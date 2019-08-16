@@ -1,4 +1,4 @@
-# mPaaS H5 容器 10.1.60 正式发布
+# mPaaS H5 容器 10.1.60
 ![30 分钟接入](https://gw.alipayobjects.com/mdn/site_comm/afts/img/A*G-65RLrNn3kAAAAAAAAAAABkARQnAQ)
 
 ### mPaaS 离线包是什么？
@@ -62,7 +62,6 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 
   [申请 UC 内核 Key，预计半个工作日内生效](https://tech.antfin.com/docs/2/112551)
 
-具体接入文档可参考：[mPaaS 容器文档]()
 
 ### 我们已经服务了谁
 

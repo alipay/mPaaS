@@ -1,0 +1,2935 @@
+zh_CN|AD|安道尔
+zh_CN|AT|奥地利
+zh_CN|AT_Burgenland|布尔根兰
+zh_CN|AT_Tyrol|蒂罗尔
+zh_CN|AT_Vorarlberg|福拉尔贝格
+zh_CN|AT_Carinthia|克恩顿
+zh_CN|AT_Upper Austria|上奥地利
+zh_CN|AT_Styria|施蒂利亚
+zh_CN|AT_Salzburg|萨尔茨堡
+zh_CN|AT_Vienna|维也纳
+zh_CN|AT_Lower Austria|下奥地利
+zh_CN|AU|澳大利亚
+zh_CN|AU_Northern Territory|北部地区
+zh_CN|AU_Northern Territory_Palmerston|北帕默斯顿
+zh_CN|AU_Northern Territory_Darwin|达尔文
+zh_CN|AU_Canberra|堪培拉
+zh_CN|AU_Queensland|昆士兰
+zh_CN|AU_Queensland_Brisbane|布里斯班
+zh_CN|AU_Queensland_Gold Coast|黄金海岸
+zh_CN|AU_Queensland_Cairns|凯恩斯
+zh_CN|AU_Queensland_Caloundra|卡罗旺德拉
+zh_CN|AU_Queensland_Townsville|汤斯维尔
+zh_CN|AU_Queensland_Toowoomba|图文巴
+zh_CN|AU_South Australia|南澳大利亚
+zh_CN|AU_South Australia_Adelaide|阿德莱德
+zh_CN|AU_South Australia_Port Augusta|奥古斯塔
+zh_CN|AU_South Australia_Mount Gambier|甘比亚山
+zh_CN|AU_South Australia_Whyalla|怀阿拉
+zh_CN|AU_South Australia_Port Lincoln|林肯港
+zh_CN|AU_South Australia_Murray Bridge|默里布里奇
+zh_CN|AU_South Australia_Port Pirie|皮里港
+zh_CN|AU_South Australia_Victor Harbor|维克托港
+zh_CN|AU_Tasmania|塔斯马尼亚
+zh_CN|AU_Tasmania_Burnie|伯尼港
+zh_CN|AU_Tasmania_Devonport|德文波特
+zh_CN|AU_Tasmania_Hobart|霍巴特
+zh_CN|AU_Tasmania_Launceston|朗塞斯顿
+zh_CN|AU_Victoria|维多利亚
+zh_CN|AU_Victoria_Geelong|吉朗
+zh_CN|AU_Victoria_Melbourne|墨尔本
+zh_CN|AU_Western Australia|西澳大利亚
+zh_CN|AU_Western Australia_Albany|奥尔巴尼
+zh_CN|AU_Western Australia_Bunbury|班伯里
+zh_CN|AU_Western Australia_Fremantle|弗里曼特尔港
+zh_CN|AU_Western Australia_Geraldton|杰拉尔顿
+zh_CN|AU_Western Australia_Mandurah|曼哲拉
+zh_CN|AU_Western Australia_Perth|珀斯
+zh_CN|AU_Western Australia_Kalgoorlie|卡尔古利
+zh_CN|AU_New South Wales|新南威尔士
+zh_CN|AU_New South Wales_Newcastle|纽卡斯尔
+zh_CN|AU_New South Wales_Wollongong|伍伦贡
+zh_CN|AU_New South Wales_Sydney|悉尼
+zh_CN|AL|阿尔巴尼亚
+zh_CN|DZ|阿尔及利亚
+zh_CN|IE|爱尔兰
+zh_CN|IE_Offaly|奥法利
+zh_CN|IE_Dublin|都柏林
+zh_CN|IE_Donegal|多内加尔
+zh_CN|IE_Tipperary|蒂珀雷里
+zh_CN|IE_Galway|戈尔韦
+zh_CN|IE_Kildare|基尔代尔
+zh_CN|IE_Kilkenny|基尔肯尼
+zh_CN|IE_Cork|科克
+zh_CN|IE_Kerry|凯里
+zh_CN|IE_Clare|克莱尔
+zh_CN|IE_Longford|朗福德
+zh_CN|IE_Limerick|利默里克
+zh_CN|IE_Louth|劳斯
+zh_CN|IE_Laois|崂斯
+zh_CN|IE_Roscommon|罗斯康芒
+zh_CN|IE_Leitrim|利特里姆
+zh_CN|IE_Mayo|梅奥
+zh_CN|IE_Monaghan|莫内根
+zh_CN|IE_Meath|米斯
+zh_CN|IE_Cavan|卡范
+zh_CN|IE_Carlow|卡洛
+zh_CN|IE_Sligo|斯莱戈
+zh_CN|IE_Wicklow|威克洛
+zh_CN|IE_Wexford|韦克斯福德
+zh_CN|IE_Waterford|沃特福德
+zh_CN|IE_Westmeath|西米斯
+zh_CN|AF|阿富汗
+zh_CN|AO|安哥拉
+zh_CN|AO_Bengo|本戈
+zh_CN|AO_Benguela|本格拉
+zh_CN|AO_Cuanza Norte|北宽扎
+zh_CN|AO_Lunda Norte|北隆达
+zh_CN|AO_Bie|比耶
+zh_CN|AO_Cuando Cubango|宽多库邦戈
+zh_CN|AO_Cunene|库内内
+zh_CN|AO_Luanda|罗安达
+zh_CN|AO_Malanje|马兰热
+zh_CN|AO_Moxico|莫希科
+zh_CN|AO_Cuanza Sul|南宽扎
+zh_CN|AO_Lunda Sul|南隆达
+zh_CN|AO_Namibe|纳米贝
+zh_CN|AO_Cabinda|卡宾达
+zh_CN|AO_Huambo|万博
+zh_CN|AO_Huila|威拉
+zh_CN|AO_Uige|威热
+zh_CN|AO_Zaire|扎伊尔
+zh_CN|AI|安圭拉
+zh_CN|AR|阿根廷
+zh_CN|AR_Viedma|别德马
+zh_CN|AR_Parana|巴拉那
+zh_CN|AR_Bahia Blanca|布兰卡港
+zh_CN|AR_Posadas|波萨达斯
+zh_CN|AR_Buenos Aires|布宜诺斯艾利斯
+zh_CN|AR_Formosa|福莫萨
+zh_CN|AR_Jujuy|胡胡伊
+zh_CN|AR_Cordoba|科尔多瓦
+zh_CN|AR_Concordia|肯考迪娅
+zh_CN|AR_Villa Krause|克劳斯城
+zh_CN|AR_Corrientes|科连特斯
+zh_CN|AR_Rio Gallegos|里奥加耶戈斯
+zh_CN|AR_Rio Cuarto|里奥夸尔托
+zh_CN|AR_La Rioja|拉里奥哈
+zh_CN|AR_La Plata|拉普拉塔
+zh_CN|AR_Rawson|罗森
+zh_CN|AR_Rosario|罗萨里奥
+zh_CN|AR_Comodoro Rivadavia|里瓦达维亚海军准将城
+zh_CN|AR_Resistencia|雷西斯滕匹亚
+zh_CN|AR_Mar del Plata|马德普拉塔
+zh_CN|AR_Mendoza|门多萨
+zh_CN|AR_Neuquen|内乌肯
+zh_CN|AR_Catamarca|卡塔马卡
+zh_CN|AR_Santiago del Estero|圣地亚哥-德尔埃斯特罗
+zh_CN|AR_Salta|萨尔塔
+zh_CN|AR_Santa Fe|圣菲
+zh_CN|AR_San Juan|圣胡安
+zh_CN|AR_San Rafael|圣拉斐尔
+zh_CN|AR_Santa Rosa|圣罗莎
+zh_CN|AR_San Luis|圣路易斯
+zh_CN|AR_San Miguel de Tucuman|圣米格尔-德图库曼
+zh_CN|AR_San Nicolas|圣尼古拉斯
+zh_CN|AR_Trelew|特雷利乌
+zh_CN|AR_Ushuaia|乌斯怀亚
+zh_CN|EG|埃及
+zh_CN|AW|阿鲁巴
+zh_CN|AE|阿拉伯联合酋长国
+zh_CN|AE_Abu Dhabi|阿布扎比
+zh_CN|AE_Al l\'Ayn|艾因
+zh_CN|AE_Dubayy|迪拜
+zh_CN|AE_Ash Shariqah|沙迦
+zh_CN|AE|阿联酋
+zh_CN|OM|阿曼
+zh_CN|AZ|阿塞拜疆
+zh_CN|ET|埃塞俄比亚
+zh_CN|EE|爱沙尼亚
+zh_CN|AG|安提瓜岛和巴布达
+zh_CN|AG|安提瓜和巴布达
+zh_CN|BB|巴巴多斯
+zh_CN|PG|巴布亚新几内亚
+zh_CN|BW|博茨瓦纳
+zh_CN|IS|冰岛
+zh_CN|BT|不丹
+zh_CN|PR|波多黎各
+zh_CN|BY|白俄罗斯
+zh_CN|BA|波黑
+zh_CN|BS|巴哈马
+zh_CN|BG|保加利亚
+zh_CN|BF|布基纳法索
+zh_CN|PK|巴基斯坦
+zh_CN|BH|巴林
+zh_CN|PE|秘鲁
+zh_CN|PL|波兰
+zh_CN|BI|布隆迪
+zh_CN|PY|巴拉圭
+zh_CN|BE|比利时
+zh_CN|BO|玻利维亚
+zh_CN|BZ|伯利兹
+zh_CN|BM|百慕大
+zh_CN|MP|北马里亚纳
+zh_CN|BJ|贝宁
+zh_CN|PA|巴拿马
+zh_CN|BV|布韦岛
+zh_CN|BR|巴西
+zh_CN|BR_Acre|阿克里
+zh_CN|BR_Alagoas|阿拉戈斯
+zh_CN|BR_Amapa|阿马帕
+zh_CN|BR_Rio Grande do Norte|北里奥格兰德
+zh_CN|BR_Parana|巴拉那
+zh_CN|BR_Pernambuco|伯南布哥
+zh_CN|BR_Brasilia|巴西利亚
+zh_CN|BR_Bahia|巴伊亚
+zh_CN|BR_Goias|戈亚斯
+zh_CN|BR_Rondonia|朗多尼亚
+zh_CN|BR_Roraima|罗赖马
+zh_CN|BR_Rio de Janeiro|里约热内卢
+zh_CN|BR_Maranhao|马拉尼昂
+zh_CN|BR_Minas Gerais|米纳斯吉拉斯
+zh_CN|BR_Mato Grosso|马托格罗索
+zh_CN|BR_Rio Grande do Sul|南里奥格兰德
+zh_CN|BR_Mato Grosso do Sul|南马托格罗索
+zh_CN|BR_Piaui|皮奥伊
+zh_CN|BR_Para|帕拉
+zh_CN|BR_Paraiba|帕拉伊巴
+zh_CN|BR_Ceara|塞阿拉
+zh_CN|BR_Espirito Santo|圣埃斯皮里图
+zh_CN|BR_Sao Paulo|圣保罗
+zh_CN|BR_Sergipe|塞尔希培
+zh_CN|BR_Santa Catarina|圣卡塔琳娜
+zh_CN|BR_Tocantins|托坎廷斯
+zh_CN|BR_Amazonas|亚马孙
+zh_CN|KP|朝鲜
+zh_CN|GQ|赤道几内亚
+zh_CN|TL|东帝汶
+zh_CN|DE|德国
+zh_CN|DE_Erfurt|爱尔福特
+zh_CN|DE_Arnsberg|阿恩斯贝格
+zh_CN|DE_Augsburg|奥格斯堡
+zh_CN|DE_Ansbach|安斯巴格
+zh_CN|DE_Potsdam|波茨坦
+zh_CN|DE_Bochum|波鸿
+zh_CN|DE_Berlin|柏林
+zh_CN|DE_Bielefeld|比勒费尔德
+zh_CN|DE_Bremen|不来梅
+zh_CN|DE_Brunswick|不伦瑞克
+zh_CN|DE_Bayreuth|拜伊罗特
+zh_CN|DE_Dresden|德累斯顿
+zh_CN|DE_Darmstadt|达姆施塔特
+zh_CN|DE_Dessau|德绍
+zh_CN|DE_Dusseldorf|杜塞尔多夫
+zh_CN|DE_Detmold|代特莫尔特
+zh_CN|DE_Freiburg|弗赖堡
+zh_CN|DE_Frankfurt|法兰克福
+zh_CN|DE_Hamburg|汉堡
+zh_CN|DE_Halle|哈雷
+zh_CN|DE_Hannover|汉诺威
+zh_CN|DE_Kiel|基尔
+zh_CN|DE_GieBen|吉森
+zh_CN|DE_Koblenz|科布伦次
+zh_CN|DE_Cologne|科隆
+zh_CN|DE_Chemnitz|开姆尼斯
+zh_CN|DE_Leipzig|莱比锡
+zh_CN|DE_Landshut|兰茨胡特
+zh_CN|DE_Luneburg|吕讷堡
+zh_CN|DE_Magdeburg|马格德堡
+zh_CN|DE_Mannheim|曼海姆
+zh_CN|DE_Munich|慕尼黑
+zh_CN|DE_Muenster|明斯特
+zh_CN|DE_Mainz|美因兹
+zh_CN|DE_Nuremberg|纽伦堡
+zh_CN|DE_Karlsruhe|卡尔斯鲁厄
+zh_CN|DE_Kassel|卡塞尔
+zh_CN|DE_Stuttgart|斯图加特
+zh_CN|DE_Schwerin|什未林
+zh_CN|DE_Trier|特里尔
+zh_CN|DE_Wuerzburg|维尔茨堡
+zh_CN|DE_Wiesbaden|威斯巴登
+zh_CN|TG|多哥
+zh_CN|DK|丹麦
+zh_CN|DO|多米尼加
+zh_CN|DM|多米尼克
+zh_CN|EC|厄瓜多尔
+zh_CN|RU|俄罗斯联邦
+zh_CN|RU_Abakan|阿巴坎
+zh_CN|RU_Arkhangelsk|阿尔汉格尔斯克
+zh_CN|RU_Aginskoye|阿金斯科耶
+zh_CN|RU_Orenburg|奥伦堡
+zh_CN|RU_Orel|奥廖尔
+zh_CN|RU_Elista|埃利斯塔
+zh_CN|RU_Anadyr|阿纳德尔
+zh_CN|RU_Astrakhan|阿斯特拉罕
+zh_CN|RU_Petropavlovsk-Kamchatskiy|彼得罗巴甫洛夫斯克
+zh_CN|RU_Petrozavodsk|彼得罗扎沃茨克
+zh_CN|RU_Belgorod|别尔哥罗德
+zh_CN|RU_Perm|彼尔姆
+zh_CN|RU_Barnaul|巴尔瑙尔
+zh_CN|RU_Chabarovsk|伯力
+zh_CN|RU_Birobidzan|比罗比詹
+zh_CN|RU_Blagoveshchensk|布拉戈维申斯克
+zh_CN|RU_Bryansk|布良斯克
+zh_CN|RU_Penza|奔萨
+zh_CN|RU_Chelyabinsk|车里雅宾斯克
+zh_CN|RU_Chita|赤塔
+zh_CN|RU_Rostov-na-Donu|顿河畔罗斯托夫
+zh_CN|RU_Omsk|鄂木斯克
+zh_CN|RU_Volgograd|伏尔加格勒
+zh_CN|RU_Vladikavkaz|弗拉季高加索
+zh_CN|RU_Vladimir|弗拉基米尔
+zh_CN|RU_Gorno-Altajsk|戈尔诺－阿尔泰斯克
+zh_CN|RU_Grozny|格罗兹尼
+zh_CN|RU_Vladivostok|海参崴
+zh_CN|RU_Khanty-Mansiysk|汉特－曼西斯克
+zh_CN|RU_Kirov|基洛夫
+zh_CN|RU_Kaliningrad|加里宁格勒
+zh_CN|RU_Kudymkar|库德姆卡尔
+zh_CN|RU_Kurgan|库尔干
+zh_CN|RU_Kursk|库尔斯克
+zh_CN|RU_Krasnodar|克拉斯诺达尔
+zh_CN|RU_Krasnojarsk|克拉斯诺亚尔斯克
+zh_CN|RU_Kemerovo|克麦罗沃
+zh_CN|RU_Kazan|喀山
+zh_CN|RU_Kostroma|科斯特罗马
+zh_CN|RU_Kyzyl|克孜勒
+zh_CN|RU_Lipeck|利佩茨克
+zh_CN|RU_Ryazan|梁赞
+zh_CN|RU_Murmansk|摩尔曼斯克
+zh_CN|RU_Makhachkala|马哈奇卡拉
+zh_CN|RU_Magadan|马加丹
+zh_CN|RU_Magas|马加斯
+zh_CN|RU_Maykop|迈科普
+zh_CN|RU_Moscow|莫斯科
+zh_CN|RU_Nalchik|纳尔奇克
+zh_CN|RU_Velikij Novgorod|诺夫哥罗德
+zh_CN|RU_Naryan-Mar|纳里扬马尔
+zh_CN|RU_Juzno-Sachalinsk|南萨哈林斯克
+zh_CN|RU_Palana|帕拉纳
+zh_CN|RU_Pskov|普斯科夫
+zh_CN|RU_Cheboksary|切博克萨雷
+zh_CN|RU_Cherkessk|切尔克斯克
+zh_CN|RU_Kaluga|卡卢加
+zh_CN|RU_Tyumen|秋明
+zh_CN|RU_St. Peterburg|圣彼得堡
+zh_CN|RU_Syktyvkar|瑟克特夫卡尔
+zh_CN|RU_Salekhard|萨列哈尔德
+zh_CN|RU_Saransk|萨兰斯克
+zh_CN|RU_Saratov|萨拉托夫
+zh_CN|RU_Samara|萨马拉
+zh_CN|RU_Smolensk|斯摩棱斯克
+zh_CN|RU_Stavropol|斯塔夫罗波尔
+zh_CN|RU_Tambov|坦波夫
+zh_CN|RU_Tula|图拉
+zh_CN|RU_Tomsk|托木斯克
+zh_CN|RU_Tver|特维尔
+zh_CN|RU_Ufa|乌法
+zh_CN|RU_Vologda|沃洛格达
+zh_CN|RU_Voronezh|沃罗涅什
+zh_CN|RU_Ulan-Ude|乌兰乌德
+zh_CN|RU_Uljanovsk|乌里扬诺夫斯克
+zh_CN|RU_Ust-Ordynsky|乌斯季奥尔登斯基
+zh_CN|RU_Niznij Novgorod|下诺夫哥罗德
+zh_CN|RU_Novosibirsk|新西伯利亚
+zh_CN|RU_Irkutsk|伊尔库茨克
+zh_CN|RU_Jakutsk|雅库茨克
+zh_CN|RU_Jaroslavl|雅罗斯拉夫尔
+zh_CN|RU_Jekaterinburg|叶卡捷林堡
+zh_CN|RU_Izhevsk|伊热夫斯克
+zh_CN|RU_Yoshkar-Ola|约什卡尔奥拉
+zh_CN|RU_Ivanovo|伊万诺沃
+zh_CN|ER|厄立特里亚
+zh_CN|VA|梵蒂冈
+zh_CN|CV|佛得角
+zh_CN|FR|法国
+zh_CN|FR_Arles|阿尔勒
+zh_CN|FR_Orleans|奥尔良
+zh_CN|FR_Aix-en-Provence|艾克斯
+zh_CN|FR_Ajaccio|阿雅克修
+zh_CN|FR_Paris|巴黎
+zh_CN|FR_Besancon|贝桑松
+zh_CN|FR_Dijon|第戎
+zh_CN|FR_Frejus|弗雷瑞斯
+zh_CN|FR_Lyon|里昂
+zh_CN|FR_Rouen|鲁昂
+zh_CN|FR_Rennes|雷恩
+zh_CN|FR_Lille|里尔
+zh_CN|FR_Limoges|利摩日
+zh_CN|FR_Montpellier|蒙彼利埃
+zh_CN|FR_Marseille|马赛
+zh_CN|FR_Metz|梅斯
+zh_CN|FR_Nice|尼斯
+zh_CN|FR_Nantes|南特
+zh_CN|FR_Caen|卡昂
+zh_CN|FR_Chalons-en-Champagne|沙隆
+zh_CN|FR_Toulouse|图卢兹
+zh_CN|FR_Valence|瓦朗斯
+zh_CN|FR_Amiens|亚眠
+zh_CN|FJ|斐济
+zh_CN|FI|芬兰
+zh_CN|PH|菲律宾
+zh_CN|PH_Davao|达沃
+zh_CN|PH_Manila|马尼拉
+zh_CN|PH_Caloocan|卡卢坎
+zh_CN|PH_Cebu|宿务
+zh_CN|FO|法罗群岛
+zh_CN|PF|法属玻利尼西亚
+zh_CN|TF|法属南部领地
+zh_CN|CU|古巴
+zh_CN|GM|冈比亚
+zh_CN|GU|关岛
+zh_CN|GP|瓜德罗普
+zh_CN|GG|格恩西岛
+zh_CN|CD|刚果
+zh_CN|CG|刚果民主共和国
+zh_CN|CO|哥伦比亚
+zh_CN|GE|格鲁吉亚
+zh_CN|GL|格陵兰(丹)
+zh_CN|GD|格林纳达
+zh_CN|CR|哥斯达黎加
+zh_CN|GF|圭亚那
+zh_CN|HT|海地
+zh_CN|HM|赫德岛和麦克唐纳群岛
+zh_CN|HN|洪都拉斯
+zh_CN|KR|韩国
+zh_CN|KR_Daegu|大邱
+zh_CN|KR_Daegu_Dalseong-gun|达城郡
+zh_CN|KR_Daegu_Daegu|大邱
+zh_CN|KR_Daegu_Suseong-gu|寿城区
+zh_CN|KR_Daejeon|大田
+zh_CN|KR_Busan|釜山
+zh_CN|KR_Gwangju|光州
+zh_CN|KR_Gangwon-do|江原道
+zh_CN|KR_Gangwon-do_Chuncheon|春川市
+zh_CN|KR_Gangwon-do_Donghae|东海市
+zh_CN|KR_Gangwon-do_Goseong County|高城郡
+zh_CN|KR_Gangwon-do_Hoengseong County|横城郡
+zh_CN|KR_Gangwon-do_Hongcheon County|洪川郡
+zh_CN|KR_Gangwon-do_Hwacheon County|华川郡
+zh_CN|KR_Gangwon-do_Gangneung|江陵市
+zh_CN|KR_Gangwon-do_Jeongseon County|旌善郡
+zh_CN|KR_Gangwon-do_Inje County|麟蹄郡
+zh_CN|KR_Gangwon-do_Yeongwol County|宁越郡
+zh_CN|KR_Gangwon-do_Pyeongchang County|平昌郡
+zh_CN|KR_Gangwon-do_Sokcho|束草市
+zh_CN|KR_Gangwon-do_Samcheok|三陟市
+zh_CN|KR_Gangwon-do_Taebaek|太白市
+zh_CN|KR_Gangwon-do_Cheorwon County|铁原郡
+zh_CN|KR_Gangwon-do_Yangyang County|襄阳郡
+zh_CN|KR_Gangwon-do_Yanggu County|杨口郡
+zh_CN|KR_Gangwon-do_Wonju|原州市
+zh_CN|KR_Jeju-do|济州岛
+zh_CN|KR_Jeju-do_Anseong|安城市
+zh_CN|KR_Jeju-do_Ansan|安山市
+zh_CN|KR_Jeju-do_Anyang|安养市
+zh_CN|KR_Jeju-do_Pocheon|抱川市
+zh_CN|KR_Jeju-do_Seongnam|城南市
+zh_CN|KR_Jeju-do_Dongducheon|东豆川市
+zh_CN|KR_Jeju-do_Bucheon|富川市
+zh_CN|KR_Jeju-do_Gwacheon|果川市
+zh_CN|KR_Jeju-do_Gwangmyeong|光明市
+zh_CN|KR_Jeju-do_Goyang|高阳市
+zh_CN|KR_Jeju-do_Gwangju|广州市
+zh_CN|KR_Jeju-do_Hwaseong|华城市
+zh_CN|KR_Jeju-do_Hanam|河南市
+zh_CN|KR_Jeju-do_Guri|九里市
+zh_CN|KR_Jeju-do_Gapyeong County|加平郡
+zh_CN|KR_Jeju-do_Gimpo|金浦市
+zh_CN|KR_Jeju-do_Gunpo|军浦市
+zh_CN|KR_Jeju-do_Yeoncheon County|涟川郡
+zh_CN|KR_Jeju-do_Icheon|利川市
+zh_CN|KR_Jeju-do_Yongin|龙仁市
+zh_CN|KR_Jeju-do_Yeoju County|骊州郡
+zh_CN|KR_Jeju-do_Namyangju|南杨州市
+zh_CN|KR_Jeju-do_Pyeongtaek|平泽市
+zh_CN|KR_Jeju-do_Paju|坡州市
+zh_CN|KR_Jeju-do_Siheung|始兴市
+zh_CN|KR_Jeju-do_Suwon|水原市
+zh_CN|KR_Jeju-do_Osan|乌山市
+zh_CN|KR_Jeju-do_Yangpyeong County|扬平郡
+zh_CN|KR_Jeju-do_Uiwang|仪旺市
+zh_CN|KR_Jeju-do_Uijeongbu|议政府
+zh_CN|KR_Jeju-do_Yangju|杨州市
+zh_CN|KR_Gyeonggi-do|济州特别自治道
+zh_CN|KR_Gyeongsangbuk-do|全罗北道
+zh_CN|KR_Gyeongsangbuk-do_Sunchang County|淳昌郡
+zh_CN|KR_Gyeongsangbuk-do_Jangsu County|长水郡
+zh_CN|KR_Gyeongsangbuk-do_Buan County|扶安郡
+zh_CN|KR_Gyeongsangbuk-do_Gochang County|高敞郡
+zh_CN|KR_Gyeongsangbuk-do_Gimje|金堤市
+zh_CN|KR_Gyeongsangbuk-do_Jeongeup|井邑市
+zh_CN|KR_Gyeongsangbuk-do_Muju County|茂朱郡
+zh_CN|KR_Gyeongsangbuk-do_Namwon|南原市
+zh_CN|KR_Gyeongsangbuk-do_Gunsan|群山市
+zh_CN|KR_Gyeongsangbuk-do_Jeonju|全州市
+zh_CN|KR_Gyeongsangbuk-do_Imsil County|任实郡
+zh_CN|KR_Gyeongsangbuk-do_Wanju County|完州郡
+zh_CN|KR_Gyeongsangbuk-do_Iksan|益山市
+zh_CN|KR_Gyeongsangbuk-do_Jinan County|鎭安郡
+zh_CN|KR_Gyeongsangnam-do|全罗南道
+zh_CN|KR_Gyeongsangnam-do_Boseong County|宝城郡
+zh_CN|KR_Gyeongsangnam-do_Jangseong County|长城郡
+zh_CN|KR_Gyeongsangnam-do_Jangheung County|长兴郡
+zh_CN|KR_Gyeongsangnam-do_Gokseong County|谷城郡
+zh_CN|KR_Gyeongsangnam-do_Wando County|莞岛郡
+zh_CN|KR_Gyeongsangnam-do_Goheung County|高兴郡
+zh_CN|KR_Gyeongsangnam-do_Gwangyang|光阳市
+zh_CN|KR_Gyeongsangnam-do_Haenam County|海南郡
+zh_CN|KR_Gyeongsangnam-do_Hwasun County|和顺郡
+zh_CN|KR_Gyeongsangnam-do_Gangjin County|康津郡
+zh_CN|KR_Gyeongsangnam-do_Yeonggwang County|灵光郡
+zh_CN|KR_Gyeongsangnam-do_Yeosu|丽水市
+zh_CN|KR_Gyeongsangnam-do_Yeongam County|灵岩郡
+zh_CN|KR_Gyeongsangnam-do_Naju|罗州市
+zh_CN|KR_Gyeongsangnam-do_Mokpo|木浦市
+zh_CN|KR_Gyeongsangnam-do_Gurye County|求礼郡
+zh_CN|KR_Gyeongsangnam-do_Suncheon|顺天市
+zh_CN|KR_Gyeongsangnam-do_Damyang County|潭阳郡
+zh_CN|KR_Gyeongsangnam-do_Muan County|务安郡
+zh_CN|KR_Gyeongsangnam-do_Sinan County|新安郡
+zh_CN|KR_Gyeongsangnam-do_Hampyeong County|咸平郡
+zh_CN|KR_Gyeongsangnam-do_Jindo County|珍岛郡
+zh_CN|KR_Chungcheongbuk-do|庆尚北道
+zh_CN|KR_Chungcheongbuk-do_Andong|安东市
+zh_CN|KR_Chungcheongbuk-do_Bonghwa County|奉化郡
+zh_CN|KR_Chungcheongbuk-do_Goryeong County|高灵郡
+zh_CN|KR_Chungcheongbuk-do_Gumi|龟尾市
+zh_CN|KR_Chungcheongbuk-do_Gimcheon|金泉市
+zh_CN|KR_Chungcheongbuk-do_Gunwi County|军威郡
+zh_CN|KR_Chungcheongbuk-do_Yecheon County|醴泉郡
+zh_CN|KR_Chungcheongbuk-do_Pohang|浦项市
+zh_CN|KR_Chungcheongbuk-do_Cheongdo County|淸道郡
+zh_CN|KR_Chungcheongbuk-do_Chilgok County|漆谷郡
+zh_CN|KR_Chungcheongbuk-do_Cheongsong County|靑松郡
+zh_CN|KR_Chungcheongbuk-do_Gyeongsan|庆山市
+zh_CN|KR_Chungcheongbuk-do_Gyeongju|庆州市
+zh_CN|KR_Chungcheongbuk-do_Yeongju|荣州市
+zh_CN|KR_Chungcheongbuk-do_Sangju|尙州市
+zh_CN|KR_Chungcheongbuk-do_Mungyeong|闻庆市
+zh_CN|KR_Chungcheongbuk-do_Uljin County|蔚珍郡
+zh_CN|KR_Chungcheongbuk-do_Seongju County|星州郡
+zh_CN|KR_Chungcheongbuk-do_Uiseong County|义城郡
+zh_CN|KR_Chungcheongbuk-do_Yeongcheon|永川市
+zh_CN|KR_Chungcheongbuk-do_Yeongdeok County|盈德郡
+zh_CN|KR_Chungcheongbuk-do_Ulleung County|郁陵郡
+zh_CN|KR_Chungcheongbuk-do_Yeongyang County|英阳郡
+zh_CN|KR_Chungcheongnam-do|庆尚南道
+zh_CN|KR_Chungcheongnam-do_Changnyeong County|昌宁郡
+zh_CN|KR_Chungcheongnam-do_Changwon|昌原市
+zh_CN|KR_Chungcheongnam-do_Goseong County|固城郡
+zh_CN|KR_Chungcheongnam-do_Hadong County|河东郡
+zh_CN|KR_Chungcheongnam-do_Geochang County|居昌郡
+zh_CN|KR_Chungcheongnam-do_Gimhae|金海市
+zh_CN|KR_Chungcheongnam-do_Geoje|巨济市
+zh_CN|KR_Chungcheongnam-do_Jinju|晋州市
+zh_CN|KR_Chungcheongnam-do_Yangsan|梁山市
+zh_CN|KR_Chungcheongnam-do_Masan|马山市
+zh_CN|KR_Chungcheongnam-do_Miryang|密阳市
+zh_CN|KR_Chungcheongnam-do_Namhae County|南海郡
+zh_CN|KR_Chungcheongnam-do_Sacheon|泗川市
+zh_CN|KR_Chungcheongnam-do_Sancheong County|山淸郡
+zh_CN|KR_Chungcheongnam-do_Tongyeong|统营市
+zh_CN|KR_Chungcheongnam-do_Haman County|咸安郡
+zh_CN|KR_Chungcheongnam-do_Hapcheon County|陜川郡
+zh_CN|KR_Chungcheongnam-do_Hamyang County|咸阳郡
+zh_CN|KR_Chungcheongnam-do_Uiryeong County|宜宁郡
+zh_CN|KR_Chungcheongnam-do_Jinhae|鎭海市
+zh_CN|KR_Incheon|仁川
+zh_CN|KR_Seoul|首尔
+zh_CN|KR_Ulsan|蔚山
+zh_CN|KR_Jeollabuk-do|忠清北道
+zh_CN|KR_Jeollabuk-do_Boeun County|报恩郡
+zh_CN|KR_Jeollabuk-do_Jecheon|堤川市
+zh_CN|KR_Jeollabuk-do_Danyang County|丹阳郡
+zh_CN|KR_Jeollabuk-do_Goesan County|槐山郡
+zh_CN|KR_Jeollabuk-do_Cheongwon County|淸原郡
+zh_CN|KR_Jeollabuk-do_Cheongju|淸州市
+zh_CN|KR_Jeollabuk-do_Okcheon County|沃川郡
+zh_CN|KR_Jeollabuk-do_Eumseong County|阴城郡
+zh_CN|KR_Jeollabuk-do_Yeongdong County|永同郡
+zh_CN|KR_Jeollabuk-do_Jincheon County|鎭川郡
+zh_CN|KR_Jeollabuk-do_Jeungpyeong County|曾坪郡
+zh_CN|KR_Jeollabuk-do_Chungju|忠州市
+zh_CN|KR_Jeollanam-do|忠清南道
+zh_CN|KR_Jeollanam-do_Boryeong|保宁市
+zh_CN|KR_Jeollanam-do_Buyeo County|扶余郡
+zh_CN|KR_Jeollanam-do_Gongju|公州市
+zh_CN|KR_Jeollanam-do_Hongseong County|洪城郡
+zh_CN|KR_Jeollanam-do_Gyeryong|鸡龙市
+zh_CN|KR_Jeollanam-do_Geumsan County|锦山郡
+zh_CN|KR_Jeollanam-do_Yesan County|礼山郡
+zh_CN|KR_Jeollanam-do_Nonsan|论山市
+zh_CN|KR_Jeollanam-do_Cheongyang County|青阳郡
+zh_CN|KR_Jeollanam-do_Seosan|瑞山市
+zh_CN|KR_Jeollanam-do_Seocheon County|舒川郡
+zh_CN|KR_Jeollanam-do_Taean County|泰安郡
+zh_CN|KR_Jeollanam-do_Cheonan|天安市
+zh_CN|KR_Jeollanam-do_Dangjin County|唐津郡
+zh_CN|KR_Jeollanam-do_Yeongi County|燕岐郡
+zh_CN|KR_Jeollanam-do_Asan|牙山市
+zh_CN|NL|荷兰
+zh_CN|NL_Ede|埃德
+zh_CN|NL_Almere|阿尔梅勒
+zh_CN|NL_Emmen|埃门
+zh_CN|NL_Amersfoort|阿默斯福特
+zh_CN|NL_Amsterdam|阿姆斯特丹
+zh_CN|NL_Arnhem|阿纳姆
+zh_CN|NL_Apeldoorn|阿珀尔多伦
+zh_CN|NL_Assen|阿森
+zh_CN|NL_Eindhoven|埃因霍芬
+zh_CN|NL_Breda|布雷达
+zh_CN|NL_Dordrecht|多德雷赫特
+zh_CN|NL_Tilburg|蒂尔堡
+zh_CN|NL_Enschede|恩斯赫德
+zh_CN|NL_Groningen|格罗宁根
+zh_CN|NL_Hoofddorp|霍夫多尔普
+zh_CN|NL_Haarlem|哈勒姆
+zh_CN|NL_Hague|海牙
+zh_CN|NL_Leiden|莱顿
+zh_CN|NL_Leeuwarden|吕伐登
+zh_CN|NL_Lelystad|莱利斯塔德
+zh_CN|NL_Rotterdam|鹿特丹
+zh_CN|NL_Middelburg|米德尔堡
+zh_CN|NL_Maastricht|马斯特里赫特
+zh_CN|NL_Nijmegen|奈梅亨
+zh_CN|NL_\'s-Hertogenbosch|斯海尔托亨博思
+zh_CN|NL_Utrecht|乌得勒支
+zh_CN|NL_Zoetermeer|佐特尔梅
+zh_CN|NL_Zwolle|兹沃勒
+zh_CN|CS|黑山共和国
+zh_CN|KZ|哈萨克斯坦
+zh_CN|ZW|津巴布韦
+zh_CN|DJ|吉布提
+zh_CN|KG|吉尔吉斯斯坦
+zh_CN|CZ|捷克
+zh_CN|KI|基里巴斯
+zh_CN|GH|加纳
+zh_CN|CA|加拿大
+zh_CN|CA_Alberta|艾伯塔
+zh_CN|CA_Alberta_Edmonton|埃德蒙顿
+zh_CN|CA_Alberta_Calgary|卡里加里
+zh_CN|CA_British Columbia|不列颠哥伦比亚
+zh_CN|CA_British Columbia_Abbotsford|阿伯茨福
+zh_CN|CA_British Columbia_Kelowna|基劳纳
+zh_CN|CA_British Columbia_Victoria|维多利亚
+zh_CN|CA_British Columbia_Vancouver|温哥华
+zh_CN|CA_Manitoba|马尼托巴
+zh_CN|CA_Manitoba_Winnipeg|温尼伯
+zh_CN|CA_New Brunswick|新不伦瑞克
+zh_CN|CA_New Brunswick_Fredericton|弗雷德里顿
+zh_CN|CA_Newfoundland and Labrador|纽芬兰与拉布拉多
+zh_CN|CA_Newfoundland and Labrador_Saint-John\'s|圣约翰斯
+zh_CN|CA_Nova Scotia|新斯科舍
+zh_CN|CA_Nova Scotia_Cape Breton|布列塔尼角
+zh_CN|CA_Nunavut|努納武特
+zh_CN|CA_Nunavut_Iqaluit|伊魁特
+zh_CN|CA_Northwest Territories|西北地区
+zh_CN|CA_Northwest Territories_Yellowknife|耶洛奈夫
+zh_CN|CA_Ontario|安大略
+zh_CN|CA_Ontario_Barrie|巴里
+zh_CN|CA_Ontario_Brampton|布兰普顿
+zh_CN|CA_Ontario_Guelph|圭尔夫
+zh_CN|CA_Ontario_Hamilton|哈密尔顿
+zh_CN|CA_Ontario_Kingston|金斯敦
+zh_CN|CA_Ontario_London|伦敦
+zh_CN|CA_Ontario_Oshawa|奥沙瓦
+zh_CN|CA_Ontario_Ottawa|渥太华
+zh_CN|CA_Ontario_Sudbury|萨德伯里
+zh_CN|CA_Ontario_St. Catharines|圣卡塔琳娜
+zh_CN|CA_Ontario_Thunder Bay|桑德贝
+zh_CN|CA_Ontario_Toronto|多伦多
+zh_CN|CA_Ontario_Windsor|温莎
+zh_CN|CA_Prince Edward Island|爱德华王子岛
+zh_CN|CA_Prince Edward Island_Charlottetown|夏洛特敦
+zh_CN|CA_Quebec|魁北克
+zh_CN|CA_Quebec_Montreal|蒙特利尔
+zh_CN|CA_Quebec_Quebec|魁北克
+zh_CN|CA_Quebec_Sherbrooke|舍布鲁克
+zh_CN|CA_Quebec_Trois-Rivieres|三河城
+zh_CN|CA_Saskatchewan|萨斯喀彻温
+zh_CN|CA_Saskatchewan_Regina|里贾纳
+zh_CN|CA_Saskatchewan_Saskatoon|萨斯卡通
+zh_CN|CA_Yukon|育空
+zh_CN|CA_Yukon_Whitehorse|怀特霍斯
+zh_CN|IC|加那利群岛
+zh_CN|GN|几内亚
+zh_CN|GW|几内亚比绍
+zh_CN|GA|加蓬
+zh_CN|KH|柬埔寨
+zh_CN|KH_Otdar Mean Chey|奥多棉吉
+zh_CN|KH_Banteay Mean Chey|班迭棉吉
+zh_CN|KH_Prey Veng|波罗勉
+zh_CN|KH_Krong Pailin|拜林市
+zh_CN|KH_Krong Keb|白马市
+zh_CN|KH_Kampong Chhnang|磅清扬
+zh_CN|KH_Kampong Spoe|磅士卑
+zh_CN|KH_Kampong Thum|磅同
+zh_CN|KH_Preah Vihear|柏威夏
+zh_CN|KH_Kampong Cham|磅湛
+zh_CN|KH_Takev|茶胶
+zh_CN|KH_Svay Rieng|柴桢
+zh_CN|KH_Kampot|贡布
+zh_CN|KH_Kandal|干丹
+zh_CN|KH_Kaoh Kong|戈公
+zh_CN|KH_Phnum Penh|金边市
+zh_CN|KH_Kracheh|桔井
+zh_CN|KH_Rotanak Kiri|腊塔纳基里
+zh_CN|KH_Mondol Kiri|蒙多基里
+zh_CN|KH_Bat Dambang|马德望
+zh_CN|KH_Pouth sat|菩萨
+zh_CN|KH_Stoeng Treng|上丁
+zh_CN|KH_Krong Preah|西哈努克市
+zh_CN|KH_Siem Reab|暹粒
+zh_CN|CK|库克群岛
+zh_CN|CC|科科斯(基林)群岛
+zh_CN|HR|克罗地亚
+zh_CN|CP|克利珀顿岛
+zh_CN|CM|喀麦隆
+zh_CN|KM|科摩罗
+zh_CN|KY|开曼群岛
+zh_CN|KE|肯尼亚
+zh_CN|CI|科特迪瓦
+zh_CN|KW|科威特
+zh_CN|LR|利比里亚
+zh_CN|LB|黎巴嫩
+zh_CN|LY|利比亚
+zh_CN|RO|罗马尼亚
+zh_CN|RE|留尼汪
+zh_CN|LU|卢森堡
+zh_CN|LS|莱索托
+zh_CN|LT|立陶宛
+zh_CN|LV|拉脱维亚
+zh_CN|RW|卢旺达
+zh_CN|LA|老挝
+zh_CN|LI|列支敦士登
+zh_CN|MM|缅甸
+zh_CN|MG|马达加斯加
+
+zh_CN|MV|马尔代夫
+zh_CN|MV_Addu Atoll|阿杜
+zh_CN|MV_North Ari Atoll|北阿里
+zh_CN|MV_North Thiladhunmathi|北蒂拉杜马蒂
+zh_CN|MV_North Miladhunmadhulu|北米拉杜马杜卢
+zh_CN|MV_North Maalhosmadhulu|北马洛斯马杜卢
+zh_CN|MV_North Nilandhe Atoll|北尼兰杜
+zh_CN|MV_North Huvadhu Atoll|北苏瓦迪瓦
+zh_CN|MV_Foammulah|福阿穆拉库
+zh_CN|MV_Faadhippolhu|法迪福卢
+zh_CN|MV_Felidhu Atoll|费利杜
+zh_CN|MV_Hadhdhunmathi|哈杜马蒂
+zh_CN|MV_Kolhumadulu|科卢马杜卢
+zh_CN|MV_Male|马累
+zh_CN|MV_Male Atoll|马累岛
+zh_CN|MV_Mulakatholhu|穆拉库
+zh_CN|MV_South Ari Atoll|南阿里
+zh_CN|MV_South Thiladhunmathi|南蒂拉杜马蒂
+zh_CN|MV_South Miladhunmadhulu|南米拉杜马杜卢
+zh_CN|MV_South Maalhosmadulu|南马洛斯马杜卢
+zh_CN|MV_South Nilandhe Atoll|南尼兰杜
+zh_CN|MV_South Huvadhu Atoll|南苏瓦迪瓦
+zh_CN|MD|摩尔多瓦
+zh_CN|MT|马耳他
+zh_CN|FK|马尔维纳斯群岛
+zh_CN|US|美国
+zh_CN|US_Idaho|爱达荷州
+zh_CN|US_Idaho_Idaho Falls|爱达荷福尔斯
+zh_CN|US_Idaho_Blackfoot|布莱克富特
+zh_CN|US_Idaho_Pocatello|波卡特洛
+zh_CN|US_Idaho_Boise|博伊西
+zh_CN|US_Idaho_Coeur d\'Alene|科达伦
+zh_CN|US_Idaho_Lewiston|刘易斯顿
+zh_CN|US_Idaho_Murphy|墨菲
+zh_CN|US_Idaho_Moscow|莫斯科
+zh_CN|US_Idaho_Nampa|楠帕
+zh_CN|US_Idaho_Ketchum|岂彻姆
+zh_CN|US_Idaho_Sun Valley|森瓦利
+zh_CN|US_Idaho_American Falls|亚美利加瀑布城
+zh_CN|US_Iowa|爱荷华
+zh_CN|US_Iowa_Des Moines|得梅因
+zh_CN|US_Iowa_Davenport|达文波特
+zh_CN|US_Iowa_Cedar Rapids|锡达拉皮兹
+zh_CN|US_Arkansas|阿肯色
+zh_CN|US_Arkansas_Fayetteville|费耶特维尔
+zh_CN|US_Arkansas_Fort Smith|史密斯堡
+zh_CN|US_Arkansas_Little Rock|小石城
+zh_CN|US_Alabama|阿拉巴马
+zh_CN|US_Alabama_Birmingham|伯明罕
+zh_CN|US_Alabama_Huntsville|亨茨维尔
+zh_CN|US_Alabama_Mobile|莫比尔
+zh_CN|US_Alabama_Montgomery|蒙哥马利
+zh_CN|US_Alaska|阿拉斯加
+zh_CN|US_Alaska_Anchorage|安克雷奇
+zh_CN|US_Alaska_Fairbanks|费尔班克斯
+zh_CN|US_Alaska_Juneau|朱诺
+zh_CN|US_North Dakota|北达科他
+zh_CN|US_North Dakota_Bismarck|俾斯麦
+zh_CN|US_North Dakota_Grand Forks|大福克斯
+zh_CN|US_North Dakota_Fargo|法戈
+zh_CN|US_North Dakota_Minot|迈诺特
+zh_CN|US_North Carolina|北卡罗来纳
+zh_CN|US_North Carolina_Asheville|艾许维尔
+zh_CN|US_North Carolina_Durham|杜罕
+zh_CN|US_North Carolina_Fayetteville|费耶特维尔
+zh_CN|US_North Carolina_Greensboro|格林斯伯勒
+zh_CN|US_North Carolina_High Point|海波特
+zh_CN|US_North Carolina_Chapel Hill|教堂山
+zh_CN|US_North Carolina_Cary|凯利
+zh_CN|US_North Carolina_Raleigh|罗利
+zh_CN|US_North Carolina_Raleigh-Durham|洛利杜罕都会区
+zh_CN|US_North Carolina_Wilmington|威尔明顿
+zh_CN|US_North Carolina_Winston–Salem|温斯顿.萨利姆
+zh_CN|US_North Carolina_Charlotte|夏洛特
+zh_CN|US_Pennsylvania|宾夕法尼亚
+zh_CN|US_Pennsylvania_Allentown|阿伦敦
+zh_CN|US_Pennsylvania_Philadephia|费城
+zh_CN|US_Pennsylvania_Pittsburgh|匹兹堡
+zh_CN|US_Pennsylvania_Erie|伊利
+zh_CN|US_Texas|德州
+zh_CN|US_Texas_Abilene|阿比林
+zh_CN|US_Texas_Odessa|敖德萨
+zh_CN|US_Texas_El Paso|埃尔帕索
+zh_CN|US_Texas_Arlington|阿灵顿
+zh_CN|US_Texas_Amarillo|阿马里洛
+zh_CN|US_Texas_Austin|奥斯汀
+zh_CN|US_Texas_Plano|布兰诺
+zh_CN|US_Texas_Brownsville|布朗斯维尔
+zh_CN|US_Texas_Beaumont|博蒙特
+zh_CN|US_Texas_Grand Prairie|大草原城
+zh_CN|US_Texas_Denton|丹敦
+zh_CN|US_Texas_Dallas|达拉斯
+zh_CN|US_Texas_College Station|大学城
+zh_CN|US_Texas_Frisco|弗里斯科
+zh_CN|US_Texas_Corpus Christi|哥帕斯基斯蒂
+zh_CN|US_Texas_Killeen|基林
+zh_CN|US_Texas_Garland|加兰
+zh_CN|US_Texas_Galveston|交维斯顿
+zh_CN|US_Texas_Lubbock|拉伯克
+zh_CN|US_Texas_Pearland|梨城
+zh_CN|US_Texas_Richardson|理查森
+zh_CN|US_Texas_Round Rock|朗德罗克
+zh_CN|US_Texas_Laredo|拉雷多
+zh_CN|US_Texas_Lewisville|路易斯维尔
+zh_CN|US_Texas_Midland|米德兰
+zh_CN|US_Texas_McKinney|麦金尼
+zh_CN|US_Texas_Mcallen|麦卡伦
+zh_CN|US_Texas_Mesquite|梅斯基特
+zh_CN|US_Texas_Irving|欧文
+zh_CN|US_Texas_Pasadena|帕萨迪纳
+zh_CN|US_Texas_Carrollton|卡罗敦
+zh_CN|US_Texas_San Antonio|圣安东尼奥
+zh_CN|US_Texas_Tyler|泰勒
+zh_CN|US_Texas_Waco|韦科
+zh_CN|US_Texas_Wichita Falls|威奇托福尔斯
+zh_CN|US_Texas_Fort Worth|沃斯堡
+zh_CN|US_Texas_Houston|休斯敦
+zh_CN|US_Ohio|俄亥俄
+zh_CN|US_Ohio_Akron|阿克伦
+zh_CN|US_Ohio_Dayton|代顿
+zh_CN|US_Ohio_Columbus|哥伦布
+zh_CN|US_Ohio_Cleveland|克利夫兰
+zh_CN|US_Ohio_Toledo|托莱多
+zh_CN|US_Ohio_Cincinnati|辛辛那提
+zh_CN|US_Oklahoma|俄克拉荷马
+zh_CN|US_Oklahoma_Broken Arrow|断箭城
+zh_CN|US_Oklahoma_Oklahoma City|俄克拉荷马城
+zh_CN|US_Oklahoma_Norman|诺曼
+zh_CN|US_Oklahoma_Tulsa|塔尔萨
+zh_CN|US_Oregon|俄勒冈
+zh_CN|US_Oregon_Bend|本德
+zh_CN|US_Oregon_Portland|波特兰
+zh_CN|US_Oregon_The Dalles|达尔斯
+zh_CN|US_Oregon_Tillamook|蒂拉穆克
+zh_CN|US_Oregon_Dallas|达拉斯
+zh_CN|US_Oregon_Grant\'s Pass|格兰茨帕斯
+zh_CN|US_Oregon_Gresham|格雷沙姆
+zh_CN|US_Oregon_Hood River|胡德里弗
+zh_CN|US_Oregon_Crater Lake|火山口湖
+zh_CN|US_Oregon_Coos Bay|库斯贝
+zh_CN|US_Oregon_Corvallis|科瓦利斯
+zh_CN|US_Oregon_Medford|梅德福
+zh_CN|US_Oregon_St Helens|圣海伦斯
+zh_CN|US_Oregon_Salem|塞勒姆
+zh_CN|US_Oregon_Springfield|斯普林菲尔德
+zh_CN|US_Oregon_Eugene|尤金
+zh_CN|US_Florida|佛罗里达
+zh_CN|US_Florida_Orlando|奥兰多
+zh_CN|US_Florida_Gainesville|盖恩斯维尔
+zh_CN|US_Florida_Hialeah|海厄利亚
+zh_CN|US_Florida_Hollywood|好莱坞
+zh_CN|US_Florida_Jacksonville|杰克逊维尔
+zh_CN|US_Florida_Key West|基韦斯特
+zh_CN|US_Florida_Coral Springs|科勒尔斯普林斯
+zh_CN|US_Florida_Clearwater|克利尔沃特
+zh_CN|US_Florida_Cape Coral|开普科勒尔
+zh_CN|US_Florida_Fort Lauderdale|罗德岱堡
+zh_CN|US_Florida_Lakeland|莱克兰
+zh_CN|US_Florida_Miami|迈阿密
+zh_CN|US_Florida_Miami Gardens|迈阿密花园
+zh_CN|US_Florida_Miramar|米拉马尔
+zh_CN|US_Florida_Pembroke Pines|潘布鲁克派恩斯
+zh_CN|US_Florida_Pompano Beach|庞帕诺比奇
+zh_CN|US_Florida_Cape Canaveral?|卡纳维拉尔角
+zh_CN|US_Florida_St. Petersburg|圣彼德斯堡市
+zh_CN|US_Florida_Port St. Lucie|圣露西港
+zh_CN|US_Florida_Tallahassee|塔拉哈西
+zh_CN|US_Florida_Tampa|坦帕
+zh_CN|US_Florida_West Palm Beach|西棕榈滩
+zh_CN|US_Florida_Palm Bay|棕榈湾
+zh_CN|US_Vermont|佛蒙特
+zh_CN|US_Vermont_Burlington|伯灵顿
+zh_CN|US_Vermont_Rutland|拉特兰
+zh_CN|US_Vermont_South Burlington|南伯灵顿
+zh_CN|US_District of Columbia|哥伦比亚特区
+zh_CN|US_District of Columbia_Washington|华盛顿
+zh_CN|US_District of Columbia_Washington D.C.|华盛顿哥伦比亚特区
+zh_CN|US_Wyoming|怀俄明州
+zh_CN|US_Wyoming_Evanston|埃文斯顿
+zh_CN|US_Wyoming_Rock Springs|罗克斯普林斯
+zh_CN|US_Wyoming_Laramie|拉勒米
+zh_CN|US_Wyoming_Casper|卡斯帕
+zh_CN|US_Wyoming_Sheridan|谢里登
+zh_CN|US_Wyoming_Cheyenne|夏延
+zh_CN|US_Washington|华盛顿
+zh_CN|US_Washington_Everett|艾佛雷特
+zh_CN|US_Washington_Bellevue|贝尔维尤
+zh_CN|US_Washington_Vancouver|范库弗峰
+zh_CN|US_Washington_Kent|肯特
+zh_CN|US_Washington_Spokane|斯波坎
+zh_CN|US_Washington_Tacoma|塔科马
+zh_CN|US_Washington_Seattle|西雅图
+zh_CN|US_California|加利福尼亚
+zh_CN|US_California_Ontario|安大略
+zh_CN|US_California_Elk Grove|埃尔克格罗夫
+zh_CN|US_California_El Monte|艾尔蒙地
+zh_CN|US_California_El Cajon|埃尔卡洪
+zh_CN|US_California_Oakland|奥克兰
+zh_CN|US_California_Oxnard|奥克斯纳德
+zh_CN|US_California_Anaheim|安那罕
+zh_CN|US_California_Escondido|埃斯孔迪多
+zh_CN|US_California_Antioch|安条克
+zh_CN|US_California_Burbank|伯班克
+zh_CN|US_California_Berkeley|伯克利
+zh_CN|US_California_Bakersfield|贝克斯菲尔德
+zh_CN|US_California_Pomona|波莫纳
+zh_CN|US_California_Orange|橙市
+zh_CN|US_California_Long Beach|长滩
+zh_CN|US_California_Daly City|戴利城
+zh_CN|US_California_Temecula|蒂梅丘拉
+zh_CN|US_California_Irvine|尔湾
+zh_CN|US_California_Fairfield|费尔菲尔德
+zh_CN|US_California_Fullerton|富勒顿
+zh_CN|US_California_Fremont|弗里蒙特
+zh_CN|US_California_Fresno|弗雷斯诺
+zh_CN|US_California_Fontana|方塔纳
+zh_CN|US_California_Glendale|格伦代尔
+zh_CN|US_California_Huntington Beach|亨丁顿滩
+zh_CN|US_California_Hayward|海沃德
+zh_CN|US_California_San Francisco|旧金山
+zh_CN|US_California_Concord|康科德
+zh_CN|US_California_Corona|科洛纳
+zh_CN|US_California_Rancho Cucamonga|库卡蒙格牧场
+zh_CN|US_California_Costa Mesa|科斯塔梅萨
+zh_CN|US_California_Riverside|里弗塞得
+zh_CN|US_California_Lancaster|兰开斯特
+zh_CN|US_California_Los Angeles|洛杉矶
+zh_CN|US_California_Richmond|里士满
+zh_CN|US_California_Roseville|罗斯维尔
+zh_CN|US_California_Rialto|里亚托
+zh_CN|US_California_Modesto|莫德斯托
+zh_CN|US_California_Moreno Valley|莫雷诺谷
+zh_CN|US_California_Murrieta|穆列塔
+zh_CN|US_California_Norwalk|诺沃克
+zh_CN|US_California_Oceanside|欧申赛德
+zh_CN|US_California_Pasadena|帕萨迪纳
+zh_CN|US_California_Carlsbad|卡尔斯巴德
+zh_CN|US_California_Chula Vista|丘拉维斯塔
+zh_CN|US_California_Thousand Oaks|千橡市
+zh_CN|US_California_Santa Ana|圣安娜
+zh_CN|US_California_San Bernardino|圣贝纳迪诺
+zh_CN|US_California_San Diego|圣迭戈
+zh_CN|US_California_San Jose|圣何塞
+zh_CN|US_California_Santa Clara|圣克拉拉
+zh_CN|US_California_Sacramento|萨克拉门托
+zh_CN|US_California_Salinas|萨利纳斯
+zh_CN|US_California_Santa Rosa|圣罗莎
+zh_CN|US_California_Santa Maria|圣玛丽亚
+zh_CN|US_California_San Mateo|圣马特奥
+zh_CN|US_California_Sunnyvale|森尼韦尔
+zh_CN|US_California_Stockton|斯托克顿
+zh_CN|US_California_Santa Clarita|圣塔克拉利塔
+zh_CN|US_California_Torrance|托伦斯
+zh_CN|US_California_Downey|唐尼
+zh_CN|US_California_Victorville|维克多维尔
+zh_CN|US_California_Vallejo|瓦列霍
+zh_CN|US_California_Visalia|维塞利亚
+zh_CN|US_California_Ventura|文图拉
+zh_CN|US_California_West Covina|西柯汶纳
+zh_CN|US_California_Simi Valley|西米谷
+zh_CN|US_California_Inglewood|英格尔伍德
+zh_CN|US_California_Garden Grove|园林市
+zh_CN|US_California_Palmdale|棕榈谷
+zh_CN|US_Colorado|科罗拉多
+zh_CN|US_Colorado_Aurora|奥罗拉
+zh_CN|US_Colorado_Aspen|阿斯彭
+zh_CN|US_Colorado_Arvada|阿瓦达
+zh_CN|US_Colorado_Boulder|博尔德
+zh_CN|US_Colorado_Denver|丹佛
+zh_CN|US_Colorado_Grand Junction|大章克申
+zh_CN|US_Colorado_Colorado Springs|科罗拉多斯普林斯
+zh_CN|US_Colorado_Fort Collins|柯林斯堡
+zh_CN|US_Colorado_Lakewood|莱克伍德
+zh_CN|US_Colorado_Pueblo|普韦布洛
+zh_CN|US_Colorado_Thornton|桑顿
+zh_CN|US_Colorado_Centennial|森特尼尔
+zh_CN|US_Colorado_Vail|韦尔
+zh_CN|US_Colorado_Westminster|威斯敏斯特
+zh_CN|US_Connecticut|康涅狄格
+zh_CN|US_Connecticut_Bridgeport|布里奇波特
+zh_CN|US_Connecticut_Darien|达里恩
+zh_CN|US_Connecticut_Greenwich|格林尼治
+zh_CN|US_Connecticut_Hartford|哈特福德
+zh_CN|US_Connecticut_Middletown|米德尔顿
+zh_CN|US_Connecticut_New Haven|纽黑文
+zh_CN|US_Connecticut_Stamford|斯坦福
+zh_CN|US_Connecticut_Westport|韦斯特波特
+zh_CN|US_Connecticut_Waterbury|沃特伯里
+zh_CN|US_Connecticut_New Britain|新不列颠
+zh_CN|US_Kansas|堪萨斯
+zh_CN|US_Kansas_Abilene|阿比林
+zh_CN|US_Kansas_Overland Park|奥弗兰公园
+zh_CN|US_Kansas_Olathe|奥拉西
+zh_CN|US_Kansas_Hutchinson|哈钦森
+zh_CN|US_Kansas_Kansas City|堪萨斯城
+zh_CN|US_Kansas_Lawrence|劳伦斯
+zh_CN|US_Kansas_Leavenworth|莱文沃思
+zh_CN|US_Kansas_Manhattan|曼哈顿
+zh_CN|US_Kansas_Topeka|托皮卡
+zh_CN|US_Kansas_Wichita|威奇托
+zh_CN|US_Kentucky|肯塔基
+zh_CN|US_Kentucky_Lexington|列克星敦
+zh_CN|US_Kentucky_Louisville|路易斯维尔
+zh_CN|US_Kentucky_Owensboro|欧文斯伯勒
+zh_CN|US_Rhode Island|罗德岛
+zh_CN|US_Rhode Island_Pawtucket|波塔基特
+zh_CN|US_Rhode Island_Cranston|克兰斯顿
+zh_CN|US_Rhode Island_Newport|纽波特
+zh_CN|US_Rhode Island_Providence|普罗维登斯
+zh_CN|US_Rhode Island_Woonsocket|文索基特
+zh_CN|US_Rhode Island_Westerly|韦斯特利
+zh_CN|US_Rhode Island_Warwick|沃威克
+zh_CN|US_Louisiana|路易斯安那
+zh_CN|US_Louisiana_Baton Rouge|巴吞鲁日
+zh_CN|US_Louisiana_Lafayette|拉法叶
+zh_CN|US_Louisiana_Shreveport|什里夫波特
+zh_CN|US_Louisiana_New Orleans|新奥尔良
+zh_CN|US_Montana|蒙大拿
+zh_CN|US_Montana_Billings|比灵斯
+zh_CN|US_Montana_Great Falls|大瀑布村
+zh_CN|US_Montana_Missoula|米苏拉
+zh_CN|US_Maryland|马里兰
+zh_CN|US_Maryland_Balitmore|巴尔的摩
+zh_CN|US_Maryland_Gaithersburg|盖瑟斯堡
+zh_CN|US_Maryland_Rockville|罗克维尔
+zh_CN|US_Minnesota|明尼苏达
+zh_CN|US_Minnesota_Rochester|罗切斯特
+zh_CN|US_Minnesota_Minneapolis|明尼阿波利斯
+zh_CN|US_Minnesota_Saint Paul|圣保罗
+zh_CN|US_Missouri|密苏里
+zh_CN|US_Missouri_Independence|独立城
+zh_CN|US_Missouri_Columbia|哥伦比亚
+zh_CN|US_Missouri_Jefferson City|杰佛逊市
+zh_CN|US_Missouri_Kansas City|堪萨斯城
+zh_CN|US_Missouri_Saint Louis|圣路易斯
+zh_CN|US_Missouri_Springfield|斯普林菲尔德
+zh_CN|US_Massachusetts|马萨诸塞
+zh_CN|US_Massachusetts_Boston|波士顿
+zh_CN|US_Massachusetts_Cambridge|剑桥
+zh_CN|US_Massachusetts_Lowell|洛厄尔
+zh_CN|US_Massachusetts_Springfield|斯普林菲尔德
+zh_CN|US_Massachusetts_Worcester|伍斯特
+zh_CN|US_Michigan|密歇根
+zh_CN|US_Michigan_Ann Arbor|安娜堡
+zh_CN|US_Michigan_Bay City|贝城
+zh_CN|US_Michigan_Battle Creek|巴特尔克里克
+zh_CN|US_Michigan_Dearborn|迪尔伯恩
+zh_CN|US_Michigan_Grand Rapids|大急流城
+zh_CN|US_Michigan_Detroit|底特律
+zh_CN|US_Michigan_Flint|弗林特
+zh_CN|US_Michigan_Wyandotte|怀恩多特
+zh_CN|US_Michigan_Lansing|兰辛
+zh_CN|US_Michigan_Muskegon|马斯基根
+zh_CN|US_Michigan_Pontiac|庞菷亚克
+zh_CN|US_Michigan_Kalamazoo|卡拉马袓
+zh_CN|US_Michigan_Saginaw|萨吉诺
+zh_CN|US_Michigan_Sault Ste Marie|苏圣玛丽
+zh_CN|US_Michigan_Sterling Heights|斯特灵海茨
+zh_CN|US_Michigan_Warren|沃伦
+zh_CN|US_Michigan_Port Huron|休伦港
+zh_CN|US_Mississippi|密西西比
+zh_CN|US_Mississippi_Biloxi|比洛克西
+zh_CN|US_Mississippi_Gulfport|格尔夫波特
+zh_CN|US_Mississippi_Greenville|格林维尔
+zh_CN|US_Mississippi_Hattiesburg|哈蒂斯堡
+zh_CN|US_Mississippi_Jackson|杰克逊
+zh_CN|US_Mississippi_Meridian|默里迪恩
+zh_CN|US_Mississippi_Vicksburg|维克斯堡
+zh_CN|US_Maine|缅因
+zh_CN|US_Maine_Bangor|班戈
+zh_CN|US_Maine_Portland|波特兰
+zh_CN|US_Maine_Lewiston|刘易斯顿
+zh_CN|US_Nebraska|内布拉斯加
+zh_CN|US_Nebraska_Omaha|奥马哈
+zh_CN|US_Nebraska_Bellevue|贝尔维尤
+zh_CN|US_Nebraska_Lincoln|林肯
+zh_CN|US_South Dakota|南达科他
+zh_CN|US_South Dakota_Aberdeen|阿伯丁
+zh_CN|US_South Dakota_Rapid City|拉皮德城
+zh_CN|US_South Dakota_Sioux Falls|苏福尔斯
+zh_CN|US_Nevada|内华达州
+zh_CN|US_Nevada_Elko|埃尔科
+zh_CN|US_Nevada_North Las Vegas|北拉斯维加斯
+zh_CN|US_Nevada_Virginia City|弗吉尼亚城
+zh_CN|US_Nevada_Henderson|亨德森
+zh_CN|US_Nevada_Reno|里诺
+zh_CN|US_Nevada_Las Vegas|拉斯维加斯
+zh_CN|US_Nevada_Carson City|卡森城
+zh_CN|US_Nevada_Sparks|斯帕克斯
+zh_CN|US_South Carolina|南卡罗来纳
+zh_CN|US_South Carolina_North Charleston|北查尔斯顿
+zh_CN|US_South Carolina_Charleston|查尔斯顿
+zh_CN|US_South Carolina_Columbia|哥伦比亚
+zh_CN|US_New York|纽约
+zh_CN|US_New York_Buffalo|布法罗
+zh_CN|US_New York_Rochester|罗切斯特
+zh_CN|US_New York_New York|纽约市
+zh_CN|US_New York_Syracuse|雪城
+zh_CN|US_New York_Yonkers|扬克斯
+zh_CN|US_Delaware|特拉华
+zh_CN|US_Delaware_Dover|多佛
+zh_CN|US_Delaware_Newark|纽瓦克
+zh_CN|US_Delaware_Wilmington|威明顿
+zh_CN|US_Tennessee|田纳西
+zh_CN|US_Tennessee_Bristol|布利斯托
+zh_CN|US_Tennessee_Chattanooga|查塔努加
+zh_CN|US_Tennessee_Kingsport|金斯波特
+zh_CN|US_Tennessee_Clarksville|克拉克维尔
+zh_CN|US_Tennessee_Murfreesboro|默弗里斯伯勒
+zh_CN|US_Tennessee_Memphis|孟菲斯
+zh_CN|US_Tennessee_Knoxville|诺克斯维尔
+zh_CN|US_Tennessee_Nashville|纳什维尔
+zh_CN|US_Tennessee_Tri-City Area|三城区
+zh_CN|US_Tennessee_Smyrna|士麦那
+zh_CN|US_Tennessee_Spring Hill|斯普林希尔
+zh_CN|US_Tennessee_Johnson City|约翰逊城
+zh_CN|US_Virginia|维吉尼亚
+zh_CN|US_Virginia_Appomattox|阿波马托克斯
+zh_CN|US_Virginia_Prince Edward|爱德华王子县
+zh_CN|US_Virginia_Albemarle|阿尔伯马尔
+zh_CN|US_Virginia_Augusta|奥古斯塔
+zh_CN|US_Virginia_Accomack|阿科马克
+zh_CN|US_Virginia_Arlington|阿灵顿
+zh_CN|US_Virginia_Alleghany|阿利根尼
+zh_CN|US_Virginia_Orange|奥兰治
+zh_CN|US_Virginia_Amelia|阿米利亚
+zh_CN|US_Virginia_Amherst|阿默斯特
+zh_CN|US_Virginia_Essex|埃塞克斯
+zh_CN|US_Virginia_Northampton|北安普敦
+zh_CN|US_Virginia_Bedford|贝德福
+zh_CN|US_Virginia_Petersburg|彼得斯堡
+zh_CN|US_Virginia_Buckingham|白金汉
+zh_CN|US_Virginia_Buchanan|布坎南
+zh_CN|US_Virginia_Bland|布兰德
+zh_CN|US_Virginia_Brunswick|布伦瑞克
+zh_CN|US_Virginia_Bristol|布里斯托尔
+zh_CN|US_Virginia_Bath|巴斯
+zh_CN|US_Virginia_Botetourt|博特托尔特
+zh_CN|US_Virginia_Powhatan|波瓦坦
+zh_CN|US_Virginia_Buena Vista|布尤纳维斯塔
+zh_CN|US_Virginia_Charles City|查尔斯城
+zh_CN|US_Virginia_Dickenson|迪肯森
+zh_CN|US_Virginia_Dinwiddie|丁威迪
+zh_CN|US_Virginia_Danville|丹维尔
+zh_CN|US_Virginia_Emporia|恩波利亚
+zh_CN|US_Virginia_Fairfax|费尔法克斯
+zh_CN|US_Virginia_Falls Church|福尔斯彻奇
+zh_CN|US_Virginia_Fauquier|福基尔
+zh_CN|US_Virginia_Virginia Beach|弗吉尼亚比奇
+zh_CN|US_Virginia_Frederick|弗雷德里克
+zh_CN|US_Virginia_Fredericksburg|弗雷德里克斯堡
+zh_CN|US_Virginia_Franklin|富兰克林
+zh_CN|US_Virginia_Fluvanna|弗卢万纳
+zh_CN|US_Virginia_Floyd|弗洛伊德
+zh_CN|US_Virginia_Giles|贾尔斯
+zh_CN|US_Virginia_Greene|格林
+zh_CN|US_Virginia_Grayson|格雷森
+zh_CN|US_Virginia_Gloucester|格洛斯特
+zh_CN|US_Virginia_Greensville|格林维尔
+zh_CN|US_Virginia_Goochland|古奇兰
+zh_CN|US_Virginia_King and Queen|国王与王后县
+zh_CN|US_Virginia_Highland|海兰
+zh_CN|US_Virginia_Henry|亨利
+zh_CN|US_Virginia_Halifax|哈利法克斯
+zh_CN|US_Virginia_Henrico|亨利科
+zh_CN|US_Virginia_Harrisonburg|哈里森堡
+zh_CN|US_Virginia_Hanover|汉诺威
+zh_CN|US_Virginia_Hampton|汉普顿
+zh_CN|US_Virginia_Hopewell|霍普韦尔
+zh_CN|US_Virginia_Wise|怀斯
+zh_CN|US_Virginia_Washington|华盛顿
+zh_CN|US_Virginia_Isle of Wight|怀特岛
+zh_CN|US_Virginia_Galax|加莱克斯
+zh_CN|US_Virginia_Caroline|加罗林
+zh_CN|US_Virginia_Campbell|坎贝尔
+zh_CN|US_Virginia_Cumberland|坎伯兰
+zh_CN|US_Virginia_Culpeper|库尔佩珀
+zh_CN|US_Virginia_Clarke|克拉尔克
+zh_CN|US_Virginia_Craig|克雷格
+zh_CN|US_Virginia_Colonial Heights|科隆尼尔海次
+zh_CN|US_Virginia_Covington|科文顿
+zh_CN|US_Virginia_Loudoun|劳登郡
+zh_CN|US_Virginia_Rockingham|罗金厄姆
+zh_CN|US_Virginia_Lancaster|兰开斯特
+zh_CN|US_Virginia_Lexington|列克星敦
+zh_CN|US_Virginia_Lunenburg|卢嫩堡郡
+zh_CN|US_Virginia_Rappahannock|拉帕汉诺克
+zh_CN|US_Virginia_Lynchburg|林奇堡
+zh_CN|US_Virginia_Russell|拉塞尔
+zh_CN|US_Virginia_Richmond|里士满
+zh_CN|US_Virginia_Lee|李县
+zh_CN|US_Virginia_Roanoke|洛亚诺克
+zh_CN|US_Virginia_Louisa|路易莎郡
+zh_CN|US_Virginia_Middlesex|米德尔塞克斯
+zh_CN|US_Virginia_Martinsville|马丁斯维尔
+zh_CN|US_Virginia_Madison|麦迪逊
+zh_CN|US_Virginia_Montgomery|蒙哥马利
+zh_CN|US_Virginia_Mecklenburg|梅克伦堡
+zh_CN|US_Virginia_Manassas|马纳萨斯
+zh_CN|US_Virginia_Manassas Park|马纳萨斯帕克
+zh_CN|US_Virginia_Mathews|马修斯
+zh_CN|US_Virginia_Southampton|南安普敦
+zh_CN|US_Virginia_Newport News|纽波特纽斯
+zh_CN|US_Virginia_Norton|诺顿
+zh_CN|US_Virginia_Nelson|纳尔逊
+zh_CN|US_Virginia_Norfolk|诺福克
+zh_CN|US_Virginia_Northumberland|诺森伯兰郡
+zh_CN|US_Virginia_Nottoway|诺托韦
+zh_CN|US_Virginia_Portsmouth|朴茨茅斯
+zh_CN|US_Virginia_Poquoson|普库森
+zh_CN|US_Virginia_Page|佩奇县
+zh_CN|US_Virginia_Patrick|帕特里克
+zh_CN|US_Virginia_Pittsylvania|皮特斯瓦
+zh_CN|US_Virginia_Pulaski|普瓦斯基
+zh_CN|US_Virginia_Carroll|卡罗尔
+zh_CN|US_Virginia_Chesapeake|切萨皮克
+zh_CN|US_Virginia_Chesterfield|切斯特菲尔德
+zh_CN|US_Virginia_King George|乔治王
+zh_CN|US_Virginia_Prince George|乔治王子县
+zh_CN|US_Virginia_Radford|瑞德福
+zh_CN|US_Virginia_Spotsylvania|斯波特瑟尔韦尼亚
+zh_CN|US_Virginia_Staunton|士丹顿
+zh_CN|US_Virginia_Suffolk|萨福克
+zh_CN|US_Virginia_Scott|斯科特
+zh_CN|US_Virginia_Surry|萨里
+zh_CN|US_Virginia_Salem|萨利姆
+zh_CN|US_Virginia_Smyth|史密斯
+zh_CN|US_Virginia_Rockbridge|石桥郡
+zh_CN|US_Virginia_Sussex|苏塞克斯
+zh_CN|US_Virginia_Stafford|斯塔福德
+zh_CN|US_Virginia_Tazewell|塔兹韦尔
+zh_CN|US_Virginia_Winchester|温彻斯特
+zh_CN|US_Virginia_Waynesboro|韦恩斯伯勒
+zh_CN|US_Virginia_Warren|沃伦
+zh_CN|US_Virginia_Williamsburg|威廉斯堡
+zh_CN|US_Virginia_King William|威廉王
+zh_CN|US_Virginia_Prince William|威廉王子县
+zh_CN|US_Virginia_Wythe|威斯
+zh_CN|US_Virginia_Westmoreland|威斯特摩兰德
+zh_CN|US_Virginia_New Kent|新肯特
+zh_CN|US_Virginia_Charlottesville|夏洛茨维尔
+zh_CN|US_Virginia_Charlotte|夏洛特
+zh_CN|US_Virginia_Shenandoah|谢南多厄
+zh_CN|US_Virginia_York|约克
+zh_CN|US_Virginia_Alexandria|亚历山大港
+zh_CN|US_Virginia_James City|詹姆斯城
+zh_CN|US_Wisconsin|威斯康星
+zh_CN|US_Wisconsin_Appleton|阿普尓顿
+zh_CN|US_Wisconsin_Oshkosh|奥什科什
+zh_CN|US_Wisconsin_Green Bay|格林贝
+zh_CN|US_Wisconsin_Kenosha|基诺沙
+zh_CN|US_Wisconsin_Lacrosse|拉克罗斯
+zh_CN|US_Wisconsin_Racine|拉辛
+zh_CN|US_Wisconsin_Madison|迈迪逊
+zh_CN|US_Wisconsin_Milwaukee|密尔沃基
+zh_CN|US_Wisconsin_Manitowoc|马尼托沃克
+zh_CN|US_Wisconsin_Eau Claire|欧克莱尓
+zh_CN|US_Wisconsin_Wausau|沃索
+zh_CN|US_Wisconsin_Sheboygan|希博伊根
+zh_CN|US_West Virginia|西佛吉尼亚
+zh_CN|US_West Virginia_Charleston|查尔斯顿
+zh_CN|US_West Virginia_Huntington|亨廷顿
+zh_CN|US_West Virginia_Parkersburg|帕克斯堡
+zh_CN|US_New Hampshire|新罕布什尔
+zh_CN|US_New Hampshire_Concord|康科德
+zh_CN|US_New Hampshire_Manchester|曼彻斯特
+zh_CN|US_New Hampshire_Nashua|纳舒厄
+zh_CN|US_New Mexico|新墨西哥
+zh_CN|US_New Mexico_Albuquerque|阿尔伯克基
+zh_CN|US_New Mexico_Las Cruces|拉斯克鲁塞斯
+zh_CN|US_New Mexico_Roswell|罗斯韦尔
+zh_CN|US_New Mexico_Santa Fe|圣菲
+zh_CN|US_Hawaii|夏威夷
+zh_CN|US_Hawaii_Kailua|凯卢阿
+zh_CN|US_Hawaii_Honolulu|檀香山
+zh_CN|US_Hawaii_Hilo|希洛
+zh_CN|US_New Jersey|新泽西
+zh_CN|US_New Jersey_Edison|爱迪生
+zh_CN|US_New Jersey_Newark|纽瓦克
+zh_CN|US_New Jersey_Paterson|帕特森
+zh_CN|US_New Jersey_Elizabeth|伊丽莎白
+zh_CN|US_New Jersey_Jersey City|泽西城
+zh_CN|US_Indiana|印第安那
+zh_CN|US_Indiana_Evansville|埃文斯维尔
+zh_CN|US_Indiana_South Bend|南本德
+zh_CN|US_Indiana_Fort Wayne|韦恩堡
+zh_CN|US_Indiana_Indianapolis|印第安纳波利斯
+zh_CN|US_Illinois|伊利诺斯州
+zh_CN|US_Illinois_Alton|奥尔顿
+zh_CN|US_Illinois_Elgin|埃尔金
+zh_CN|US_Illinois_Aurora|奥罗拉
+zh_CN|US_Illinois_Bloomington|布卢明顿
+zh_CN|US_Illinois_Decatur|迪凯特
+zh_CN|US_Illinois_De Kalb|迪卡尔布
+zh_CN|US_Illinois_East St Louis|东圣路易斯
+zh_CN|US_Illinois_Danville|丹维尓
+zh_CN|US_Illinois_Champaign-Urbana|厄巴纳-香槟
+zh_CN|US_Illinois_Galesburg|盖尔斯堡
+zh_CN|US_Illinois_Rock Island|罗克艾兰
+zh_CN|US_Illinois_Rockford|罗克福德
+zh_CN|US_Illinois_Normal|诺黙尔
+zh_CN|US_Illinois_Naperville|内珀维尔
+zh_CN|US_Illinois_Peoria|皮奥里亚
+zh_CN|US_Illinois_Carbondale|卡本代尔
+zh_CN|US_Illinois_Joliet|乔利埃特
+zh_CN|US_Illinois_Springfield|斯普林菲尔德
+zh_CN|US_Illinois_Centralia|森特勒利亚
+zh_CN|US_Illinois_Waukegan|沃其根
+zh_CN|US_Illinois_Chicago|芝加哥
+zh_CN|US_Arizona|亚利桑那
+zh_CN|US_Arizona_Phoenix|凤凰城
+zh_CN|US_Arizona_Glendale|格兰代尔
+zh_CN|US_Arizona_Gilbert|吉尔伯特
+zh_CN|US_Arizona_Mesa|梅萨
+zh_CN|US_Arizona_Peoria|皮奥里亚
+zh_CN|US_Arizona_Chandler|钱德勒
+zh_CN|US_Arizona_Surprise|瑟普赖斯
+zh_CN|US_Arizona_Scottsdale|史卡兹代尔
+zh_CN|US_Arizona_Tempe|坦普
+zh_CN|US_Arizona_Tucson|图森
+zh_CN|US_Arizona_Yuma|优玛
+zh_CN|US_Utah|犹他
+zh_CN|US_Utah_Ogden|奥格登
+zh_CN|US_Utah_Layton|雷登
+zh_CN|US_Utah_Orem|欧仁
+zh_CN|US_Utah_Park City|帕克城
+zh_CN|US_Utah_Provo|普罗沃
+zh_CN|US_Utah_St.George|圣乔治
+zh_CN|US_Utah_West Jordan|西乔丹
+zh_CN|US_Utah_West Valley City|西瓦利城
+zh_CN|US_Utah_Salt Lake City|盐湖城
+zh_CN|US_Georgia|佐治亚
+zh_CN|US_Georgia_Augusta|奥古斯塔
+zh_CN|US_Georgia_Columbus|哥伦布
+zh_CN|US_Georgia_Macon|梅肯
+zh_CN|US_Georgia_Savannah|沙瓦纳
+zh_CN|US_Georgia_Athens|雅典
+zh_CN|US_Georgia_Atlanta|亚特兰大
+zh_CN|MN|蒙古
+zh_CN|BD|孟加拉国
+zh_CN|FM|密克罗尼西亚联邦
+zh_CN|ML|马里
+zh_CN|MA|摩洛哥
+zh_CN|MU|毛里求斯
+zh_CN|MR|毛里塔尼亚
+zh_CN|MW|马拉维
+zh_CN|MY|马来西亚
+zh_CN|MY_Perlis|玻璃市
+zh_CN|MY_Perlis_Kangar|加央
+zh_CN|MY_Pulau Pinang|槟榔屿
+zh_CN|MY_Pulau Pinang_George Town|槟城
+zh_CN|MY_Pulau Pinang_Butterworth|北海
+zh_CN|MY_Pulau Pinang_Bukit Mertajam|大山脚
+zh_CN|MY_Pulau Pinang_Nibong Tebal|高渊
+zh_CN|MY_Terengganu|丁加奴
+zh_CN|MY_Terengganu_Kuala Terengganu|瓜拉丁加奴
+zh_CN|MY_Terengganu_Kemaman|甘马挽
+zh_CN|MY_Terengganu_Dungun|龙运
+zh_CN|MY_Terengganu_Marang|马江
+zh_CN|MY_Terengganu_Setiu|实兆
+zh_CN|MY_Terengganu_Hulu|乌鲁
+zh_CN|MY_Terengganu_Besut|勿述
+zh_CN|MY_Kedah|吉打
+zh_CN|MY_Kedah_Padang Terap|巴东得腊
+zh_CN|MY_Kedah_Pendang|笨筒
+zh_CN|MY_Kedah_Langkawi|浮罗交怡
+zh_CN|MY_Kedah_Kubang Pasu|古邦巴素
+zh_CN|MY_Kedah_Kota Setar|哥打士打
+zh_CN|MY_Kedah_Kuala Muda|瓜拉姆达
+zh_CN|MY_Kedah_Baling|华玲
+zh_CN|MY_Kedah_Kulim|居林
+zh_CN|MY_Kedah_Bandar Baharu|万拉峇鲁
+zh_CN|MY_Kelantan|吉兰丹
+zh_CN|MY_Kelantan_Pasir Putih|巴西富地
+zh_CN|MY_Kelantan_Pasir Mas|巴西马
+zh_CN|MY_Kelantan_Tumpat|道北
+zh_CN|MY_Kelantan_Tanah Merah|丹那美拉
+zh_CN|MY_Kelantan_Bachok|登卓
+zh_CN|MY_Kelantan_Kota Bharu|哥打巴鲁
+zh_CN|MY_Kelantan_Kuala Krai|瓜拉吉赖
+zh_CN|MY_Kelantan_Gua Musang|话望生
+zh_CN|MY_Kelantan_Machang|马樟
+zh_CN|MY_Kelantan_Jeli|日里
+zh_CN|MY_Kuala Lumpur|吉隆坡
+zh_CN|MY_Kuala Lumpur_Kuala Lumpur|吉隆坡
+zh_CN|MY_Malacca|马六甲
+zh_CN|MY_Malacca_Melaka|马六甲市
+zh_CN|MY_Malacca_Alor Gajah|亚罗牙也
+zh_CN|MY_Malacca_Jasin|野新
+zh_CN|MY_Labuan|纳闽
+zh_CN|MY_Labuan_Labuan|纳闽
+zh_CN|MY_Labuan_Victoria|维多利亚
+zh_CN|MY_Pahang|彭亨
+zh_CN|MY_Pahang_Pekan|北根
+zh_CN|MY_Pahang_Bera|百乐
+zh_CN|MY_Pahang_Temerloh|淡马鲁
+zh_CN|MY_Pahang_Jerantut|而连突
+zh_CN|MY_Pahang_Kuantan|关丹
+zh_CN|MY_Pahang_Cameron Highlands|金马仑高原
+zh_CN|MY_Pahang_Kuala Lipis|立卑
+zh_CN|MY_Pahang_Raub|劳勿
+zh_CN|MY_Pahang_Maran|马兰
+zh_CN|MY_Pahang_Bentong|文冬
+zh_CN|MY_Pahang_Rompin|云冰
+zh_CN|MY_Perak|霹雳
+zh_CN|MY_Perak_Teluk Intan|安顺
+zh_CN|MY_Perak_Tanjung Malim|丹绒马
+zh_CN|MY_Perak_Batu Gajah|华都牙也
+zh_CN|MY_Perak_Sungai Siput|和丰
+zh_CN|MY_Perak_Lumut|紅土坎
+zh_CN|MY_Perak_Kuala Kangsar|江沙
+zh_CN|MY_Perak_Taiping|太平
+zh_CN|MY_Perak_Ipoh|怡保
+zh_CN|MY_Johor|柔佛
+zh_CN|MY_Johor_Pontian|笨珍
+zh_CN|MY_Johor_Mersing|丰盛港
+zh_CN|MY_Johor_Kota Tinggi|哥打丁宜
+zh_CN|MY_Johor_Kluang|居銮
+zh_CN|MY_Johor_Batu Pahat|峇株巴辖
+zh_CN|MY_Johor_Muar|麻坡
+zh_CN|MY_Johor_Segamat|昔加末
+zh_CN|MY_Johor_Johor Bahru|新山
+zh_CN|MY_Sabah|沙巴
+zh_CN|MY_Sabah_Papar|吧巴
+zh_CN|MY_Sabah_Pitas|必达士
+zh_CN|MY_Sabah_Beaufort|保佛
+zh_CN|MY_Sabah_Beluran|比鲁兰
+zh_CN|MY_Sabah_Penampang|兵南邦
+zh_CN|MY_Sabah_Tambunan|担布南
+zh_CN|MY_Sabah_Tawau|斗湖
+zh_CN|MY_Sabah_Tenom|丹南
+zh_CN|MY_Sabah_Tuaran|斗亚兰
+zh_CN|MY_Sabah_Kudat|古达
+zh_CN|MY_Sabah_Kota Kinabalu|哥打基纳巴鲁
+zh_CN|MY_Sabah_Kota Belud|古打毛律
+zh_CN|MY_Sabah_Kota Marudu|哥打马鲁都
+zh_CN|MY_Sabah_Keningau|根地咬
+zh_CN|MY_Sabah_Kuala Penyu|瓜拉班尤
+zh_CN|MY_Sabah_Kunak|古纳
+zh_CN|MY_Sabah_Kinabatangan|京那巴登岸
+zh_CN|MY_Sabah_Ranau|兰脑
+zh_CN|MY_Sabah_Nabawan|纳巴湾
+zh_CN|MY_Sabah_Lahad Datu|拿笃
+zh_CN|MY_Sabah_Sandakan|山打根
+zh_CN|MY_Sabah_Semporna|仙本那
+zh_CN|MY_Sabah_Sipitang|西比陶
+zh_CN|MY_Sarawak|沙捞越
+zh_CN|MY_Sarawak_Kuching|古晋
+zh_CN|MY_Sarawak_Kapit|加帛
+zh_CN|MY_Sarawak_Limbang|林梦
+zh_CN|MY_Sarawak_Bintulu|民都鲁
+zh_CN|MY_Sarawak_Mukah|木胶
+zh_CN|MY_Sarawak_Miri|美里
+zh_CN|MY_Sarawak_Betong|木中
+zh_CN|MY_Sarawak_Sri Aman|斯里阿曼
+zh_CN|MY_Sarawak_Sarikei|泗里街
+zh_CN|MY_Sarawak_Samarahan|三马拉汉
+zh_CN|MY_Sarawak_Sibu|泗务
+zh_CN|MY_Negeri Sembilan|森美兰
+zh_CN|MY_Negeri Sembilan_Port Dickson|波德申
+zh_CN|MY_Negeri Sembilan_Tampin|淡边
+zh_CN|MY_Negeri Sembilan_Seremban|芙蓉
+zh_CN|MY_Negeri Sembilan_Kuala Pilah|瓜拉庇劳
+zh_CN|MY_Negeri Sembilan_Rembau|林茂
+zh_CN|MY_Negeri Sembilan_Jempol|仁保
+zh_CN|MY_Negeri Sembilan_Jelebu|日叻务
+zh_CN|MY_Selangor|雪兰莪
+zh_CN|MY_Selangor_Petaling|八打灵
+zh_CN|MY_Selangor_Gombak|鹅麦
+zh_CN|MY_Selangor_Kuala Langat|瓜拉冷岳
+zh_CN|MY_Selangor_Kuala Selangor|瓜拉雪兰莪
+zh_CN|MY_Selangor_Sabak Bernam|沙白安南
+zh_CN|MY_Selangor_Hulu Langat|乌鲁冷岳
+zh_CN|MY_Selangor_Hulu Selangor|乌鲁雪兰莪
+zh_CN|MY_Selangor_Sepang|雪邦
+zh_CN|MC|摩纳哥
+zh_CN|MZ|莫桑比克
+zh_CN|MH|马绍尔群岛
+zh_CN|AS|美属萨摩亚
+zh_CN|VI|美属维尔京群岛
+zh_CN|MQ|马提尼克
+zh_CN|MS|蒙特塞拉特
+zh_CN|MX|墨西哥
+zh_CN|MX_Obregon|奥夫雷贡城
+zh_CN|MX_Aguascalientes|阿瓜斯卡连斯特
+zh_CN|MX_Orizaba|奥里萨巴
+zh_CN|MX_Hermosillo|埃莫西约
+zh_CN|MX_Campeche|埃佩切
+zh_CN|MX_Acapulco|阿卡普尔科
+zh_CN|MX_Valles|巴利城
+zh_CN|MX_Villahermosa|比利亚埃尔莫萨
+zh_CN|MX_Benito Juurez|贝尼托·胡亚雷斯
+zh_CN|MX_Poza Rica de Hidalgo|波萨里卡
+zh_CN|MX_Puerto Vallarta|巴亚尔塔港
+zh_CN|MX_Tijuana|蒂华纳
+zh_CN|MX_Durango|杜兰戈
+zh_CN|MX_Ensenada|恩塞纳达
+zh_CN|MX_Guadalajara|瓜达拉哈拉
+zh_CN|MX_Guanajuato|瓜纳华托
+zh_CN|MX_Jalapa|哈拉帕
+zh_CN|MX_Juarez|华雷斯
+zh_CN|MX_Cuernavaca|库埃纳瓦卡
+zh_CN|MX_Coatzacoalcos|夸察夸拉克斯
+zh_CN|MX_Culiacan|库利阿坎
+zh_CN|MX_Colima|科利马
+zh_CN|MX_Queretaro|克雷塔罗
+zh_CN|MX_Leon|莱昂
+zh_CN|MX_La Paz|拉巴斯
+zh_CN|MX_Reynosa|雷诺萨
+zh_CN|MX_Los Mochis|洛斯莫奇斯
+zh_CN|MX_Monclova|蒙克洛瓦
+zh_CN|MX_Merida|梅里达
+zh_CN|MX_Morelia|莫雷利亚
+zh_CN|MX_Mazatlan|马萨特兰
+zh_CN|MX_Monterrey|蒙特雷
+zh_CN|MX_Matamoros|马塔莫罗斯
+zh_CN|MX_Mexico City|墨西哥城
+zh_CN|MX_Mexicali|墨西卡利
+zh_CN|MX_Nogales|诺加莱斯
+zh_CN|MX_Puebla|普埃布拉
+zh_CN|MX_Pachuca|帕丘卡
+zh_CN|MX_Chilpancingo|奇尔潘辛戈
+zh_CN|MX_Carmen|卡门
+zh_CN|MX_Cheturnal|切图马尔
+zh_CN|MX_Chihuahua|奇瓦瓦
+zh_CN|MX_Saltillo|萨尔蒂约
+zh_CN|MX_Celaya|塞拉亚
+zh_CN|MX_San Luis Potosi|圣路易斯波托亚
+zh_CN|MX_Zacatecas|萨卡特卡斯
+zh_CN|MX_Toluca|托卢卡
+zh_CN|MX_Tlaxcala|特拉斯卡拉
+zh_CN|MX_Torreon|托雷翁
+zh_CN|MX_Tampico|坦皮科
+zh_CN|MX_Tepic|特皮克
+zh_CN|MX_Tapachula|塔帕丘拉
+zh_CN|MX_Tuxtla Gutierrez|图斯特拉-古铁雷斯
+zh_CN|MX_Tehuacan|特瓦坎
+zh_CN|MX_Victoria|维多利亚城
+zh_CN|MX_Oaxaca|瓦哈卡
+zh_CN|MX_Uruapan|乌鲁阿潘
+zh_CN|MX_Veracruz|韦拉克鲁斯
+zh_CN|MX_Nuevo Laredo|新拉雷多
+zh_CN|MX_Irapuato|伊拉普阿托
+zh_CN|YT|马约特
+zh_CN|NU|纽埃
+zh_CN|NP|尼泊尔
+zh_CN|ZA|南非
+zh_CN|ZA_Mount Ayliff|艾利弗山
+zh_CN|ZA_Upington|阿平顿
+zh_CN|ZA_Pietermaritzburg|彼德马里茨堡
+zh_CN|ZA_Pietersburg|彼德斯堡
+zh_CN|ZA_Bredasdorp|布雷达斯多普
+zh_CN|ZA_Bloemfontein|布隆方丹
+zh_CN|ZA_Bronkhorstspruit|布隆克斯特斯普利特
+zh_CN|ZA_Pretoria|比勒陀利亚
+zh_CN|ZA_Bisho|比索
+zh_CN|ZA_De Aar|德阿尔
+zh_CN|ZA_Durban|德班
+zh_CN|ZA_Barkley East|东巴克利
+zh_CN|ZA_Dundee|邓迪
+zh_CN|ZA_East London|东伦敦
+zh_CN|ZA_Vryburg|弗雷堡
+zh_CN|ZA_Vereeniging|弗里尼欣
+zh_CN|ZA_Groblersdal|格罗布莱斯达尔
+zh_CN|ZA_Kimberley|金伯利
+zh_CN|ZA_Giyani|基雅尼
+zh_CN|ZA_Klerksdorp|克莱克斯多普
+zh_CN|ZA_Kuruman|库鲁曼
+zh_CN|ZA_Cape Town|开普敦
+zh_CN|ZA_Queenstown|昆士敦
+zh_CN|ZA_Richards Bay|理查兹湾
+zh_CN|ZA_Randfontein|兰德方丹
+zh_CN|ZA_Ladysmith|莱迪史密斯
+zh_CN|ZA_Rustenburg|利斯滕堡
+zh_CN|ZA_Middelburg|米德尔堡
+zh_CN|ZA_Mkuze|姆库泽
+zh_CN|ZA_Moorreesburg|穆里斯堡
+zh_CN|ZA_Nelspruit|内尔斯普雷特
+zh_CN|ZA_Nylstroom|尼尔斯特隆
+zh_CN|ZA_Newcastle|纽卡斯尔
+zh_CN|ZA_George|乔治
+zh_CN|ZA_Secunda|瑟孔达
+zh_CN|ZA_Sasolburg|萨索尔堡
+zh_CN|ZA_Thohoyandou|托霍延杜
+zh_CN|ZA_Ixopo|特克索波
+zh_CN|ZA_Springbok|跳羚
+zh_CN|ZA_Thulamahashe|图拉马哈谢
+zh_CN|ZA_Trompsburg|特隆普斯堡
+zh_CN|ZA_Witsieshoek|韦茨肖克
+zh_CN|ZA_Welkom|韦尔科姆
+zh_CN|ZA_Ulundi|乌伦迪
+zh_CN|ZA_Umtata|乌姆塔塔
+zh_CN|ZA_Worcester|伍斯特
+zh_CN|ZA_Beaufort West|西博福特
+zh_CN|ZA_Port Shepstone|谢普斯通港
+zh_CN|ZA_Johannesburg|约翰内斯堡
+zh_CN|ZA_Port Elizabeth|伊丽莎白港
+zh_CN|NF|诺福克岛
+zh_CN|NI|尼加拉瓜
+zh_CN|AQ|南极洲
+zh_CN|NR|瑙鲁
+zh_CN|NA|纳米比亚
+zh_CN|GE|南乔治亚岛和南桑德韦奇岛
+zh_CN|NE|尼日尔
+zh_CN|NG|尼日利亚
+zh_CN|SS|南苏丹
+zh_CN|NO|挪威
+zh_CN|PW|帕劳
+zh_CN|PN|皮特凯恩
+zh_CN|PT|葡萄牙
+zh_CN|PT_Porto|波尔图
+zh_CN|PT_Alentejo Litoral|滨海阿连特茹
+zh_CN|PT_Pinhal Litoral|滨海皮尼亚尔
+zh_CN|PT_Douro|杜罗
+zh_CN|PT_Entre Douro e Vouga|恩特拉杜罗伏日
+zh_CN|PT_Faro|法鲁
+zh_CN|PT_Funchal|丰沙尔
+zh_CN|PT_Cova da Beira|科瓦贝拉
+zh_CN|PT_Leziria do Tejo|利巴特茹
+zh_CN|PT_Lisboa|里斯本
+zh_CN|PT_Medio Tejo|梅地奥特茹
+zh_CN|PT_Minho-Lima|米尼奥-利马
+zh_CN|PT_Beira Interior Norte|内贝拉北
+zh_CN|PT_Beira Interior Sul|内贝拉南
+zh_CN|PT_Pinhal Interior Norte|内皮尼亚尔北
+zh_CN|PT_Pinhal Interior Sul|内皮尼亚尔南
+zh_CN|PT_Ponta Delgada|蓬塔德尔加达
+zh_CN|PT_Cavado|卡瓦多
+zh_CN|PT_Alto Alentejo|上阿连特茹
+zh_CN|PT_Serra da Estrela|山后
+zh_CN|PT_Peninsula de Setubal|塞图巴尔半岛
+zh_CN|PT_Alto Tros-os-Montes|上特拉斯山
+zh_CN|PT_Tamega|塔梅加
+zh_CN|PT_Ave|万福
+zh_CN|PT_Baixo Alentejo|下阿连特茹
+zh_CN|PT_Oeste|西部
+zh_CN|PT_Baixo Vouga|下伏日
+zh_CN|PT_Baixo Mondego|下蒙德古
+zh_CN|PT_Alentejo Central|中阿连特茹
+zh_CN|PT_Madeira|马德拉岛
+zh_CN|MK|前南马其顿
+zh_CN|QA|卡塔尔
+zh_CN|JP|日本
+zh_CN|JP_Ehime|爱媛
+zh_CN|JP_Aichi|爱知
+zh_CN|JP_Hokkaido|北海道
+zh_CN|JP_Hyogo|兵库
+zh_CN|JP_Ibaraki|茨城
+zh_CN|JP_Nagasaki|长崎
+zh_CN|JP_Okinawa|冲绳
+zh_CN|JP_Nagano|长野
+zh_CN|JP_Osaka|大阪
+zh_CN|JP_Tokushima|徳岛
+zh_CN|JP_Oita|大分
+zh_CN|JP_Shimane|岛根
+zh_CN|JP_Tokyo|东京
+zh_CN|JP_Fukushima|福岛
+zh_CN|JP_Fukuoka|福冈
+zh_CN|JP_Fukui|福井
+zh_CN|JP_Toyama|富山
+zh_CN|JP_Miyagi|宮城
+zh_CN|JP_Hiroshima|广岛
+zh_CN|JP_Miyazaki|宫崎
+zh_CN|JP_Okayama|冈山
+zh_CN|JP_Kochi|高知
+zh_CN|JP_Wakayama|和歌山
+zh_CN|JP_Kyoto|京都
+zh_CN|JP_Shizuoka|静冈
+zh_CN|JP_Kagoshima|鹿儿岛
+zh_CN|JP_Tochigi|枥木
+zh_CN|JP_Nara|奈良
+zh_CN|JP_Tottori|鸟取
+zh_CN|JP_Gifu|岐阜
+zh_CN|JP_Gunma|群马
+zh_CN|JP_Aomori|青森
+zh_CN|JP_Akita|秋田
+zh_CN|JP_Saitama|埼玉
+zh_CN|JP_Chiba|千叶
+zh_CN|JP_Mie|三重
+zh_CN|JP_Ishikawa|石川
+zh_CN|JP_Yamaguchi|山口
+zh_CN|JP_Yamanashi|山梨
+zh_CN|JP_Kanagawa|神奈川
+zh_CN|JP_Yamagata|山形
+zh_CN|JP_Kumamoto|熊本
+zh_CN|JP_Kagawa|香川
+zh_CN|JP_Niigata|新潟
+zh_CN|JP_Iwate|岩手
+zh_CN|JP_Shiga|滋贺
+zh_CN|JP_Saga|佐贺
+zh_CN|SE|瑞典
+zh_CN|SE_Norrbottens|北博滕
+zh_CN|SE_Blekinge|布莱金厄
+zh_CN|SE_Dalarnas|达拉纳
+zh_CN|SE_Ustergotland|东约特兰
+zh_CN|SE_Orebro|厄勒布鲁
+zh_CN|SE_Gotlands|哥得兰
+zh_CN|SE_Hallands|哈兰
+zh_CN|SE_Kronobergs|克鲁努贝里
+zh_CN|SE_Sodermanlands|南曼兰
+zh_CN|SE_Kalmar|卡尔马
+zh_CN|SE_Stockholms|斯德哥尔摩
+zh_CN|SE_Skane|斯科耐
+zh_CN|SE_Varmlands|韦姆兰
+zh_CN|SE_Uppsala|乌普萨拉
+zh_CN|SE_Vasterbottens|西博滕
+zh_CN|SE_Vastmanlands|西曼兰
+zh_CN|SE_Vasternorrlands|西诺尔兰
+zh_CN|SE_Vastra Gotalands|西约特兰
+zh_CN|SE_Gavleborgs|耶夫勒堡
+zh_CN|SE_Jamtlands|耶姆特兰
+zh_CN|SE_Jonkopings|延雪平
+zh_CN|CH|瑞士
+zh_CN|CH_Aargau|阿尔高
+zh_CN|CH_Bern|伯尔尼
+zh_CN|CH_Basel-stadt|巴塞尔
+zh_CN|CH_Basel Landschaft|巴塞尔乡村
+zh_CN|CH_Zug|楚格
+zh_CN|CH_Freiburg|弗里堡
+zh_CN|CH_Graubnden|格劳宾登
+zh_CN|CH_Glarus|格拉鲁斯
+zh_CN|CH_Lausanne|洛桑
+zh_CN|CH_Luzern|卢塞恩
+zh_CN|CH_Appenzell Innerrhodn|内阿彭策尔
+zh_CN|CH_Neuchatel|纳沙泰尔
+zh_CN|CH_Jura|汝拉
+zh_CN|CH_Geneve|日内瓦
+zh_CN|CH_Schaffhausen|沙夫豪森
+zh_CN|CH_St.Gallen|圣加仑
+zh_CN|CH_Zurich|苏黎世
+zh_CN|CH_Solothurn|索洛图恩
+zh_CN|CH_Schwyz|施维茨
+zh_CN|CH_Obwalden|上瓦尔登
+zh_CN|CH_Thurgau|图尔高
+zh_CN|CH_Ticino|提契诺
+zh_CN|CH_Vaud|沃
+zh_CN|CH_Appenzell Ausserrhon|外阿彭策尔
+zh_CN|CH_Wallis|瓦莱
+zh_CN|CH_Uri|乌里
+zh_CN|CH_Nidwalden|下瓦尔登
+zh_CN|SD|苏丹
+zh_CN|CX|圣诞岛
+zh_CN|ST|圣多美和普林西比
+zh_CN|SV|萨尔瓦多
+zh_CN|RS|塞尔维亚
+zh_CN|SH|圣赫勒拿
+zh_CN|KN|圣基茨和尼维斯
+zh_CN|SK|斯洛伐克
+zh_CN|SL|塞拉利昂
+zh_CN|LK|斯里兰卡
+zh_CN|SB|所罗门群岛
+zh_CN|SR|苏里南
+zh_CN|SI|斯洛文尼亚
+zh_CN|LC|圣卢西亚
+zh_CN|SO|索马里
+zh_CN|SM|圣马力诺
+zh_CN|WS|萨摩亚
+zh_CN|SN|塞内加尔
+zh_CN|PM|圣皮埃尔和密克隆
+zh_CN|CY|塞浦路斯
+zh_CN|SC|塞舌尔
+zh_CN|SA|沙特阿拉伯
+zh_CN|SA_Abha|艾卜哈
+zh_CN|SA_Arar|阿尔阿尔
+zh_CN|SA_Al Hofuf|阿尔胡富夫
+zh_CN|SA_Al Mubarraz|阿尔姆巴拉兹
+zh_CN|SA_Al Kharj|阿尔卡里
+zh_CN|SA_Al Jubail|阿尔朱拜勒
+zh_CN|SA_Al Bahah|巴哈
+zh_CN|SA_Buraydah|布赖代
+zh_CN|SA_Dammam|达曼
+zh_CN|SA_Hafar al-Batin|哈费尔巴廷
+zh_CN|SA_Khamis Mushayt|海米斯穆谢特
+zh_CN|SA_Hail|哈伊勒
+zh_CN|SA_Jiddah|吉达
+zh_CN|SA_Jizan|吉赞
+zh_CN|SA_Riyad|利雅得
+zh_CN|SA_Medina|麦地那
+zh_CN|SA_Makkah|麦加
+zh_CN|SA_Najran|纳季兰
+zh_CN|SA_Sakaka|塞卡卡
+zh_CN|SA_Tabuk|塔布克
+zh_CN|SA_At Tarif|塔伊夫
+zh_CN|SA_Yanbu al-Bahr|延布
+zh_CN|SJ|斯瓦尔巴岛和扬马延岛
+zh_CN|SZ|斯威士兰
+zh_CN|VC|圣文森特和格林纳丁斯
+zh_CN|TR|土耳其
+zh_CN|TR_Aydin|艾登
+zh_CN|TR_Edirne|埃迪尔内
+zh_CN|TR_Adana|阿达纳
+zh_CN|TR_Adiyaman|阿德亚曼
+zh_CN|TR_Ordu|奥尔杜
+zh_CN|TR_Ardahan|阿尔达罕
+zh_CN|TR_Erzincan|埃尔津詹
+zh_CN|TR_Artvin|阿尔特温
+zh_CN|TR_Erzurum|埃尔祖鲁姆
+zh_CN|TR_Afyon|阿菲永
+zh_CN|TR_Aksaray|阿克萨赖
+zh_CN|TR_Agri|阿勒
+zh_CN|TR_Elazig|埃拉泽
+zh_CN|TR_Amasya|阿马西亚
+zh_CN|TR_Ankara|安卡拉
+zh_CN|TR_Eskisehir|埃斯基谢希尔
+zh_CN|TR_Antalya|安塔利亚
+zh_CN|TR_Burdur|布尔杜尔
+zh_CN|TR_Bursa|布尔萨
+zh_CN|TR_Bartin|巴尔腾
+zh_CN|TR_Bingol|宾格尔
+zh_CN|TR_Bolu|博卢
+zh_CN|TR_Bilecik|比莱吉克
+zh_CN|TR_Balikesir|巴勒克埃西尔
+zh_CN|TR_Bitlis|比特利斯
+zh_CN|TR_Batman|巴特曼
+zh_CN|TR_Bayburt|巴伊布尔特
+zh_CN|TR_Cankiri|昌克勒
+zh_CN|TR_Denizli|代尼兹利
+zh_CN|TR_Diyarbakir|迪亚巴克尔
+zh_CN|TR_Van|凡
+zh_CN|TR_Hakkari|哈卡里
+zh_CN|TR_Hatay|哈塔伊
+zh_CN|TR_Gaziantep|加济安泰普
+zh_CN|TR_Giresun|吉雷松
+zh_CN|TR_Kilis|基利斯
+zh_CN|TR_Gumushane|居米什哈内
+zh_CN|TR_Kirsehir|克尔谢希尔
+zh_CN|TR_Kocaeli|科贾埃利
+zh_CN|TR_Kirklareli|柯克拉雷利
+zh_CN|TR_Kirikkale|克勒克卡莱
+zh_CN|TR_Konya|科尼亚
+zh_CN|TR_Kayseri|开塞利
+zh_CN|TR_Urfa|拉飞
+zh_CN|TR_Rize|里泽
+zh_CN|TR_Mardin|马尔丁
+zh_CN|TR_Mugla|穆拉
+zh_CN|TR_Malatya|马拉蒂亚
+zh_CN|TR_Manisa|马尼萨
+zh_CN|TR_Mus|穆什
+zh_CN|TR_Nigde|尼代
+zh_CN|TR_Nevsehir|内夫谢希尔
+zh_CN|TR_Kars|卡尔斯
+zh_CN|TR_Kahraman?Maras|卡赫拉曼马拉什
+zh_CN|TR_Karabuk|卡拉比克
+zh_CN|TR_Karaman|卡拉曼
+zh_CN|TR_Corum|乔鲁姆
+zh_CN|TR_Canakkale|恰纳卡莱
+zh_CN|TR_Kastamonu|卡斯塔莫努
+zh_CN|TR_Kutahya|屈塔希亚
+zh_CN|TR_Samsun|萨姆松
+zh_CN|TR_Sakarya|萨卡里亚
+zh_CN|TR_Tekirdag|泰基尔达
+zh_CN|TR_Tunceli|通杰利
+zh_CN|TR_Trabzon|特拉布宗
+zh_CN|TR_Tokat|托卡特
+zh_CN|TR_Usak|乌萨克
+zh_CN|TR_Sirnak|锡尔纳克
+zh_CN|TR_Siirt|锡尔特
+zh_CN|TR_Sinop|锡诺普
+zh_CN|TR_Sivas|锡瓦斯
+zh_CN|TR_Igdir|伊迪尔
+zh_CN|TR_Icel|伊切尔
+zh_CN|TR_Isparta|伊斯帕尔塔
+zh_CN|TR_Istanbul|伊斯坦布尔
+zh_CN|TR_Yozgat|约兹加特
+zh_CN|TR_Izmir|伊兹密尔
+zh_CN|TR_Zonguldak|宗古尔达克
+zh_CN|TH|泰国
+zh_CN|TH_Amnat Charoen|安纳乍能
+zh_CN|TH_Saraburi|北标
+zh_CN|TH_Kanchanaburi|北碧
+zh_CN|TH_Phetchabun|碧差汶
+zh_CN|TH_Phatthalung|博达伦
+zh_CN|TH_Pattani|北大年
+zh_CN|TH_Samut Prakan|北揽
+zh_CN|TH_Chachoengsao|北柳
+zh_CN|TH_Nakhon Sawan|北榄坡
+zh_CN|TH_Prachuap Khiri Khan|巴蜀
+zh_CN|TH_Pathum Thani|巴吞他尼
+zh_CN|TH_Prachin Buri|巴真
+zh_CN|TH_Chai Nat|猜那
+zh_CN|TH_Chumphon|春蓬
+zh_CN|TH_Chon Buri|春武里
+zh_CN|TH_Uttaradit|程逸
+zh_CN|TH_Chaiyaphum|猜也奔
+zh_CN|TH_Tak|达
+zh_CN|TH_Phra Nakhon Si Ayutthaya|大城
+zh_CN|TH_Trat|达叻
+zh_CN|TH_Trang|董里
+zh_CN|TH_Phetchaburi|佛丕
+zh_CN|TH_Nakhon Pathom|佛统
+zh_CN|TH_Kamphaeng Phet|甘烹碧
+zh_CN|TH_Lop Buri|华富里
+zh_CN|TH_Ang Thong|红统
+zh_CN|TH_Kalasin|加拉信
+zh_CN|TH_Krabi|甲米
+zh_CN|TH_Chanthaburi|尖竹汶
+zh_CN|TH_Khon Kaen|孔敬
+zh_CN|TH_Loei|黎
+zh_CN|TH_Nong Khai|廊开
+zh_CN|TH_Nakhon Si Thammarat|洛坤
+zh_CN|TH_Nong Bua Lamphu|廊莫那浦
+zh_CN|TH_Rayong|拉农
+zh_CN|TH_Ratchaburi|叻丕
+zh_CN|TH_Roi Et|黎逸
+zh_CN|TH_Ranong|罗勇
+zh_CN|TH_Samut Sakhon|龙仔厝
+zh_CN|TH_Mukdahan|莫达汉
+zh_CN|TH_Bangkok|曼谷
+zh_CN|TH_Maha Sarakham|玛哈沙拉堪
+zh_CN|TH_Nan|难
+zh_CN|TH_Lamphun|南奔
+zh_CN|TH_Nakhon Nayok|那空那育
+zh_CN|TH_Nakhon Phanom|那空帕农
+zh_CN|TH_Nonthaburi|暖武里
+zh_CN|TH_Phrae|帕
+zh_CN|TH_Phichit|披集
+zh_CN|TH_Phuket|普吉
+zh_CN|TH_Phitsanulok|彭世洛
+zh_CN|TH_Phayao|帕尧
+zh_CN|TH_Phangnga|攀牙
+zh_CN|TH_Chiang Rai|清莱
+zh_CN|TH_Chiang Mai|清迈
+zh_CN|TH_Satun|沙敦
+zh_CN|TH_Sakon Nakhon|色军
+zh_CN|TH_Sa Kaeo|沙缴
+zh_CN|TH_Sukhothai|素可泰
+zh_CN|TH_Surin|素林
+zh_CN|TH_Surat Thani|素叻
+zh_CN|TH_Suphan Buri|素攀武里
+zh_CN|TH_Songkhla|宋卡
+zh_CN|TH_Si sa ket|四色菊
+zh_CN|TH_Narathiwat|陶公
+zh_CN|TH_Udon Thani|乌隆
+zh_CN|TH_Buri Ram|武里南
+zh_CN|TH_Uthai Thani|乌泰他尼
+zh_CN|TH_Ubon Ratchathani|乌汶
+zh_CN|TH_Sing Buri|信武里
+zh_CN|TH_Mae Hong Son|夜丰颂
+zh_CN|TH_Samut Songkhram|夜功
+zh_CN|TH_Yala|也拉
+zh_CN|TH_Yasothon|耶梭通
+zh_CN|TO|汤加
+zh_CN|TJ|塔吉克斯坦
+zh_CN|TK|托克劳
+zh_CN|TM|土库曼斯坦
+zh_CN|TC|特克斯和凯科斯群岛
+zh_CN|TT|特立尼达和多巴哥
+zh_CN|TN|突尼斯
+zh_CN|TZ|坦桑尼亚
+zh_CN|TV|图瓦卢
+zh_CN|GT|危地马拉
+zh_CN|UG|乌干达
+zh_CN|WK|威克岛
+zh_CN|UA|乌克兰
+zh_CN|UA_Odessa|敖德萨
+zh_CN|UA_Poltava|波尔塔瓦
+zh_CN|UA_Dnipropetrovsk|第聂伯罗波得罗夫斯克
+zh_CN|UA_Donetsk|顿涅茨克
+zh_CN|UA_Kharkiv|哈尔科夫
+zh_CN|UA_Khersonsrka|赫尔松州
+zh_CN|UA_Khmelnytsky|赫梅利尼茨基
+zh_CN|UA_Ternopil|捷尔诺波尔
+zh_CN|UA_Kyiv|基辅
+zh_CN|UA_Kirovohrad|基洛夫格勒
+zh_CN|UA_Respublika Krym|克里米亚自治共和国
+zh_CN|UA_Rivne|罗夫诺
+zh_CN|UA_Luhansk|卢甘斯克
+zh_CN|UA_Lviv|利沃夫
+zh_CN|UA_Mykolayiv|尼古拉耶夫
+zh_CN|UA_Chernivtsi|切尔诺夫策
+zh_CN|UA_Chernihiv|切尔尼戈夫
+zh_CN|UA_Cherkasy|切尔卡瑟
+zh_CN|UA_Zhytomyr|日托米尔
+zh_CN|UA_Sumy|苏梅
+zh_CN|UA_Zakarpatska|外喀尔巴阡
+zh_CN|UA_Volyn|沃伦
+zh_CN|UA_Vinnytsya|文尼察
+zh_CN|UA_Ivano-Frankivsk|伊万－弗兰科夫州
+zh_CN|UA_Zaporizhzhya|扎波罗热
+zh_CN|BN|文莱
+zh_CN|UY|乌拉圭
+zh_CN|WF|瓦利斯和富图纳
+zh_CN|VU|瓦努阿图
+zh_CN|VE|委内瑞拉
+zh_CN|VE_Aragua|阿拉瓜
+zh_CN|VE_Delta Amacuro|阿马库罗三角洲
+zh_CN|VE_Apure|阿普雷
+zh_CN|VE_Anzoategui|安索阿特吉
+zh_CN|VE_Barinas|巴里纳斯
+zh_CN|VE_Bolivar|玻利瓦尔
+zh_CN|VE_Portuguesa|波图格萨
+zh_CN|VE_Falcon|法尔孔
+zh_CN|VE_Guarico|瓜里科
+zh_CN|VE_Caracas|加拉加斯
+zh_CN|VE_Cojedes|科赫德斯
+zh_CN|VE_Dependencias Federales|联邦属地
+zh_CN|VE_Lara|拉腊
+zh_CN|VE_Merida|梅里达
+zh_CN|VE_Miranda|米兰达
+zh_CN|VE_Monagas|莫纳加斯
+zh_CN|VE_Carabobo|卡拉沃沃
+zh_CN|VE_Sucre|苏克雷
+zh_CN|VE_Zulia|苏利亚
+zh_CN|VE_Trujillo|特鲁希略
+zh_CN|VE_Tachira|塔奇拉
+zh_CN|VE_Estado Nueva Esparta|新埃斯帕塔
+zh_CN|VE_Yaracuy|亚拉奎
+zh_CN|VE_Amazonas|亚马孙
+zh_CN|UZ|乌兹别克斯坦
+zh_CN|ES|西班牙
+zh_CN|ES_Almeria|阿尔梅里亚
+zh_CN|ES_Albacete|阿尔瓦塞特
+zh_CN|ES_Alicante|阿利坎特
+zh_CN|ES_Orense|奥伦塞
+zh_CN|ES_Alava|阿拉瓦
+zh_CN|ES_Asturias|阿斯图利亚斯
+zh_CN|ES_Avila|阿维拉
+zh_CN|ES_Badajoz|巴达霍斯
+zh_CN|ES_Burgos|布尔戈斯
+zh_CN|ES_Baleares|巴利阿里
+zh_CN|ES_Valencia|巴伦西亚
+zh_CN|ES_Valladolid|巴利亚多利德
+zh_CN|ES_Vizcaya|比斯开
+zh_CN|ES_Barcelona|巴塞罗那
+zh_CN|ES_Guadalajara|瓜达拉哈拉
+zh_CN|ES_Granada|格拉纳达
+zh_CN|ES_Jaen|哈恩
+zh_CN|ES_Gerona|赫罗纳
+zh_CN|ES_Cadiz|加的斯
+zh_CN|ES_Guipuzcoa|吉普斯夸
+zh_CN|ES_Cordoba|科尔多瓦
+zh_CN|ES_Cuenca|昆卡
+zh_CN|ES_Leon|莱昂
+zh_CN|ES_Ciudad Real|雷阿尔城
+zh_CN|ES_Provincia de Lugo|卢戈
+zh_CN|ES_La Coruna|拉科鲁尼亚
+zh_CN|ES_La Rioja|拉里奥哈
+zh_CN|ES_Lleida|莱里达
+zh_CN|ES_Las Palmas|拉斯帕尔马斯
+zh_CN|ES_Madrid|马德里
+zh_CN|ES_Murcia|穆尔西亚
+zh_CN|ES_Malaga|马拉加
+zh_CN|ES_Navarra|纳瓦拉
+zh_CN|ES_Palencia|帕伦西亚
+zh_CN|ES_Provincia de Pontevedra|蓬特韦德拉
+zh_CN|ES_Caceres|卡塞雷斯
+zh_CN|ES_Castellon|卡斯特利翁
+zh_CN|ES_Segovia|塞哥维亚
+zh_CN|ES_Santa Cruz de Tenerife|圣克鲁斯-德特内里费
+zh_CN|ES_Zaragoza|萨拉戈萨
+zh_CN|ES_Salamanca|萨拉曼卡
+zh_CN|ES_Soria|索里亚
+zh_CN|ES_Zamora|萨莫拉
+zh_CN|ES_Santander|桑坦德
+zh_CN|ES_Sevilla|塞维利亚
+zh_CN|ES_Teruel|特鲁埃尔
+zh_CN|ES_Toledo|托莱多
+zh_CN|ES_Tarragona|塔拉戈纳
+zh_CN|ES_Huelva|韦尔瓦
+zh_CN|ES_Huesca|韦斯卡
+zh_CN|SG|新加坡
+zh_CN|NC|新喀里多尼亚
+zh_CN|GR|希腊
+zh_CN|SY|叙利亚
+zh_CN|NZ|新西兰
+zh_CN|NZ_Auckland|奥克兰
+zh_CN|NZ_North Shore|北岸
+zh_CN|NZ_Blenheim|布莱尼姆
+zh_CN|NZ_Palmerston North|北帕默斯顿
+zh_CN|NZ_Far North|北远
+zh_CN|NZ_Dunedin|达尼丁
+zh_CN|NZ_Greymouth|格雷茅斯
+zh_CN|NZ_Hamilton|哈密尔顿
+zh_CN|NZ_Hastings|黑斯廷斯
+zh_CN|NZ_Waitakere|怀塔科拉
+zh_CN|NZ_Gisborne|吉斯伯恩
+zh_CN|NZ_Christchurch|克赖斯特彻奇
+zh_CN|NZ_Kaipara|凯帕拉
+zh_CN|NZ_Richmond|里士满
+zh_CN|NZ_Manukau|马努考
+zh_CN|NZ_Nelson|纳尔逊
+zh_CN|NZ_Napier|内皮尔
+zh_CN|NZ_Stratford|斯特拉特福德
+zh_CN|NZ_Taumarunui|陶马鲁努伊
+zh_CN|NZ_Whangarei|旺阿雷
+zh_CN|NZ_Wanganui|旺格努伊
+zh_CN|NZ_Whakatane|瓦卡塔尼
+zh_CN|NZ_New Plymouth|新普利茅斯
+zh_CN|NZ_Invercargill|因弗卡吉尔
+zh_CN|HU|匈牙利
+zh_CN|HU_Budapest|布达佩斯
+zh_CN|HU_Borsod-Abauj-Zemplen|包尔绍德-奥包乌伊-曾普伦
+zh_CN|HU_Bekes|贝凯什
+zh_CN|HU_Baranya|巴兰尼亚
+zh_CN|HU_Bacs-Kiskun|巴奇-基什孔
+zh_CN|HU_Fejer|费耶尔
+zh_CN|HU_Heves|赫维什
+zh_CN|HU_Hajdu-Bihar|豪伊杜-比豪尔
+zh_CN|HU_Gyor-Moson-Sopron|杰尔-莫松-肖普朗
+zh_CN|HU_Jasz-Nagykun-Szolnok|加兹-纳杰孔-索尔诺克
+zh_CN|HU_Komarom-Esztergom|科马罗姆
+zh_CN|HU_Nograd|诺格拉德
+zh_CN|HU_Pest|佩斯
+zh_CN|HU_Csongrad|琼格拉德
+zh_CN|HU_Szabolcs-Szatmar-Bereg|索博尔奇-索特马尔-贝拉格
+zh_CN|HU_Somogy|绍莫吉
+zh_CN|HU_Tolna|托尔瑙
+zh_CN|HU_Vas|沃什
+zh_CN|HU_Veszprem|维斯普雷姆
+zh_CN|HU_Zala|佐洛
+zh_CN|IN|印度
+zh_CN|IN_Agra|阿格拉
+zh_CN|IN_Ahmedabad|艾哈迈达巴德
+zh_CN|IN_Agartala|阿加尔塔拉
+zh_CN|IN_Aligarh|阿里格尔
+zh_CN|IN_Allahabad|阿拉哈巴德
+zh_CN|IN_Aurangabad|奥兰加巴德
+zh_CN|IN_Amritsar|阿姆利则
+zh_CN|IN_Aizawl|艾藻尔
+zh_CN|IN_Bhubaneswar|布巴内斯瓦尔
+zh_CN|IN_Pondicherry|本地治里
+zh_CN|IN_Bangalore|班加罗尔
+zh_CN|IN_Baroda|巴罗达
+zh_CN|IN_Nasik|邦纳西克
+zh_CN|IN_Bhopal|博帕尔
+zh_CN|IN_Bokaro|波卡罗
+zh_CN|IN_Patna|巴特那
+zh_CN|IN_Chandigarh|昌迪加尔
+zh_CN|IN_Jammu|查谟
+zh_CN|IN_Durgapur|杜加浦
+zh_CN|IN_Dehradun|德拉敦
+zh_CN|IN_Tiruchirappalli|蒂鲁吉拉伯利
+zh_CN|IN_Dimapur|迪马普尔
+zh_CN|IN_Faridabad|法里达巴德
+zh_CN|IN_Goa|果阿
+zh_CN|IN_Jabalpur|贾巴尔普尔
+zh_CN|IN_Gandhinagar|甘地讷格尔
+zh_CN|IN_Kolhapur|戈尔
+zh_CN|IN_Gurgaon|古尔加翁
+zh_CN|IN_Jullundhar|贾朗达尔
+zh_CN|IN_Gwalior|瓜廖尔
+zh_CN|IN_Jamnagar|贾姆纳格尔
+zh_CN|IN_Guwahati|古瓦哈提
+zh_CN|IN_Coimbatore|哥印拜陀
+zh_CN|IN_Hyderabad|海德拉巴
+zh_CN|IN_Kolkata|加尔各答
+zh_CN|IN_Ghaziabad|加济阿巴德
+zh_CN|IN_Chennai|金奈
+zh_CN|IN_Jodhpur|焦特布尔
+zh_CN|IN_Kanpur|坎普尔
+zh_CN|IN_Cochin|科钦
+zh_CN|IN_Cuttack|克塔克
+zh_CN|IN_Raipur|赖布尔
+zh_CN|IN_Ludhiana|卢迪亚纳
+zh_CN|IN_Rourkela|鲁尔克拉
+zh_CN|IN_Rajkot|拉杰果德
+zh_CN|IN_Lucknow|勒克瑙
+zh_CN|IN_Ranchi|兰契
+zh_CN|IN_Madurai|马杜赖
+zh_CN|IN_Margao|马尔高
+zh_CN|IN_Mangalore|芒格洛尔
+zh_CN|IN_Mumbai|孟买
+zh_CN|IN_Mysore|迈索尔
+zh_CN|IN_Nagpur|那格浦尔
+zh_CN|IN_Noida|诺伊达
+zh_CN|IN_Panjim|潘吉姆
+zh_CN|IN_Pune|浦那
+zh_CN|IN_Secunderabad|塞康德拉巴德
+zh_CN|IN_Sura|苏拉
+zh_CN|IN_Salem|塞勒姆
+zh_CN|IN_Srinagar|斯利那加
+zh_CN|IN_Thiruvananthapuram|特里凡得琅
+zh_CN|IN_Thane|塔那
+zh_CN|IN_Udaipur|乌代布尔
+zh_CN|IN_Vijayawada|维杰亚瓦达
+zh_CN|IN_Vellore|韦洛尔
+zh_CN|IN_Varanasi|瓦拉纳西
+zh_CN|IN_Visakhapatnam|維沙哈巴南
+zh_CN|IN_New Delhi|新德里
+zh_CN|IN_Shillong|西隆
+zh_CN|IN_Siliguri|西里古里
+zh_CN|IN_Indore|印多尔
+zh_CN|IN_Imphal|因帕尔
+zh_CN|IN_Jaipur|斋普尔
+zh_CN|IN_Jamshedpur|詹谢普尔
+zh_CN|JO|约旦
+zh_CN|IT|意大利
+zh_CN|IT_Olbia-Tempio|奥尔比亚
+zh_CN|IT_Agrigento|阿格里真托
+zh_CN|IT_Ancona|安科纳
+zh_CN|IT_Oristano|奥里斯塔诺
+zh_CN|IT_Arezzo|阿雷佐
+zh_CN|IT_Asti|阿斯蒂
+zh_CN|IT_Ascoli Piceno|阿斯科利皮切诺
+zh_CN|IT_Aosta|奥斯塔
+zh_CN|IT_Pordenone|波代诺内
+zh_CN|IT_Bolzano|博尔扎诺
+zh_CN|IT_Bergamo|贝加莫
+zh_CN|IT_Bari|巴里
+zh_CN|IT_Biella|布拉
+zh_CN|IT_Brindisi|布林迪西
+zh_CN|IT_Palermo|巴勒莫
+zh_CN|IT_Belluno|贝卢诺
+zh_CN|IT_Bologna|博洛尼亚
+zh_CN|IT_Barletta-Andria-Trani|巴列塔 - 安德里亚 - 特拉尼
+zh_CN|IT_Brescia|布雷西亚
+zh_CN|IT_Benevento|贝内文托
+zh_CN|IT_Pisa|比萨
+zh_CN|IT_Potenza|波坦察
+zh_CN|IT_Turin|都灵
+zh_CN|IT_Trieste|的里雅斯特
+zh_CN|IT_Enna|恩纳
+zh_CN|IT_Fermo|费尔莫
+zh_CN|IT_Foggia|福贾
+zh_CN|IT_Forlì- Cesena|弗利 - 切塞纳
+zh_CN|IT_Ferrara|费拉拉
+zh_CN|IT_Firenze|佛罗伦萨
+zh_CN|IT_Frosinone|费辛隆尼
+zh_CN|IT_Gorizia|戈里齐亚
+zh_CN|IT_Grosseto|格罗塞托
+zh_CN|IT_Chieti|基耶蒂
+zh_CN|IT_Campobasso|坎波巴索
+zh_CN|IT_Crotone|克罗托内
+zh_CN|IT_Como|科摩
+zh_CN|IT_Cuneo|库内奥
+zh_CN|IT_Cosenza|科森扎
+zh_CN|IT_Latina|拉丁
+zh_CN|IT_Rieti|列蒂
+zh_CN|IT_Lodi|洛迪
+zh_CN|IT_Vibo-valentia|伦蒂亚
+zh_CN|IT_Ragusa|拉古萨
+zh_CN|IT_Reggio Emilia|雷焦艾米利亚
+zh_CN|IT_Reggio Calabria|雷焦卡拉布里亚
+zh_CN|IT_Lecco|莱科
+zh_CN|IT_L\'Aquila|拉奎拉
+zh_CN|IT_Roma|罗马
+zh_CN|IT_Rimini|里米尼
+zh_CN|IT_Lecce|莱切
+zh_CN|IT_Lucca|卢卡
+zh_CN|IT_La Spezia|拉斯佩齐亚
+zh_CN|IT_Rovigo|罗维戈
+zh_CN|IT_Ravenna|拉文纳
+zh_CN|IT_Livorno|里窝那
+zh_CN|IT_Modena|摩德纳
+zh_CN|IT_Milano|米兰
+zh_CN|IT_Macerata|马切拉塔
+zh_CN|IT_Massa-Carrara|马萨
+zh_CN|IT_Matera|马泰拉
+zh_CN|IT_Mantova|曼图亚
+zh_CN|IT_Messina|墨西拿
+zh_CN|IT_Monza e Brianza|蒙扎
+zh_CN|IT_Nuoro|努奥罗
+zh_CN|IT_Naples|那不勒斯
+zh_CN|IT_Novara|诺瓦拉
+zh_CN|IT_Padova|帕多瓦
+zh_CN|IT_Parma|帕尔马
+zh_CN|IT_Perugia|佩鲁贾
+zh_CN|IT_Prato|普拉托
+zh_CN|IT_Pesaro|佩萨罗
+zh_CN|IT_Pescara|佩斯卡拉
+zh_CN|IT_Pistoia|皮斯托亚
+zh_CN|IT_Pavia|帕维亚
+zh_CN|IT_Piacenza|皮亚琴察
+zh_CN|IT_Carbonia-Iglesias|卡博尼亚 - 伊格莱西亚斯
+zh_CN|IT_Cagliari|卡利亚里
+zh_CN|IT_Caserta|卡塞塔
+zh_CN|IT_Catania|卡塔尼亚
+zh_CN|IT_Catanzaro|卡坦扎罗
+zh_CN|IT_Genova|热那亚
+zh_CN|IT_Sondrio|松德里奥
+zh_CN|IT_Salerno|萨莱诺
+zh_CN|IT_Sassari|萨萨里
+zh_CN|IT_Savona|萨沃纳
+zh_CN|IT_Terni|特尔尼
+zh_CN|IT_Teramo|泰拉莫
+zh_CN|IT_Trapani|特拉帕尼
+zh_CN|IT_Taranto|塔兰托
+zh_CN|IT_Trento|特伦托
+zh_CN|IT_Treviso|特雷维索
+zh_CN|IT_Verbano-Cusio-Ossola|韦巴诺 - 库西奥 - 奥索拉
+zh_CN|IT_Udine|乌迪内
+zh_CN|IT_Vercelli|韦尔切利
+zh_CN|IT_Verona|维罗纳
+zh_CN|IT_Varese|瓦雷泽
+zh_CN|IT_Venice|威尼斯
+zh_CN|IT_Vicenza|维琴察
+zh_CN|IT_Viterbo|维泰博
+zh_CN|IT_Syracuse|锡拉库扎
+zh_CN|IT_Siena|锡耶纳
+zh_CN|IT_Alessandria|亚历山德里亚
+zh_CN|IT_Imperia|因佩里亚
+zh_CN|IT_Isernia|伊塞尔尼亚
+zh_CN|ID|印度尼西亚
+zh_CN|ID_Kepulauan Bangka Belitung|邦加－勿里洞群岛
+zh_CN|ID_Bali|巴厘
+zh_CN|ID_Sulawesi Utara|北苏拉威西
+zh_CN|ID_Sumatera Utara|北苏门答腊
+zh_CN|ID_Kalimantan Timur|东加里曼丹
+zh_CN|ID_Nusa Tenggara Timur|东努沙登加拉
+zh_CN|ID_Sulawesi Tenggara|东南苏拉威西
+zh_CN|ID_Daerah Tingkat I Kalimantan Barat|大雅加达首都特区
+zh_CN|ID_Java Timur|东爪哇
+zh_CN|ID_Riau|廖内
+zh_CN|ID_Bengkulu|明古鲁
+zh_CN|ID_Maluku|马鲁古
+zh_CN|ID_Lampung|楠榜
+zh_CN|ID_Kalimantan Selatan|南加里曼丹
+zh_CN|ID_Sulawesi Selatan|南苏拉威西
+zh_CN|ID_Sumatera Selatan|南苏门答腊
+zh_CN|ID_Daerah Istimewa Yogyakarta|日惹特区
+zh_CN|ID_Banten|万丹
+zh_CN|ID_Nusa Tenggara Barat|西努沙登加拉
+zh_CN|ID_Sumatera Barat|西苏门答腊
+zh_CN|ID_Java Barat|西爪哇
+zh_CN|ID_Jakarta Raya|雅加达
+zh_CN|ID_Irian Jaya|伊里安查亚
+zh_CN|ID_Aceh|亚齐
+zh_CN|ID_Jambi|占碑
+zh_CN|ID_Kalimantan Tengah|中加里曼丹
+zh_CN|ID_Sulawesi Tengah|中苏拉威西
+zh_CN|ID_Java Tengah|中爪哇
+zh_CN|GB|英国
+zh_CN|GB_Northern Ireland|北爱尔兰
+zh_CN|GB_Northern Ireland_Belfast|贝尔法斯特
+zh_CN|GB_Northern Ireland_Derry|德里
+zh_CN|GB_Northern Ireland_Lisburn|利斯本
+zh_CN|GB_Northern Ireland_Newry|纽里
+zh_CN|GB_Scotland|苏格兰
+zh_CN|GB_Scotland_Aberdeen|阿伯丁
+zh_CN|GB_Scotland_Edinburgh|爱丁堡
+zh_CN|GB_Scotland_Dundee|丹迪
+zh_CN|GB_Scotland_Glasgow|格拉斯哥
+zh_CN|GB_Scotland_Stirling|斯特灵
+zh_CN|GB_Scotland_Inverness|因弗内斯
+zh_CN|GB_Wales|威尔士
+zh_CN|GB_Wales_Bangor|班戈
+zh_CN|GB_Wales_Newport|纽波特
+zh_CN|GB_Wales_Cardiff|卡迪夫
+zh_CN|GB_Wales_Swansea|斯旺西
+zh_CN|GB_England|英格兰
+zh_CN|GB_England_Exeter|爱塞特
+zh_CN|GB_England_Peterborough|彼得伯勒
+zh_CN|GB_England_Bradford|布拉德福德
+zh_CN|GB_England_Brighton &amp; Hove|布莱顿霍夫
+zh_CN|GB_England_Bristol|布里斯托尔
+zh_CN|GB_England_Birmingham|伯明翰
+zh_CN|GB_England_Bath|巴斯
+zh_CN|GB_England_Derby|德比
+zh_CN|GB_England_Durham|德罕
+zh_CN|GB_England_Gloucester|格洛斯特
+zh_CN|GB_England_Kingston upon Hull|赫尔河畔京斯敦
+zh_CN|GB_England_Hereford|赫里福德
+zh_CN|GB_England_Cambridge|剑桥
+zh_CN|GB_England_Canterbury|坎特伯雷
+zh_CN|GB_England_Coventry|考文垂
+zh_CN|GB_England_London|伦敦
+zh_CN|GB_England_Lincoln|林肯
+zh_CN|GB_England_Lancaster|兰开斯特
+zh_CN|GB_England_Ripon|里彭
+zh_CN|GB_England_Lichfield|利奇菲尔德
+zh_CN|GB_England_Leicester|列斯特
+zh_CN|GB_England_Liverpool|利物浦
+zh_CN|GB_England_Leeds|利茲
+zh_CN|GB_England_Manchester|曼彻斯特
+zh_CN|GB_England_Southampton|南安普敦
+zh_CN|GB_England_Nottingham|诺丁汉
+zh_CN|GB_England_Oxford|牛津
+zh_CN|GB_England_Norwich|诺里奇
+zh_CN|GB_England_Newcastle|纽卡斯尔
+zh_CN|GB_England_Portsmouth|朴茨茅斯
+zh_CN|GB_England_Plymouth|普利茅斯
+zh_CN|GB_England_Preston|普雷斯顿
+zh_CN|GB_England_Carlisle|卡莱尔
+zh_CN|GB_England_Chichester|奇切斯特
+zh_CN|GB_England_Chester|切斯特
+zh_CN|GB_England_Saint Albans|圣阿本斯
+zh_CN|GB_England_Sunderland|桑德兰
+zh_CN|GB_England_Salisbury|索尔斯堡
+zh_CN|GB_England_Salford|索福特
+zh_CN|GB_England_Truro|特鲁罗
+zh_CN|GB_England_Stoke-on-Trent|特伦特河畔斯多克
+zh_CN|GB_England_Winchester|温彻斯特
+zh_CN|GB_England_Wolverhampton|伍尔弗汉普顿
+zh_CN|GB_England_Wells|威尔斯
+zh_CN|GB_England_Wakefield|韦克菲尔德
+zh_CN|GB_England_Worcester|伍斯特
+zh_CN|GB_England_Sheffield|谢菲尔德
+zh_CN|GB_England_York|约克
+zh_CN|GB_England_Ely|伊利
+zh_CN|IR|伊朗
+zh_CN|IQ|伊拉克
+zh_CN|YE|也门
+zh_CN|JM|牙买加
+zh_CN|AM|亚美尼亚
+zh_CN|VN|越南
+zh_CN|VN_Haiphong|海防
+zh_CN|VN_Hanoi|河内
+zh_CN|VN_Ho Chi Minh City|胡志明市
+zh_CN|IL|以色列
+zh_CN|VG|英属维尔京群岛
+zh_CN|IO|英属印度洋领地
+zh_CN|GI|直布罗陀
+zh_CN|ZM|赞比亚
+zh_CN|TD|乍得
+zh_CN|CF|中非
+zh_CN|CN|中国
+zh_CN|CN_Anhui|安徽
+zh_CN|CN_Anhui_Anqing|安庆
+zh_CN|CN_Anhui_Bengbu|蚌埠
+zh_CN|CN_Anhui_Bozhou|亳州
+zh_CN|CN_Anhui_Chizhou|池州
+zh_CN|CN_Anhui_Chuzhou|滁州
+zh_CN|CN_Anhui_Fuyang|阜阳
+zh_CN|CN_Anhui_Hefei|合肥
+zh_CN|CN_Anhui_Huaibei|淮北
+zh_CN|CN_Anhui_Huainan|淮南
+zh_CN|CN_Anhui_Huangshan|黄山
+zh_CN|CN_Anhui_Lu\'an|六安
+zh_CN|CN_Anhui_Ma\'anshan|马鞍山
+zh_CN|CN_Anhui_Suzhou|宿州
+zh_CN|CN_Anhui_Tongling|铜陵
+zh_CN|CN_Anhui_Wuhu|芜湖
+zh_CN|CN_Anhui_Xuancheng|宣城
+zh_CN|CN_Beijing|北京
+zh_CN|CN_Beijing_Changping|昌平区
+zh_CN|CN_Beijing_Chaoyang|朝阳区
+zh_CN|CN_Beijing_Daxing|大兴区
+zh_CN|CN_Beijing_Dongcheng|东城区
+zh_CN|CN_Beijing_Fangshan|房山区
+zh_CN|CN_Beijing_Fengtai|丰台区
+zh_CN|CN_Beijing_Haidian|海淀区
+zh_CN|CN_Beijing_Huairou|怀柔区
+zh_CN|CN_Beijing_Mentougou|门头沟区
+zh_CN|CN_Beijing_Miyun Unit|密云区
+zh_CN|CN_Beijing_Pinggu|平谷区
+zh_CN|CN_Beijing_Shijingshan|石景山区
+zh_CN|CN_Beijing_Shunyi|顺义区
+zh_CN|CN_Beijing_Tongzhou|通州区
+zh_CN|CN_Beijing_Xicheng|西城区
+zh_CN|CN_Beijing_Yanqing Unit|延庆区
+zh_CN|CN_Chongqing|重庆
+zh_CN|CN_Chongqing_Banan|巴南区
+zh_CN|CN_Chongqing_Beibei|北碚区
+zh_CN|CN_Chongqing_Bishan|璧山区
+zh_CN|CN_Chongqing_Changshou|长寿区
+zh_CN|CN_Chongqing_Dadukou|大渡口区
+zh_CN|CN_Chongqing_Dazu|大足区
+zh_CN|CN_Chongqing_Fuling|涪陵区
+zh_CN|CN_Chongqing_Hechuan|合川区
+zh_CN|CN_Chongqing_Jiangbei|江北区
+zh_CN|CN_Chongqing_Jiangjin|江津区
+zh_CN|CN_Chongqing_Jiulongpo|九龙坡区
+zh_CN|CN_Chongqing_Kaizhou Unit|开州区
+zh_CN|CN_Chongqing_Liangping|梁平县
+zh_CN|CN_Chongqing_Nan\'an|南岸区
+zh_CN|CN_Chongqing_Nanchuan|南川区
+zh_CN|CN_Chongqing_Qianjiang|黔江区
+zh_CN|CN_Chongqing_Qijiang|綦江区
+zh_CN|CN_Chongqing_Rongchang|荣昌区
+zh_CN|CN_Chongqing_Shapingba|沙坪坝区
+zh_CN|CN_Chongqing_Tongliang|铜梁区
+zh_CN|CN_Chongqing_Tongnan|潼南区
+zh_CN|CN_Chongqing_Wanzhou|万州区
+zh_CN|CN_Chongqing_Yongchuan|永川区
+zh_CN|CN_Chongqing_Yubei|渝北区
+zh_CN|CN_Chongqing_Yuzhong|渝中区
+zh_CN|CN_Fujian|福建
+zh_CN|CN_Fujian_Fuzhou|福州
+zh_CN|CN_Fujian_Longyan|龙岩
+zh_CN|CN_Fujian_Nanping|南平
+zh_CN|CN_Fujian_Ningde|宁德
+zh_CN|CN_Fujian_Putian|莆田
+zh_CN|CN_Fujian_Quanzhou|泉州
+zh_CN|CN_Fujian_Sanming|三明
+zh_CN|CN_Fujian_Xiamen|厦门
+zh_CN|CN_Fujian_Zhangzhou|漳州
+zh_CN|CN_Gansu|甘肃
+zh_CN|CN_Gansu_Baiyin|白银
+zh_CN|CN_Gansu_Dingxi|定西
+zh_CN|CN_Gansu_Gannan|甘南藏族自治州
+zh_CN|CN_Gansu_Jiayuguan|嘉峪关
+zh_CN|CN_Gansu_Jinchang|金昌
+zh_CN|CN_Gansu_Jiuquan|酒泉
+zh_CN|CN_Gansu_Lanzhou|兰州
+zh_CN|CN_Gansu_Linxia|临夏回族自治州
+zh_CN|CN_Gansu_Longnan|陇南
+zh_CN|CN_Gansu_Pingliang|平凉
+zh_CN|CN_Gansu_Qingyang|庆阳
+zh_CN|CN_Gansu_Tianshui|天水
+zh_CN|CN_Gansu_Wuwei|武威
+zh_CN|CN_Gansu_Zhangye|张掖
+zh_CN|CN_Guangdong|广东
+zh_CN|CN_Guangdong_Chaozhou|潮州
+zh_CN|CN_Guangdong_Dongguan|东莞
+zh_CN|CN_Guangdong_Dongsha Islands|东沙群岛
+zh_CN|CN_Guangdong_Foshan|佛山
+zh_CN|CN_Guangdong_Guangzhou|广州
+zh_CN|CN_Guangdong_Heyuan|河源
+zh_CN|CN_Guangdong_Huizhou|惠州
+zh_CN|CN_Guangdong_Jiangmen|江门
+zh_CN|CN_Guangdong_Jieyang|揭阳
+zh_CN|CN_Guangdong_Maoming|茂名
+zh_CN|CN_Guangdong_Meizhou|梅州
+zh_CN|CN_Guangdong_Qingyuan|清远
+zh_CN|CN_Guangdong_Shantou|汕头
+zh_CN|CN_Guangdong_Shanwei|汕尾
+zh_CN|CN_Guangdong_Shaoguan|韶关
+zh_CN|CN_Guangdong_Shenzhen|深圳
+zh_CN|CN_Guangdong_Yangjiang|阳江
+zh_CN|CN_Guangdong_Yunfu|云浮
+zh_CN|CN_Guangdong_Zhanjiang|湛江
+zh_CN|CN_Guangdong_Zhaoqing|肇庆
+zh_CN|CN_Guangdong_Zhongshan|中山
+zh_CN|CN_Guangdong_Zhuhai|珠海
+zh_CN|CN_Guangxi|广西
+zh_CN|CN_Guangxi_Baise|百色
+zh_CN|CN_Guangxi_Beihai|北海
+zh_CN|CN_Guangxi_Chongzuo|崇左
+zh_CN|CN_Guangxi_Fangchenggang|防城港
+zh_CN|CN_Guangxi_Guigang|贵港
+zh_CN|CN_Guangxi_Guilin|桂林
+zh_CN|CN_Guangxi_Hechi|河池
+zh_CN|CN_Guangxi_Hezhou|贺州
+zh_CN|CN_Guangxi_Laibin|来宾
+zh_CN|CN_Guangxi_Liuzhou|柳州
+zh_CN|CN_Guangxi_Nanning|南宁
+zh_CN|CN_Guangxi_Qinzhou|钦州
+zh_CN|CN_Guangxi_Wuzhou|梧州
+zh_CN|CN_Guangxi_Yulin|玉林
+zh_CN|CN_Guizhou|贵州
+zh_CN|CN_Guizhou_Anshun|安顺
+zh_CN|CN_Guizhou_Bijie|毕节
+zh_CN|CN_Guizhou_Guiyang|贵阳
+zh_CN|CN_Guizhou_Liupanshui|六盘水
+zh_CN|CN_Guizhou_Qiandongnan|黔东南苗族侗族自治州
+zh_CN|CN_Guizhou_Qiannan|黔南布依族苗族自治州
+zh_CN|CN_Guizhou_Qianxinan|黔西南布依族苗族自治州
+zh_CN|CN_Guizhou_Tongren|铜仁
+zh_CN|CN_Guizhou_Zunyi|遵义
+zh_CN|CN_Hainan|海南
+zh_CN|CN_Hainan_Baisha|白沙黎族自治县
+zh_CN|CN_Hainan_Baoting|保亭黎族苗族自治县
+zh_CN|CN_Hainan_Changjiang|昌江黎族自治县
+zh_CN|CN_Hainan_Chengmai|澄迈县
+zh_CN|CN_Hainan_Danzhou|儋州
+zh_CN|CN_Hainan_Ding\'an|定安县
+zh_CN|CN_Hainan_Dongfang|东方市
+zh_CN|CN_Hainan_Haikou|海口
+zh_CN|CN_Hainan_Ledong|乐东黎族自治县
+zh_CN|CN_Hainan_Lingao|临高县
+zh_CN|CN_Hainan_Lingshui|陵水黎族自治县
+zh_CN|CN_Hainan_Qionghai|琼海市
+zh_CN|CN_Hainan_Qiongzhong|琼中黎族苗族自治县
+zh_CN|CN_Hainan_Sansha|三沙
+zh_CN|CN_Hainan_Sanya|三亚
+zh_CN|CN_Hainan_Tunchang|屯昌县
+zh_CN|CN_Hainan_Wanning|万宁市
+zh_CN|CN_Hainan_Wenchang|文昌市
+zh_CN|CN_Hainan_Wuzhishan|五指山市
+zh_CN|CN_Hebei|河北
+zh_CN|CN_Hebei_Baoding|保定
+zh_CN|CN_Hebei_Cangzhou|沧州
+zh_CN|CN_Hebei_Chengde|承德
+zh_CN|CN_Hebei_Handan|邯郸
+zh_CN|CN_Hebei_Hengshui|衡水
+zh_CN|CN_Hebei_Langfang|廊坊
+zh_CN|CN_Hebei_Qinhuangdao|秦皇岛
+zh_CN|CN_Hebei_Shijiazhuang|石家庄
+zh_CN|CN_Hebei_Tangshan|唐山
+zh_CN|CN_Hebei_Xingtai|邢台
+zh_CN|CN_Hebei_Zhangjiakou|张家口
+zh_CN|CN_Heilongjiang|黑龙江
+zh_CN|CN_Heilongjiang_Da Hinggan Ling|大兴安岭地区
+zh_CN|CN_Heilongjiang_Daqing|大庆
+zh_CN|CN_Heilongjiang_Harbin|哈尔滨
+zh_CN|CN_Heilongjiang_Hegang|鹤岗
+zh_CN|CN_Heilongjiang_Heihe|黑河
+zh_CN|CN_Heilongjiang_Jiamusi|佳木斯
+zh_CN|CN_Heilongjiang_Jixi|鸡西
+zh_CN|CN_Heilongjiang_Mudanjiang|牡丹江
+zh_CN|CN_Heilongjiang_Qiqihar|齐齐哈尔
+zh_CN|CN_Heilongjiang_Qitaihe|七台河
+zh_CN|CN_Heilongjiang_Shuangyashan|双鸭山
+zh_CN|CN_Heilongjiang_Suihua|绥化
+zh_CN|CN_Heilongjiang_Yichun|伊春
+zh_CN|CN_Henan|河南
+zh_CN|CN_Henan_Anyang|安阳
+zh_CN|CN_Henan_Hebi|鹤壁
+zh_CN|CN_Henan_Jiaozuo|焦作
+zh_CN|CN_Henan_Jiyuan|济源市
+zh_CN|CN_Henan_Kaifeng|开封
+zh_CN|CN_Henan_Luohe|漯河
+zh_CN|CN_Henan_Luoyang|洛阳
+zh_CN|CN_Henan_Nanyang|南阳
+zh_CN|CN_Henan_Pingdingshan|平顶山
+zh_CN|CN_Henan_Puyang|濮阳
+zh_CN|CN_Henan_Sanmenxia|三门峡
+zh_CN|CN_Henan_Shangqiu|商丘
+zh_CN|CN_Henan_Xinxiang|新乡
+zh_CN|CN_Henan_Xinyang|信阳
+zh_CN|CN_Henan_Xuchang|许昌
+zh_CN|CN_Henan_Zhengzhou|郑州
+zh_CN|CN_Henan_Zhoukou|周口
+zh_CN|CN_Henan_Zhumadian|驻马店
+zh_CN|CN_Hong Kong|香港
+zh_CN|CN_Hong Kong_Central and Western District|中西区
+zh_CN|CN_Hong Kong_Eastern District|东区
+zh_CN|CN_Hong Kong_Islands District|离岛区
+zh_CN|CN_Hong Kong_Kowloon City District|九龙城区
+zh_CN|CN_Hong Kong_Kwai Tsing District|葵青区
+zh_CN|CN_Hong Kong_Kwun Tong District|观塘区
+zh_CN|CN_Hong Kong_Northern District|北区
+zh_CN|CN_Hong Kong_Sai Kung District|西贡区
+zh_CN|CN_Hong Kong_Sha Tin District|沙田区
+zh_CN|CN_Hong Kong_Sham Shui Po District|深水埗区
+zh_CN|CN_Hong Kong_Southern District|南区
+zh_CN|CN_Hong Kong_Tai Po District|大埔区
+zh_CN|CN_Hong Kong_Tsuen Wan District|荃湾区
+zh_CN|CN_Hong Kong_Tuen Mun District|屯门区
+zh_CN|CN_Hong Kong_Wan Chai District|湾仔区
+zh_CN|CN_Hong Kong_Wong Tai Sin District|黄大仙区
+zh_CN|CN_Hong Kong_Yau Tsim Mong District|油尖旺区
+zh_CN|CN_Hong Kong_Yuen Long District|元朗区
+zh_CN|CN_Hubei|湖北
+zh_CN|CN_Hubei_Enshi|恩施土家族苗族自治州
+zh_CN|CN_Hubei_Ezhou|鄂州
+zh_CN|CN_Hubei_Huanggang|黄冈
+zh_CN|CN_Hubei_Huangshi|黄石
+zh_CN|CN_Hubei_Jingmen|荆门
+zh_CN|CN_Hubei_Jingzhou|荆州
+zh_CN|CN_Hubei_Qianjiang|潜江市
+zh_CN|CN_Hubei_Shennongjia|神农架林区
+zh_CN|CN_Hubei_Shiyan|十堰
+zh_CN|CN_Hubei_Suizhou|随州
+zh_CN|CN_Hubei_Tianmen|天门市
+zh_CN|CN_Hubei_Wuhan|武汉
+zh_CN|CN_Hubei_Xiangyang|襄阳
+zh_CN|CN_Hubei_Xianning|咸宁
+zh_CN|CN_Hubei_Xiantao|仙桃市
+zh_CN|CN_Hubei_Xiaogan|孝感
+zh_CN|CN_Hubei_Yichang|宜昌
+zh_CN|CN_Hunan|湖南
+zh_CN|CN_Hunan_Changde|常德
+zh_CN|CN_Hunan_Changsha|长沙
+zh_CN|CN_Hunan_Chenzhou|郴州
+zh_CN|CN_Hunan_Hengyang|衡阳
+zh_CN|CN_Hunan_Huaihua|怀化
+zh_CN|CN_Hunan_Loudi|娄底
+zh_CN|CN_Hunan_Shaoyang|邵阳
+zh_CN|CN_Hunan_Xiangtan|湘潭
+zh_CN|CN_Hunan_Xiangxi|湘西土家族苗族自治州
+zh_CN|CN_Hunan_Yiyang|益阳
+zh_CN|CN_Hunan_Yongzhou|永州
+zh_CN|CN_Hunan_Yueyang|岳阳
+zh_CN|CN_Hunan_Zhangjiajie|张家界
+zh_CN|CN_Hunan_Zhuzhou|株洲
+zh_CN|CN_Inner Mongolia|内蒙古
+zh_CN|CN_Inner Mongolia_Alxa|阿拉善盟
+zh_CN|CN_Inner Mongolia_Baotou|包头
+zh_CN|CN_Inner Mongolia_Bayan Nur|巴彦淖尔
+zh_CN|CN_Inner Mongolia_Chifeng|赤峰
+zh_CN|CN_Inner Mongolia_Hinggan|兴安盟
+zh_CN|CN_Inner Mongolia_Hohhot|呼和浩特
+zh_CN|CN_Inner Mongolia_Hulun Buir|呼伦贝尔
+zh_CN|CN_Inner Mongolia_Ordos|鄂尔多斯
+zh_CN|CN_Inner Mongolia_Tongliao|通辽
+zh_CN|CN_Inner Mongolia_Ulanqab|乌兰察布
+zh_CN|CN_Inner Mongolia_Wuhai|乌海
+zh_CN|CN_Inner Mongolia_Xilin Gol|锡林郭勒盟
+zh_CN|CN_Jiangsu|江苏
+zh_CN|CN_Jiangsu_Changzhou|常州
+zh_CN|CN_Jiangsu_Huai\'an|淮安
+zh_CN|CN_Jiangsu_Lianyungang|连云港
+zh_CN|CN_Jiangsu_Nanjing|南京
+zh_CN|CN_Jiangsu_Nantong|南通
+zh_CN|CN_Jiangsu_Suqian|宿迁
+zh_CN|CN_Jiangsu_Suzhou|苏州
+zh_CN|CN_Jiangsu_Taizhou|泰州
+zh_CN|CN_Jiangsu_Wuxi|无锡
+zh_CN|CN_Jiangsu_Xuzhou|徐州
+zh_CN|CN_Jiangsu_Yancheng|盐城
+zh_CN|CN_Jiangsu_Yangzhou|扬州
+zh_CN|CN_Jiangsu_Zhenjiang|镇江
+zh_CN|CN_Jiangxi|江西
+zh_CN|CN_Jiangxi_Fuzhou|抚州
+zh_CN|CN_Jiangxi_Ganzhou|赣州
+zh_CN|CN_Jiangxi_Ji\'an|吉安
+zh_CN|CN_Jiangxi_Jingdezhen|景德镇
+zh_CN|CN_Jiangxi_Jiujiang|九江
+zh_CN|CN_Jiangxi_Nanchang|南昌
+zh_CN|CN_Jiangxi_Pingxiang|萍乡
+zh_CN|CN_Jiangxi_Shangrao|上饶
+zh_CN|CN_Jiangxi_Xinyu|新余
+zh_CN|CN_Jiangxi_Yichun|宜春
+zh_CN|CN_Jiangxi_Yingtan|鹰潭
+zh_CN|CN_Jilin|吉林
+zh_CN|CN_Jilin_Baicheng|白城
+zh_CN|CN_Jilin_Baishan|白山
+zh_CN|CN_Jilin_Changchun|长春
+zh_CN|CN_Jilin_Jilin|吉林
+zh_CN|CN_Jilin_Liaoyuan|辽源
+zh_CN|CN_Jilin_Siping|四平
+zh_CN|CN_Jilin_Songyuan|松原
+zh_CN|CN_Jilin_Tonghua|通化
+zh_CN|CN_Jilin_Yanbian|延边朝鲜族自治州
+zh_CN|CN_Liaoning|辽宁
+zh_CN|CN_Liaoning_Anshan|鞍山
+zh_CN|CN_Liaoning_Benxi|本溪
+zh_CN|CN_Liaoning_Chaoyang|朝阳
+zh_CN|CN_Liaoning_Dalian|大连
+zh_CN|CN_Liaoning_Dandong|丹东
+zh_CN|CN_Liaoning_Fushun|抚顺
+zh_CN|CN_Liaoning_Fuxin|阜新
+zh_CN|CN_Liaoning_Huludao|葫芦岛
+zh_CN|CN_Liaoning_Jinzhou|锦州
+zh_CN|CN_Liaoning_Liaoyang|辽阳
+zh_CN|CN_Liaoning_Panjin|盘锦
+zh_CN|CN_Liaoning_Shenyang|沈阳
+zh_CN|CN_Liaoning_Tieling|铁岭
+zh_CN|CN_Liaoning_Yingkou|营口
+zh_CN|CN_Macao|澳门
+zh_CN|CN_Macao_Cathedral Parish|大堂区
+zh_CN|CN_Macao_Our Lady Fatima Parish|花地玛堂区
+zh_CN|CN_Macao_Our Lady of Carmel Parish|嘉模堂区
+zh_CN|CN_Macao_St. Anthony Parish|花王堂区
+zh_CN|CN_Macao_St. Francis Xavier\'s Parish|圣方济各堂区
+zh_CN|CN_Macao_St. Lawrence Parish|风顺堂区
+zh_CN|CN_Macao_St. Lazarus Parish|望德堂区
+zh_CN|CN_Macao_Taipa-Coloane Reclamation Area|路凼填海区
+zh_CN|CN_Ningxia|宁夏
+zh_CN|CN_Ningxia_Guyuan|固原
+zh_CN|CN_Ningxia_Shizuishan|石嘴山
+zh_CN|CN_Ningxia_Wuzhong|吴忠
+zh_CN|CN_Ningxia_Yinchuan|银川
+zh_CN|CN_Ningxia_Zhongwei|中卫
+zh_CN|CN_Qinghai|青海
+zh_CN|CN_Qinghai_Golog|果洛藏族自治州
+zh_CN|CN_Qinghai_Haibei|海北藏族自治州
+zh_CN|CN_Qinghai_Haidong|海东
+zh_CN|CN_Qinghai_Hainan|海南藏族自治州
+zh_CN|CN_Qinghai_Haixi|海西蒙古族藏族自治州
+zh_CN|CN_Qinghai_Huangnan|黄南藏族自治州
+zh_CN|CN_Qinghai_Xining|西宁
+zh_CN|CN_Qinghai_Yushu|玉树藏族自治州
+zh_CN|CN_Shaanxi|陕西
+zh_CN|CN_Shaanxi_Ankang|安康
+zh_CN|CN_Shaanxi_Baoji|宝鸡
+zh_CN|CN_Shaanxi_Hanzhong|汉中
+zh_CN|CN_Shaanxi_Shangluo|商洛
+zh_CN|CN_Shaanxi_Tongchuan|铜川
+zh_CN|CN_Shaanxi_Weinan|渭南
+zh_CN|CN_Shaanxi_Xi\'an|西安
+zh_CN|CN_Shaanxi_Xianyang|咸阳
+zh_CN|CN_Shaanxi_Yan\'an|延安
+zh_CN|CN_Shaanxi_Yulin|榆林
+zh_CN|CN_Shandong|山东
+zh_CN|CN_Shandong_Binzhou|滨州
+zh_CN|CN_Shandong_Dezhou|德州
+zh_CN|CN_Shandong_Dongying|东营
+zh_CN|CN_Shandong_Heze|菏泽
+zh_CN|CN_Shandong_Jinan|济南
+zh_CN|CN_Shandong_Jining|济宁
+zh_CN|CN_Shandong_Laiwu|莱芜
+zh_CN|CN_Shandong_Liaocheng|聊城
+zh_CN|CN_Shandong_Linyi|临沂
+zh_CN|CN_Shandong_Qingdao|青岛
+zh_CN|CN_Shandong_Rizhao|日照
+zh_CN|CN_Shandong_Tai\'an|泰安
+zh_CN|CN_Shandong_Weifang|潍坊
+zh_CN|CN_Shandong_Weihai|威海
+zh_CN|CN_Shandong_Yantai|烟台
+zh_CN|CN_Shandong_Zaozhuang|枣庄
+zh_CN|CN_Shandong_Zibo|淄博
+zh_CN|CN_Shanghai|上海
+zh_CN|CN_Shanghai_Baoshan|宝山区
+zh_CN|CN_Shanghai_Changning|长宁区
+zh_CN|CN_Shanghai_Chongming Unit|崇明区
+zh_CN|CN_Shanghai_Fengxian|奉贤区
+zh_CN|CN_Shanghai_Hongkou|虹口区
+zh_CN|CN_Shanghai_Huangpu|黄浦区
+zh_CN|CN_Shanghai_Jiading|嘉定区
+zh_CN|CN_Shanghai_Jing\'an|静安区
+zh_CN|CN_Shanghai_Jinshan|金山区
+zh_CN|CN_Shanghai_Minhang|闵行区
+zh_CN|CN_Shanghai_Pudong|浦东新区
+zh_CN|CN_Shanghai_Putuo|普陀区
+zh_CN|CN_Shanghai_Qingpu|青浦区
+zh_CN|CN_Shanghai_Songjiang|松江区
+zh_CN|CN_Shanghai_Xuhui|徐汇区
+zh_CN|CN_Shanghai_Yangpu|杨浦区
+zh_CN|CN_Shanxi|山西
+zh_CN|CN_Shanxi_Changzhi|长治
+zh_CN|CN_Shanxi_Datong|大同
+zh_CN|CN_Shanxi_Jincheng|晋城
+zh_CN|CN_Shanxi_Jinzhong|晋中
+zh_CN|CN_Shanxi_Linfen|临汾
+zh_CN|CN_Shanxi_Lvliang|吕梁
+zh_CN|CN_Shanxi_Shuozhou|朔州
+zh_CN|CN_Shanxi_Taiyuan|太原
+zh_CN|CN_Shanxi_Xinzhou|忻州
+zh_CN|CN_Shanxi_Yangquan|阳泉
+zh_CN|CN_Shanxi_Yuncheng|运城
+zh_CN|CN_Sichuan|四川
+zh_CN|CN_Sichuan_Aba|阿坝藏族羌族自治州
+zh_CN|CN_Sichuan_Bazhong|巴中
+zh_CN|CN_Sichuan_Chengdu|成都
+zh_CN|CN_Sichuan_Dazhou|达州
+zh_CN|CN_Sichuan_Deyang|德阳
+zh_CN|CN_Sichuan_Garze|甘孜藏族自治州
+zh_CN|CN_Sichuan_Guang\'an|广安
+zh_CN|CN_Sichuan_Guangyuan|广元
+zh_CN|CN_Sichuan_Leshan|乐山
+zh_CN|CN_Sichuan_Liangshan|凉山彝族自治州
+zh_CN|CN_Sichuan_Luzhou|泸州
+zh_CN|CN_Sichuan_Meishan|眉山
+zh_CN|CN_Sichuan_Mianyang|绵阳
+zh_CN|CN_Sichuan_Nanchong|南充
+zh_CN|CN_Sichuan_Neijiang|内江
+zh_CN|CN_Sichuan_Panzhihua|攀枝花
+zh_CN|CN_Sichuan_Suining|遂宁
+zh_CN|CN_Sichuan_Ya\'an|雅安
+zh_CN|CN_Sichuan_Yibin|宜宾
+zh_CN|CN_Sichuan_Zigong|自贡
+zh_CN|CN_Sichuan_Ziyang|资阳
+zh_CN|CN_Taiwan|台湾
+zh_CN|CN_Taiwan_Changhua County|彰化县
+zh_CN|CN_Taiwan_Chiayi City|嘉义市
+zh_CN|CN_Taiwan_Chiayi County|嘉义县
+zh_CN|CN_Taiwan_Hsinchu City|新竹市
+zh_CN|CN_Taiwan_Hsinchu County|新竹县
+zh_CN|CN_Taiwan_Hualien County|花莲县
+zh_CN|CN_Taiwan_Kaohsiung City|高雄市
+zh_CN|CN_Taiwan_Keelung City|基隆市
+zh_CN|CN_Taiwan_Kinmen County|金门县
+zh_CN|CN_Taiwan_Lianjiang County|连江县
+zh_CN|CN_Taiwan_Miaoli County|苗栗县
+zh_CN|CN_Taiwan_Nantou County|南投县
+zh_CN|CN_Taiwan_New Taipei City|新北市
+zh_CN|CN_Taiwan_Penghu County|澎湖县
+zh_CN|CN_Taiwan_Pingtung County|屏东县
+zh_CN|CN_Taiwan_Taichung City|台中市
+zh_CN|CN_Taiwan_Tainan City|台南市
+zh_CN|CN_Taiwan_Taipei|台北市
+zh_CN|CN_Taiwan_Taitung County|台东县
+zh_CN|CN_Taiwan_Taoyuan County|桃园县
+zh_CN|CN_Taiwan_Yilan County|宜兰县
+zh_CN|CN_Taiwan_Yunlin County|云林县
+zh_CN|CN_Tianjin|天津
+zh_CN|CN_Tianjin_Baodi|宝坻区
+zh_CN|CN_Tianjin_Beichen|北辰区
+zh_CN|CN_Tianjin_Binhai|滨海新区
+zh_CN|CN_Tianjin_Dongli|东丽区
+zh_CN|CN_Tianjin_Hebei|河北区
+zh_CN|CN_Tianjin_Hedong|河东区
+zh_CN|CN_Tianjin_Heping|和平区
+zh_CN|CN_Tianjin_Hexi|河西区
+zh_CN|CN_Tianjin_Hongqiao|红桥区
+zh_CN|CN_Tianjin_Jinghaiqu|静海区
+zh_CN|CN_Tianjin_Jinnan|津南区
+zh_CN|CN_Tianjin_Jizhou Unit|蓟州区
+zh_CN|CN_Tianjin_Nankai|南开区
+zh_CN|CN_Tianjin_Ninghe Unit|宁河区
+zh_CN|CN_Tianjin_Wuqing|武清区
+zh_CN|CN_Tianjin_Xiqing|西青区
+zh_CN|CN_Tibet|西藏
+zh_CN|CN_Tibet_Lhasa|拉萨
+zh_CN|CN_Tibet_Mountain Nanshi|山南
+zh_CN|CN_Tibet_Nagqu|那曲地区
+zh_CN|CN_Tibet_Ngari|阿里地区
+zh_CN|CN_Tibet_Nyingchi|林芝
+zh_CN|CN_Tibet_Qamdo|昌都
+zh_CN|CN_Tibet_Xigaze|日喀则
+zh_CN|CN_Xinjiang|新疆
+zh_CN|CN_Xinjiang_Aksu|阿克苏地区
+zh_CN|CN_Xinjiang_Altay|阿勒泰地区
+zh_CN|CN_Xinjiang_Aral|阿拉尔市
+zh_CN|CN_Xinjiang_Bayingol|巴音郭楞蒙古自治州
+zh_CN|CN_Xinjiang_Beitun|北屯市
+zh_CN|CN_Xinjiang_Bortala|博尔塔拉蒙古自治州
+zh_CN|CN_Xinjiang_Changji|昌吉回族自治州
+zh_CN|CN_Xinjiang_Hotan|和田地区
+zh_CN|CN_Xinjiang_Ili|伊犁哈萨克自治州
+zh_CN|CN_Xinjiang_Karamay|克拉玛依
+zh_CN|CN_Xinjiang_Kashgar|喀什地区
+zh_CN|CN_Xinjiang_Kizilsu|克孜勒苏柯尔克孜自治州
+zh_CN|CN_Xinjiang_Kokdala|可克达拉市
+zh_CN|CN_Xinjiang_Kumul|哈密
+zh_CN|CN_Xinjiang_Kunyushi|昆玉市
+zh_CN|CN_Xinjiang_Qoqek|塔城地区
+zh_CN|CN_Xinjiang_Shihezi|石河子市
+zh_CN|CN_Xinjiang_Shuanghe|双河市
+zh_CN|CN_Xinjiang_Tiemenguan|铁门关市
+zh_CN|CN_Xinjiang_Tumxuk|图木舒克市
+zh_CN|CN_Xinjiang_Turpan|吐鲁番
+zh_CN|CN_Xinjiang_Urumqi|乌鲁木齐
+zh_CN|CN_Xinjiang_Wujiaqu|五家渠市
+zh_CN|CN_Yunnan|云南
+zh_CN|CN_Yunnan_Baoshan|保山
+zh_CN|CN_Yunnan_Chuxiong|楚雄彝族自治州
+zh_CN|CN_Yunnan_Dali|大理白族自治州
+zh_CN|CN_Yunnan_Dehong|德宏傣族景颇族自治州
+zh_CN|CN_Yunnan_Deqen|迪庆藏族自治州
+zh_CN|CN_Yunnan_Honghe|红河哈尼族彝族自治州
+zh_CN|CN_Yunnan_Kunming|昆明
+zh_CN|CN_Yunnan_Lijiang|丽江
+zh_CN|CN_Yunnan_Lincang|临沧
+zh_CN|CN_Yunnan_Nujiang|怒江傈僳族自治州
+zh_CN|CN_Yunnan_Pu\'er|普洱
+zh_CN|CN_Yunnan_Qujing|曲靖
+zh_CN|CN_Yunnan_Wenshan|文山壮族苗族自治州
+zh_CN|CN_Yunnan_Xishuangbanna|西双版纳傣族自治州
+zh_CN|CN_Yunnan_Yuxi|玉溪
+zh_CN|CN_Yunnan_Zhaotong|昭通
+zh_CN|CN_Zhejiang|浙江
+zh_CN|CN_Zhejiang_Hangzhou|杭州
+zh_CN|CN_Zhejiang_Huzhou|湖州
+zh_CN|CN_Zhejiang_Jiaxing|嘉兴
+zh_CN|CN_Zhejiang_Jinhua|金华
+zh_CN|CN_Zhejiang_Lishui|丽水
+zh_CN|CN_Zhejiang_Ningbo|宁波
+zh_CN|CN_Zhejiang_Quzhou|衢州
+zh_CN|CN_Zhejiang_Shaoxing|绍兴
+zh_CN|CN_Zhejiang_Taizhou|台州
+zh_CN|CN_Zhejiang_Wenzhou|温州
+zh_CN|CN_Zhejiang_Zhoushan|舟山
+zh_CN|CL|智利
+zh_CN|JE|泽西岛

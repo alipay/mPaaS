@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>自定义 JSAPI</title>
+</head>
+
+<body>
+  <button id="J_Custom_Jsapi">自定义 JSAPI</button>
+</body>
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var jsapiNode = document.getElementById('J_Custom_Jsapi');
+    jsapiNode.addEventListener('click', function () {
+      AlipayJSBridge.call('myapi', {
+        param1: 'JsParam1',
+        param2: 'JsParam2'
+      }, function (result) {
+        alert(JSON.stringify(result));
+      });
+    });
+  });
+</script>
+
+</html>

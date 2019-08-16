@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="h5_default_titlebar_color">#1976d2</color>
+    <color name="h5_provider_bg">#ffffff</color>
+    <color name="h5_nav_bar_bottomline">#C6C8C9</color>
+</resources>

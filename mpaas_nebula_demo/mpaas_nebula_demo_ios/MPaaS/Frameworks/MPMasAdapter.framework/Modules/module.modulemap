@@ -1,0 +1,6 @@
+framework module MPMasAdapter {
+  umbrella header "MPMasAdapter.h"
+
+  export *
+  module * { export * }
+}

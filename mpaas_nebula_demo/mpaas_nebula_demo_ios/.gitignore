@@ -1,0 +1,43 @@
+#OS noise
+profile
+[Tt]humbs.db
+*.DS_Store
+*~
+*.swp
+*.out
+*.bak*
+*.lock
+
+#Other CSM
+.hg
+.svn
+CVS
+out
+
+
+#Xcode noise
+*.log
+*~.nib
+*.moved-aside
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+xcshareddata
+*.xcworkspace/
+**xcuserdata
+
+#Project files
+[Bb]uild/
+DerivedData/
+Products/
+
+#CocoaPods
+Pods
+
+#aptkit
+remote_ios_deploy.conf
+*.podspec.json
+.dependency.txt
+autoXcode.py
+debug.json
+mod_pbxproj.py
+release.json

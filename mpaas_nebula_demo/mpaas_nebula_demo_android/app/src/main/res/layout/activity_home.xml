@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:text="H5容器和小程序"
+        android:textColor="#ff222222"
+        android:textSize="20sp" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_online"
+        style="@com.alipay.mobile.antui:style/mainButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:text="在线页面" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_offline"
+        style="@com.alipay.mobile.antui:style/mainButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="离线包" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_plugin_register"
+        style="@com.alipay.mobile.antui:style/mainButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/title_plugin_register" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_customized_config"
+        style="@com.alipay.mobile.antui:style/mainButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="自定义设置" />
+
+</LinearLayout>

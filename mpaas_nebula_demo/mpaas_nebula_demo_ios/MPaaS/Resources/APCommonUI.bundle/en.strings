@@ -1,0 +1,60 @@
+//Written by 多语言翻译管理系统 
+//Wed Jul 06 2016 13:05:06 GMT+0800 (CST)
+//如有问题请联系去疾
+"APCommonUI:%.0f 秒后重试" = "%.0f S";
+"APCommonUI:APCheckBox.checked" = "Selected";
+"APCommonUI:APCheckBox.unchecked" = "Unselected";
+"APCommonUI:APExceptionView.alert" = "Oops! System error\nServer is busy. Please try again later.";
+"APCommonUI:APExceptionView.empty" = "Null Content";
+"APCommonUI:APExceptionView.networkError" = "Network is unavailable. \nPlease check your settings and try again later.";
+"APCommonUI:APNextPagePullView.click&load" = "Click to Load";
+"APCommonUI:APNumericKeyboard.back&delete" = "Back";
+"APCommonUI:APNumericKeyboard.disappear" = "Hide";
+"APCommonUI:APNumericKeyboard.dismissKeyboard" = "Hide";
+"APCommonUI:APSecurityCode.securityCode" = "Code";
+"APCommonUI:APToastView.load" = "Loading %.0f%%";
+"APCommonUI:EGORefresh.current" = "Current Time";
+"APCommonUI:EGORefresh.last" = "Last Update";
+"APCommonUI:EGORefresh.pull&load" = "Pull to Load More";
+"APCommonUI:EGORefresh.pull&refresh" = "Pull to Refresh";
+"APCommonUI:EGORefresh.release&refresh" = "Release to Refresh";
+"APCommonUI:Login.forgotPassword" = "Forgot Password?";
+"APCommonUI:Login.password" = "Login Password";
+"APCommonUI:SMS.code" = "SMS Code";
+"APCommonUI:SMS.inputCode" = "Enter SMS Code";
+"APCommonUI:SMS.resendAfter" = "%.0f S";
+"APCommonUI:SMS.resendCode" = "Resend";
+"APCommonUI:SMS.sendCode" = "Send";
+
+"APCommonUI:网络不给力" = "Poor Network";
+"APCommonUI:世界上最遥远的距离莫过于此" = "Hello, anyone can hear me? Hello?";
+"APCommonUI:忙不过来了，客官请稍候" = "Oops! System Busy";
+"APCommonUI:给我一朵花开的时间" = "The debuggers are debugging some undebugged bugs.";
+"APCommonUI:什么都没有" = "Nothing";
+"APCommonUI:前不见古人，后不见来者" = "Oops, seems like you’re in the middle of nowhere.";
+"APCommonUI:请稍等哦，马上出来" = "Please wait for a little while";
+"APCommonUI:前面还有很多朋友在排队" = "We are over capacity, thanks for your patience.";
+"APCommonUI:页面找不到" = "Page not found.";
+"APCommonUI:此用户已注销" = "The User has logout";
+
+"APCommonUI:再试一次" = "Try Again/Retry";
+"APCommonUI:刷新" = "Refresh";
+"APCommonUI:加载中" = "Loading...";
+"APCommonUI:取消" = "Cancel";
+"APCommonUI:完成" = "Done";
+"APCommonUI:搜索" = "Search";
+"APCommonUI:注册" = "Register";
+"APCommonUI:清除" = "Clear/Delete";
+"APCommonUI:登录" = "Log In";
+"APCommonUI:确定" = "Yes";
+"APCommonUI:网络无法连接" = "Network Unavailable";
+"APCommonUI:请检查你的手机是否联网" = "Please check your network.";
+"APCommonUI:返回" = "Back";
+"APCommonUI:重新尝试" = "Try Again/Retry";
+"APCommonUI:重试" = "Retry";
+"APCommonUI:顾客太多，客官请稍候" = "Too many customers, please wait ...";
+"APCommonUI:前面还有很多朋友在排队" = "Server busy";
+"APCommonUI:语音助手" = "voice aide";
+"APCommonUI:加载中" = "Loading";
+"APCommonUI:松开刷新" = "Release to Update";
+"APCommonUI:更多" = "More";

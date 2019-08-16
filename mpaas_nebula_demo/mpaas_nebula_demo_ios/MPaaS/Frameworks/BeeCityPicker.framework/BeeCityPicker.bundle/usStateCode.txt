@@ -1,0 +1,71 @@
+US_Alabama|AL
+US_Alaska|AK
+US_American Samoa|AS
+US_Arizona|AZ
+US_Arkansas|AR
+US_California|CA
+US_Colorado|CO
+US_Connecticut|CT
+US_Delaware|DE
+US_District of Columbia|DC
+US_Federated States of Micronesia|FM
+US_Florida|FL
+US_Georgia|GA
+US_Guam|GU
+US_Hawaii|HI
+US_Idaho|ID
+US_Illinois|IL
+US_Indiana|IN
+US_Iowa|IA
+US_Kansas|KS
+US_Kentucky|KY
+US_Louisiana|LA
+US_Maine|ME
+US_Marshall Islands|MH
+US_Maryland|MD
+US_Massachusetts|MA
+US_Michigan|MI
+US_Minnesota|MN
+US_Mississippi|MS
+US_Missouri|MO
+US_Montana|MT
+US_Nebraska|NE
+US_Nevada|NV
+US_New Hampshire|NH
+US_New Jersey|NJ
+US_New Mexico|NM
+US_New York|NY
+US_North Carolina|NC
+US_Northern Mariana Islands|MP
+US_Ohio|OH
+US_Oklahoma|OK
+US_Oregon|OR
+US_Palau|PW
+US_Pennsylvania|PA
+US_Puerto Rico|PR
+US_Rhode Island|RI
+US_South Carolina|SC
+US_South Dakota|SD
+US_Tennessee|TN
+US_Texas|TX
+US_Utah|UT
+US_Vermont|VT
+US_Virgin Islands|VI
+US_Virginia|VA
+US_Washington|WA
+US_West Virginia|WV
+US_Wisconsin|WI
+US_Wyoming|WY
+CA_Alberta|AB
+CA_British Columbia|BC
+CA_Manitoba|MB
+CA_New Brunswick|NB
+CA_Newfoundland and Labrador|NL
+CA_Northwest Territories|NT
+CA_Nova Scotia|NS
+CA_Nunavut|NU
+CA_Ontario|ON
+CA_Prince Edward Island|PE
+CA_Quebec|QC
+CA_Saskatchewan|SK
+CA_Yukon|YT

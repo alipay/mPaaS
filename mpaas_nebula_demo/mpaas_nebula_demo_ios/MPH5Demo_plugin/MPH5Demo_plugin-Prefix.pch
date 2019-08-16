@@ -1,0 +1,21 @@
+//
+//  MPH5Demo_plugin-Prefix.pch
+//  MPH5Demo_plugin
+//
+//  Created by vivi.yw on 2019/03/28.
+//  Copyright © 2019 Alibaba. All rights reserved.
+//
+
+#ifndef MPH5Demo_plugin_Prefix_pch
+#define MPH5Demo_plugin_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MPH5Demo_plugin-mPaaS-Headers.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "MPAntUIDemoDef.h"
+
+
+#endif /* MPH5Demo_plugin_Prefix_pch */

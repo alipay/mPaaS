@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MobileRuntime</key>
+	<dict>
+		<key>Delegate</key>
+		<array>
+			<dict>
+				<key>protocol</key>
+				<string>NAMDownloadProtocol</string>
+				<key>name</key>
+				<string>NAMDownloadBiz</string>
+			</dict>
+			<dict>
+				<key>protocol</key>
+				<string>NAMZipArchiveProtocol</string>
+				<key>name</key>
+				<string>NAMZipArchiveBiz</string>
+			</dict>
+			<dict>
+				<key>protocol</key>
+				<string>NAMRequestProtocol</string>
+				<key>name</key>
+				<string>NAMRequestBiz</string>
+			</dict>
+			<dict>
+				<key>protocol</key>
+				<string>NAMDataStorageProtocol</string>
+				<key>name</key>
+				<string>NAMDataStorageBiz</string>
+			</dict>
+			<dict>
+				<key>protocol</key>
+				<string>NAMDynamicConfigProtocol</string>
+				<key>name</key>
+				<string>NAMConfigBiz</string>
+			</dict>
+		</array>
+	</dict>
+	<key>ClientConfig</key>
+	<dict/>
+</dict>
+</plist>

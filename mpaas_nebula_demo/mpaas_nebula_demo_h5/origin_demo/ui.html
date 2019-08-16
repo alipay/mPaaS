@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>界面交互</title>
+</head>
+
+<body>
+  <button id="J_ActionSheet">选择列表</button>
+  <div class="header">用户提示</div>
+  <button id="J_Alert">警告框</button>
+  <button id="J_Toast">弱提示</button>
+  <button id="J_Confirm">确认框</button>
+  <div class="header">标题栏</div>
+  <button id="J_SetTitle">设置标题文字</button>
+  <button id="J_SetTitleColor">设置标题颜色</button>
+  <button id="J_ShowOptionMenu">显示右上角按钮</button>
+  <button id="J_HideOptionMenu">隐藏右上角按钮</button>
+  <button id="J_SetOptionMenu">设置右上角按钮</button>
+</body>
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var actionSheetNode = document.getElementById('J_ActionSheet');
+    var alertNode = document.getElementById('J_Alert');
+    var toastNode = document.getElementById('J_Toast');
+    var confirmNode = document.getElementById('J_Confirm');
+    var setTitleNode = document.getElementById('J_SetTitle');
+    var setTitleColorNode = document.getElementById('J_SetTitleColor');
+    var showOptionMenuNode = document.getElementById('J_ShowOptionMenu');
+    var hideOptionMenuNode = document.getElementById('J_HideOptionMenu');
+    var setOptionMenuNode = document.getElementById('J_SetOptionMenu');
+    actionSheetNode.addEventListener('click', function () {
+      AlipayJSBridge.call("actionSheet", {
+        title: "标题",
+        btns: ["第一个按钮", "第二个按钮", "第三个按钮"],
+        cancelBtn: "取消",
+        destructiveBtnIndex: 2
+      }, function (data) {
+        // index 标示用户点击的按钮，在 actionSheet 中的位置，从 0 开始
+        switch (data.index) {
+          case 0:
+            alert("第一个按钮");
+            break;
+          case 1:
+            alert("第二个按钮");
+            break;
+          case 2:
+            alert("第三个按钮");
+            break;
+          case 3:
+            alert("取消按钮");
+            break;
+        }
+      });
+    });
+    alertNode.addEventListener('click', function () {
+      AlipayJSBridge.call('alert', {
+        title: '亲',
+        message: '你好',
+        button: '确定'
+      });
+    });
+    toastNode.addEventListener('click', function () {
+      AlipayJSBridge.call('toast', {
+        content: '操作成功',
+        type: 'success',
+        duration: 2000
+      }, function () {
+        alert("toast消失后执行");
+      });
+    });
+    confirmNode.addEventListener('click', function () {
+      AlipayJSBridge.call('confirm', {
+        title: '亲',
+        message: '确定要退出吗？',
+        okButton: '是',
+        cancelButton: '否'
+      }, function (e) {
+        alert(JSON.stringify(e));
+      });
+    });
+    setTitleNode.addEventListener('click', function () {
+      AlipayJSBridge.call('setTitle', {
+        title: "主标题",
+        subtitle: "副标题"
+      });
+    });
+    setTitleColorNode.addEventListener('click', function () {
+      AlipayJSBridge.call("setTitleColor", {
+        color: 16711680,
+        reset: false,
+        resetTransparent: false
+      });
+    });
+    showOptionMenuNode.addEventListener('click', function () {
+      AlipayJSBridge.call("showOptionMenu");
+    });
+    hideOptionMenuNode.addEventListener('click', function () {
+      AlipayJSBridge.call("hideOptionMenu");
+    });
+    setOptionMenuNode.addEventListener('click', function () {
+      AlipayJSBridge.call("setOptionMenu", {
+        // 显示的时候是从后往前显示的
+        menus: [{
+            icontype: "more",
+            redDot: "1" // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+          },
+          {
+            icontype: "scan",
+            redDot: "4" // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+          }
+        ],
+        override: true //在需要设置多个 option 的情况下，是否保留默认的 optionMenu
+      });
+      AlipayJSBridge.call("showOptionMenu");
+      document.addEventListener("optionMenu", function(e) {
+        if (e.data.index === 1) {
+          AlipayJSBridge.call("scan", {
+            type: "qr"
+          }, function (res) {
+            AlipayJSBridge.call("alert", {
+              title: "扫码结果",
+              message: JSON.stringify(res)
+            });
+          });
+        } else if (e.data.index === 0) {
+          AlipayJSBridge.call("showPopMenu", {
+            menus: [{
+              name: "字体",
+              tag: "tag1"
+            }, {
+              name: "菜单项2",
+              tag: "tag2"
+            }, {
+              name: "菜单项3",
+              tag: "tag3"
+            }]
+          }, function (e) {
+            alert(JSON.stringify(e));
+          });
+        }
+      });
+    });
+  });
+</script>
+
+</html>

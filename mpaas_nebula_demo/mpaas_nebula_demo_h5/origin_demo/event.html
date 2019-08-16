@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>事件扩展</title>
+</head>
+
+<body>
+  <button id="J_TitleClick">标题点击事件</button>
+  <button id="J_SubTitleClick">副标题点击事件</button>
+  <button id="J_Pause">页面压后台</button>
+  <button id="J_Resume">页面恢复前台</button>
+  <button id="J_Back">返回事件</button>
+  <button id="J_AddNotify">添加通知</button>
+  <button id="J_RemoveNotify" disabled=true>移除通知</button>
+  <button id="J_SendNotify">分发消息</button>
+  <button id="J_OptionMenu">点击右上角按钮</button>
+</body>
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+  var NEBULA_PREFIX = 'NEBULANOTIFY_';
+  var EVENT_NAME = NEBULA_PREFIX + 'myevent';
+  var titleClickNode = document.getElementById('J_TitleClick');
+  var subTitleClickNode = document.getElementById('J_SubTitleClick');
+  var pauseNode = document.getElementById('J_Pause');
+  var resumeNode = document.getElementById('J_Resume');
+  var backNode = document.getElementById('J_Back');
+  var addNotifyNode = document.getElementById('J_AddNotify');
+  var removeNotifyNode = document.getElementById('J_RemoveNotify');
+  var sendNotifyNode = document.getElementById('J_SendNotify');
+  var optionMenuNode = document.getElementById('J_OptionMenu');
+  titleClickNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    document.addEventListener("titleClick", function() {
+      alert('标题被点击');
+    });
+    ready(function () {
+      AlipayJSBridge.call('toast', {
+        content: '已监听点击标题事件'
+      });
+    });
+  });
+  subTitleClickNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    ready(function () {
+      AlipayJSBridge.call('setTitle', {
+        title: '事件扩展',
+        subtitle: '副标题'
+      });
+    });
+    document.addEventListener("subtitleClick", function() {
+      alert('副标题被点击');
+    });
+    ready(function () {
+      AlipayJSBridge.call('toast', {
+        content: '已监听副标题点击事件'
+      });
+    });
+  });
+  pauseNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    document.addEventListener("pause", function() {
+      alert('页面已压至后台');
+    });
+    ready(function () {
+      AlipayJSBridge.call('toast', {
+        content: '已监听页面压后台事件'
+      });
+    });
+  });
+  resumeNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    document.addEventListener("resume", function() {
+      alert('页面已恢复至前台');
+    });
+    ready(function () {
+      AlipayJSBridge.call('toast', {
+        content: '已监听页面恢复前台事件'
+      });
+    });
+  });
+  backNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    document.addEventListener('back', function(e) {
+      e.preventDefault();
+      ready(function () {
+        AlipayJSBridge.call('confirm', {
+          message: '确定要退出吗?',
+          okButton: '是',
+          cancelButton: '否'
+        }, function(result) {
+          if (result.ok) {
+            AlipayJSBridge.call('popWindow');
+          }
+        })
+      });
+    });
+    ready(function () {
+      AlipayJSBridge.call('toast', {
+        content: '已监听返回事件'
+      });
+    });
+  });
+  addNotifyNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    removeNotifyNode.removeAttribute("disabled");
+    ready(function () {
+      AlipayJSBridge.call('addNotifyListener', {
+        name: EVENT_NAME
+      }, function(message) {
+        alert(JSON.stringify(message))
+      });
+      AlipayJSBridge.call('toast', {
+        content: '通知已添加'
+      });
+    });
+  });
+  removeNotifyNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    addNotifyNode.removeAttribute("disabled");
+    ready(function () {
+      AlipayJSBridge.call('removeNotifyListener', {
+        name: EVENT_NAME
+      });
+      AlipayJSBridge.call('toast', {
+        content: '通知已移除'
+      });
+    });
+  });
+  sendNotifyNode.addEventListener('click', function (e) {
+    ready(function () {
+      AlipayJSBridge.call('postNotification', {
+        name: 'myevent',
+        data: {
+          message: 'A message from tada!!!'
+        }
+      });
+    });
+  });
+  optionMenuNode.addEventListener('click', function (e) {
+    e.target.setAttribute("disabled", true);
+    document.addEventListener('optionMenu', function() {
+      alert("option menu clicked");
+    });
+  });
+</script>
+
+</html>

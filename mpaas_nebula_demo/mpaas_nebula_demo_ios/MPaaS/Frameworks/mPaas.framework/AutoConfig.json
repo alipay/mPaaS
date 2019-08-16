@@ -1,0 +1,33 @@
+{
+    "class": "MPaaSInterface",
+    "header": "<mPaas/MPaaSInterface.h>",
+    "group": "General",
+    "entries": [
+                    {
+                        "title": {
+                            "chinese": "开启设置服务",
+                            "english": "Enable Setting Service"
+                        },
+                        "declaration": "- (BOOL)enableSettingService",
+                        "description": {
+                            "chinese": "使用苹果系统设置服务在开发阶段方便的切换环境。默认的MPaaS设置服务支持RPC与远程日志埋点模块的环境配置。如果使用该服务，重写以下方法会导致设置失效：\n    [DTRpcInterface productId]，[DTRpcInterface gatewayURL]\n    [APLogAdditions logServerURL]，[APLogAdditions configServerURL]，[APLogAdditions platformID]",
+                            "english": "iOS setting service for application can be used for environment switching. The defualt MPaaS setting service supports RPC and Remote-Logging system. If you enable this service, you should not override the following methods:\n    [DTRpcInterface productId], [DTRpcInterface gatewayURL]\n    [APLogAdditions logServerURL], [APLogAdditions configServerURL], [APLogAdditions platformID]"
+                        },
+                        "type": "option",
+                        "default": "NO",
+                        "options": [
+                                    "YES",
+                                    "NO"
+                                    ],
+                        "option:YES": [
+                            {
+                                "type": "resource",
+                                "files": [
+                                    "Settings.bundle",
+                                    "GatewayConfig.plist"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+}

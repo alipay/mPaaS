@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" href="./common.css">
+      <title>页面上下文</title>
+  </head>
+  <body>
+    <button id="J_PushWindow">打开新页面</button>
+    <button id="J_PopWindow">关闭当前页面</button>
+    <button id="J_PopTo">关闭多个页面</button>
+    <button id="J_StartApp">启动其他应用</button>
+    <button id="J_ExitApp">退出当前应用</button>
+  </body>
+  <script>
+    function ready(callback) {
+      // 如果 jsbridge 已经注入则直接调用
+      if (window.AlipayJSBridge) {
+        callback && callback();
+      } else {
+        // 如果没有注入则监听注入的事件
+        document.addEventListener('AlipayJSBridgeReady', callback, false);
+      }
+    }
+
+    ready(function() {
+      var pushWindowNode = document.getElementById('J_PushWindow');
+      var popWindowNode = document.getElementById('J_PopWindow');
+      var popToNode = document.getElementById('J_PopTo');
+      var startAppNode = document.getElementById('J_StartApp');
+      var exitAppNode = document.getElementById('J_ExitApp');
+      pushWindowNode.addEventListener('click', function() {
+        AlipayJSBridge.call('pushWindow', {
+          url: './util.html'
+        });
+      });
+      popWindowNode.addEventListener('click', function() {
+        AlipayJSBridge.call('popWindow');
+      });
+      popToNode.addEventListener('click', function() {
+        AlipayJSBridge.call('popTo', {
+          index: -1
+        });
+      });
+      startAppNode.addEventListener('click', function() {
+        AlipayJSBridge.call('startApp', {
+          appId: '20180910'
+        });
+      });
+      exitAppNode.addEventListener('click', function() {
+        AlipayJSBridge.call('exitApp');
+      });
+    });
+  </script>
+</html>

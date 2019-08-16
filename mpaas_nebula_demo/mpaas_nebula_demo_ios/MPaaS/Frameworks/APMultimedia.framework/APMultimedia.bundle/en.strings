@@ -1,0 +1,10 @@
+//Written by 多语言翻译管理系统 
+//Thu Jun 30 2016 04:15:08 GMT+0800 (CST)
+//如有问题请联系去疾
+"APMultimedia:加亮模式" = "Light Boost";
+"APMultimedia:周围环境太暗，建议打开加亮模式" = "Too dark, try enabling Light Boost.";
+"APMultimedia:加亮模式下，不可以双击放大。" = "Double tap to zoom in is not available in Light Boost.";
+"APMultimedia:双击放大" = "Double Tap to Zoom In";
+"APMultimedia:视频录制运行时异常" = "Sight processing failed. Please try again";
+"APMultimedia:请在iOS“设置-隐私”选项中，允许访问你的相机和麦克风。" = "Please enable access to camera and microphone in “Setting - Privacy”.";
+

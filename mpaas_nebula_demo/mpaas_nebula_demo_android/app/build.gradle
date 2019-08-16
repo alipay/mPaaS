@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.alipay.portal'
+apply plugin: 'android-apt'
+apply plugin: 'com.alipay.apollo.baseline.update'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+    signingConfigs {
+        release {
+            keyAlias 'mpaas123'
+            keyPassword 'mpaas123'
+            storeFile file('mpaas_keystore.jks')
+            storePassword 'mpaas123'
+        }
+        debug {
+            keyAlias 'mpaas123'
+            keyPassword 'mpaas123'
+            storeFile file('mpaas_keystore.jks')
+            storePassword 'mpaas123'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.mpaas.demo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug { signingConfig signingConfigs.debug }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenLocal()
+    }
+}
+
+
+bundle {
+}
+
+
+dependencies {
+    compile project(":api")
+    apt 'com.alipay.android.tools:androidannotations:2.7.1@jar'
+}
+mpaascomponents {
+    excludeDependencies = []
+}

@@ -1,0 +1,38 @@
+apply plugin: 'maven'
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven {
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.alipay.android:android-gradle-plugin:3.0.0.7.25'
+        classpath 'com.android.boost.easyconfig:easyconfig:2.2.10'
+
+    }
+}
+allprojects {
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+        mavenLocal()
+        maven {
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+
+    }
+}
+    

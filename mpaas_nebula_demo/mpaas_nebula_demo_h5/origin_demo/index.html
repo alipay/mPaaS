@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>JSAPI示例</title>
+</head>
+
+<body>
+  <button id="J_Ua">UserAgent</button>
+  <button id="J_PushWindow">页面上下文</button>
+  <button id="J_UI">界面交互</button>
+  <button id="J_Event">事件扩展</button>
+  <button id="J_Util">工具类</button>
+  <button id="J_UseCommonResource">使用公共资源包</button>
+  <button id="J_API1">调用自定义API1</button>
+  <button id="J_API2">调用自定义API2</button>
+</body>
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var uaNode = document.getElementById('J_Ua');
+    var pushWindowNode = document.getElementById('J_PushWindow');
+    var uiNode = document.getElementById('J_UI');
+    var eventNode = document.getElementById('J_Event');
+    var utilNode = document.getElementById('J_Util');
+    var useCommonResourceNode = document.getElementById('J_UseCommonResource');
+    var api1Node = document.getElementById('J_API1');
+    var api2Node = document.getElementById('J_API2');
+    uaNode.addEventListener('click', function () {
+      AlipayJSBridge.call('alert', {
+        title: '亲',
+        message: window.navigator.userAgent,
+        button: '确定'
+      });
+    });
+    pushWindowNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './switch.html'
+      });
+    });
+    uiNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './ui.html'
+      });
+    });
+    eventNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './event.html'
+      });
+    });
+    utilNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './util.html'
+      });
+    });
+    useCommonResourceNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './use_common_resource.html'
+      });
+    });
+    api1Node.addEventListener('click', function () {
+      AlipayJSBridge.call('myapi1', {
+        param1: 'Hello'
+      }, function(e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          alert(JSON.stringify(e));
+        }
+      });
+    });
+    api2Node.addEventListener('click', function () {
+      AlipayJSBridge.call('myapi2', {
+        param2: 'World'
+      }, function(e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          alert(JSON.stringify(e));
+        }
+      });
+    });
+  });
+</script>
+
+</html>

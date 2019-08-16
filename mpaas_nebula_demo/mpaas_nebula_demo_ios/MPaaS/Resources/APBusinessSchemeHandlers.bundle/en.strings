@@ -1,0 +1,10 @@
+//Written by 多语言翻译管理系统 
+//Thu Jun 30 2016 04:08:52 GMT+0800 (CST)
+//如有问题请联系去疾
+"APBusinessSchemeHandlers:ClientUpdate.updateLater" = "Later";
+"APBusinessSchemeHandlers:ClientUpdate.updateNow" = "Update Now";
+"APBusinessSchemeHandlers:ClientUpdate.welcome" = "You may experience features in new version.";
+"APBusinessSchemeHandlers:StartApp.notSupportNow" = "Function not supported. Please update Alipay Wallet.";
+"APBusinessSchemeHandlers:StartApp.update" = "Update";
+"APBusinessSchemeHandlers:取消" = "Cancel";
+

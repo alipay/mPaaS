@@ -1,0 +1,6 @@
+framework module SGMain {
+  umbrella header "SGMain.h"
+
+  export *
+  module * { export * }
+}

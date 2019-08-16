@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.demo.nebula">
+
+    <application
+        android:name="com.mpaas.demo.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeNew">
+
+        <!--全面屏适配-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <!--UC开发者Key-->
+        <meta-data
+            android:name="UCSDKAppKey"
+            android:value="JJQ/FLbHKX+ETiFNpCcb0fqjPfQ+JnjGBxDaqUm0MDcNATUVfsVrSh4KHq8of4/pFud/TDgjKf8891LpDlGG4w==" />
+
+        <activity android:name=".OnlineActivity" />
+        <activity android:name=".CustomizeActivity" />
+        <activity android:name=".NebulaAppActivity" />
+        <activity android:name=".EmbedActivity" />
+        <activity android:name="com.mpaas.demo.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

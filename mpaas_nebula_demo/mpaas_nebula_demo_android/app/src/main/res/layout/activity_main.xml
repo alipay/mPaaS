@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlebar" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_scan_open_page"
+        style="@com.alipay.mobile.antui:style/mainButtonStyle"
+        android:layout_margin="12dp"
+        android:clickable="true"
+        android:text="@string/scan_open_page" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:layout_margin="12dp">
+
+        <com.alipay.mobile.antui.common.AUCheckIcon
+            android:id="@+id/cb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:text="@string/show_titlebar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:layout_margin="12dp">
+
+        <com.alipay.mobile.antui.common.AUCheckIcon
+            android:id="@+id/cb_pull_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:text="@string/can_pull_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:layout_margin="12dp">
+
+        <com.alipay.mobile.antui.common.AUCheckIcon
+            android:id="@+id/cb_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:text="@string/show_process_bar" />
+    </LinearLayout>
+
+</LinearLayout>

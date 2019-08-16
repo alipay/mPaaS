@@ -1,0 +1,10 @@
+//Written by 多语言翻译管理系统 
+//Thu Jan 28 2016 20:02:09 GMT+0800 (CST)
+//如有问题请联系去疾
+"APBusinessSchemeHandlers:ClientUpdate.updateLater" = "以后再说";
+"APBusinessSchemeHandlers:取消" = "取消";
+"APBusinessSchemeHandlers:StartApp.notSupportNow" = "当前版本暂不支持该功能，请升级后再试。";
+"APBusinessSchemeHandlers:StartApp.update" = "升级";
+"APBusinessSchemeHandlers:ClientUpdate.updateNow" = "现在升级";
+"APBusinessSchemeHandlers:ClientUpdate.welcome" = "欢迎体验新版本";
+

@@ -1,0 +1,13 @@
+//Written by 多语言翻译管理系统 
+//Thu Jun 16 2016 08:15:53 GMT+0800 (CST)
+//如有问题请联系去疾
+"BeeCityPicker:全部" = "All";
+"BeeCityPicker:地区" = "Region";
+"BeeCityPicker:城市选择" = "Select";
+"BeeCityPicker:定位到的位置" = "Position located";
+"BeeCityPicker:已选地区" = "Selected";
+"BeeCityPicker:无法获取当前地理位置" = "Unable to find your location";
+"BeeCityPicker:返回" = "Back";
+"BeeCityPicker:热门城市" = "Popular Cities";
+"BeeCityPicker:重新定位" = "Click to try again";
+

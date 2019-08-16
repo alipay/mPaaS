@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.nebula.view.H5TitleBarFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/h5_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/h5_rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/h5_status_bar_adjust_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/h5_title_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageButton
+                android:id="@+id/h5_tv_nav_back"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:padding="12dp"
+                android:src="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/h5_nav_close"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_toRightOf="@+id/h5_tv_nav_back"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/close" />
+
+            <View
+                android:id="@+id/h5_v_divider"
+                android:layout_width="0.7dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/h5_nav_close"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/h5_rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:id="@+id/h5_ll_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/h5_tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/h5_tv_title_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/h5_tv_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- optionmenu0-->
+            <FrameLayout
+                android:id="@+id/h5_nav_options"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp">
+
+                <ImageButton
+                    android:id="@+id/h5_bt_image"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/h5_bt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/h5_bt_options"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <!--<FrameLayout-->
+                <!--android:id="@+id/h5_bt_dot"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--android:layout_marginRight="6dp"-->
+                <!--android:visibility="gone"-->
+                <!--tools:visibility="visible">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/h5_bt_dot_bg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/h5_redpoint"-->
+                <!--tools:ignore="ContentDescription"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/h5_bt_dot_number"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/h5_msg_flag_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:includeFontPadding="false"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="12sp"-->
+                <!--tools:text="12"/>-->
+                <!--</FrameLayout>-->
+            </FrameLayout>
+
+            <!-- optionmenu1-->
+            <FrameLayout
+                android:id="@+id/h5_nav_options1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toLeftOf="@id/h5_nav_options"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/h5_bt_image1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/h5_bt_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="12dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:textColor="#108ee9"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/h5_bt_options1"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription"
+                    tools:visibility="gone" />
+
+                <!--<FrameLayout-->
+                <!--android:id="@+id/h5_bt_dot1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--android:layout_marginRight="6dp"-->
+                <!--android:visibility="gone"-->
+                <!--tools:visibility="visible">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/h5_bt_dot_bg1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/h5_point_small"-->
+                <!--tools:ignore="ContentDescription"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/h5_bt_dot_number1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/h5_point_large"-->
+                <!--android:gravity="center"-->
+                <!--android:includeFontPadding="false"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="12sp"-->
+                <!--tools:text="12"/>-->
+                <!--</FrameLayout>-->
+            </FrameLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/h5_h_divider_intitle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.alipay.mobile.nebula.view.H5TitleBarFrameLayout>

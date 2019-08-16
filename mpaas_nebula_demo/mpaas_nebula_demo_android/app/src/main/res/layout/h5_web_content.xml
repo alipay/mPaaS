@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/h5_web_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/h5_provider_bg">
+
+    <!-- 空的 provider_layout，仅为满足接口设计，无需关注，去除会导致创建 H5 页面失败 -->
+    <LinearLayout
+        android:id="@+id/h5_ly_provider_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical" />
+
+    <!-- 自定义背景区域 -->
+    <LinearLayout
+        android:id="@+id/h5_fl_customized_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/smile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/customized_bg"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <com.alipay.mobile.nebula.refresh.H5PullContainer
+        android:id="@+id/h5_pc_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/h5_h_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/h5_nav_bar_bottomline" />
+
+    <com.alipay.mobile.nebula.view.H5Progress
+        android:id="@+id/h5_pb_progress"
+        style="@style/h5_wb_progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <com.alipay.mobile.nebula.view.H5LoadingView
+        android:id="@+id/h5_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

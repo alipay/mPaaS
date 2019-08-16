@@ -1,0 +1,126 @@
+<module name="FileCache" initializer="createTable" tableName="fileCache" version="3.2">
+    
+    <const table_columns="(recordId, localId, cloudId, diskPath, fileType, updateTime, fileSize, info, business, delOption)"/>
+    <const table_values="null, #{m.localId}, #{m.cloudId}, #{m.diskPath}, #{m.fileType}, #{m.updateTime}, #{m.fileSize}, #{m.info}, #{m.business}, #{m.delOption}"/>
+    <update id="createTable">
+        <step>
+            create table if not exists ${T} (recordId integer primary key autoincrement, localId Varchar(200), cloudId Varchar(200), diskPath Varchar(200), fileType Smallint  NOT NULL DEFAULT 0, updateTime Timestamp, fileSize INTEGER ,info Varchar(400), business text, delOption INTEGER)
+        </step>
+        <step>
+            create index if not exists fileCache_idx on ${T}(localId, cloudId, info)
+        </step>
+
+    </update>
+    
+    <upgrade toVersion="3.1">
+        <step>
+            alter table ${T} ADD business text default 'oldVersion'
+        </step>
+    </upgrade>
+    
+    <upgrade toVersion="3.2">
+        <step>
+            alter table ${T} ADD delOption INTEGER default 0
+        </step>
+        <step>
+            create index if not exists fileCache_business on ${T}(business)
+        </step>
+    </upgrade>
+    
+    <insert id="insertCacheRecord" arguments="m">
+        insert into ${T} ${table_columns} values(${table_values})
+    </insert>
+
+    <select id="queryFileCacheByLocalId" arguments="localId" result="[FileCacheRecord]">
+        select * from ${T} where localId = #{localId}
+    </select>
+    
+    <select id="queryFileCacheByCloudId" arguments="cloudId" result="[FileCacheRecord]">
+        select * from ${T} where cloudId = #{cloudId}
+    </select>
+    
+    <select id="queryFileCacheByAnyId" arguments="key" result="[FileCacheRecord]">
+        select * from ${T} where cloudId = #{key} or localId = #{key}
+    </select>
+    
+    <select id="queryCloudIdByLocalId" arguments="localId" result="string">
+        select cloudId from ${T} where localId = #{localId}
+    </select>
+    
+    <select id="queryOlderRecords" arguments="overTime" result="[FileCacheRecord]">
+        select * from ${T} where updateTime &gt; #{overTime} order by updateTime limit 200
+    </select>
+    
+    <select id="queryOverTimesRecords" arguments="fileType, overTime" result="[FileCacheRecord]">
+        select * from ${T} where fileType = #{fileType} and updateTime &lt; #{overTime}
+    </select>
+    
+    <select id="queryAllRecordsByFileType" arguments="fileType" result="[FileCacheRecord]">
+        select * from ${T} where fileType = #{fileType}
+    </select>
+    
+    <update id="linkToDBByCloudId"  arguments="cloudId, localId">
+        update ${T} set cloudId = #{cloudId} where localId = #{localId}
+    </update>
+    
+    <update id="updateBusinessById"  arguments="keyId, business">
+        update ${T} set business = #{business} where cloudId = #{keyId} or localId = #{keyId}
+    </update>
+    
+    <update id="updateDelOptionById"  arguments="keyId, delOption">
+        update ${T} set delOption = #{delOption} where cloudId = #{keyId} or localId = #{keyId}
+    </update>
+    
+    <update id="updateByLocalId"  arguments="localId, cloudId, business">
+        update ${T} set localId = #{localId}, cloudId = #{cloudId}, business = #{business} where localId = #{localId} or cloudId = #{localId}
+    </update>
+    
+    <update id="updateInfoByLocalId"  arguments="localId, info">
+        update ${T} set info = #{info} where localId = #{localId}
+    </update>
+    
+    <delete id="deleteRecordByRecordId" arguments="recordId">
+        delete from ${T} where recordId = #{recordId}
+    </delete>
+    
+    <delete id="deleteAllRecords" >
+        delete from ${T}
+    </delete>
+    
+    <select id="countTotolDiskCost" arguments="overTime" result="long long">
+        select sum(fileSize) from ${T} where updateTime &lt; #{overTime}
+    </select>
+    
+    <select id="countDiskByFileType" arguments="fileType" result="long long">
+        select sum(fileSize) from ${T} where fileType = #{fileType}
+    </select>
+    
+    <select id="countSizeGroupByBusiness" result="[{}]">
+        select business, delOption, sum(fileSize) as fileSize from ${T} group by business, delOption
+    </select>
+    
+    <select id="countSizeByBusiness" arguments="business, overTime, delOption" result="long long">
+        select sum(fileSize) from ${T} where business = #{business} and delOption &amp; #{delOption} = 0 and updateTime &lt; #{overTime}
+    </select>
+    
+    <select id="queryRecordsByBussiness"  arguments="business, startTime, endTime, delOption"  result="[FileCacheRecord]">
+        select * from ${T} where business = #{business} and delOption &amp; #{delOption} = 0 and updateTime between #{startTime} and #{endTime} order by updateTime limit 200
+    </select>
+    
+    <select id="queryRecordsWithOutBussiness" arguments="businesses,overTime" result="[FileCacheRecord]">
+        select * from ${T} where business not in
+        <foreach item="business" collection="businesses" open="(" separator="," close=")">
+            #{business}
+        </foreach>
+        and updateTime &gt; #{overTime} order by updateTime limit 400
+    </select>
+    
+    <select id="queryMigrateRecordsByBussiness" arguments="businesses, after, limit"  result="[FileCacheRecord]">
+        select * from ${T} where business in
+        <foreach item="business" collection="businesses" open="(" separator="," close=")">
+            #{business}
+        </foreach>
+        or updateTime &gt; #{after} or cloudId is null order by updateTime limit #{limit}
+    </select>
+   
+</module>

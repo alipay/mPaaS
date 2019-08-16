@@ -1,0 +1,19 @@
+//"BeeCityPicker:你所在城市" = "你所在城市";
+"BeeCityPicker:全部" = "全部";
+//"BeeCityPicker:历史" = "歷史";
+//"BeeCityPicker:历史访问城市" = "歷史訪問城市";
+"BeeCityPicker:地区" = "地區";
+"BeeCityPicker:城市选择" = "城市選擇";
+//"BeeCityPicker:定位中，请稍候..." = "定位中，請稍後...";
+"BeeCityPicker:定位到的位置" = "定位到的位置";
+"BeeCityPicker:已选地区" = "已選地區";
+//"BeeCityPicker:当前" = "當前";
+//"BeeCityPicker:无法定位你所在城市，请稍后再试" = "無法定位你所在城市，請稍後再試";
+"BeeCityPicker:无法获取当前地理位置" = "無法獲取當前地理位置";
+//"BeeCityPicker:无结果" = "無結果";
+//"BeeCityPicker:热门" = "熱門";
+"BeeCityPicker:热门城市" = "熱門城市";
+//"BeeCityPicker:输入城市名、拼音或首字母查询" = "輸入城市名、拼音或首字母查詢";
+"BeeCityPicker:返回" = "返回";
+"BeeCityPicker:重新定位" = "重新定位";
+

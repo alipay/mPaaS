@@ -1,0 +1,16 @@
+//Written by 多语言翻译管理系统 
+//Thu Jun 30 2016 04:09:23 GMT+0800 (CST)
+//如有问题请联系去疾
+"APNetwork:connect.Cellular" = "Cellular";
+"APNetwork:connect.NoConnection" = "No Connection";
+"APNetwork:connect.WiFi" = "WiFi";
+"APNetwork:error.deserializeError" = "Deserialization Error";
+"APNetwork:error.networkCancel" = "Network is cancelled";
+"APNetwork:error.networkUnreachable" = "Network is unavailable";
+"APNetwork:message.error.serverFormatError" = "Incorrect Data Format from App";
+"APNetwork:message.error.serverReturnEmpty" = "Null Data from App";
+"APNetwork:message.error.systemError" = "System error, please try again later.";
+"APNetwork:reason.HTTPResponseString" = "Content from App: %@";
+"APNetwork:reason.HTTPStatusCode" = "HTTP Status Code from Server: %ld";
+"APNetwork:reason.unknowError" = "Unknown Error";
+

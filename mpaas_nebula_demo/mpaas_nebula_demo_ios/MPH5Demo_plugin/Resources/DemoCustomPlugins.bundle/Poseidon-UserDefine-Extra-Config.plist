@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>JsApiRuntime</key>
+	<dict>
+		<key>JsApis</key>
+		<array>
+			<dict>
+				<key>jsApi</key>
+				<string>myapi1</string>
+				<key>name</key>
+				<string>MPJsApiHandler4OpenSms</string>
+			</dict>
+			<dict>
+				<key>jsApi</key>
+				<string>myapi2</string>
+				<key>name</key>
+				<string>MPJsApiHandler4SetDoubleTitle</string>
+			</dict>
+		</array>
+	</dict>
+	<key>PluginRuntime</key>
+	<dict>
+		<key>Plugins</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>MPPlugin4TitleView</string>
+				<key>scope</key>
+				<string>scene</string>
+				<key>events</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>-</string>
+						<key>useCapture</key>
+						<false/>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>MPPlugin4WebView</string>
+				<key>scope</key>
+				<string>scene</string>
+				<key>events</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>-</string>
+						<key>useCapture</key>
+						<false/>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

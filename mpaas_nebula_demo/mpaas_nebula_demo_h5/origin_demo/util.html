@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>工具类</title>
+</head>
+
+<body>
+  <button id="J_RpcGet">RPC get请求</button>
+  <button id="J_RpcPost">RPC post请求</button>
+  <button id="J_StartupParams">获取启动参数</button>
+  <div class="header">数据存储</div>
+  <input id="J_Key" type="text" placeholder="请输入key值">
+  <input id="J_Value" type="text" placeholder="请输入value值">
+  <button id="J_GetStorage">读取</button>
+  <button id="J_SetStorage">写入</button>
+  <button id="J_RemoveStorage">删除</button>
+</body>
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var rpcGetNode = document.getElementById('J_RpcGet');
+    var rpcPostNode = document.getElementById('J_RpcPost');
+    var startupParamsNode = document.getElementById('J_StartupParams');
+    var keyNode = document.getElementById('J_Key');
+    var valueNode = document.getElementById('J_Value');
+    var getStorageNode = document.getElementById('J_GetStorage');
+    var setStorageNode = document.getElementById('J_SetStorage');
+    var removeStorageNode = document.getElementById('J_RemoveStorage');
+    rpcGetNode.addEventListener('click', function () {
+      AlipayJSBridge.call("rpc", {
+        operationType: "com.antcloud.request.get",
+        requestData: [{
+          isMale: false,
+          id: "",
+          age: 0
+        }],
+        headers: {}
+      }, function (result) {
+        AlipayJSBridge.call("toast", {
+          content: JSON.stringify(result)
+        });
+      });
+    });
+    rpcPostNode.addEventListener('click', function () {
+      AlipayJSBridge.call("rpc", {
+        operationType: "com.antcloud.request.post",
+        requestData: [{
+          _requestBody: {
+            username: "abc"
+          }
+        }],
+        headers: {}
+      }, function (result) {
+        AlipayJSBridge.call("toast", {
+          content: JSON.stringify(result)
+        });
+      });
+    });
+    startupParamsNode.addEventListener('click', function () {
+      AlipayJSBridge.call("getStartupParams", function(result) {
+        alert(JSON.stringify(result));
+      });
+    });
+    getStorageNode.addEventListener('click', function () {
+      AlipayJSBridge.call('getAPDataStorage', {
+        type: 'common',
+        business: 'demo',
+        key: keyNode.value,
+      }, function (e) {
+        if (e.success) {
+          valueNode.value = e.data;
+        } else {
+          AlipayJSBridge.call('alert', {
+            title: '读取失败',
+            message: JSON.stringify(e)
+          });
+        }
+      });
+    });
+    setStorageNode.addEventListener('click', function () {
+      AlipayJSBridge.call('setAPDataStorage', {
+        type: 'common',
+        business: 'demo',
+        key: keyNode.value,
+        value: valueNode.value,
+      }, function (e) {
+        AlipayJSBridge.call('alert', {
+          title: '操作结果',
+          message: e.success ? '成功' : '失败'
+        });
+      });
+    });
+    removeStorageNode.addEventListener('click', function () {
+      AlipayJSBridge.call('removeAPDataStorage', {
+        type: 'common',
+        business: 'demo',
+        key: keyNode.value,
+      }, function(e) {
+        if (e.success) {
+          keyNode.value = '';
+          valueNode.value = '';
+        }
+        AlipayJSBridge.call('alert', {
+          title: '操作结果',
+          message: e.success ? '成功' : '失败'
+        });
+      });
+    });
+  });
+</script>
+
+</html>

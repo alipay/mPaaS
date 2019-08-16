@@ -74,3 +74,27 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 * 加入技术交流群，有问题随时交流
 
 ![mPaaS 功能试用 - 引流关注](https://gw.alipayobjects.com/mdn/site_comm/afts/img/A*JEarR7cwzd4AAAAAAAAAAABkARQnAQ)
+
+### 开源许可
+
+This project is under the Apache 2.0 License. See the [LICENSE](https://github.com/alipay/mpaas-demo/blob/master/LICENSE) file for the full license text.
+
+```
+Copyright (C) 2015-present, Ant Financial Services Group
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ 	http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+### Disclaimer（免责声明）
+
+[免责声明](https://github.com/alipay/mpaas-demo/blob/master/Disclaimer.md)

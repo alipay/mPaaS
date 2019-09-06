@@ -1,0 +1,30 @@
+{
+	"config":{
+		"updateReqRate":16400,
+		"limitReqRate":13600,
+		"appPoolLimit":3,
+		"versionRefreshRate":86400
+	},
+	"data":[
+		{
+			"app_desc":"离线包1",
+			"app_id":"80000000",
+			"auto_install":1,
+			"fallback_base_url":"https://mcube-prod.oss-cn-hangzhou.aliyuncs.com/3F92837082003-test/80000000/1.0.0.0_all/nebula/fallback/",
+			"global_pack_url":"",
+			"icon_url":"",
+			"installType":1,
+			"main_url":"/h5_to_native.html",
+			"name":"离线包1",
+			"online":1,
+			"package_url":"https://mcube-prod.oss-cn-hangzhou.aliyuncs.com/3F92837082003-test/80000000/1.0.0.0_all/nebula/80000000_1.0.0.0.amr",
+			"patch":"",
+			"sub_url":"",
+			"version":"1.0.0.0",
+			"vhost":"https://80000000.h5app.com"
+		}
+	],
+	"resultCode":100,
+	"resultMsg":"操作成功",
+	"state":"success"
+}

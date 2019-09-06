@@ -1,0 +1,1 @@
+!function(){var t;window.NEBULAHASADDEDTOUCHEVENT||(t=function(){document.addEventListener("touchstart",function(t){AlipayJSBridge.call("reportClickTime")},!1)},/complete|loaded|interactive/.test(document.readyState)?setTimeout(function(){t()},1):document.defaultView.addEventListener("DOMContentLoaded",function(){t()},!1),window.NEBULAHASADDEDTOUCHEVENT=!0)}();

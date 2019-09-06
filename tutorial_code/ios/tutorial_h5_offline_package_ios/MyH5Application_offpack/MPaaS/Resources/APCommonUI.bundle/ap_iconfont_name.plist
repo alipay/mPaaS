@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>wticonfont</key>
+	<dict>
+		<key>file</key>
+		<string>WealthTally.bundle/wticonfont</string>
+		<key>config</key>
+		<string>WealthTally.bundle/WTIconFontConfig</string>
+	</dict>
+	<key>apcuiconfont</key>
+	<dict>
+		<key>file</key>
+		<string>APCommonUI.bundle/apcuiconfont</string>
+		<key>config</key>
+		<string>APCommonUI.bundle/apcuiconfontconfig</string>
+	</dict>
+	<key>faiconfont</key>
+	<dict>
+		<key>file</key>
+		<string>FamilyAccount.bundle/faiconfont</string>
+		<key>config</key>
+		<string>FamilyAccount.bundle/FAIconFontConfig</string>
+	</dict>
+	<key>mvtkticonfont</key>
+	<dict>
+		<key>file</key>
+		<string>MovieTicket.bundle/mviconfont</string>
+		<key>config</key>
+		<string>MovieTicket.bundle/mviconfontconfig</string>
+	</dict>
+	<key>ospiconfont</key>
+	<dict>
+		<key>file</key>
+		<string>OnsitePay.bundle/ospiconfont</string>
+		<key>config</key>
+		<string>OnsitePay.bundle/ospiconfontconfig</string>
+	</dict>
+	<key>cdpspeakericonfont</key>
+	<dict>
+		<key>file</key>
+		<string>Promotion.bundle/cdpspeakericonfont</string>
+		<key>config</key>
+		<string>Promotion.bundle/cdpspeakericonfontconfig</string>
+	</dict>
+</dict>
+</plist>

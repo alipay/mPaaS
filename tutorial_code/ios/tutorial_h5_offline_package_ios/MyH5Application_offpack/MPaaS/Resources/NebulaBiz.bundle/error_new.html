@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>!!!!</title>
+    <style type="text/css">
+        body, img, div, p {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          background-color: #FFF;
+        }
+
+        .noselect {
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        .am-page-result {
+        }
+
+        .am-page-result .am-page-result-pic {
+          width: 58.7%;
+          margin: 10.53% auto 0;
+          position: relative;
+        }
+
+        .am-page-result .am-page-result-pic:before { 
+          content: ""; 
+          display: block; 
+          padding-top:100%;
+        }
+
+        .am-page-result .am-page-result-pic object,img{           
+          position: absolute; 
+          width: 100%;
+          height: 100%;
+          top: 0; 
+          left: 0; 
+          bottom: 0; 
+          right: 0;
+        }
+
+        .am-page-result p {
+          margin: 6.67% 0 0;
+          font-size: 20px;
+          color: #333;
+          text-align: center;
+        }
+    
+        .am-page-result-sub-title {
+            margin: 4% 10px 0;
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+        }
+
+        .am-page-result-bottom {
+          position: absolute;
+          width: 100%;
+          bottom: 45px;
+          z-index: 10;
+        }
+
+        .am-page-result-btn {
+          color: #108ee9;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          margin: 15px 0;
+          overflow: hidden;
+        }
+
+        .am-page-info-text {
+          color: #FFFCFC;
+          font-size: 16px;
+          line-height: 22px;
+          overflow: hidden;
+          word-break: break-all;
+        }
+    </style>
+<body>
+<div class="am-page-result">
+  <div class="am-page-result-pic">
+    <img src="data:image/png;base64,----"/>
+    <object type="application/view">
+      <param name="type" value="errorPageIcon" />
+      <param name="id" value="errorPageIcon1" />
+    </object>
+    <script type="text/javascript">
+      function ready(callback) {
+        if (window.AlipayJSBridge) {
+          callback && callback();
+        } else {
+          document.addEventListener('AlipayJSBridgeReady', callback, false);
+        }
+      }
+      ready(function() {
+        AlipayJSBridge.call("NBComponent.render",{
+            element:"errorPageIcon1", 
+        },function(result){
+        });
+
+        AlipayJSBridge.call("NBComponent.sendMessage",{
+             element:"errorPageIcon1",
+          actionType:"setErrorIconImage",
+                data:{type:"===="}, 
+        },function(result){
+        });
+      });
+    </script>
+    </div>
+
+    <p>&&&&</p>
+    <div class="am-page-result-sub-title noselect">
+     ^^^^
+    </div>
+    <div class="am-page-info-text noselect" id='error-page-info-title'>
+
+        以下信息可能包括您的隐私数据，请勿传播:
+    </div>
+    <div class="am-page-info-text noselect" id='error-page-info-text'>
+
+        ````
+    </div>
+
+    <div class="am-page-result-bottom noselect">
+        <div class="am-page-result-btn" id="reload">####
+        </div>
+        <div class="am-page-result-btn" id="other">****
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    ready(function() {
+      var btn_reload = document.querySelector('#reload');
+      if (btn_reload) {
+          btn_reload.addEventListener('touchend', function() {
+            AlipayJSBridge.call('startRepair',{actionType:'reload'});
+        });
+      }
+      var btn_other = document.querySelector('#other');
+      if (btn_other) {
+          btn_other.addEventListener('touchend', function() {
+          AlipayJSBridge.call('startRepair', {actionType:'++++'});
+        });
+      }
+      @@@@
+    });
+    window.H5ISLOADERRORHTML = true;
+</script>
+</html>

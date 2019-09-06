@@ -1,0 +1,35 @@
+<module name="MPBadgeService" initializer="createTable" tableName="MPBadgeService" version="1.0">
+    <update id="createTable">
+        CREATE TABLE IF NOT EXISTS ${T} (badgeId TEXT PRIMARY KEY, style TEXT, bizId TEXT, userId TEXT, temporaryBadgeNumber INTEGER, persistentBadgeNumber INTEGER, ExAttr1 TEXT, ExAttr2 TEXT, ExAttr3 TEXT)
+    </update>
+    
+    <!-- <crypt class="MPBadgeInfo" property="userId"/> -->
+    
+    <select id="getBadgeData" arguments="userId" result="[MPBadgeInfo]">
+        SELECT badgeId, style, bizId, userId, temporaryBadgeNumber, persistentBadgeNumber FROM ${T} WHERE userId = #{userId}
+    </select>
+    
+    <select id="getBadgeDataWithBadges" arguments="list" foreach="list.info" result="[MPBadgeInfo]">
+        SELECT badgeId, style, bizId, userId, temporaryBadgeNumber, persistentBadgeNumber FROM ${T} WHERE badgeId = #{info.badgeId}
+    </select>
+    
+    <insert id="saveBadgeData" arguments="list" foreach="list.info">
+        INSERT OR REPLACE INTO ${T} (badgeId, style, bizId, userId, temporaryBadgeNumber, persistentBadgeNumber) values(#{info.badgeId}, #{info.style}, #{info.bizId}, #{info.userId}, #{info.temporaryBadgeNumber}, #{info.persistentBadgeNumber})
+    </insert>
+    
+    <delete id="deleteBadgeData" arguments="list" foreach="list.info">
+        DELETE FROM ${T} WHERE badgeId = #{info.badgeId}
+    </delete>
+    
+    <delete id="deleteBadgeInfoWithTrafficId" arguments="badgeId">
+        DELETE FROM ${T} WHERE badgeId = #{badgeId}
+    </delete>
+    
+    <delete id="deleteBadgeDataWithUserId" arguments="userId">
+        DELETE FROM ${T} WHERE userId = #{userId}
+    </delete>
+    
+    <delete id="deleteAllBadgeData">
+        DELETE FROM ${T}
+    </delete>
+</module>

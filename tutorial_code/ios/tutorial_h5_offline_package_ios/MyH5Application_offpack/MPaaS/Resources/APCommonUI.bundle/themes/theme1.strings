@@ -1,0 +1,203 @@
+
+"AU_COLOR1" =       "COLOR(#29AB91)";
+"AU_COLOR2" =       "COLOR(#F15A4A)";
+"AU_COLOR3" =       "COLOR(#FFB415)";
+"AU_COLOR4" =       "COLOR(#2B91E2)";
+"AU_COLOR5" =       "COLOR(#333333)";
+"AU_COLOR6" =       "COLOR(#999999)";
+"AU_COLOR7" =       "COLOR(#A4A9B0)";
+"AU_COLOR8" =       "COLOR(#DDDDDD)";
+"AU_COLOR9" =       "COLOR(#108EE9)";
+"AU_COLOR10" =      "COLOR(#F4333C)";
+"AU_COLOR11" =      "COLOR(#FF3B30)";
+"AU_COLOR12" =      "COLOR(#F5F5F9)";
+"AU_COLOR13" =      "COLOR(#EBEEEF)";
+"AU_COLOR14" =      "COLOR_A(#000000, 0.65)";
+"AU_COLOR15" =      "COLOR(#FFFFFF)";
+"AU_COLOR16" =      "COLOR(#1B82D2)";
+"AU_COLOR17" =      "COLOR_A(#333333, 0.05)";
+"AU_COLOR18" =      "COLOR(#0B71BA)";
+"AU_COLOR19" =      "COLOR(#BBBBBB)";
+"AU_COLOR20" =      "COLOR(#777777)";
+"AU_COLOR21" =      "COLOR(#000000)";
+"AU_COLOR22" =      "COLOR(#CCCCCC)";
+"AU_COLOR24"  = "COLOR_A(#108EE9, 0.60)";
+"AU_COLOR28"  = "COLOR(#F5F5F5)";
+"AU_COLOR29"  = "COLOR(#eeeeee)";
+"AU_COLOR30"  = "COLOR(0xd9d9d9)"; 
+
+
+"AU_TEXTSIZE1"      =   "NUMBER(10)";
+"AU_TEXTSIZE2"      =   "NUMBER(12)";
+"AU_TEXTSIZE3"      =   "NUMBER(13)";
+"AU_TEXTSIZE4"      =   "NUMBER(14)";
+"AU_TEXTSIZE5"      =   "NUMBER(15)";
+"AU_TEXTSIZE6"      =   "NUMBER(16)";
+"AU_TEXTSIZE7"      =   "NUMBER(17)";
+"AU_TEXTSIZE8"      =   "NUMBER(18)";
+"AU_TEXTSIZE8_BOLD" =   "NUMBER(18)";
+"AU_TEXTSIZE9"      =   "NUMBER(30)";
+
+"AU_CORNER1" = "NUMBER(3)";
+"AU_CORNER2" = "NUMBER(5)";
+"AU_CORNER3" = "NUMBER(6)";
+"AU_CORNER4" = "NUMBER(8)";
+"AU_CORNER5" = "NUMBER(2)";
+
+"AU_SPACE1"       = "NUMBER(4)";
+"AU_SPACE2"       = "NUMBER(5)";
+"AU_SPACE3"       = "NUMBER(8)";
+"AU_SPACE4"       = "NUMBER(12)";
+"AU_SPACE5"       = "NUMBER(15)";
+"AU_SPACE6"       = "NUMBER(16)";
+"AU_SPACE7"       = "NUMBER(20)";
+"AU_SPACE8"       = "NUMBER(24)";
+"AU_SPACE9"       = "NUMBER(28)";
+"AU_SPACE10"      = "NUMBER(32)";
+"AU_SPACE11"      = "NUMBER(36)";
+"AU_SPACE12"      = "NUMBER(40)";
+"AU_SPACE13"      = "NUMBER(44)";
+"AU_SPACE14"      = "NUMBER(45)";
+"AU_SPACE15"      = "NUMBER(48)";
+"AU_SPACE16"      = "NUMBER(52)";
+"AU_SPACE17"      = "NUMBER(56)";
+"AU_SPACE18"      = "NUMBER(60)";
+"AU_SPACE19"      = "NUMBER(64)";
+"AU_SPACE20"      = "NUMBER(30)";
+"AU_DIVIDER_SPACE2" = "NUMBER(1)";
+
+"AU_ICONSIZE1"    = "ICON_SIZE(29 / 2, 29 / 2)";
+"AU_ICONSIZE2"    = "ICON_SIZE(44 / 2, 44 / 2)";
+"AU_ICONSIZE3"    = "ICON_SIZE(54 / 2, 54 / 2)";
+"AU_ICONSIZE4"    = "ICON_SIZE(57 / 2, 57 / 2)";
+"AU_ICONSIZE5"    = "ICON_SIZE(58 / 2, 58 / 2)";
+"AU_ICONSIZE6"    = "ICON_SIZE(60 / 2, 60 / 2)";
+"AU_ICONSIZE7"    = "ICON_SIZE(80 / 2, 80 / 2)";
+"AU_ICONSIZE8"    = "ICON_SIZE(87 / 2, 87 / 2)";
+"AU_ICONSIZE9"    = "ICON_SIZE(90 / 2, 90 / 2)";
+"AU_ICONSIZE10"   = "ICON_SIZE(120 / 2, 120 / 2)";
+"AU_ICONSIZE11"   = "ICON_SIZE(180 / 2, 180 / 2)";
+
+"TITLEBAR_BACK_BUTTON_IMAGE_PATH" = "PATH(APCommonUI.bundle/back_button_normal)";
+
+"AU_COLOR_APP_GREEN"              =   "AU_COLOR1";
+"AU_COLOR_APP_RED"                =   "AU_COLOR2";
+"AU_COLOR_APP_YELLOW"             =   "AU_COLOR3";
+"AU_COLOR_APP_BLUE"               =   "AU_COLOR4";
+"AU_COLOR_SUB_CONTENT"            =   "AU_COLOR6";
+"AU_COLOR_ICON_DEF"               =   "AU_COLOR6";
+"AU_COLOR_ASS_CONTENT"            =   "AU_COLOR7";
+"AU_COLOR_LINE"                   =   "AU_COLOR8";
+"AU_COLOR_BG_DISABLE"             =   "AU_COLOR8";
+"AU_COLOR_LINK"                   =   "AU_COLOR9";
+"AU_COLOR_ERROR"                  =   "AU_COLOR10";
+"AU_COLOR_KEY_REMIND"             =   "AU_COLOR11";
+"AU_COLOR_CLIENT_BG1"             =   "AU_COLOR28";
+"AU_COLOR_CLIENT_BG2"             =   "AU_COLOR13";
+"AU_COLOR_MASK"                   =   "AU_COLOR14";
+"AU_COLOR_UNIVERSAL_BG"           =   "AU_COLOR15";
+"AU_COLOR_HOME_PAGE_TITLEBAR_BG"  =   "AU_COLOR16";
+"AU_COLOR_ITEM_PRESSED"           =   "AU_COLOR17";
+"AU_COLOR_LINK_PRESSED"           =   "AU_COLOR18";
+"AU_COLOR_LINK_DISABLE"           =   "AU_COLOR24";
+"AU_COLOR_TEXT_DISABLE"           =   "AU_COLOR19";
+"AU_COLOR_HINT"                   =   "AU_COLOR19";
+"AU_COLOR_TITLE"                  =   "AU_COLOR21";
+"AU_COLOR_MAIN_CONTENT"           =   "AU_COLOR21";
+
+
+//"STATUSBAR_DEFAULT_COLOR"       = "AU_COLOR_UNIVERSAL_BG";
+"TITLEBAR_ICON_COLOR"           = "AU_COLOR_LINK";                            // AUTitleBar图标颜色（左右navItem）
+"TITLEBAR_ICON_SIZE"            = "ICON_SIZE(18, 18)";                         // AUTitleBar图标大小
+"TITLEBAR_TEXTSIZE"             = "FONT(AU_TEXTSIZE6)";                         // AUTitleBar文本大小，不包含标题
+"TITLEBAR_TEXTCOLOR"            = "AU_COLOR_LINK";                             // AUTitleBar文本色，不包含标题
+
+//"SERACHBAR_INPUT_BACKGROUND_COLOR" = "COLOR(#dfdfe2)";  // AUSerachBar背景色
+//"SERACHBAR_INPUT_HEIGHT" = "NUMBER(44)";            // AUSerachBar输入框高度
+//"SEARCHBAR_HEIGHT"    =   "NUMBER(64)";
+//"SERACHBAR_INPUT_TEXTCOLOR" = "COLOR(#333333)";         // AUSerachBar输入框输入文案颜色
+//"SERACHBAR_ICON_COLOR" = "COLOR(#b9b9b9)";              // AUSerachBar输入框输入图标颜色
+//"SEARCHBAR_SEARCH_ICON_IMAGE_PATH"    =   "PATH(APCommonUI.bundle/searchbar/PP_Search)";
+//"SEARCHBAR_STYLE_NORMAL_BACKGROUND_COLOR"    =   "COLOR(#ffffff)";
+
+//"SEARCH_TITLEVIEW_MIDDLEALIGN_CONTENT_BACKGROUND_COLOR" = "COLOR_A(#FFFFFF, 0.3)";
+//"SEARCH_TITLEVIEW_MIDDLEALIGN_PLACEHOLDER_TEXT_COLOR" = "COLOR(#ffffff)";
+//"SEARCH_TITLEVIEW_MIDDLEALIGN_SEARCHICON_IMAGE_PATH" = "PATH(APCommonUI.bundle/searchbar/ap_titlebar_search_content)";
+
+//"TABBAR_BACKGROUND_COLOR" = "AU_COLOR_UNIVERSAL_BG";           // AUTabBar背景色
+//"TABBAR_HEIGHT" = "NUMBER(50)";                     // AUTabBar高度
+//"TABBAR_TEXTCOLOR" = "COLOR(#888888)";                  //AUTabBar文本色
+//"TABBAR_ICON_COLOR_SELECTED" = "AU_COLOR_HOME_PAGE_TITLEBAR_BG";                  //AUTabBar文本色
+//"TABBAR_TEXTSIZE" = "FONT(AU_TEXTSIZE1)"; //AU_FONT1";                   // AUTabBar文本大小
+//"TABBAR_ICON_COLOR" = "COLOR(#888888)";                 // AUTabBar图标颜色
+//"TABBAR_ICON_COLOR_SELECTED" = "AU_COLOR_HOME_PAGE_TITLEBAR_BG";                 // AUTabBar图标颜色
+//"TABBAR_ICON_SIZE" = "ICON_SIZE(48, 42)";                  // AUTabBar图标大小
+//"TABBAR_LINE_COLOR" = "AU_COLOR_LINE";                 // AUTabBar分割线或边线的颜色
+
+//"FLOATMENU_MASK_COLOR" = "AU_COLOR_MASK";              // AUFloatMenu遮盖颜色
+//"FLOATMENU_ITEM_BACKGROUND_COLOR_HIGHLIGHT" = "COLOR(#ededed)";   // AUFloatMenu菜单条目背景色
+//"FLOATMENU_ICON_COLOR" = "COLOR(#696969)";              // AUFloatMenu图标颜色
+//"FLOATMENU_ICON_SIZE" = "ICON_SIZE(20, 20)";  // AUFloatMenu图标大小
+
+
+
+//"MAIN_BTN_STYLE3_INDICATOR_WIDTH" = "NUMBER(17)";
+
+//"MAIN_BTN_STYLE4_BORDER_COLOR" = "COLOR_A(AU_COLOR9)";
+//"MAIN_BTN_STYLE5_BORDER_COLOR" = "COLOR_A(#108ee9)";
+//"MAIN_BTN_STYLE5_BORDERLINE_COLOR" = "COLOR(#DDDDDD)";
+
+
+
+//"SUBSCRIPT_BUTTON_MAX_WIDTH" = "NUMBER(148)";
+
+
+//"SEGMENT_TEXTCOLOR_SELECTED" = "AU_COLOR_LINK";         // AUSegment文本选中颜色
+//"SEGMENT_COLOR_NORMAL" = "AU_COLOR_LINE";               // AUSegment颜色默认色
+//"SEGMENT_HEIGHT" = "NUMBER(43.5)";                      // AUSegment高度
+"SEGMENT_BOTTOM_LINE_COLOR" = "COLOR(#dcdcdc)";         // segment 底部分割线颜色
+//"SEGMENT_TEXT_HORIZONTAL_PADDING_BADGE" = "NUMBER(17)"; // segment 存在红点的情况下内文字与各项的内边距
+//"SEGMENT_EDGE_MASK_VIEW_WIDTH" = "NUMBER(36)";
+//"SEGMENT_ADD_ACTION_ICON_WIDTH" = "NUMBER(16)";
+//"SEGMENT_ADD_ACTION_ICON_RIGHT_MARGIN" = "NUMBER(16)";
+
+
+//"CHECKBOX_COLOR_NORMAL" = "COLOR(#888888)";             // AUCheckBox图标普通颜色
+
+
+"LIST_TITLE_TEXT_FONT" = "FONT(17)";    // 列表标题字体
+"LIST_LEFT_RIGHT_MARGIN" = "NUMBER(16)";    // 单行列表左右间距
+"LIST_DOUBLE_LINE_SUBTITLE_TEXT_FONT" = "FONT(14)";
+"LIST_SINGLE_LINE_RIGHT_SUBTITLE_TEXT_COLOR" = "COLOR(#999999)";
+"LIST_SINGLE_LINE_RIGHT_SUBTITLE_TEXT_FONT" = "FONT(16)";
+"LIST_SINGLE_LINE_STYLE_DEFAULT_LEFT_ICON_SIZE" = "ICON_SIZE(30, 30)";
+
+
+"TOAST_RADIUS"          = "NUMBER(2)";
+
+// 账单直接使用该主题定义的宏，防止账单在还没重新打包集成的情况下出现取值错误问题，所以宏定义对外开放的值保留在主题文件中
+"SUBSCRIPT_BUTTON_EDGE_MARGIN" = "NUMBER(18)";
+
+//"LIST_DOUBLE_LINE_SUBTITLE_TITLE_MARGIN" = "NUMBER(2)";     // title 跟 subtitle 的间距
+
+
+
+//"DIALOG_PADDING_TOP"    = "NUMBER(48 / 2)";              // 距离顶部高度
+//"DIALOG_PADDING_LEFT"   = "NUMBER(32 / 2)";              // 左边距
+//"DIALOG_PADDING_RIGHT"  = "NUMBER(32 / 2)";              // 右边距
+//"DIALOG_SUB_BTN_COLOR"  = "COLOR(#108EE9)";             // 次要按钮颜色
+//"DIALOG_MAIN_BTN_COLOR" = "DIALOG_SUB_BTN_COLOR";       // 主要按钮颜色
+
+
+
+
+
+
+
+
+
+
+
+
+
+

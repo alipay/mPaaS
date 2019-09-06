@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/start_app_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#108EE9"
+        android:gravity="center"
+        android:text="启动一个离线包"
+        android:textColor="#ffffff" />
+
+
+    <Button
+        android:id="@+id/update_app_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#108EE9"
+        android:gravity="center"
+        android:text="更新离线包"
+        android:textColor="#ffffff" />
+
+
+
+</LinearLayout>

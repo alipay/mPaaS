@@ -52,7 +52,7 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 
 * 步骤二：接入 mPaaS Nebula 容器
 
-  [接入 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*PmxESr0hfsYAAAAAAAAAAABkARQnAQ)
+  [接入 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*kRtRRam3PxAAAAAAAAAAAABkARQnAQ)
 
 * 步骤三：打包，预置到客户端，编译运行
 

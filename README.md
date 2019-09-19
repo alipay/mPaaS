@@ -42,9 +42,11 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 
 ### 你可以如何接入它？
 
-* 步骤零：申请试用
+#### [步骤零：申请试用]
 
   [申请试用 mPaaS 离线包](http://mpaas2019.mikecrm.com/otOU1k1)
+
+#### [Android 端]
 
 * 步骤一：接入 mPaaS Inside
 
@@ -58,7 +60,22 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 
   [预置离线包，编译运行](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*e5pMRpUNrjcAAAAAAAAAAABkARQnAQ)
 
-* 步骤四：申请 UC 内核
+#### [iOS 端]
+
+* 步骤一：创建工程并接入 mPaaS Nebula 容器组件
+
+  [接入 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*IwoXSqm6sBgAAAAAAAAAAABkARQnAQ)
+
+* 步骤二：使用 mPaaS Nebula 容器
+
+  [使用 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*y02KQ6c9gFkAAAAAAAAAAABkARQnAQ)
+
+* 步骤三：使用 mPaaS 离线包
+
+  [预置离线包，编译运行](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*U_wHQ51Gb6IAAAAAAAAAAABkARQnAQ)
+
+
+#### [步骤四：申请 UC 内核]
 
   [申请 UC 内核 Key，预计半个工作日内生效](https://tech.antfin.com/docs/2/112551)
 

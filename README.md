@@ -44,7 +44,7 @@ mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验�
 
 #### [步骤零：申请试用]
 
-  [申请试用 mPaaS 离线包](http://mpaas2019.mikecrm.com/otOU1k1)
+  [申请试用 mPaaS 离线包](https://www.aliyun.com/product/mpaas?spm=5176.224200.h2v3icoap.455.5d716ed6zl3rpw&aly_as=J7wB1L5q)
 
 #### [Android 端]
 

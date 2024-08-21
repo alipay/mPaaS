@@ -46,7 +46,7 @@ Based on the above solution, Native services can be converted into HTML5, thereb
 
 #### [Step 0: Apply for a trial]
 
-  [Apply for a trial of mPaaS offline package](https://www.aliyun.com/product/mpaas?spm=5176.224200.h2v3icoap.455.5d716ed6zl3rpw&aly_as=J7wB1L5q)
+  [Apply for a trial of mPaaS offline package](https://www.alibabacloud.com/en?_p_lc=1)
 
 #### [Android]
 
@@ -79,7 +79,7 @@ Based on the above solution, Native services can be converted into HTML5, thereb
 
 #### [Step 4: Apply for UC kernel]
 
-  [Apply for UC kernel key, which is expected to take effect within half a working day](https://tech.antfin.com/docs/2/112551)
+  [Apply for UC kernel key, which is expected to take effect within half a working day](https://survey.alipay.com/apps/zhiliao/Oi2hbo_-v)
 
 For access documents, please refer to:[mPaaS Container Documentation](https://tech.antfin.com/docs/2/130789)
 
@@ -113,6 +113,11 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+```
+
+### Disclaimer
+
+[Disclaimer](https://github.com/alipay/mpaas-demo/blob/master/Disclaimer.md)
 ```
 
 ### Disclaimer

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js"></script>
+	 <script>
+		try{
+			var vv = new VConsole()
+			console.log("dongfenghua"+vv)
+
+		}catch(e){
+			console.error(e)
+		}
+	</script>
+</head>
+<body>
+	<button onclick="test()">点击测试</button>
+	<button ontouchstart="test()">点击测试</button>
+	<script>
+		function test(){
+			navigator.mediaDevices.getUserMedia({audio:true})
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="isEn">0</string>
+    <string name="lbs">定位</string>
+    <string name="request_lbs">点击获取定位信息</string>
+    <string name="lbs_success">定位成功</string>
+    <string name="lbs_error">定位失败</string>
+    <string name="longitude">经度：</string>
+    <string name="latitude">纬度：</string>
+    <string name="ad_code">城市编码：</string>
+    <string name="country">国：</string>
+    <string name="province">省：</string>
+    <string name="city">市：</string>
+    <string name="district">区：</string>
+    <string name="street">街：</string>
+    <string name="address">地址：</string>
+    <string name="map_notice">注意：\n\n1.请确认在您的AndroidManifest.xml中注册高德地图的key。\n2.请确认在您的AndroidManifest.xml中注册高德地图的服务APSService。\n3.请确认在您的portal工程的slink文件内，已加入com.alipay.android.phone.mobilecommon-lbs、com.alipay.mobileapi-mobilelbs。</string>
+    <string name="lbs_informaion">定位信息</string>
+    <string name="gdmap_start">开始定位</string>
+    <string name="gdmap_current_location">获取高德地图当前定位</string>
+    <string name="gdmap_location">当前定位 : </string>
+</resources>

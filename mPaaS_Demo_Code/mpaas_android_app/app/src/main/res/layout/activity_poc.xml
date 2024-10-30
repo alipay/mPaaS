@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:keyboard="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="随机数字"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mpaas.safekeyboard.view.SafeKeyboardEditText
+                    android:id="@+id/safe_edit1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    keyboard:contain_dot="true"
+                    keyboard:enable_press_effect="true"
+                    keyboard:encrypt_type="rsa"
+                    keyboard:input_type="number_only"
+                    keyboard:random="true"
+                    keyboard:ui_theme="white" />
+
+                <Button
+                    android:id="@+id/safe_edit1_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示结果" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="数字+字母"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mpaas.safekeyboard.view.SafeKeyboardEditText
+                    android:id="@+id/safe_edit2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    keyboard:enable_press_effect="true"
+                    keyboard:enable_preview="true"
+                    keyboard:encrypt_type="sm2"
+                    keyboard:input_type="letter_number"
+                    keyboard:ui_theme="white" />
+
+                <Button
+                    android:id="@+id/safe_edit2_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示结果" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="数字+字母+特殊符号"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mpaas.safekeyboard.view.SafeKeyboardEditText
+                    android:id="@+id/safe_edit3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    keyboard:enable_press_effect="true"
+                    keyboard:encrypt_type="sm2"
+                    keyboard:input_type="full"
+                    keyboard:ui_theme="white" />
+
+                <Button
+                    android:id="@+id/safe_edit3_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示结果" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_encrypt_result_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="加密结果"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/encrypt_result_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="清空结果" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_encrypt_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.mpaas.safekeyboard.view.SafeKeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        keyboard:titlebar_height="50dp" />
+</RelativeLayout>
+

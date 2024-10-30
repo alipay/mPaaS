@@ -1,0 +1,19 @@
+<resources>
+    <string name="testText" >texttexttexttexttexttexttext with a default text attribute</string>
+    <string name="page_main_btn">Primary button Normal</string>
+    <string name="page_main_disable_btn">Primary button Disable</string>
+    <string name="page_next_level_btn">Secondary operation Normal</string>
+    <string name="page_next_level_disable_btn">Secondary operation Disable</string>
+    <string name="page_warn_btn">Warning button Normal</string>
+    <string name="page_warn_disaable_btn">Warning button Disable</string>
+    <string name="down_load_btn">Download</string>
+    <string name="auxiliary_btn">Auxiliary button</string>
+    <string name="operation_btn">Operation</string>
+    <string name="text_btn">Text button</string>
+    <string name="text_disable_btn">Text button(Disable)</string>
+    <string name="text_next_level_btn">Secondary text button</string>
+    <string name="text_next_level_disable_btn">Secondary text button (unavailable)</string>
+    <string name="disable_follow_btn">Unfollow</string>
+    <string name="more_server_btn">More services</string>
+
+</resources>

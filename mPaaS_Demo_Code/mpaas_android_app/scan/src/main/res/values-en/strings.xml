@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan_tip">放入框内，自动扫描</string>
+    <string name="camera_open_error">无法开启摄像头，请检查应用是否有访问摄像头的权限，或重启设备后重试</string>
+    <string name="camera_no_permission">摄像头权限被关闭，请开启权限后重试</string>
+    <string name="custom_title">Custom UI</string>
+    <string name="app_name">scan_Demo</string>
+
+    <string name="scan_title">Scan</string>
+    <string name="standard_ui_btn">Use standard UI</string>
+    <string name="custom_ui_btn">Use custom UI</string>
+    <string name="scan_failure">Scanning failed. Please try again.</string>
+    <string name="standard_title">Standard UI</string>
+    <string name="confirms">Confirm</string>
+
+
+    <string name="scan_type_rq">QR code</string>
+    <string name="scan_type_bar_code">Barcode</string>
+    <string name="select_scan_style">Select UI style</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="input_text">Please input a text</string>
+    <string name="flashlight_light_Tips">The light is too dim. Please turn on the flashlight</string>
+    <string name="input_chinese">Input text</string>
+    <string name="setting_scan_style">Set UI style</string>
+    <string name="transparent_status_bar">Set transparent status column</string>
+    <string name="set_scan_type">Set recognition style</string>
+    <string name="set_scan_title">Set title</string>
+    <string name="set_Tips_title">Set prompt</string>
+    <string name="set_Tips_open_title">Set turn on the flashlight prompt</string>
+    <string name="set_Tips_close_title">Set turn off the flashlight prompt</string>
+
+    <string name="set_transparent_status_bar">Set transparent status bar</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <string name="select_support_type">Select support type</string>
+    <string name="dm_code">DM code</string>
+    <string name="pdf_417_code">PDF417 code</string>
+
+</resources>

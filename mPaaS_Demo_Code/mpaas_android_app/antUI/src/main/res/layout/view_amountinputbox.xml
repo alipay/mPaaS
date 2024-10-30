@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:id="@+id/pop_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="资金输入" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="AUAmountInputBox" />
+
+        <com.alipay.mobile.antui.basic.AUScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.alipay.mobile.antui.basic.AULinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<com.alipay.mobile.antui.amount.AUAmountEditText-->
+                    <!--android:id="@+id/edit_text"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:amountHintText="可用余额500.00" />-->
+
+                <!--<com.alipay.mobile.antui.amount.AUAmountLabelText-->
+                    <!--android:id="@+id/label_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal" />-->
+
+                <!--<com.alipay.mobile.antui.amount.AUAmountInputBox-->
+                    <!--android:id="@+id/amount_input_2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--app:amountHintText="可用余额500.00"-->
+                    <!--app:amountTitleText="转账金额"-->
+                    <!--app:footStyle="textStyle" />-->
+
+                <com.alipay.mobile.antui.amount.AUAmountInputBox
+                    android:id="@+id/amount_input_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:amountTitleText="转账金额" />
+
+                <com.alipay.mobile.antui.basic.AUButton
+                    style="@style/mainButtonStyle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:clickable="true"
+                    android:text="确定" />
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+        </com.alipay.mobile.antui.basic.AUScrollView>
+    </LinearLayout>
+
+    <com.alipay.mobile.antui.keyboard.AUNumberKeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</com.alipay.mobile.antui.basic.AULinearLayout>

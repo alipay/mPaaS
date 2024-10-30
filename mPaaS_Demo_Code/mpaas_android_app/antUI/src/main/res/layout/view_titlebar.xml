@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AUTitleBar start -->
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="主标题导航"
+        app:rightIconUnicode="@string/iconfont_more" />
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="标题导航"
+        app:leftIconUnicode="@string/iconfont_more"
+        android:visibility="gone"/>
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题"
+       app:aui_titleTextSize="@dimen/AU_TEXTSIZE2"
+       app:aui_titleTextColor="#f64219"
+        app:leftIconUnicode="@string/iconfont_add"
+        app:rightIconUnicode="@string/iconfont_search"/>
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题2"
+        app:leftIconUnicode="@string/iconfont_contacts"
+        app:rightIconUnicode="@string/iconfont_more"/>
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题3"
+        app:leftIconUnicode="@string/iconfont_bill"
+        app:rightIconUnicode="@string/iconfont_user"/>
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_bar_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题4"
+        app:leftIconUnicode="@string/iconfont_user_setting"
+        app:rightText="Setting"/>
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题5"
+        app:backgroundDrawable="@color/AU_COLOR_HOME_PAGE_TITLEBAR_BG"
+       app:aui_titleTextColor="@color/AU_COLOR15"
+        app:backIconColor="@color/AU_COLOR15"
+        app:rightIconColor="@color/AU_COLOR15"
+        app:rightIconUnicode="@string/iconfont_setting"/>
+
+    <!-- AUTitleBar end -->
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/dynamic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       app:aui_titleText="标题6" />
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/segment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

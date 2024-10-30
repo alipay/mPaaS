@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.push">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application>
+        <activity android:name=".mpPush.PushLauncherActivity"></activity>
+        <activity android:name=".mpPush.LandingTargetActivity"></activity>
+        <activity android:name=".mpPush.MainActivity"></activity>
+        <service
+            android:name="com.alipay.pushsdk.push.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="NotificationService"
+            android:process=":push">
+            <intent-filter>
+                <action android:name="${applicationId}.push.action.START_PUSHSERVICE" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.alipay.pushsdk.BroadcastActionReceiver"
+            android:enabled="true"
+            android:process=":push">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".mpPush.PushMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="${applicationId}.push.action.MESSAGE_RECEIVED" />
+                <action android:name="${applicationId}.push.action.REGISTRATION_ID" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

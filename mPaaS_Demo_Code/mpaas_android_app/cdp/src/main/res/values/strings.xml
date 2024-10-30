@@ -1,0 +1,68 @@
+<resources>
+    <string name="cdp">营销系统</string>
+    <string name="app_name">营销系统</string>
+
+    <string name="multi_style">展位类型</string>
+    <string name="rotation">轮播广告</string>
+    <string name="list">列表广告</string>
+    <string name="banner">单行广告</string>
+    <string name="announcement">公告</string>
+    <string name="popup">弹屏广告</string>
+    <string name="splash">启动页广告</string>
+    <string name="h5_popup">弹屏广告</string>
+    <string name="h5_popup_native">H5Native弹屏广告</string>
+
+
+    <string name="location">展位位置</string>
+    <string name="top">顶部</string>
+    <string name="float_top">浮动顶部</string>
+    <string name="bottom">底部</string>
+    <string name="full">全屏</string>
+    <string name="header">列表头部</string>
+    <string name="footer">列表尾部</string>
+    <string name="cdp_float">浮标</string>
+    <string name="cdp_custom">自渲染</string>
+
+    <string name="cdp_test">Cdp测试</string>
+
+    <string name="input_space_code">请输入自定义SpaceCode</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="custom_space_code">自定义SpaceCode</string>
+
+    <string name="dynamic_view_content_1">动态View 1</string>
+    <string name="dynamic_view_content_2">动态View 2</string>
+    <string name="dynamic_view_content_3">动态View 3</string>
+    <string name="dynamic_view_list_1">动态ListView 1</string>
+    <string name="dynamic_view_list_2">动态ListView 2</string>
+    <string name="dynamic_view_list_3">动态ListView 3</string>
+
+    <string name="upload_log">手动上报日志</string>
+
+    <string name="content_text">半透明浅蓝色区域为正文区域</string>
+    <string name="feature_add_feature">添加上下线测试</string>
+    <string name="feature_new_activity">新建一个投放活动</string>
+    <string name="feature_new_test_1">模拟银行界面：单帧</string>
+    <string name="feature_new_test_2">模拟银行界面：多帧</string>
+    <string name="feature_new_activity_adcode">新建活动占位码是 feature_space_new_adcode</string>
+    <string name="feature_add_feature_adcode">活动上下线占位码是 feature_space_add_adcode</string>
+
+    <string name="show_user_id">当前用户ID如下(人群管理使用):</string>
+    <string name="cdp_test_ui_view">UI样式测试</string>
+    <string name="cdp_test_case_view">测试用例</string>
+
+    <string name="cdp_feature_show_top">上边的占位码是:pit_cdp_cav_top</string>
+    <string name="cdp_feature_show_center">上边的占位码是:pit_cdp_cav_center</string>
+    <string name="cdp_feature_show_bottom">上边的占位码是:pit_cdp_cav_bottom</string>
+
+    <string name="cdp_test_ui_jump_over">跳过</string>
+    <string name="cdp_feature_add_title">活动上下线测试</string>
+    <string name="cdp_feature_new_title">新建活动测试</string>
+    <string name="cdp_feature_show_title">模拟展示页面-单帧</string>
+
+
+    <string name="gonggaoquanweizhishili">公告全位置示例</string>
+    <string name="banner_advertising_nice_practice">轮播广告最佳实践</string>
+    <string name="Simulated_display_page">模拟展示页面-多帧</string>
+    <string name="single_advertising_practice">单行广告最佳实践</string>
+</resources>

@@ -1,0 +1,23 @@
+<!--<network-security-config>-->
+<!--    <debug-overrides>-->
+<!--        <trust-anchors>-->
+<!--            &lt;!&ndash; Trust user added CAs while debuggable only &ndash;&gt;-->
+<!--            <certificates src="user" />-->
+<!--            <certificates src="system" />-->
+<!--        </trust-anchors>-->
+<!--    </debug-overrides>-->
+<!--</network-security-config>-->
+
+
+<network-security-config>
+<debug-overrides>
+    <trust-anchors>
+        <!-- Trust user added CAs while debuggable only -->
+        <certificates src="user" />
+    </trust-anchors>
+</debug-overrides>
+<domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">192.168.162.161</domain>
+    <!--        <domain includeSubdomains="true">11.158.124.220</domain>-->
+</domain-config>
+</network-security-config>

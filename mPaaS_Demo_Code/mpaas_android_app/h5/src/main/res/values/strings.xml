@@ -1,0 +1,41 @@
+<resources>
+    //H5
+    <string name="custom_jsapi_setting_tips">注册成功\n
+        现在可以打开离线包，点击\"调用自定义API1\"和\"调用自定义API2\"，即可看到自定义返回值。点击小程序\"自定义API1\"，即可看到自定义返回值</string>
+    <string name="title">H5</string>
+
+    <string name="update_success">更新成功</string>
+
+    <string name="H5_getappversion">H5获取APP版本</string>
+    <string name="open_html">H5打开本地预置html页面</string>
+    <string name="offline_package">离线包</string>
+    <string name="online_page">在线页面</string>
+    <string name="h5_container">H5容器</string>
+    <string name="setting_shezhilixianbaogongyaochenggong">设置离线包公钥成功</string>
+    <string name="open_offline_package_attestation">开启离线包验签</string>
+    <string name="preset_offline_package">预置离线包</string>
+    <string name="preset_offline_package_success">预置离线包成功</string>
+    <string name="title_plugin_registers">注册自定义JSAPI</string>
+    <string name="H5open_camera">H5打开相机</string>
+
+
+    <string name="update_failure">更新失败</string>
+    <string name="nebula_app">H5应用</string>
+    <string name="open_h5_app">打开H5应用</string>
+    <string name="open_h5_app_sync">打开H5应用_sycn更新</string>
+    <string name="open_h5_app_2">打开H5应用(方式二，不再推荐)</string>
+    <string name="update_app">更新H5应用信息</string>
+    <string name="update_specific_app">更新指定的H5应用</string>
+    <string name="verify_app_setting">离线包验签说明</string>
+
+
+
+    <string name="H5resources">H5容器</string>
+
+
+    <string name="verify_app_setting_toast">1. 请在assets/config/custom_config.json里将h5_shouldverifyapp设置成YES\n
+        2. 请在启动时调用 H5Utils.setProvider(H5PublicRsaProvider.class.getName(),new H5RsaProviderImpl()); 设置验签公钥\n
+        3. 请注意，因为rsa只会在打开H5页面时初始化一次，所以RsaProvider必须在第一次H5页面打开前设置。
+    </string>
+
+</resources>

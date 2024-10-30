@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AUScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/mainButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:text="@string/page_main_btn" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/mainButtonStyle"
+            android:layout_margin="12dp"
+            android:enabled="false"
+            android:text="@string/page_main_disable_btn"
+            app:dynamicThemeDisable="true" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/subButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:text="@string/page_next_level_btn" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/subButtonStyle"
+            android:layout_margin="12dp"
+            android:enabled="false"
+            android:text="@string/page_next_level_disable_btn" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/warnButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:text="@string/page_warn_btn" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/warnButtonStyle"
+            android:layout_margin="12dp"
+            android:enabled="false"
+            android:text="@string/page_warn_disaable_btn" />
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assMainButtonStyle"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/down_load_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assMainButtonStyle"
+                android:layout_margin="12dp"
+                android:enabled="false"
+                android:text="@string/down_load_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assMainButtonStyle"
+                android:layout_margin="12dp"
+                android:text="@string/down_load_btn" />
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assButtonStyle"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/down_load_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assButtonStyle"
+                android:layout_margin="12dp"
+                android:enabled="false"
+                android:text="@string/down_load_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/assButtonStyle"
+                android:layout_margin="12dp"
+                android:text="@string/auxiliary_btn" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.alipay.mobile.antui.basic.AUProcessButton
+                android:id="@+id/progress_button"
+                style="@style/mainButtonStyle"
+                android:layout_margin="@dimen/AU_SPACE3"
+                android:text="@string/operation_btn" />
+
+            <com.alipay.mobile.antui.basic.AUProcessButton
+                android:id="@+id/sub_progress_button"
+                style="@style/subButtonStyle"
+                android:layout_margin="@dimen/AU_SPACE3"
+                android:text="@string/operation_btn" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/textButtonStyle"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/text_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/textButtonStyle"
+                android:layout_margin="12dp"
+                android:enabled="false"
+                android:text="@string/text_disable_btn" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/textSubButtonStyle"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/text_next_level_btn" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/textSubButtonStyle"
+                android:layout_margin="12dp"
+                android:enabled="false"
+                android:text="@string/text_next_level_disable_btn" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/listButtonStyle"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:text="@string/disable_follow_btn" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/listButtonStyle"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:textColor="@color/AU_COLOR_LINK"
+            android:text="@string/more_server_btn" />
+
+
+    </LinearLayout>
+</com.alipay.mobile.antui.basic.AUScrollView>

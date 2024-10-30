@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="CheckBox" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="CheckBox" />
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="默认样式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.alipay.mobile.antui.basic.AULinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- AUCheckIcon start -->
+                <com.alipay.mobile.antui.common.AUCheckIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkIconState = "checked"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="6dp" />
+                <com.alipay.mobile.antui.basic.AUTextView
+                    android:text="选中"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.alipay.mobile.antui.common.AUCheckIcon
+                    android:id="@+id/check_icon"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.alipay.mobile.antui.basic.AUTextView
+                    android:text="未选中"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.alipay.mobile.antui.common.AUCheckIcon
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    app:checkIconState = "cannot_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+                <com.alipay.mobile.antui.basic.AUTextView
+                    android:text="不可勾选"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- AUCheckIcon end -->
+
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="复选列表项"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.alipay.mobile.antui.tablelist.AUCheckBoxListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listItemType="top"
+                app:listLeftText="多项选择列表" />
+
+            <com.alipay.mobile.antui.tablelist.AUCheckBoxListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:checkIconState="checked"
+                app:listShowArrow="false"
+                app:listItemType="center"
+                app:listLeftText="多项选择列表" />
+
+            <com.alipay.mobile.antui.tablelist.AUCheckBoxListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listShowArrow="false"
+                app:checkIconState="cannot_uncheck"
+                app:listItemType="bottom"
+                app:listLeftText="多项选择列表" />
+
+            <com.alipay.mobile.antui.tablelist.AUCheckBoxListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listShowArrow="false"
+                app:checkIconState="cannot_check"
+                app:listItemType="bottom"
+                app:listLeftText="多项选择列表" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+
+    </LinearLayout>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

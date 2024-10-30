@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="analytic_title">移动分析</string>
+    <string name="automation_title">自动化日志</string>
+    <string name="user_active_btn">用户报活</string>
+    <string name="behavior_log_btn">自定义事件日志</string>
+    <string name="crash_log_btn">闪退日志</string>
+    <string name="automation_log_btn">自动化日志</string>
+    <string name="log_report_btn">日志上报</string>
+    <string name="open_launch_anr_btn">打开启动卡死开关</string>
+    <string name="block_log_btn">卡顿日志</string>
+    <string name="anr_log_btn">卡死日志</string>
+    <string name="mock_crash">模拟闪退</string>
+    <string name="user_active_result">用户报活成功</string>
+    <string name="behavior_log_result">已记录1条自定义事件日志</string>
+    <string name="performance_log_result">已记录1条性能日志</string>
+    <string name="block_log_result">已记录1条卡顿日志</string>
+    <string name="anr_log_result">已记录1条卡死日志</string>
+    <string name="report_log_result">日志已上报</string>
+    <string name="open_launch_anr_switch">已打开启动卡死</string>
+    <string name="close_launch_anr_switch">已关闭启动卡死</string>
+    <string name="user_active_tips">用户报活一般是在用户登录成功后调用，\n可在 控制台-移动分析-基础分析-基础大盘/行为分析 中查看活跃用户\n\n本设备的 userId 为：%1$s\n可通过该 id 查询其他日志，\n另外，实时发布（版本升级、热修复）中使用的白名单功能也需要根据该 id 来配置</string>
+    <string name="crash_log_tips">点击会触发闪退，\n可在 控制台-移动分析-性能分析-闪退报告 中查看</string>
+    <string name="automation_log_tips">点击后进入的页面，其中所有页面的展现和按钮点击都会通过自动化日志进行上报，\n可在 控制台-移动分析-基础分析-页面分析/行为分析 中查看</string>
+    <string name="report_log_tips">除了性能日志（闪退、卡顿、卡死)是实时上报外，其他日志都是按照一定的策略进行上报，点击该按钮会触发主动上报，\n可在 控制台-移动分析-日志管理-查询历史日志 中查看</string>
+    <string name="open_launch_anr_switch_tips">打开启动卡死开关后，杀进程重启应用会模拟启动卡死，等待30秒后会上报日志</string>
+    <string name="anr_log_tips">点击会触发一段ANR，\n可在 控制台-移动分析-性能分析-卡死报告 中查看</string>
+    <string name="block_log_tips">点击会触发一段卡顿，\n可在 控制台-移动分析-性能分析-卡顿报告 中查看</string>
+    <string name="automation_tab1">Tab1</string>
+    <string name="automation_tab2">Tab2</string>
+    <string name="automation_fragment1">Fragment1</string>
+    <string name="automation_fragment2">Fragment2</string>
+    <string name="automation_view_tab1">View1</string>
+    <string name="automation_view_tab2">View2</string>
+    <string name="automation_view1">AUTextView1</string>
+    <string name="automation_view2">AUTextView2</string>
+    <string name="automation_scroll_tips">向下滚动依次展现更多View</string>
+
+
+    <string name="pays_analytics"> 自定义移动分析事件-- 完成支付用户自定义大盘</string>
+</resources>

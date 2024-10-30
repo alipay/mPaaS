@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed -->
+    <item android:drawable="@drawable/download_cancel_press" android:state_enabled="true" android:state_pressed="true" />
+
+    <!-- selected -->
+    <item android:drawable="@drawable/download_cancel_press" android:state_enabled="true" android:state_selected="true" />
+
+    <!-- Non focused states -->
+    <item android:drawable="@drawable/download_cancel_normal" />
+</selector>

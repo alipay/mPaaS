@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:gravity="center"
+        android:text="离线包"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/AU_SPACE20"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="加载离线包"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="升级离线包"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="删除离线包"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_plugin_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/title_plugin_registers"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnGetAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="获取安装信息"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnUpdateDiff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="diff离线包"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnPlayVideo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="播放视频插件"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

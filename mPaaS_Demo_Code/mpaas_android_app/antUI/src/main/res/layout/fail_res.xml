@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mpaas.antui.viewdemo.view.DemoTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bar"
+           app:aui_titleText="支付失败" />
+
+
+        <com.alipay.mobile.antui.status.AUResultView
+            android:id="@+id/result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:mainTitleText="操作失败"
+            app:thirdTitleText="内容详情，根据实际文案安排
+如果换行不超过两行"/>
+
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/mainButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:text="主要操作" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/subButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:text="辅助操作" />
+
+
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

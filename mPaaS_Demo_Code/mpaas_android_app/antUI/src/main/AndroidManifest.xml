@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.antui">
+
+    <application>
+
+        <activity android:name="com.mpaas.antui.viewdemo.SplashActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.NavBarActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.HomeAntUIActivity"/>
+
+        <activity android:name="com.mpaas.antui.viewdemo.ButtonActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.TitleBarActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.SearchBarActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.ScrollTitleBarActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.InputActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUTabBarActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUSegmentActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.form.CheckBoxActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.RadioActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.InputBoxActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.PickerActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.SwitchActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.TextAreaActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.AUAgreementActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.search.SearchActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.search.TopSearchActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.BadgeActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.ButtonActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.FilterActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.FooterActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.IconActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.ResultActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.LoadingActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.SingleFilterActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.MultipleFilterActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.ScreenActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.ArticleActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.FailResultActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.form.SuccessResultActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.APBladeViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.DatePickActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.CardMenuActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUCardOptionViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.StatusActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.ListItemViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.EmptyPageLoadingActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.PullRefreshActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.action.DialogActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.action.TipsActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.action.ToastActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.NetErrorViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.ChangeSkinActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUAmountInputBoxActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.ImageActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.DividerListActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.QRCodeActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.RefreshActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUImagePickerActivity"
+            />
+        <activity android:name="com.mpaas.antui.viewdemo.PopoverActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.PinnedSectionActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.common.CarouselActivity"></activity>
+        <activity android:name="com.mpaas.antui.viewdemo.list.ListViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.ActionSheetActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AUVerticalTabViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.PopTipsActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.BubbleViewActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.FullScreenActivity" />
+        <activity android:name="com.mpaas.antui.viewdemo.AULinearLayoutActivity"/>
+    </application>
+</manifest>

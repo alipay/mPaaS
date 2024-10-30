@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_atb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_rotation_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/rotation" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_list_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/list" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_banner_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/banner" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_announcement_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/announcement" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_splash_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/splash" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_custom_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/cdp_custom" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_h5_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/h5_popup"
+                android:visibility="gone" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_h5_native_btn"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="@string/h5_popup_native"
+                android:visibility="gone" />
+
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_announcement_best_practice"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="公告类型最佳实践"
+                android:visibility="gone" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_single_best_practice"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="单行类型最佳实践"
+                android:visibility="gone" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                android:id="@+id/multi_style_banner_best_practice"
+                style="@style/mainButtonStyle"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:text="轮播类型最佳实践"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

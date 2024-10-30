@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="type">1</string>
+    <string name="app_name">POC demo</string>
+
+    <string name="tiny_app">tinyapp</string>
+    <string name="gdmap">Gaude map</string>
+
+    <string name="numkeyboard_normal">正序数字键盘： </string>
+    <string name="numkeyboard_random">随机数字键盘： </string>
+    <string name="alphabetkeyboard_normal">正序数字字母全键盘： </string>
+    <string name="numkeyboard_normal_customed">自定义正序数字键盘： </string>
+    <string name="numkeyboard_random_customed">自定义随机数字键盘： </string>
+    <string name="alphabetkeyboard_normal_customed">自定义正序数字字母全键盘： </string>
+    <string name="clear">清空</string>
+    <string name="clear_keyboard">清空键盘</string>
+    <string name="keyboard_logo_name">安全输入</string>
+    <string name="finish">完成</string>
+    <string name="decryption_addr">键盘解密服务地址(ip:port)</string>
+    <string name="decryption_addr_hint">不填写，不调用解密</string>
+
+<!--    <string name="push_title">推送</string>
+    <string name="push_init">初始化推送</string>
+    <string name="init_tips">Tips: 使用上面接口，可以实现移动推送的初始化</string>
+    <string name="push_bind">将用户id和token标识绑定</string>
+    <string name="bind_tips">Tips: push支持用户维度的推送。用户可以结合自身的用户系统将用户id和内建渠道的token绑定，进而实现基于用户id的推送</string>
+    <string name="push_unbind">解除用户id和token标识的绑定</string>
+    <string name="unbind_tips">Tips: 使用上面接口，可以实现用户id和token标识的解除绑定操作</string>
+    <string name="push_uploadThirdToken">上报第三方push的token</string>
+    <string name="uploadThirdToken_tips">Tips: 使用上面接口，可以实现第三方push的token的上传，但push不支持对内建渠道的token值的指定</string>
+    <string name="operation_result">操作结果将输入在这里</string>
+    <string name="use_default_msg">使用内置通知栏消息</string>-->
+
+
+    //分享
+    <!--    <string name="share">社交分享</string>-->
+    <string name="click_to_share">Tap to share</string>
+    <string name="mpaas_share_notice">Notes: \n\n1.To use WeChat sharing, the developer must manually create the WXEntryActivity class. Otherwise, the callback of the sharing will not be received on the client.\n2. The size of the image used for WeChat sharing should be no more than 32 KB. Otherwise, the default Alipay icon will be used.\n3.To use QQ or QZone sharing, set a correct QQ sharing ID, and register it to the AndroidManifest class. Otherwise, the sharing and callback feature will fail to work properly.\n4. To use Weibo sharing, ensure that your application signature, package name, and sharing ID are consistent with that are registered on the Weibo Open Platform. Otherwise, the sharing will fail.\n5.If the SMS page is opened when you use the SMS sharing, the sharing callback succeeds. If you want to call back the sending status of the message, apply for a permission for development purposes.\n\nTap the following buttons to obtain the detailed instruction.</string>
+    <string name="get_instructions">Tap to obtain detailed instruction</string>
+    <string name="alipay">Alipay</string>
+    <string name="wechat">WeChat contacts</string>
+    <string name="wechat_timeline">WeChat moments</string>
+    <string name="weibo">Weibo</string>
+    <string name="qq">QQ contacts</string>
+    <string name="qzone">QZone</string>
+    <string name="dingding">DingTalk</string>
+    <string name="sms">SMS</string>
+    <string name="share_success">Sharing succeeded</string>
+    <string name="share_cancel">Sharing cancelled</string>
+    <string name="share_error">Sharing failed</string>
+
+    <string name="uikongjian">UI controls library</string>
+    <string name="H5">2-way communication of H5 container</string>
+    <string name="getid">Get device ID</string>
+    <string name="share">multi-channel sharing</string>
+    <string name="scan">Scan</string>
+    <string name="ide">IDE plug-ins support quick development on mobile devices</string>
+    <string name="storage">统一存储</string>
+
+    //扫码
+<!--    <string name="scan_title">扫一扫</string>-->
+<!--    <string name="standard_ui_btn">使用标准UI</string>-->
+<!--    <string name="custom_ui_btn">使用自定义UI</string>-->
+<!--    <string name="scan_failure">扫码失败，请重试！</string>-->
+<!--    <string name="standard_title">标准UI</string>-->
+<!--    <string name="confirm">确认</string>-->
+
+    //热修复
+
+    <string name="hot_fix_abnormal">Error. The current tapping event has not been fixed</string>
+    <string name="hot_fix_abnormal_success">The current tapping event has been fixed</string>
+    <string name="hotpatch">Hotpatch</string>
+    <string name="mock_need_hotpatch">Simulate the tapping event to be fixed</string>
+    <string name="mock_need_hotpatch_tip">Hotpatch will fix the code corresponding to the tapping event of the button</string>
+    <string name="trigger_hotpatch_dynamic_release">Trigger Hotpatch deployment detection</string>
+    <string name="trigger_hotpatch_dynamic_release_tip">Generally, the developer is recommended to trigger Hotpatch deployment detection in postInit of MockLauncherApplicationAgent.</string>
+    <string name="notice">Note:\nwhen using the Hotpatch feature, the developer must ensure that the encrypted image is generated properly. Otherwise, the Hotpatch package will fail to be issued.</string>
+    //H5
+    <string name="custom_jsapi_setting_tips">Registered successfully\n
+        Now you can open the offline package by clicking\"Call custom API1\"and\"Call custom API2\"，You can see custom return values</string>
+    <string name="title">H5</string>
+    <string name="update_success">The update is successful</string>
+    <string name="update_failure">Update failed</string>
+    <string name="nebula_app">H5 application</string>
+    <string name="open_h5_app">Open the H5 application</string>
+    <string name="open_h5_app_2">Open the H5 app (Option 2, no longer recommended)</string>
+    <string name="update_app">Update H5 application information</string>
+    <string name="update_specific_app">Updates the specified H5 application</string>
+    <string name="verify_app_setting">Description of offline package verification</string>
+    <string name="H5resources">H5 container</string>
+    <string name="verify_app_setting_toast">1. Please set h5_shouldverifyapp to YES\n in assets/config/custom_config.json
+    2. Please call H5Utils at startup. SetProvider (H5PublicRsaProvider. Class. GetName (), new H5RsaProviderImpl ()); Set the check public key \n
+    3. Note that the RsaProvider must be set up before the H5 page is opened for the first time because RSA initializes only once when the H5 page is opened.
+    </string>
+
+    <string name="H5_getappversion">H5 obtain app version</string>
+    <string name="open_html">H5 open local html file</string>
+    <string name="offline_package">Offline package</string>
+    <string name="online_page">Online page</string>
+    <string name="h5_container">H5 container</string>
+    <string name="setting_shezhilixianbaogongyaochenggong">Setting the public key of the offline package succeeded</string>
+    <string name="open_offline_package_attestation">Enable signature verification of the offline package</string>
+    <string name="preset_offline_package">Preset offline package</string>
+    <string name="preset_offline_package_success">Presetting the offline package succeeded</string>
+    <string name="title_plugin_registers">Register custom JSAPI</string>
+    <string name="H5open_camera">H5 open camera</string>
+
+    <string name="antUI">antUI</string>
+
+
+    <string name="config_service">Switch management configuration</string>
+    <string name="cdp">cdp</string>
+    <string name="push">push</string>
+    <string name="hot_patch_txt">hot fix</string>
+    <string name="limit_request_Data">LIMIT Request data :</string>
+
+
+    <!--数据同步-->
+    <string name="sync">Mobile Synchronization</string>
+    <string name="sync_bind">Bind user</string>
+    <string name="sync_unbind">Unbind user</string>
+    <string name="user_id_text">User ID</string>
+    <string name="session_id_text">Session ID</string>
+    <string name="user_id_hint">Enter a user ID</string>
+    <string name="session_id_hint">Enter a session ID</string>
+    <string name="sync_bind_result">Binding return value</string>
+
+    <string name="sync_bindTips">Notes: Mobile Synchronization supports the message synchronization based on user IDs. Bind the user IDs before using this feature. The session ID is used to verify the user identity, which is not required for the client app</string>
+    <string name="sync_unBindTips">Note: unbind the user ID and the verification of user identity</string>
+    <string name="sync_deviceIdTips">Note: the device ID of a user, which is obtained through the utdid API (UTDevice.getUtdid(context)). The device IDs are used to initialize the synchronization service by default. That is, the message synchronization based on device IDs is supported by default</string>
+    <string name="sync_unconnected">Connection status: not connected </string>
+    <string name="sync_deviceData">The synchronization data obtained based on the device ID:</string>
+    <string name="sync_uidData">The synchronization data obtained based on the user ID:</string>
+    <string name="sync_deviceid">Device ID: </string>
+    <string name="sync_by_devide">Data synchronization in the device dimension</string>
+    <string name="sync_by_user">Data synchronization in the user dimension</string>
+    <string name="connect_state">Connection status</string>
+    <string name="get_analysis_uid">Obtain the uid provieded by the Mobile Synchronization demo</string>
+    <!--数据同步-->
+
+    <!--移动网关-->
+    <string name="safekeyboard">Security keyboard</string>
+    <string name="rpc">Mobile gateway service</string>
+    <string name="rpc_get_btn">GET request</string>
+    <string name="rpc_post_btn">POST request</string>
+    <string name="rpc_post_limit">POST LIMIT request</string>
+    <string name="rpc_post_weights">Dynamic weight</string>
+    <string name="rpc_exception_btn">Exceptional request</string>
+    <string name="rpc_endorsed">Non-endorsement test</string>
+    <string name="rpc_dynamic_weight_btn">Dynamic weight</string>
+    <string name="rpc_exception_text">This request is processed by the RPC interceptor</string>
+    <string name="rpc_exception_toast">Interception failed，code: %d</string>
+    <string name="rpc_interceptor">For related demo of the rpc interceptor, see the CommonInterceptor class</string>
+    <string name="rpc_self_encrypt">To enable the RPC encryption, configure the assets/mpaas_netconfig.properties file in the portal project:
+        \n1. If Crypt=true, this feature is enabled; if Ctypt=false, this feature is disabled\n2. The values of PubKey need to be in the same line. Use \\n to replace line breaks
+        \n3. GWWhiteList is a whitelist. Only the requests with domain names in the whitelist will be encrypted. Use English comma to separate multiple domain names</string>
+
+
+    <string name="db_storage">数据库存储</string>
+    <string name="random_user">随机生成用户</string>
+    <string name="insert_user">插入用户</string>
+    <string name="user_name_is">用户名为</string>
+    <string name="user_color_is">用户颜色为</string>
+    <string name="user_time_is">用户生成时间为</string>
+    <string name="user_repeated">用户已存在，插入失败</string>
+
+    <string name="kv_storage">键值对存储</string>
+    <string name="random_kv">随机生成键值对</string>
+    <string name="insert_kv">插入键值对</string>
+    <string name="key_is">Key为</string>
+    <string name="value_is">Value为</string>
+
+    <string name="file_storage">文件存储</string>
+    <string name="random_file">随机生成文件</string>
+    <string name="insert_file">插入文件</string>
+    <string name="name_is">文件名径为</string>
+    <string name="path_is">文件路径为</string>
+    <string name="content_is">文件内容为</string>
+    <string name="file_type_is">文件类型为</string>
+
+</resources>

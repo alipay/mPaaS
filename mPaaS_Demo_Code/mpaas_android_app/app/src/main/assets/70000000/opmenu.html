@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./common.css">
+    <title>Document</title>
+</head>
+
+<body style="width: 100%;height: 100%; overflow-y: scroll;">
+<h1>点击以下按钮看不同效果</h1>
+
+<a href="javascript:void(0)" class="btn button">单按钮</a>
+<a href="javascript:void(0)" class="btn icon">单图标</a>
+<a href="javascript:void(0)" class="btn menu">多菜单(9.9.3)</a>
+<a href="javascript:void(0)" class="btn reset">重置</a>
+<a href="javascript:void(0)" class="btn hide">隐藏</a>
+<a href="javascript:void(0)" class="btn show">显示</a>
+</body>
+
+<script>
+    function ready(callback) {
+        // 如果 jsbridge 已经注入则直接调用
+        if (window.AlipayJSBridge) {
+            callback && callback();
+        } else {
+            // 如果没有注入则监听注入的事件
+            document.addEventListener('AlipayJSBridgeReady', callback, false);
+        }
+    }
+    ready(function (e) {
+        document.querySelector('.button').addEventListener('click', function () {
+            AlipayJSBridge.call('setOptionMenu', {
+                title: '单按钮',
+                redDot: '5', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                color: '#000000', // 必须以＃开始 ARGB 颜色值
+            });
+            AlipayJSBridge.call('showOptionMenu');
+        });
+
+        document.querySelector('.icon').addEventListener('click', function () {
+            AlipayJSBridge.call('setOptionMenu', {
+                icon: 'http://pic.alipayobjects.com/e/201212/1ntOVeWwtg.png',
+                redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+            });
+            AlipayJSBridge.call('showOptionMenu');
+        });
+
+        document.querySelector('.menu').addEventListener('click', function () {
+            AlipayJSBridge.call('setOptionMenu', {
+                // 显示时的顺序为从右至左
+                menus: [{
+                    icontype: 'scan',
+                    redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                }, {
+                    icontype: 'user',
+                    redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                }],
+                override: true // 在需要设置多个 option 的情况下，是否保留默认的 optionMenu
+            });
+
+            // 必须强制调用一次以刷新界面
+            AlipayJSBridge.call('showOptionMenu');
+        });
+
+        document.querySelector('.reset').addEventListener('click', function () {
+            AlipayJSBridge.call('setOptionMenu', {
+                reset: true,
+            });
+            AlipayJSBridge.call('showOptionMenu');
+        });
+
+        document.querySelector('.show').addEventListener('click', function () {
+            AlipayJSBridge.call('showOptionMenu');
+        });
+
+        document.querySelector('.hide').addEventListener('click', function () {
+            AlipayJSBridge.call('hideOptionMenu');
+        });
+
+        document.addEventListener('optionMenu', function (e) {
+            alert(JSON.stringify(e.data));
+        }, false);
+    });
+</script>

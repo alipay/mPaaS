@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_atb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.alipay.mobile.antui.input.AUInputBox
+        android:id="@+id/tv_devId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.input.AUInputBox
+        android:id="@+id/inputboxUid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:hint="@string/user_id_hint"
+        android:visibility="gone"
+        aui:inputName="@string/user_id_text"
+        aui:listItemType="center" />
+
+    <com.alipay.mobile.antui.input.AUInputBox
+        android:id="@+id/inputboxSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:hint="@string/session_id_hint"
+        android:visibility="gone"
+        aui:inputName="@string/session_id_text"
+        aui:listItemType="center" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_bind"
+        style="@style/mainButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/sync_bind"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:id="@+id/tvBindTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/sync_bindTips"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_unbind"
+        style="@style/mainButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/sync_unbind"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:id="@+id/tvUnBindTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/sync_unBindTips"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:id="@+id/tvDeviceIdTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/sync_deviceIdTips"
+        android:visibility="gone" />
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:id="@+id/tvSyncMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="visible" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/btn_to_activity"
+        style="@style/mainButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="12dp"
+        android:text="跳转指定activity" />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.cdpdemo">
+
+    <application>
+
+        <meta-data android:name="com.mpaas.cdp.autoInit" android:value="true" />
+
+        <activity android:name="com.mpaas.cdpdemo.CdpTestActivity">
+        </activity>
+
+        <activity
+            android:name="com.mpaas.cdpdemo.CdpMultiStyleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.RotationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mpaas.cdpdemo.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.H5PopUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.BannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.AnnouncementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.CdpLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationTopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationFloatTopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationBottomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationFullScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationListHeaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.LocationListFooterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.CustomSpaceCodeActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name=".CdpTestActivity"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicContent1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicContent2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicContent3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicList1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicList2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.DynamicList3Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mpaas.cdpdemo.FeatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.FeatureAddFeatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.FeatureNewActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.FeatureShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.FeatureShow2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.AnnouncementFullLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.BannerFullLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.SinglelineFullLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.CdpTestUiViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mpaas.cdpdemo.CdpPortalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.mpaas.cdpdemo.LocationFloatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.mpaas.cdpdemo.CustomActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

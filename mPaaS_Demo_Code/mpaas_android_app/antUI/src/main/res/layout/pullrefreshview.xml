@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/swichButton"
+        style="@style/mainButtonStyle"
+        android:layout_margin="30dp" />
+
+    <com.alipay.mobile.antui.basic.AUPullRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.alipay.mobile.antui.basic.AUListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.alipay.mobile.antui.basic.AUPullRefreshView>
+
+    <com.alipay.mobile.antui.basic.AUPullRefreshView
+        android:id="@+id/pull_refresh_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.alipay.mobile.antui.basic.AUListView
+            android:id="@+id/list2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.alipay.mobile.antui.basic.AUPullRefreshView>
+</com.alipay.mobile.antui.basic.AULinearLayout>

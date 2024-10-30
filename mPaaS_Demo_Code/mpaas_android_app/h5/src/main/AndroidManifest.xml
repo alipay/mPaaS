@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.H5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <!--        android:name="com.example.h5.MainApplication"-->
+        <!--        android:allowBackup="true"-->
+        <!--        android:icon="@mipmap/ic_launcher"-->
+        <!--        android:label="@string/app_name"-->
+        <!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+        <!--        android:supportsRtl="true"-->
+        <!--        android:theme="@style/Theme.68bjspoc">-->
+
+
+        <activity android:name="com.example.h5.HomeActivity1" />
+        <activity android:name="com.example.h5.OfflineActivity" />
+
+        <activity android:name="com.example.h5.NebulaAppActivity" />
+        <activity android:name="com.example.h5.PublicResActivity" />
+        <!--        <meta-data-->
+        <!--            android:name="UCSDKAppKey"-->
+        <!--            android:value="JJQ/FLbHKX+ETiFNpCcb0fqjPfQ+JnjGBxDaqUm0MDcNATUVfsVrSh4KHq8of4/pFud/TDgjKf8891LpDlGG4w==" />-->
+
+
+    </application>
+
+
+</manifest>

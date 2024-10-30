@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AU_COLOR_APP_BLUE"
+    android:orientation="vertical">
+
+    <!--<com.alipay.mobile.antui.viewdemo.view.AULinearLayoutViewTest-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:background="@color/AU_COLOR_APP_YELLOW"-->
+    <!--android:orientation="vertical" />-->
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:id="@+id/ll_test"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@color/AU_COLOR_APP_YELLOW"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:id="@+id/tv_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/AU_COLOR_APP_RED"
+            android:gravity="center"
+            android:text="测试LinearLayout适配" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+    <com.alipay.mobile.antui.basic.AUFrameLayout
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@color/AU_COLOR1"
+        android:paddingLeft="10dp">
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@color/AU_COLOR_APP_RED"
+            android:text="测试FrameLayout适配"
+            android:textSize="16dp" />
+
+    </com.alipay.mobile.antui.basic.AUFrameLayout>
+
+    <com.alipay.mobile.antui.basic.AURelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@color/AU_COLOR3">
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@color/AU_COLOR_CLIENT_BG1"
+            android:text="测试RelativeLayout适配1"
+            android:textSize="12dp" />
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/AU_COLOR10"
+            android:text="测试RelativeLayout适配2"
+            android:textSize="12dp" />
+
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/AU_COLOR_MAIN_CONTENT"
+        android:orientation="vertical">
+
+        <com.alipay.mobile.antui.basic.AUImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY" />
+
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+</com.alipay.mobile.antui.basic.AULinearLayout>

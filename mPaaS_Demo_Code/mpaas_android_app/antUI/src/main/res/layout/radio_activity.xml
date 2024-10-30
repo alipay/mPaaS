@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Radio" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="TabBar" />
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="默认样式"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.alipay.mobile.antui.basic.AULinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.alipay.mobile.antui.iconfont.AUIconView
+                    android:id="@+id/list_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:iconfontUnicode="@string/iconfont_selected"
+                    app:iconfontColor="@color/AU_COLOR_LINK"
+                    />
+
+                <com.alipay.mobile.antui.basic.AUTextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选中"/>
+            </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="单选列表项"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="中国"
+                app:listShowCheck="true" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="美国"
+                app:listShowCheck="true" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="巴西"
+                app:listShowCheck="true" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="俄罗斯"
+                app:listShowCheck="true" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="英国"
+                app:listShowCheck="true" />
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="法国"
+                app:listShowCheck="true" />
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+        <com.mpaas.antui.viewdemo.view.BaseFootView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

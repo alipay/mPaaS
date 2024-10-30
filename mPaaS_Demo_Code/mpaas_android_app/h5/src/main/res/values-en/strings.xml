@@ -1,0 +1,33 @@
+<resources>
+    //H5
+    <string name="custom_jsapi_setting_tips">Registered successfully\n
+        Now you can open the offline package by clicking\"Call custom API1\"and\"Call custom API2\"，You can see custom return values</string>
+    <string name="title">H5</string>
+    <string name="open_html">H5 The preset HTML page is displayed</string>
+    <string name="update_success">The update is successful</string>
+    <string name="offline_package">The offline package</string>
+    <string name="online_page">Online page</string>
+    <string name="h5_container">H5 container</string>
+    <string name="setting_shezhilixianbaogongyaochenggong">Succeeded in setting the offline package public key. Procedure</string>
+    <string name="open_offline_package_attestation">Enable offline package check</string>
+    <string name="preset_offline_package">Preset offline package</string>
+    <string name="preset_offline_package_success">The preset offline package succeeded. Procedure</string>
+    <string name="update_failure">Update failed</string>
+    <string name="nebula_app">H5 application</string>
+    <string name="open_h5_app">Open the H5 application</string>
+    <string name="open_h5_app_2">Open the H5 app (Option 2, no longer recommended)</string>
+    <string name="update_app">Update H5 application information</string>
+    <string name="update_specific_app">Updates the specified H5 application</string>
+    <string name="verify_app_setting">Description of offline package verification</string>
+    <string name="H5resources">H5 container</string>
+    <string name="H5_getappversion">H5 Obtain the APP version</string>
+    <string name="H5open_camera">H5 Turn on the camera</string>
+    <string name="title_plugin_registers">Register custom JSAPI</string>
+    <string name="verify_app_setting_toast">1. Please set h5_shouldverifyapp to YES\n in assets/config/custom_config.json
+
+2. Please call H5Utils at startup. SetProvider (H5PublicRsaProvider. Class. GetName (), new H5RsaProviderImpl ()); Set the check public key \n
+
+3. Note that the RsaProvider must be set up before the H5 page is opened for the first time because RSA initializes only once when the H5 page is opened.
+    </string>
+
+</resources>

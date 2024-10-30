@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/menu_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="底部浮层"
+        app:rightIconUnicode="@string/iconfont_more" />
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_below="@id/menu_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toastPopMenu"
+            android:text="选项一"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="down"/>
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toastPopMenu"
+            android:text="选项二"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="down"/>
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="showCardMenu"
+            android:text="选项三"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="down"/>
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toastPopMenu"
+            android:text="选项一"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="up"/>
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toastPopMenu"
+            android:text="选项二"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="up"/>
+
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_bg_menu_item"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toastPopMenu"
+            android:text="选项三"
+            android:textColor="@color/AU_COLOR_TITLE"
+            android:textSize="13dp"
+            android:tag="up"/>
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+</RelativeLayout>

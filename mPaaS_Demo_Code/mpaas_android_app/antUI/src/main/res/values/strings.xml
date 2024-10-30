@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="testText" >这是一段很长很长很长很长的文字默认属性</string>
+    <string name="page_main_btn">页面主按钮 Normal</string>
+    <string name="page_main_disable_btn">页面主按钮 Disable</string>
+    <string name="page_next_level_btn">页面次要操作 Normal</string>
+    <string name="page_next_level_disable_btn">页面次要操作 Disable</string>
+    <string name="page_warn_btn">警告按钮 Normal</string>
+    <string name="page_warn_disaable_btn">警告按钮 Disable</string>
+    <string name="down_load_btn">下载</string>
+    <string name="auxiliary_btn">辅助按钮</string>
+    <string name="operation_btn">操作</string>
+    <string name="text_btn">文字按钮</string>
+    <string name="text_disable_btn">文字按钮(Disable)</string>
+    <string name="text_next_level_btn">文字次按钮</string>
+    <string name="text_next_level_disable_btn">文字次按钮(不可用)</string>
+    <string name="disable_follow_btn">取消关注</string>
+    <string name="more_server_btn">更多服务</string>
+
+</resources>

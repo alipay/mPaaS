@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.lottie.AULottieLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mpaas.antui.viewdemo.view.DemoTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bar"
+           app:aui_titleText="支付成功" />
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="Result" />
+
+
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/subButtonStyle"
+            android:layout_margin="12dp"
+            android:id="@+id/success_action"
+            android:clickable="true"
+            android:text="操作成功结果页" />
+        <com.alipay.mobile.antui.basic.AUButton
+            style="@style/subButtonStyle"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:id="@+id/fail_action"
+            android:text="操作失败结果页" />
+
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

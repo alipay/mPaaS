@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.share">
+
+    <application>
+
+
+        <activity android:name=".ddshare.DDShareActivity"/>
+        <activity android:name=".share.ShareActivity1"/>
+        <activity
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:name=".wxapi.WXEntryActivity"/>
+
+
+
+
+
+
+    </application>
+
+</manifest>

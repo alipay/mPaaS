@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Lists" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.mpaas.antui.viewdemo.view.BaseHeadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:aui_titleText="Lists" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带说明的列表项(AUAssistLabelView, isHead=true)"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftText="标题文字"
+                app:listRightText="说明信息"
+                app:listShowArrow="false" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带图标、说明的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftText="标题文字"
+                app:listRightText="说明信息特别长说明信息特别长说明信息特别长说明信息特别长"
+                app:listItemType="top"
+                app:listShowArrow="false" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftText="标题文字特别长标题文字特别长标题文字特别长"
+                app:listRightText="说明信息特别长说明信息特别长说明信息特别长说明信息特别长"
+                app:listItemType="bottom"
+                app:listShowArrow="false" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带跳转的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftText="标题文字" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带说明、跳转的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftText="标题文字"
+                app:listRightText="说明信息" />
+
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带图标、说明、跳转的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftText="标题文字"
+                app:listRightText="说明信息" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带描述、跳转的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftSubText="描述信息"
+                app:listLeftText="双行列表" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带头像小图、联系人的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:hasRound="true"
+                app:listLeftImage="@drawable/list_avatar"
+                app:listLeftImageSizeType="size_large"
+                app:listLeftText="单行列表" />
+
+            <!--<com.alipay.mobile.antui.tablelist.AUSingleTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:hasRound="true"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftImage="@drawable/image"-->
+            <!--app:listLeftImageHeight="36dp"-->
+            <!--app:listLeftImageWidth="36dp"-->
+            <!--app:listLeftText="自定义图片大小"-->
+            <!--app:listShowArrow="false" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUSingleTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftText="标题"-->
+            <!--app:listRightImage="@drawable/image"-->
+            <!--app:listRightText="内容展示加长加长加长加长加长加长" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUSingleTitleListItem-->
+            <!--android:id="@+id/button_item"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:listItemType="bottom"-->
+            <!--app:listLeftImage="@drawable/image"-->
+            <!--app:listLeftText="标题"-->
+            <!--app:listRightText="试一试"-->
+            <!--app:listRightType="button"/>-->
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带头像中图、摘要的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:hasRound="true"
+                app:listLeftImage="@drawable/list_avatar"
+                app:listLeftSubText="副标签文本"
+                app:listLeftText="文本标签"
+                app:listRightText="10:30"
+                app:listShowArrow="false" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带头像大图、摘要的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:hasRound="true"
+                app:listLeftImage="@drawable/list_avatar"
+                app:listLeftImageSizeType="size_large"
+                app:listLeftSubText="副标签文本"
+                app:listLeftText="文本标签" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带图片小图、联系人的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftImageSizeType="size_large"
+                app:listLeftText="单行列表" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带图片中图、摘要的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftSubText="副标签文本"
+                app:listLeftText="文本标签"
+                app:listRightText="10:30"
+                app:listShowArrow="false" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="带图片大图、摘要的列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listLeftImage="@drawable/image"
+                app:listLeftImageSizeType="size_large"
+                app:listLeftSubText="副标签文本"
+                app:listLeftText="文本标签" />
+
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图文列表项"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.tablelist.AUMultiListItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listLeftImage="@drawable/image"
+                app:listLeftSubText="“全球未来机场计划”是指未来游客在海外机场，支付宝使用航班提醒等服务。全球未来机场计划”是指未来游客在海外机场，支付宝使用航班提醒等服务"
+                app:listLeftText="标题" />
+
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/AU_COLOR_LINE"-->
+            <!--android:text="AUParallelTitleListItem" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUParallelTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:listItemType="top"-->
+            <!--app:listLeftSubText="内容一"-->
+            <!--app:listLeftText="标题一"-->
+            <!--app:listRightSubText="内容二"-->
+            <!--app:listRightText="标题二"-->
+            <!--app:listShowArrow="false" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUParallelTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftSubText="内容一"-->
+            <!--app:listLeftText="标题一"-->
+            <!--app:listRightSubText="内容二"-->
+            <!--app:listShowArrow="false" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUParallelTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftSubText="内容一"-->
+            <!--app:listLeftText="标题一"-->
+            <!--app:listRightText="标题二"-->
+            <!--app:listShowArrow="false" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AUParallelTitleListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--app:listItemType="bottom"-->
+            <!--app:listLeftSubText="内容一"-->
+            <!--app:listLeftText="标题一"-->
+            <!--app:listRightSubText="内容二"-->
+            <!--app:listRightText="标题二" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/AU_COLOR_LINE"-->
+            <!--android:text="AULineBreakListItem" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AULineBreakListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:listItemType="top"-->
+            <!--app:listLeftText="主体信息"-->
+            <!--app:listRightText="单行文字过多，换行与左侧文字间距保持30px" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AULineBreakListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftText="单行文字过多，换行与右侧文字间距保持30px"-->
+            <!--app:listRightText="详细信息" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AULineBreakListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:listItemType="center"-->
+            <!--app:listLeftText="单行文字"-->
+            <!--app:listRightText="详细信息" />-->
+
+            <!--<com.alipay.mobile.antui.tablelist.AULineBreakListItem-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:listItemType="bottom"-->
+            <!--app:listLeftText="单行文字过多，换行与右侧文字间距保持30px"-->
+            <!--app:listRightText="单行文字过多，换行与右侧文字间距保持30px" />-->
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

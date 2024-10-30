@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/mock_need_hotpatch_tip" />
+
+    <Button
+        android:id="@+id/hotpatch_need_hotpatch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:background="@color/black"
+        android:text="@string/mock_need_hotpatch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:visibility="gone"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/trigger_hotpatch_dynamic_release_tip" />
+
+    <Button
+        android:id="@+id/hotpatch_trigger_hotpatch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#fff"
+        android:background="@color/black"
+        android:layout_marginBottom="20dp"
+        android:text="@string/trigger_hotpatch_dynamic_release" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/notice" />
+</LinearLayout>

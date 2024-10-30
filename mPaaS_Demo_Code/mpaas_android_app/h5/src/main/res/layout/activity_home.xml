@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:gravity="center"
+        android:text="@string/h5_container"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btnKsns"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="ksns"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_online"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/online_page"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_enable_verify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/open_offline_package_attestation"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_preset_offline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/preset_offline_package"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_offline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/offline_package"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_plugin_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/title_plugin_registers"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_open_html"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="@string/open_html"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_public_res"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="加载全局资源"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_h5_load_public_res"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:text="离线包加载全局资源"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

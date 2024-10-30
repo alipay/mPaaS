@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_antUI"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/antUI"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_uikongjian"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="功能组件"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_gdmap"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:text="定位与地图"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+
+            <Button
+                android:id="@+id/btn_rpc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_sync"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/sync"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_analytics"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/analytic_title"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_fast_start"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:text="@string/tiny_app"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+
+            <Button
+                android:id="@+id/btn_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/upgrade"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_hot_patch"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/hotpatch"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/H5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/H5resources"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_config_service"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/config_service"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_cdp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/cdp"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+            <Button
+                android:id="@+id/btn_push"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/push"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

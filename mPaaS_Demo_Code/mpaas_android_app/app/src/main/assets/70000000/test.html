@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./common.css">
+    <title>Document</title>
+</head>
+
+<body style="width: 100%;height: 100%; overflow-y: scroll;">
+    <div style="width: 100%;height: 100px; background-color: aqua;">过度页面1</div>
+    <button id="go2">go2</button>
+    <button id="J_BACK_RESULT">返回携带参数</button>
+</body>
+<script>
+    function ready(callback) {
+        var currentUrl = window.location.href;
+        alert(currentUrl);
+        // 如果 jsbridge 已经注入则直接调用
+        if (window.AlipayJSBridge) {
+            callback && callback();
+        } else {
+            // 如果没有注入则监听注入的事件
+            document.addEventListener('AlipayJSBridgeReady', callback, false);
+        }
+    }
+    ready(function () {
+        var currentUrl = window.location.href;
+        var go2 = document.getElementById('go2');
+        var J_BACK_RESULT = document.getElementById('J_BACK_RESULT');
+
+        document.addEventListener('resume',
+            function (e) {
+                alert(`触发resume==${currentUrl}`);
+                3
+            }, false);
+        go2.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './test2.html',
+                passData: {
+                    key1: {
+                        "url": "/www/index.html",
+                        "showTitleBar": "YES",
+                        "showToolBar": "NO"
+                       },
+                    key2: "key2Value"
+                  }
+            });
+        });
+        J_BACK_RESULT.addEventListener('click', function () {
+        AlipayJSBridge.call('J_BACK_RESULT', {
+          param2: 'J_BACK_RESULT'
+        }, function (e) {
+          if (e.error === 1) {
+            alert('请前往自定义设置注册JSAPI');
+          } else {
+            var resultStr = JSON.stringify(e);
+            alert(resultStr);
+          }
+        });
+      });
+    })
+</script>
+
+</html>

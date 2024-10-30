@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.alipay.mobile.antui.basic.AUScrollView-->
+    <!--android:id="@+id/test_scroll"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<com.alipay.mobile.antui.basic.AUTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2000dp"-->
+    <!--android:background="#f5f5f9" />-->
+
+    <!--<com.alipay.mobile.antui.basic.AUImageView-->
+    <!--android:id="@+id/test_img"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="400dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:background="@drawable/test1" />-->
+    <!--</FrameLayout>-->
+    <!--</com.alipay.mobile.antui.basic.AUScrollView>-->
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:rightIconUnicode="@string/iconfont_more"
+       app:aui_titleText="换肤" />
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.alipay.mobile.antui.basic.AUButton
+            android:id="@+id/default_btn"
+            style="@style/mainButtonStyle"
+            android:layout_margin="@dimen/AU_SPACE3"
+            android:layout_weight="1"
+            android:text="默认皮肤"
+            android:onClick="onClickDefault"/>
+
+        <com.alipay.mobile.antui.basic.AUButton
+            android:id="@+id/second_btn"
+            style="@style/mainButtonStyle"
+            android:layout_margin="@dimen/AU_SPACE3"
+            android:layout_weight="1"
+            android:text="当前页面"
+            android:onClick="onClickSecond"/>
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+    <com.alipay.mobile.antui.basic.AUButton
+        style="@style/mainButtonStyle"
+        android:layout_margin="@dimen/AU_SPACE3"
+        android:text="全局监听页面"
+        android:onClick="onClickAll"/>
+</com.alipay.mobile.antui.basic.AULinearLayout>

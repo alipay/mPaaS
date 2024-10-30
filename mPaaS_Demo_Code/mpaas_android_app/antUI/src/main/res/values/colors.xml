@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="AU_COLOR1">#29AB91</color>
+    <color name="AU_COLOR2">#F15A4A</color>
+    <color name="AU_COLOR3">#FFB415</color>
+    <color name="AU_COLOR4">#2B91E2</color>
+    <color name="AU_COLOR5">#333333</color>
+    <color name="AU_COLOR6">#888888</color>
+    <color name="AU_COLOR7">#A4A9B0</color>
+    <color name="AU_COLOR8">#DDDDDD</color>
+    <color name="AU_COLOR9">#108EE9</color>
+    <color name="AU_COLOR10">#F4333C</color>
+    <color name="AU_COLOR11">#FF5B05</color>
+    <color name="AU_COLOR12">#F5F5F9</color>
+    <color name="AU_COLOR13">#EBEEEF</color>
+    <color name="AU_COLOR14">#68000000</color>
+    <color name="AU_COLOR15">#FFFFFF</color>
+    <color name="AU_COLOR16">#1B82D2</color>
+    <color name="AU_COLOR17">#0B333333</color>
+    <color name="AU_COLOR18">#1284D6</color>
+    <color name="AU_COLOR19">#BBBBBB</color>
+    <color name="AU_COLOR20">#777777</color>
+    <color name="AU_COLOR21">#000000</color>
+    <color name="AU_COLOR22">#CCCCCC</color>
+
+</resources>

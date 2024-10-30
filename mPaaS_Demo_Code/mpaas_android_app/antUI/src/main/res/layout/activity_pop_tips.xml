@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="小提示"
+        android:textSize="20dp" />
+
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/ab_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tips"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/AU_COLOR_APP_GREEN"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="展示气泡左半屏贴边"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/ab_tips1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tips"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/AU_COLOR_APP_GREEN"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="展示气泡左半屏居中"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/ab_tips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_tips"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/AU_COLOR_APP_GREEN"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="展示气泡右半屏居中"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/ab_tips3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_tips"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="500dp"
+        android:background="@color/AU_COLOR_APP_GREEN"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="展示气泡右半屏贴边"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

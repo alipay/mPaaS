@@ -1,0 +1,97 @@
+{
+  "config": {
+    "updateReqRate": 16400,
+    "limitReqRate": 13600,
+    "appPoolLimit": 3,
+    "versionRefreshRate": 86400
+  },
+  "data": [
+    {
+      "app_desc":"9910在线客服",
+      "app_id":"99100000",
+      "auto_install":1,
+      "extend_info":{
+        "launchParams":{
+        }
+      },
+      "fallback_base_url":"https://tteest.96079.com.cn:40000/mcube/PRI39F8EC0181502-sit/99100000/0.0.0.20_all/nebula/fallback/",
+      "global_pack_url":"",
+      "icon_url":"",
+      "installType":1,
+      "main_url":"/index.htm",
+      "name":"9910在线客服",
+      "online":1,
+      "package_url":"https://tteest.96079.com.cn:40000/mcube/PRI39F8EC0181502-sit/99100000/0.0.0.20_all/nebula/99100000_0.0.0.20.amr",
+      "patch":"",
+      "sub_url":"",
+      "version":"0.0.0.20",
+      "vhost":"https://99100000.h5app.ksrcb.com"
+    },
+    {
+      "app_desc": "h5测试包70000000",
+      "app_id": "70000000",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mcube-prod.cn-hangzhou.oss.aliyuncs.com/ONEXDF259A2051016-shaojian/70000000/0.0.0.2_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/index.html",
+      "name": "h5测试包70000000",
+      "online": 1,
+      "package_url": "https://mcube-prod.cn-hangzhou.oss.aliyuncs.com/ONEXDF259A2051016-shaojian/70000000/0.0.0.2_all/nebula/70000000_0.0.0.2.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.2",
+      "vhost": "https://70000000.testj.com"
+    },
+    {
+      "app_desc": "cpial预置包",
+      "app_id": "80808080",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mcube-prod.cn-hangzhou.oss.aliyuncs.com/ONEXDF259A2051016-shaojian/80808080/0.0.0.9_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/www/index.html",
+      "name": "cpial预置包",
+      "online": 1,
+      "package_url": "https://mcube-prod.cn-hangzhou.oss.aliyuncs.com/ONEXDF259A2051016-shaojian/80808080/0.0.0.9_all/nebula/80808080_0.0.0.9.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.9",
+      "vhost": "https://80808080.testj.com"
+    },
+    {
+      "app_desc": "H5离线包升级POC",
+      "app_id": "66668888",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mcube-prod.mpaascloud.com/ONEXDF259A2051016-shaojian/66668888/1.0.0.0_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/www/index.html",
+      "name": "H5离线包升级POC",
+      "online": 1,
+      "package_url": "https://mcube-prod.mpaascloud.com/ONEXDF259A2051016-shaojian/66668888/1.0.0.0_all/nebula/66668888_1.0.0.0.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "1.0.0.0",
+      "vhost": "https://66668888.testj.com"
+    }
+  ],
+  "resultCode": 100,
+  "resultMsg": "操作成功",
+  "state": "success"
+}

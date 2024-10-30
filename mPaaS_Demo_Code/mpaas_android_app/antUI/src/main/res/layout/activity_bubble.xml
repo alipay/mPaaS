@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:id="@+id/bubble_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="BubbleView">
+
+    </com.mpaas.antui.viewdemo.view.DemoTitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="@string/testText"
+            android:textSize="12sp"
+            />
+
+        <!--固定宽高的气泡-->
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/bv0"
+            android:gravity="center"
+            android:text="右上角"
+            android:textSize="12sp"
+            app:bubbleColor="@color/AU_COLOR10"
+            app:bubblePosition="topMid"
+            />
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bv0"
+            android:layout_margin="10dp"
+            android:text="大的气泡"
+            android:textSize="60sp"
+            app:bubblePosition="topMid"
+            />
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv4"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/bv3"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="大的蓝色气泡小字"
+            android:textColor="@color/AU_COLOR14"
+            android:textSize="10sp"
+            app:bubbleColor="@color/AU_COLOR9"
+            app:bubblePosition="topMid"
+            />
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bv4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="免单惠"
+            app:bubblePosition="topRight"
+            />
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bv4"
+            android:layout_centerHorizontal="true"
+            android:text="免单惠"
+            app:bubblePosition="topMid"
+            />
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bv4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="免单惠"
+            app:bubblePosition="topLeft"
+            />
+
+        <LinearLayout
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_top_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="位于右上角"/>
+
+            <Button
+                android:id="@+id/bt_top_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="位于正上方"/>
+
+            <Button
+                android:id="@+id/bt_top_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="位于左上角"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/controller"
+            android:layout_marginBottom="20dp"/>
+
+        <com.alipay.mobile.antui.badge.bubble.AUBubbleView
+            android:id="@+id/bv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sb"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

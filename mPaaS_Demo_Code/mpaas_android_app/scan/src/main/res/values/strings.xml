@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan_tip">放入框内，自动扫描</string>
+    <string name="camera_open_error">无法开启摄像头，请检查应用是否有访问摄像头的权限，或重启设备后重试</string>
+    <string name="camera_no_permission">摄像头权限被关闭，请开启权限后重试</string>
+    <string name="custom_title">自定义UI</string>
+    <string name="app_name">scan_Demo</string>
+    <string name="scan_title">扫一扫</string>
+    <string name="standard_ui_btn">使用标准UI</string>
+    <string name="custom_ui_btn">使用自定义UI</string>
+    <string name="scan_failure">扫码失败，请重试！</string>
+    <string name="standard_title">标准UI</string>
+    <string name="confirms">确认</string>
+
+    <string name="scan_type_rq">二维码</string>
+    <string name="scan_type_bar_code">条形码</string>
+    <string name="select_scan_style">选择UI风格</string>
+
+    <string name="input_text">请输入文字</string>
+    <string name="flashlight_light_Tips">光线太暗，请打开手电筒</string>
+    <string name="input_chinese">输入文字</string>
+    <string name="cancel">取消</string>
+    <string name="setting_scan_style">设置UI风格</string>
+    <string name="transparent_status_bar">设置透明状态栏</string>
+    <string name="set_scan_type">设置识别类型</string>
+    <string name="set_scan_title">设置标题文案</string>
+    <string name="set_Tips_title">设置提示文案</string>
+    <string name="set_Tips_open_title">设置打开手电筒提示文案</string>
+    <string name="set_Tips_close_title">设置关闭手电筒提示文案</string>
+    <string name="set_Tips_open_torch">设置暗光是否自动打开手电筒</string>
+    <string name="set_transparent_status_bar">设置透明状态栏</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="select_support_type">选择识别类型</string>
+    <string name="dm_code">DM码</string>
+    <string name="pdf_417_code">PDF417码</string>
+
+</resources>

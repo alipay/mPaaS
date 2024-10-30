@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scan">
+
+    <application>
+
+        <activity android:name=".CustomScanActivity"/>
+        <activity android:name=".scan.ScanActivity"/>
+        <activity android:name=".scan.ScanRequestActivity"/>
+
+    </application>
+
+</manifest>

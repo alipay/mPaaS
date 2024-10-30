@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_100"
+        android:background="#f23"
+        android:gravity="center"
+        android:text="图书"
+        android:textColor="#fff"
+        android:textSize="@dimen/di_30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLingShi"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#999"
+            android:gravity="center"
+            android:text="零食"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+
+        <TextView
+            android:id="@+id/tvClothes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#d34"
+            android:gravity="center"
+            android:text="服装"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+
+        <TextView
+            android:id="@+id/tvCar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#000"
+            android:gravity="center"
+            android:text="汽车"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_100"
+        android:background="#ff4"
+        android:gravity="center"
+        android:text="零食"
+        android:textColor="#000"
+        android:textSize="@dimen/di_30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvJiFen"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#999"
+            android:gravity="center"
+            android:text="积分"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+
+        <TextView
+            android:id="@+id/tvHaikuan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#d34"
+            android:gravity="center"
+            android:text="还款"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+
+        <TextView
+            android:id="@+id/tvDaiKuan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/di_100"
+            android:layout_weight="1"
+            android:background="#000"
+            android:gravity="center"
+            android:text="贷款"
+            android:textColor="#fff"
+            android:textSize="@dimen/di_30" />
+    </LinearLayout>
+</LinearLayout>

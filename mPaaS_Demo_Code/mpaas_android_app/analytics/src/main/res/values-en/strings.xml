@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="analytic_title">Mobile Analysis</string>
+    <string name="automation_title">Automation log</string>
+    <string name="user_active_btn">Active user report</string>
+    <string name="behavior_log_btn">Custom event log</string>
+    <string name="crash_log_btn">Crash log</string>
+    <string name="automation_log_btn">Automation log</string>
+    <string name="log_report_btn">Report log</string>
+    <string name="open_launch_anr_btn">Enable crash on launch</string>
+    <string name="block_log_btn">Hangup log</string>
+    <string name="anr_log_btn">Frozen log</string>
+    <string name="mock_crash">Simulate crash</string>
+    <string name="user_active_result">Reporting active users successfully</string>
+    <string name="behavior_log_result">1 custom event log recorded</string>
+    <string name="performance_log_result">1 performance log recorded</string>
+    <string name="block_log_result">1 hangup log recorded</string>
+    <string name="anr_log_result">1 frozen log recorded</string>
+    <string name="report_log_result">Log reported</string>
+    <string name="open_launch_anr_switch">Enable crash on launch</string>
+    <string name="close_launch_anr_switch">Disable crash on launch</string>
+    <string name="user_active_tips">The active user report is generally called when users log in successfully.\nYou can log in to the console, and go to Mobile Analysis > Basic analysis > Basic dashboard > Behavior analysis to view active users.\n\nuserId of this device: %1$s\nOther logs can be queried by using this id\nThe whitelist feature of Mobile Delivery Service (including features such as version update and hotpatch) also requires this id for configuration purpose.</string>
+    <string name="crash_log_tips"> Tap this to trigger a crash.\nYou can log in to the console, and go to Mobile Analysis > Performance analysis > Crash report to view it. </string>
+    <string name="automation_log_tips">After the page is opened, the display of all components and taps of all buttons will be reported through the automation log.\nYou can log in to the console, and go to Mobile Analysis > Basic analysis > Page analysis > Behavior analysis to view it.</string>
+    <string name="report_log_tips">Except for performance logs (crash, hangup, frozen) that are reported in real time, other logs are reported based on specific policies. Tap this button to trigger an active report.\nYou can log in to the console, and go to Mobile Analysis > Log management > Query history log to view it</string>
+    <string name="open_launch_anr_switch_tips">After you enable the crash on launch feature, when you close and relaunch an app, a crash on launch will be simulated. The log will be reported after 30 seconds.</string>
+    <string name="anr_log_tips">Tap this to trigger a period of ANR.\nYou can log in to the console, and go to Mobile Analysis > Performance analysis > Frozen report to view it.</string>
+    <string name="block_log_tips">Tap this to trigger a period of hangup.\nYou can log in to the console, and go to Mobile Analysis > Performance analysis > Hangup report to view it.</string>
+    <string name="automation_tab1">Tab1</string>
+    <string name="automation_tab2">Tab2</string>
+    <string name="automation_fragment1">Fragment1</string>
+    <string name="automation_fragment2">Fragment2</string>
+    <string name="automation_view_tab1">View1</string>
+    <string name="automation_view_tab2">View2</string>
+    <string name="automation_view1">AUTextView1</string>
+    <string name="automation_view2">AUTextView2</string>
+    <string name="automation_scroll_tips">Scroll down to view more View</string>
+
+    <string name="pays_analytics"> 自定义移动分析事件-- 完成支付用户自定义大盘</string>
+
+</resources>

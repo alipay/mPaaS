@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_atb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/feature_show_adcode_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pit_cdp_cav_top"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/cdp_feature_show_top" />
+
+
+    <com.mpaas.cdp.CdpAdvertisementView
+        android:id="@+id/pit_cdp_cav_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_atb"
+        android:layout_gravity="center_vertical"
+        android:background="#ff00ff00" />
+
+
+    <com.mpaas.cdp.CdpAdvertisementView
+        android:id="@+id/pit_cdp_cav_center_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="#ff00ff00" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/feature_show_adcode_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pit_cdp_cav_center_two"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/cdp_feature_show_center" />
+
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/feature_show_adcode_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pit_cdp_cav_bottom"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/cdp_feature_show_bottom" />
+
+
+    <com.mpaas.cdp.CdpAdvertisementView
+        android:id="@+id/pit_cdp_cav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="#ff00ff00" />
+    <include
+        layout="@layout/activity_dynamic"
+        />
+
+
+</RelativeLayout>

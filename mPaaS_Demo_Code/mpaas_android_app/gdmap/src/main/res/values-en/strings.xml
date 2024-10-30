@@ -1,0 +1,22 @@
+<resources>
+    <string name="isEn">1</string>
+    <string name="lbs">Positioning</string>
+    <string name="request_lbs">Tap to obtain positioning information</string>
+    <string name="lbs_success">Positioning successful</string>
+    <string name="lbs_error">Positioning failed</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="ad_code">City code:</string>
+    <string name="country">Country:</string>
+    <string name="province">Province:</string>
+    <string name="city">City:</string>
+    <string name="district">District:</string>
+    <string name="street">Street:</string>
+    <string name="address">Address:</string>
+    <string name="map_notice">Note:\n\n1.Please ensure that the key of Amap is registered in your AndroidManifest.xml.\n2.Please ensure that the Amap service APSService is registered in your AndroidManifest.xml\n3. Please ensure that com.alipay.android.phone.mobilecommon-lbs and com.alipay.mobileapi-mobilelbs are added to the slink file in your portal project.</string>
+
+    <string name="lbs_informaion">locate information</string>
+    <string name="gdmap_location">current location : </string>
+    <string name="gdmap_start">Start positioning</string>
+    <string name="gdmap_current_location">Obtain current position of Amap</string>
+</resources>

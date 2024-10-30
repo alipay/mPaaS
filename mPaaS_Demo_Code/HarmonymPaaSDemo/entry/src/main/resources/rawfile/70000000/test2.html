@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./common.css">
+    <title>Document</title>
+</head>
+
+<body style="width: 100%;height: 100%; overflow-y: scroll;">
+    <div style="width: 100%;height: 100px; background-color: aqua;">过度页面2</div>
+    <button id="goSwitch">goSwitch</button>
+    <button id="sendMsgToPreviousPage">给上一页resume发消息</button>
+</body>
+<script>
+    function ready(callback) {
+        var currentUrl = window.location.href;
+        alert(currentUrl);
+        // 如果 jsbridge 已经注入则直接调用
+        if (window.AlipayJSBridge) {
+            callback && callback();
+        } else {
+            // 如果没有注入则监听注入的事件
+            document.addEventListener('AlipayJSBridgeReady', callback, false);
+        }
+    }
+    ready(function () {
+        var currentUrl = window.location.href;
+        var goSwitch = document.getElementById('goSwitch');
+        var sendMsgToPreviousPage = document.getElementById('sendMsgToPreviousPage');
+
+
+sendMsgToPreviousPage.addEventListener('click', function () {
+            AlipayJSBridge.call('sendMsgToPreviousPage', {
+                param2: 'sendMsgToPreviousPage'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+        document.addEventListener('resume',
+            function (e) {
+                alert(`触发resume==${currentUrl}`);
+                3
+            }, false);
+
+        goSwitch.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './switch.html',
+            });
+        });
+        AlipayJSBridge.call('getStartupParams', {
+            // 可选，根据 key 值过滤返回结果，不填返回全部
+            key: ['key1', 'key2']
+            }, function(result) {
+            alert(`启动参数${JSON.stringify(result)}`);
+         });
+
+    })
+</script>
+
+</html>

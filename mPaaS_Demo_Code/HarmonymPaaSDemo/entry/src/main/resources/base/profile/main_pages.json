@@ -1,0 +1,26 @@
+{
+  "src": [
+    "pages/PageMain",
+    "pages/PageRpc",
+    "pages/PageLogin",
+    "pages/PageLoginCallBack",
+    "pages/PageTask",
+    "pages/PageProvideComsume",
+    "pages/PageLogger",
+    "pages/PageUpgrade",
+    "pages/PageSync",
+    "pages/PagePush",
+    "pages/PageH5Container",
+    "pages/PageKeyBoard",
+    "pages/Index",
+    "pages/PageNavigation",
+    "pages/PageScan",
+    "pages/PageScroll",
+    "pages/PageWeb",
+    "pages/PageSplash",
+    "test/TestPageNavigation1",
+    "test/TestPageNavigation10",
+    "test/TestPageNavigation999",
+    "test/TestPageNavigationChild"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "routerMap": [
+    {
+      "name": "OtherPageMain",
+      "pageSourceFile": "src/main/ets/pages/OtherPageMain.ets",
+      "buildFunction": "getOtherPageMain"
+    }
+  ]
+}

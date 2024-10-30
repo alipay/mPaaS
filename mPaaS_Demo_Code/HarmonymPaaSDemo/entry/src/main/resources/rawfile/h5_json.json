@@ -1,0 +1,475 @@
+{
+  "config": {
+    "updateReqRate": 16400,
+    "limitReqRate": 13600,
+    "appPoolLimit": 3,
+    "versionRefreshRate": 86400
+  },
+  "data": [
+    {
+      "app_desc":"20240913",
+      "app_id":"20240913",
+      "auto_install":1,
+      "extend_info":{
+        "launchParams":{
+        }
+      },
+      "fallback_base_url":"http://11.164.247.99/mcube/PRI95CCE11211247-default/20240913/0.0.0.1_all/nebula/fallback/",
+      "global_pack_url":"",
+      "icon_url":"",
+      "installType":1,
+      "main_url":"/zz_transfer_harmony/card_transfer/index.html",
+      "name":"20240913",
+      "online":1,
+      "package_url":"http://11.164.247.99/mcube/PRI95CCE11211247-default/20240913/0.0.0.1_all/nebula/20240913_0.0.0.1.amr",
+      "patch":"",
+      "sub_url":"",
+      "version":"0.0.0.1",
+      "vhost":"https://20240913.h5app.com"
+    },
+    {
+      "app_desc": "鸿蒙调试专用",
+      "app_id": "00000153",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mtbank.qhdbank.cn:9443/CC710D2050951-sit/00000153/0.0.0.4_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/www/index.html",
+      "name": "鸿蒙调试专用",
+      "online": 1,
+      "package_url": "https://mtbank.qhdbank.cn:9443/CC710D2050951-sit/00000153/0.0.0.4_all/nebula/00000153_0.0.0.4.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.4",
+      "vhost": "https://00000153.qhdbank.cn"
+    },
+    {
+      "app_desc": "全部功能",
+      "app_id": "00000154",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mtbank.qhdbank.cn:9443/CC710D2050951-sit/00000154/0.0.0.1_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/www/index.html",
+      "name": "全部功能",
+      "online": 1,
+      "package_url": "https://mtbank.qhdbank.cn:9443/CC710D2050951-sit/00000154/0.0.0.1_all/nebula/00000154_0.0.0.1.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.1",
+      "vhost": "https://00000154.qhdbank.cn"
+    },
+    {
+      "app_desc": "鸿蒙测试",
+      "app_id": "99990000",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://pmbcdn.bankofshanghai.net:3603/161BC41281604-harmonysit1/99990000/0.0.0.57_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/HMtestPage/testPage/page.html",
+      "name": "鸿蒙测试",
+      "online": 1,
+      "package_url": "https://pmbcdn.bankofshanghai.net:3603/161BC41281604-harmonysit1/99990000/0.0.0.57_all/nebula/99990000_0.0.0.57.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.57",
+      "vhost": "https://99990000.harmonysit1_mbank.bosc.com"
+    },
+    {
+      "icon_url": "",
+      "fallback_base_url": "https://mpaastest.jxnxs.com/29D93CC140943-A1/00000201/0.0.0.71_all/nebula/fallback/",
+      "package_url": "https://mpaastest.jxnxs.com/29D93CC140943-A1/00000201/0.0.0.71_all/nebula/00000201_0.0.0.71.amr",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "main_url": "/www/login-index.html",
+      "version": "0.0.0.71",
+      "patch": "",
+      "vhost": "https://00000201.com.jxnxs",
+      "sub_url": "",
+      "global_pack_url": "",
+      "installType": 1,
+      "name": "www201",
+      "online": 1,
+      "app_desc": "www201",
+      "app_id": "00000201"
+    },
+    {
+      "app_desc": "02007000理财",
+      "app_id": "02007000",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mptest.xacbank.com:10062/mcube/F8E401C110934-default/02007000/0.0.0.62_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/static/03/0301101.html",
+      "name": "02007000理财",
+      "online": 1,
+      "package_url": "https://mptest.xacbank.com:10062/mcube/F8E401C110934-default/02007000/0.0.0.62_all/nebula/02007000_0.0.0.62.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.62",
+      "vhost": "https://02007000.h5.xacbank.com"
+    },
+    {
+      "app_desc": "测试模块",
+      "app_id": "20200101",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20200101/0.0.0.1_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/test/index.html",
+      "name": "测试模块",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20200101/0.0.0.1_all/nebula/20200101_0.0.0.1.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.1",
+      "vhost": "https://20200101.guilin.h5app.com"
+    },
+    {
+      "app_desc": "转账汇款",
+      "app_id": "20201103",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201103/0.0.0.999_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/transfer/index.html",
+      "name": "转账汇款",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201103/0.0.0.999_all/nebula/20201103_0.0.0.999.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.999",
+      "vhost": "https://20201103.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共新增图片资源包",
+      "app_id": "99999999",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/image/logo.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共新增图片资源包",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/99999999/0.0.0.82_all/nebula/99999999_0.0.0.82.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.82",
+      "vhost": "https://99999999.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共资源模块",
+      "app_id": "88888888",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/fonts/vant-icon-0c347b.ttf",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共资源模块",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/88888888/0.0.0.280_all/nebula/88888888_0.0.0.280.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.280",
+      "vhost": "https://88888888.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共资源包非活动类的图片二",
+      "app_id": "66666666",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/imgcomtwo/city/menu6.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共资源包非活动类的图片二",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/66666666/0.0.0.1_all/nebula/66666666_0.0.0.1.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.1",
+      "vhost": "https://66666666.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共图片资源包",
+      "app_id": "55555555",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/img/xyk-zhgl.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共图片资源包",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/55555555/0.0.0.10_all/nebula/55555555_0.0.0.10.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.10",
+      "vhost": "https://55555555.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共icons资源",
+      "app_id": "22222222",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/icons/xyk-aqs.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共icons资源",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/22222222/0.0.0.7_all/nebula/22222222_0.0.0.7.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.7",
+      "vhost": "https://22222222.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共资源包非活动类的图片一",
+      "app_id": "11111111",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/imgcomone/financial/foreign-ad.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共资源包非活动类的图片一",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/11111111/0.0.0.3_all/nebula/11111111_0.0.0.3.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.3",
+      "vhost": "https://11111111.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共资源离线包活动类图片二",
+      "app_id": "20248888",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/imgactivetwo/close@2x.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共资源离线包活动类图片二",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20248888/0.0.0.12_all/nebula/20248888_0.0.0.12.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.12",
+      "vhost": "https://20248888.guilin.h5app.com"
+    },
+    {
+      "app_desc": "登录中心",
+      "app_id": "20201027",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201027/0.0.0.826_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/login/index.html",
+      "name": "登录中心",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201027/0.0.0.826_all/nebula/20201027_0.0.0.826.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.826",
+      "vhost": "https://20201027.guilin.h5app.com"
+    },
+    {
+      "app_desc": "App首页",
+      "app_id": "20201011",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201011/0.0.0.973_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/index/index.html",
+      "name": "App首页",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201011/0.0.0.973_all/nebula/20201011_0.0.0.973.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.973",
+      "vhost": "https://20201011.guilin.h5app.com"
+    },
+    {
+      "app_desc": "登录中心",
+      "app_id": "20201027",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201027/0.0.0.826_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/login/index.html",
+      "name": "登录中心",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/20201027/0.0.0.826_all/nebula/20201027_0.0.0.826.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.826",
+      "vhost": "https://20201027.guilin.h5app.com"
+    },
+    {
+      "app_desc": "公共资源模块",
+      "app_id": "88888888",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "",
+      "global_pack_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539_sit/www/icons/00006002.png",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "index.htm",
+      "name": "公共资源模块",
+      "online": 1,
+      "package_url": "https://csmds.guilinbank.com.cn:4432/6B61A4E261539-sit/88888888/0.0.0.279_all/nebula/88888888_0.0.0.279.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.279",
+      "vhost": "https://88888888.guilin.h5app.com"
+    },
+    {
+      "app_desc": "20200001基础网金",
+      "app_id": "20200001",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "https://mpaasdev.bankofchangsha.com:8104/mcube/PRI2D5BE23121546-sit/20200001/0.0.0.7_harmony/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/financebase/register/index.html",
+      "name": "20200001基础网金",
+      "online": 1,
+      "package_url": "https://mpaasdev.bankofchangsha.com:8104/mcube/PRI2D5BE23121546-sit/20200001/0.0.0.7_harmony/nebula/20200001_0.0.0.7.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.7",
+      "vhost": "https://20200001.ynetapp.com"
+    },
+    {
+      "app_desc": "普通离线包1",
+      "app_id": "70000000",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "http://11.164.247.99/mcube/PRI95CCE11211247-default/70000000/0.0.0.28_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/index.html",
+      "name": "普通离线包1",
+      "online": 1,
+      "package_url": "http://11.164.247.99/mcube/PRI95CCE11211247-default/70000000/0.0.0.28_all/nebula/70000000_0.0.0.28.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.28",
+      "vhost": "https://70000000.testminapp.com"
+    },
+    {
+      "app_desc": "80808080",
+      "app_id": "80808080",
+      "auto_install": 1,
+      "extend_info": {
+        "launchParams": {
+        }
+      },
+      "fallback_base_url": "http://11.164.247.99/mcube/PRI95CCE11211247-default/80808080/0.0.0.2_all/nebula/fallback/",
+      "global_pack_url": "",
+      "icon_url": "",
+      "installType": 1,
+      "main_url": "/www/index.html",
+      "name": "80808080",
+      "online": 1,
+      "package_url": "http://11.164.247.99/mcube/PRI95CCE11211247-default/80808080/0.0.0.2_all/nebula/80808080_0.0.0.2.amr",
+      "patch": "",
+      "sub_url": "",
+      "version": "0.0.0.2",
+      "vhost": "https://80808080.testminapp.com"
+    }
+  ],
+  "resultCode": 100,
+  "resultMsg": "操作成功",
+  "state": "success"
+}

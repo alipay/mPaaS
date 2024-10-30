@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    window._to = {
+      server: 'http://mdap.mpaas.cn-hangzhou.aliyuncs.com/loggw/logUpload.do', // 必填，接受埋点的服务地址
+      appId: 'ONEXDF259A2051016', // 必填，App 唯一标识
+      workspaceId: 'shaojian', // 必填，环境标识
+      h5version: '1.0.0.0',    // 必填，客户端 App/H5 页面版本
+      bizScenario: 'alipay',   // 选填，渠道来源，默认为空
+      userId: "yangtao",
+      mtrDebug: true,
+      //  mtrDebug: true
+    };
+  </script>
+  <script src="https://gw.alipayobjects.com/render/p/yuyan_npm/@alipay_mpaas-mtracker/1.2.2/dist/index.min.js"></script>
+
+  <script>
+    setTimeout(() => {
+      window.Tracker.click('payGoods', {
+        bizType: 'webTracker', ext: {
+          goodsPrice: '999'
+        }
+      })
+
+      window.Tracker.click('payGoods', {
+        bizType: 'webTracker', ext: {
+          areaCode: '888',
+        }
+      })
+    }, 500);
+  </script>
+</body>
+
+</html>

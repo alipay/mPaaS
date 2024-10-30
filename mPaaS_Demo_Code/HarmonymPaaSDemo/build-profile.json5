@@ -1,0 +1,134 @@
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        //指定HarmonyOS应用/服务兼容的最低版本。注意使用英文.和()
+        "targetSdkVersion": "5.0.0(12)",
+        //指定HarmonyOS应用/服务目标版本。若没有设置，默认为compatibleSdkVersion
+        "runtimeOS": "HarmonyOS"
+      },
+      {
+        "name": "release",
+        "signingConfig": "release",
+        "compatibleSdkVersion": "5.0.0(12)",
+        //指定HarmonyOS应用/服务兼容的最低版本。注意使用英文.和()
+        "targetSdkVersion": "5.0.0(12)",
+        //指定HarmonyOS应用/服务目标版本。若没有设置，默认为compatibleSdkVersion
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release",
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "00000018A7EEBA6EAA9D2E6B2E324D32A73C49C6F692AE8DA3DB97920B3AE3F6C8A6E6A41A507EEE",
+          "certpath": "./keystore/debug/mpaas_debug.cer",
+          "keyAlias": "mpaas123",
+          "keyPassword": "00000018451F13D83C092B790EC2A84DCF2AB29A79EC2ABF28C239559628223101DB7C548A91F798",
+          "profile": "./keystore/debug/mpaas_debugDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./keystore/debug/mpaas_debug.p12"
+        }
+      },
+      {
+        "name": "release",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "./keystore/release/mpaas_release.cer",
+          "storePassword": "00000018F422C534DEDD5934B497437B952A16621B280A39FC1F07B9826E7B5E4BCB33DA5CF02653",
+          "keyAlias": "mpaas123",
+          "keyPassword": "0000001887AF5BD26AA27C9D173A23BB5FE41FF78A864952A2F29411665582B8D55FB9999F8D31DA",
+          "profile": "./keystore/release/mpaas_releaseRelease.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./keystore/release/mpaas_relrease.p12"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "release",
+          "applyToProducts": [
+            "release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TestModule",
+      "srcPath": "./TestModule",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "release",
+          "applyToProducts": [
+            "release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BasicSharedModule",
+      "srcPath": "./BasicSharedModule",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "release",
+          "applyToProducts": [
+            "release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mpaas_ocr_demo",
+      "srcPath": "./mpaas_ocr_demo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        },
+        {
+          "name": "release",
+          "applyToProducts": [
+            "release"
+          ]
+        }
+      ]
+    }
+  ]
+}

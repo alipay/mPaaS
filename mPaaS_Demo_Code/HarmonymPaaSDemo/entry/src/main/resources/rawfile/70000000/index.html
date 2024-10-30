@@ -1,0 +1,383 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="./common.css">
+    <title>JSAPI示例</title>
+</head>
+
+<body style="width: 100%;height: 100%; background-color: burlywood; overflow-y: scroll;">
+<button id="J_Ua1">0.0.0.16</button>
+<button id="showCloseX">showCloseX</button>
+<button id="hideNativeTitleBar">hideTitleBar</button>
+<button id="hideNativeBackButton">hideBackButton</button>
+<button id="customMenu">自定义菜单</button>
+<button id="goMenu">goMenu</button>
+<button id="goStorge">goStorge</button>
+<button id="hideStatusBar">沉浸式</button>
+<button id="showStatusBar">非沉浸式</button>
+<button id="J_Ua">UserAgent</button>
+<button id="J_PushWindow">页面上下文</button>
+<button id="J_UI">界面交互</button>
+<button id="J_Event">事件扩展</button>
+<button id="J_Util">工具类</button>
+<button id="J_UseCommonResource">使用公共资源包</button>
+<button id="J_API1">调用自定义API1</button>
+<button id="J_API2">调用自定义API2</button>
+<button id="J_PLUGIN_DIALOG">PLUGIN中弹窗</button>
+<button id="windowOpen">window.open</button>
+<button id="addNotifyListener">添加通知</button>
+<button id="removeNotifyListener">移除通知</button>
+<button id="postNotify">分发消息</button>
+<button id="notifyN2h">模拟原生发通知</button>
+<button id="toNativeCallback">打开原生页面并获取返回值</button>
+<button id="J_BACK">返回</button>
+<button id="jBackResultPackage">返回携带参数</button>
+<button id="postRpc">rpc</button>
+<button id="jumpHref">href跳转</button>
+<button id="changeColor">修改导航栏颜色</button>
+<button>升级离线包</button>
+<button>埋点</button>
+<!--    <button style="position: absolute; bottom: 10px; right:10px; background-color: aqua;">底部按钮</button>-->
+</body>
+<script>
+
+
+    function ready(callback) {
+        var currentUrl = window.location.href;
+        <!--        alert(currentUrl);-->
+        // 如果 jsbridge 已经注入则直接调用
+        if (window.AlipayJSBridge) {
+            callback && callback();
+        } else {
+            // 如果没有注入则监听注入的事件
+            document.addEventListener('AlipayJSBridgeReady', callback, false);
+        }
+    }
+
+    ready(function () {
+        var currentUrl = window.location.href;
+        var jumpHref = document.getElementById('jumpHref');
+        var showCloseX = document.getElementById('showCloseX');
+        var changeColor = document.getElementById('changeColor');
+        var toNativeCallback = document.getElementById('toNativeCallback');
+        var hideNativeTitleBar = document.getElementById('hideNativeTitleBar');
+        var hideNativeBackButton = document.getElementById('hideNativeBackButton');
+        var jBackResultPackage = document.getElementById('jBackResultPackage');
+        var customMenu = document.getElementById('customMenu');
+        var goMenu = document.getElementById('goMenu');
+        var goStorge = document.getElementById('goStorge');
+        var hideStatusBar = document.getElementById('hideStatusBar');
+        var showStatusBar = document.getElementById('showStatusBar');
+        var jBack = document.getElementById('J_BACK');
+        var uaNode = document.getElementById('J_Ua');
+        var pushWindowNode = document.getElementById('J_PushWindow');
+        var uiNode = document.getElementById('J_UI');
+        var eventNode = document.getElementById('J_Event');
+        var utilNode = document.getElementById('J_Util');
+        var useCommonResourceNode = document.getElementById('J_UseCommonResource');
+        var api1Node = document.getElementById('J_API1');
+        var api2Node = document.getElementById('J_API2');
+        var api2Dialog = document.getElementById('J_PLUGIN_DIALOG');
+        var windowOpen = document.getElementById('windowOpen');
+        var addNotifyListener = document.getElementById('addNotifyListener');
+        var removeNotifyListener = document.getElementById('removeNotifyListener');
+        var postNotify = document.getElementById('postNotify');
+        var postRpc = document.getElementById('postRpc');
+        var notifyN2h = document.getElementById('notifyN2h');
+
+
+        AlipayJSBridge.call('getStartupParams', {
+            // 可选，根据 key 值过滤返回结果，不填返回全部
+            key: ['keyList']
+            }, function(result) {
+            alert(`启动参数${JSON.stringify(result)}`);
+         });
+
+        AlipayJSBridge.call('setTitle', {
+            title: '设置一个标题试试'
+        });
+        //前端监听resume
+        document.addEventListener('resume',
+            function (e) {
+                alert(`resume=${JSON.stringify(e)}`);
+            }, false);
+        //注册监听
+        document.addEventListener('testAction',
+            function (e) {
+                alert(JSON.stringify(e));
+            }, false);
+
+        postRpc.addEventListener('click', function () {
+            var params = [{
+                "_requestBody": {
+                    "password": "yt",
+                    "userName": "27"
+                }
+            }]
+            var headers = {
+                "h5hk": "h5hv",
+            }
+            var operationType = 'com.harmonyos.post'
+
+            AlipayJSBridge.call('rpc', {
+                operationType: operationType,
+                requestData: params,
+                headers: headers
+            }, function (result) {
+                alert(JSON.stringify(result));
+            });
+        });
+        jumpHref.addEventListener('click', function () {
+            // 设置新的URL并导航到该页面
+            window.location.href = "http://www.aliyun.com";
+        });
+        showCloseX.addEventListener('click', function () {
+            AlipayJSBridge.call('showCloseX', {
+                param2: 'showCloseX'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+        //打开原生页面并获取返回值
+        toNativeCallback.addEventListener('click', function () {
+            AlipayJSBridge.call('toNativeCallback', {
+                param2: 'toNativeCallback'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+        //修稿导航栏颜色
+        changeColor.addEventListener('click', function () {
+            AlipayJSBridge.call('changeColor', {
+                param1: 'changeColor'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    alert(JSON.stringify(e));
+                }
+            });
+        });
+        customMenu.addEventListener('click', function () {
+            //自定义菜单栏
+            AlipayJSBridge.call('setOptionMenu', {
+                // 显示时的顺序为从右至左
+                menus: [{
+                    icontype: 'scan',
+                    redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                }, {
+                    icontype: 'user',
+                    redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                }],
+                override: true // 在需要设置多个 option 的情况下，是否保留默认的 optionMenu
+            });
+
+            // 必须强制调用一次以刷新界面
+            AlipayJSBridge.call('showOptionMenu');
+        });
+        hideNativeTitleBar.addEventListener('click', function () {
+            //隐藏默认导航栏
+            AlipayJSBridge.call('hideTitlebar');
+        });
+        hideNativeBackButton.addEventListener('click', function () {
+            //隐藏默认导航栏返回键
+            AlipayJSBridge.call('hideBackButton');
+        });
+        hideStatusBar.addEventListener('click', function () {
+            //隐藏状态栏
+            AlipayJSBridge.call('hideStatusBar007');
+        });
+        showStatusBar.addEventListener('click', function () {
+            //隐藏状态栏
+            AlipayJSBridge.call('showStatusBar007');
+        });
+        jBack.addEventListener('click', function () {
+            AlipayJSBridge.call('jBack', {
+                param2: 'jBack'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+        jBackResultPackage.addEventListener('click', function () {
+            AlipayJSBridge.call('jBackResultPackage', {
+                param2: 'jBackResultPackage'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+
+        addNotifyListener.addEventListener('click', function () {
+            alert('添加通知成功');
+            AlipayJSBridge.call('addNotifyListener', {
+                name: 'fortest'
+            }, function (result) {
+                console.log(result);
+                alert(JSON.stringify(result));
+            });
+        });
+        removeNotifyListener.addEventListener('click', function () {
+            alert('移除通知成功');
+            AlipayJSBridge.call('removeNotifyListener', {
+                name: 'fortest'
+            }, function (result) {
+                console.log(result);
+                alert(JSON.stringify(result));
+            });
+        });
+        postNotify.addEventListener('click', function () {
+            AlipayJSBridge.call('postNotification', {
+                name: 'fortest',
+                data: {}
+            }, function (result) {
+                console.log(result);
+                alert(JSON.stringify(result));
+            });
+        });
+
+
+        windowOpen.addEventListener('click', function () {
+            alert("windowOpen");
+            // window.open("https://www.aliyun.com/");
+
+        });
+        uaNode.addEventListener('click', function () {
+            AlipayJSBridge.call('alert', {
+                title: '亲',
+                message: window.navigator.userAgent,
+                button: '确定'
+            });
+        });
+        pushWindowNode.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './test.html',
+                param: {
+                    transparentTitle: 'auto'
+                }
+            });
+        });
+        uiNode.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './ui.html',
+                param: {
+                    transparentTitle: 'always'
+                }
+            });
+        });
+        goMenu.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './opmenu.html'
+            });
+        });
+        goStorge.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './opstorge.html'
+            });
+        });
+        eventNode.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './event.html',
+                param: {
+                    transparentTitle: 'none'
+                }
+            });
+        });
+        utilNode.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './util.html'
+            });
+        });
+        useCommonResourceNode.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './use_common_resource.html'
+            });
+        });
+        api1Node.addEventListener('click', function () {
+            AlipayJSBridge.call('myapi1', {
+                param1: 'Hello'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    alert(JSON.stringify(e));
+                }
+            });
+        });
+        notifyN2h.addEventListener('click', function () {
+            AlipayJSBridge.call('notifyN2h', {
+                param2: 'notifyN2h'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    alert(JSON.stringify(e));
+                }
+            });
+        });
+
+        api2Node.addEventListener('click', function () {
+            __commonWrap('myapi2', {
+                param2: 'myapi2通过其他方式传'
+            }).then((res)=>{
+            alert(`2==${JSON.stringify(res)}`);
+            })
+            // AlipayJSBridge.call('myapi2', {
+            //     param2: 'World'
+            // }, function (e) {
+            //     if (e.error === 1) {
+            //         alert('请前往自定义设置注册JSAPI');
+            //         window.location.reload()
+            //     } else {
+            //         var resultStr = JSON.stringify(e);
+            //         alert(resultStr);
+            //         window.location.reload()
+            //     }
+            // });
+        });
+        api2Dialog.addEventListener('click', function () {
+            AlipayJSBridge.call('plugin_dialog', {
+                param2: 'plugin中弹窗'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+    });
+    function __commonWrap(api, options = {}) {
+        return new Promise((resolve, reject) => {
+            AlipayJSBridge.call(api, options, res => {
+                alert(`1==${JSON.stringify(res)}`);
+                (res && res.errorCode && res.errorCode != 0) ? reject(res) : resolve(res)
+            })
+        })
+    }
+</script>
+
+</html>

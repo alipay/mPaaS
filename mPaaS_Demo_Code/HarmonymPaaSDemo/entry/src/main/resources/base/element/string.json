@@ -1,0 +1,124 @@
+{
+  "string": [
+    {
+      "name": "sampleaaa",
+      "value": "支付宝需要使用此权限，用于出行、打车等场景\n出行、打车就是小程序，客户那边根据小程序用于哪些业务，大概写下"
+    },
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "EntryAbilityStage_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbilityStage_label",
+      "value": "label"
+    },
+    {
+      "name": "login",
+      "value": "Sign in/Sign up>"
+    },
+    {
+      "name": "personalInfo",
+      "value": "Personal info"
+    },
+    {
+      "name": "avatar",
+      "value": "Profile picture"
+    },
+    {
+      "name": "nickname",
+      "value": "Nickname"
+    },
+    {
+      "name": "inputNickname",
+      "value": "Set"
+    },
+    {
+      "name": "inputPhone",
+      "value": "Authorize"
+    },
+    {
+      "name": "phone",
+      "value": "Mobile number"
+    },
+    {
+      "name": "dearUser",
+      "value": "Dear user>"
+    },
+    {
+      "name": "hwid_no_internet_connect",
+      "value": "No Internet connection. Check your network settings."
+    },
+    {
+      "name": "hwid_text_button_known",
+      "value": "OK"
+    },
+    {
+      "name": "agree",
+      "value": "I have read and agree to "
+    },
+    {
+      "name": "privacy",
+      "value": "Privacy Policy"
+    },
+    {
+      "name": "and",
+      "value": " and "
+    },
+    {
+      "name": "protocols",
+      "value": "User Service Agreement"
+    },
+    {
+      "name": "others",
+      "value": "Sign in another way"
+    },
+    {
+      "name": "end",
+      "value": "."
+    },
+    {
+      "name": "appName",
+      "value": "App name"
+    },
+    {
+      "name": "appDesc",
+      "value": "App description"
+    },
+    {
+      "name": "MpaasBridgeMsgAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MpaasBridgeMsgAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "PushLandingAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PushLandingAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "MpaasBridgeExtMsgAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MpaasBridgeExtMsgAbility_label",
+      "value": "label"
+    }
+  ]
+}

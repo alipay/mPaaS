@@ -1,0 +1,170 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "srcEntry": "./ets/appliaction/EntryAbilityStage.ets",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    // 这里要配置鸿蒙控制台的client_id
+    "metadata": [
+      {
+        "name": "client_id",
+        // 配置为步骤1中获取的Client ID
+        "value": "110838497"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ],
+            "uris": [
+              {
+                "scheme": "mpaas",
+                "host": "com.mpaas.harmonydemo",
+                "path": "firstAbility"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MpaasBridgeMsgAbility",
+        "srcEntry": "./ets/mpaasbridgemsgability/MpaasBridgeMsgAbility.ets",
+        "description": "$string:MpaasBridgeMsgAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:MpaasBridgeMsgAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "removeMissionAfterTerminate": true,
+        "skills": [
+          {
+            "actions": [
+              "com.mpaas.harmony.push"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PushLandingAbility",
+        "srcEntry": "./ets/pushlandingability/PushLandingAbility.ets",
+        "description": "$string:PushLandingAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:PushLandingAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "skills": [
+          {
+            "actions": [
+              ""
+            ],
+            "uris": [
+              {
+                "scheme": "jump",
+                "host": "com.mpaas.harmony.push",
+                "path": "landing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MpaasBridgeExtMsgAbility",
+        "srcEntry": "./ets/mpaasbridgeextmsgability/MpaasBridgeExtMsgAbility.ets",
+        "description": "$string:MpaasBridgeExtMsgAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:MpaasBridgeExtMsgAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "skills": [
+          {
+            "actions": [
+              "action.ohos.push.listener"
+            ]
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "TEMPJITALLOW",                  // 必须添加，解决66版本release闪退问题
+        "reason": "$string:sampleaaa", // 根据小程序使用场景自定义相应说明
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO",
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+      },
+      {
+        "name": "ohos.permission.MICROPHONE",
+        "reason": "$string:appName",
+        "usedScene": {
+        }
+      },
+      {
+        // 根据需要，如果有使用到扫码功能，需要添加
+        "name": "ohos.permission.CAMERA",
+        "reason": "$string:appName",
+        "usedScene": {}
+      },
+      {
+        // 根据需要，如果有使用到获取位置功能，需要添加
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:appName",
+        "usedScene": {
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "$string:appName",
+        "usedScene": {
+        }
+      },
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:appName",
+        "usedScene": {
+        }
+      }
+    ],
+    "definePermissions": [
+      {
+        "name": "TEMPJITALLOW"  // 必须添加，解决66版本release闪退问题
+      }
+    ],
+    //路由表
+//    "routerMap": "$profile:router_map"
+  }
+}

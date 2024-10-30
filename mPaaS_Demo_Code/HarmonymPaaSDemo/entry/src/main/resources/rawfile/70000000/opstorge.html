@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./common.css">
+    <title>Document</title>
+</head>
+
+<body style="width: 100%;height: 100%; overflow-y: scroll;">
+    <h1>点击以下按钮看不同效果</h1>
+
+    <button id="J_saveDataBtn" class="btn">保存数据(原生存)</button>
+    <button id="J_getDataBtn" class="btn">查看数据(原生取)</button>
+    <button id="J_saveDataBtnH5" class="btn">保存数据(H5存)</button>
+    <button id="J_getDataBtnH5" class="btn">查看数据(H5取)</button>
+    <button id="J_removeDataBtn" class="btn">删除数据</button>
+</body>
+<script>
+function ready(callback) {
+  // 如果 jsbridge 已经注入则直接调用
+  if (window.AlipayJSBridge) {
+    callback && callback();
+  } else {
+    // 如果没有注入则监听注入的事件
+    document.addEventListener('AlipayJSBridgeReady', callback, false);
+  }
+}
+ready(function() {
+  document.querySelector('#J_saveDataBtn').addEventListener('click', function(e) {
+    AlipayJSBridge.call('setAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "testFile",
+      value: "customValue"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+  }, false);
+
+  document.querySelector('#J_getDataBtn').addEventListener('click', function(e) {
+    AlipayJSBridge.call('getAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "testFile"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+  }, false);
+
+
+  document.querySelector('#J_saveDataBtnH5').addEventListener('click', function(e) {
+    AlipayJSBridge.call('setAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "customKey",
+      value: "customValue"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+  }, false);
+
+  document.querySelector('#J_getDataBtnH5').addEventListener('click', function(e) {
+    AlipayJSBridge.call('getAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "customKey"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+    AlipayJSBridge.call('removeAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "customKey"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+  }, false);
+
+  document.querySelector('#J_removeDataBtn').addEventListener('click', function(e) {
+    AlipayJSBridge.call('removeAPDataStorage', {
+      type: "common",
+      business: "customBusinessKey",
+      key: "customKey"
+    }, function(result) {
+      alert(JSON.stringify(result));
+    });
+  }, false);
+}, false);
+</script>

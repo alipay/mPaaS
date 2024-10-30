@@ -1,0 +1,42 @@
+{
+  "appid": "70000000",
+  "name": "h5app",
+  "version": "0.0.0.2",
+  "author": "",
+  "description": "H5App demo",
+  "launchParams": {
+    "url": "/www/index.html",
+    "showTitleBar": "YES",
+    "showToolBar": "NO"
+  },
+  "host": {
+    "enable": true,
+    "dev": "https://70000000.h5app.dev.alipay.com",
+    "test": "https://70000000.h5app.test.alipay.com",
+    "online": "https://70000000.h5app.alipay.com"
+  },
+  "preBuild": "prebuild.sh",
+  "build": {
+    "include": [
+      "./www/**"
+    ],
+    "ignore": [
+      "./**/*.md"
+    ]
+  },
+  "support": {
+    "ios": {
+      "minSDK": "",
+      "maxSDK": "",
+      "minOS": "",
+      "maxOS": ""
+    },
+    "android": {
+      "minSDK": "",
+      "maxSDK": "",
+      "minOS": "",
+      "maxOS": ""
+    }
+  },
+  "dependencies": {}
+}

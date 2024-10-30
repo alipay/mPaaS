@@ -1,0 +1,45 @@
+{
+    "name": "entry",
+    "version": "1.0.0",
+    "description": "Please describe the basic information.",
+    "main": "",
+    "author": "",
+    "license": "",
+    "dependencies": {
+        "@ohos/hypium": "1.0.15",
+        "@ohos/hamock": "1.0.0-rc",
+        "@mpaas/framework": "1.0.240722195448",
+        "@mpaas/datacenter": "1.0.240909151445",
+        "@mpaas/rpc": "1.0.240904203320",
+        "@mpaas/gm": "1.0.240702194534",
+        "@mpaas/hriver": "1.0.240912170641",
+        "@mpaas/masadapter": "1.0.240802113431",
+        "@mpaas/upgrade": "1.0.240909120426",
+        "@mpaas/configservice": "1.0.240726163920",
+        "@mpaas/push": "1.0.240919192754",
+        "@mpaas/safekeyboard": "1.0.240829094956",
+        "@mpaas/scanapp": "1.0.240722200423",
+        "library": "file:../BasicSharedModule",
+        "@mpaas/sync_service": "1.0.240911193552",
+        "@mpaas/udid": "1.0.240722105823",
+        "@mpaas/mpsecurestorage": "1.0.240806155218",
+        "@mpaas/trace_log": "1.0.240902173726",
+        "@mpaas/hrivermini": "1.0.240904153745",
+
+        //小程序-先手动加--start
+        //        '@mpaas/hrivermini': '1.0.0',
+        "@mpaas/exthub": "1.0.240718005901",
+        "@mpaas/antui": "1.0.240717191810",
+        "@mpaas/nebulaintegration": "1.0.240718171401",
+        "@mpaas/xriverohos": "1.0.240718174425",
+        "@mpaas/apframework": "1.0.240718031931",
+        //小程序-先手动加--end
+
+        //ocr---------start
+        "@mpaas/mpaas_ocr_demo": "file:../mpaas_ocr_demo",
+        "@mpaas/mpaas_ocr_core": "^0.0.2",
+        //ocr---------end
+    },
+    "devDependencies": {},
+    "dynamicDependencies": {}
+}

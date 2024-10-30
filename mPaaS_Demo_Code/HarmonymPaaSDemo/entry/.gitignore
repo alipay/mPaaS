@@ -1,0 +1,14 @@
+/node_modules
+/oh_modules
+/.preview
+/build
+/.cxx
+/.test
+.DS_Store
+/.DS_Store
+/src/main/.DS_Store
+/local.properties
+local.properties
+oh-package-lock.json5
+/oh-package-lock.json5
+*/.DS_Store

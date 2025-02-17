@@ -1,6 +1,6 @@
 # mPaaS H5 Container 10.1.60
-[![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob//kroos_work/README.md)
-[![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/kroos_work/README.zh-Hans.md)
+[![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob//master/README.md)
+[![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/master/README.zh-Hans.md)
 
 ### What is the mPaaS offline package?
 The hybrid development model is not a new topic. It can not only quickly release new services, but also provide great flexibility for business updates and iterations without considering the release time of the App. Compared with Web development, the hybrid development model provides a rich set of device APIs, making business forms more diverse and rich.  

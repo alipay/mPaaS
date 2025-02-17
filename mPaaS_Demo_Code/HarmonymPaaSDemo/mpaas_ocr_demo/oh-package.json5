@@ -1,0 +1,24 @@
+{
+    "name": "@mpaas/mpaas_ocr_demo",
+    "version": "0.0.3",
+    "description": "Please describe the basic information.",
+    "main": "Index.ets",
+    "author": "",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "@mpaas/mpaas_ocr_core": "^0.0.2",
+        "@alipay/mpaas_xmedia": "^1.0.0-240401202828",
+        "@mpaas/mpaas_xmediacorebiz": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_driver_license": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_idcard": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_bank": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_bizlicense": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_car_license": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_driving_license": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_gas_meter": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_passport": "^0.0.2",
+        "@mpaas/mpaas_ocr_model_vin_code": "^0.0.2"
+    },
+    "devDependencies": {},
+    "dynamicDependencies": {}
+}

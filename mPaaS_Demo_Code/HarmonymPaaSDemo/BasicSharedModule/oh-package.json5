@@ -1,0 +1,16 @@
+{
+    "name": "basicsharedmodule",
+    "version": "1.0.0",
+    "description": "Please describe the basic information.",
+    "main": "Index.ets",
+    "author": "",
+    "license": "Apache-2.0",
+    "packageType": "InterfaceHar",
+    "dependencies": {
+        "@mpaas/framework": "1.0.240722195448",
+        "@mpaas/rpc": "1.0.240904203320",
+        "@mpaas/sync_service": "1.0.240911193552"
+    },
+    "devDependencies": {},
+    "dynamicDependencies": {}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.alipay.mobile.antui.basic.AUImageView
+        android:id="@+id/icon_drawable"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <com.alipay.mobile.antui.basic.AURoundImageView
+        android:id="@+id/round"
+        android:layout_marginTop="@dimen/AU_SPACE10"
+        android:layout_width="120dp"
+        android:layout_height="60dp"/>
+
+    <com.alipay.mobile.antui.basic.AURoundImageView
+        android:id="@+id/round2"
+        android:layout_marginTop="@dimen/AU_SPACE10"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/test1"/>
+</LinearLayout>

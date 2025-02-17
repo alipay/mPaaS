@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_open_app"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/open_h5_app"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_open_app_sycn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/open_h5_app_sync"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_open_app_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/open_h5_app_2"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_update_app"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/update_app"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_update_specific_app"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/update_specific_app"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_verify_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/verify_app_setting"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_H5_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/H5open_camera"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_H5_get_version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:clickable="true"
+        android:text="@string/H5_getappversion"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

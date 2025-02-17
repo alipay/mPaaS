@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_atb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/feature_add_feature"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:clickable="true"
+        android:text="@string/feature_add_feature" />
+
+
+    <Button
+        android:id="@+id/feature_new_activity"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:clickable="true"
+        android:text="@string/feature_new_activity" />
+
+
+    <Button
+        android:id="@+id/mock_bank_feature_show"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:clickable="true"
+        android:text="@string/feature_new_test_1" />
+
+
+    <Button
+        android:id="@+id/mock_bank_feature_show2"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:clickable="true"
+        android:text="@string/feature_new_test_2" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/feature_new_activity_adcode" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/feature_new_activity_adcode" />
+
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/show_user_id" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/v_show_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_large" />
+
+
+</LinearLayout>

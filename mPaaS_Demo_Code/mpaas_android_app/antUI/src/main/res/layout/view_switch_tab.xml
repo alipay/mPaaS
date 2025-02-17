@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="AUSegment" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mpaas.antui.viewdemo.view.BaseHeadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:aui_titleText="AUSegment" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:add="true"
+                app:tab1Text="左边文字"
+                app:tab2Text="中间文字"
+                app:tab3Text="右边文字"
+                app:tabCount="2" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_three"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:tab1Text="选项一"
+                app:tab2Text="选项二"
+                app:tab3Text="选四项三"
+                app:tab4Text="选项"
+                app:tabCount="4"
+                app:uniformlySpaced="true" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_four"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:add="true"
+                app:tab1Text="选项一"
+                app:tab2Text="选项二"
+                app:tab3Text="选四项三"
+                app:tab4Text="选项"
+                app:tabCount="4"
+                app:uniformlySpaced="false" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_five"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:tab1Text="选项一"
+                app:tab2Text="选项二"
+                app:tab3Text="选四项三选四项三选四项三选四项三"
+                app:tab4Text="选项"
+                app:tabCount="4"
+                app:uniformlySpaced="false" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_more"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:tabCount="10"
+                app:add="true"
+                app:tabTextArray="1,2,3,4,5,6,7,8,9,10" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_more2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                app:scroll="true" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_more3"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                app:tabTextSize="20dp"
+                app:scroll="true" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="红点样式" />
+
+            <!--<com.alipay.mobile.antui.segement.AUSegment-->
+            <!--android:id="@+id/switchtab4"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--app:tab1Text="左边文字"-->
+            <!--app:tab2Text="中间文字"-->
+            <!--app:tab3Text="右边文字"-->
+            <!--app:tabCount="2" />-->
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab4"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="61dp"
+                app:tab1Text="境内"
+                app:tab2Text="境外"
+                app:tabCount="2" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_more6"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                app:add="true"
+                app:scroll="true" />
+
+            <com.alipay.mobile.antui.segement.AUSegment
+                android:id="@+id/switchtab_more5"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                app:scroll="true" />
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

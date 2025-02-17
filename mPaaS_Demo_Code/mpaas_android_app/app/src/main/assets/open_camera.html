@@ -1,0 +1,164 @@
+<!--<!doctype html>-->
+<!--<html lang="zh-cn">-->
+
+<!--<head>-->
+<!--  <meta charset="utf-8" />-->
+<!--  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />-->
+<!--  <meta name="format-detection" content="telephone=no" />-->
+<!--  <style type="text/css">-->
+<!--    .jsapiButton {-->
+<!--      border: 0;-->
+<!--      margin-bottom: 15px;-->
+<!--      width: 100%;-->
+<!--      height: 50px;-->
+<!--      background-color: #108EE9;-->
+<!--      border: 1px solid #108EE9;-->
+<!--      color: #ffffff;-->
+<!--      text-align: center;-->
+<!--      font-size: 18px;-->
+<!--    }-->
+<!--  </style>-->
+<!--  <title>打开相机</title>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--  <button id="J_test" class="jsapiButton">打开相机</button>-->
+<!--</body>-->
+<!--<script>-->
+<!--  function ready(callback) {-->
+<!--    // 如果 jsbridge 已经注入则直接调用-->
+<!--    if (window.AlipayJSBridge) {-->
+<!--      callback && callback();-->
+<!--    } else {-->
+<!--      // 如果没有注入则监听注入的事件-->
+<!--      document.addEventListener('AlipayJSBridgeReady', callback, false);-->
+<!--    }-->
+<!--  }-->
+
+<!--  ready(function () {-->
+<!--    var jsapiNode = document.getElementById('J_test');-->
+<!--    jsapiNode.addEventListener('click', function () {-->
+<!--      AlipayJSBridge.call('chooseImage', {-->
+<!--        sourceType: ['camera', 'album'],-->
+<!--        count: 6-->
+<!--      }, function (result) {-->
+<!--        alert(JSON.stringify(result));-->
+<!--      });-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+
+<!--</html>-->
+
+<!--<!DOCTYPE HTML>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>上传图片</title>-->
+<!--    <meta charset="utf-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<iframe name="uploadfrm" id="uploadfrm" style="display: none;"></iframe>-->
+<!--<form name="formHead" method="post" action="" id="formHead" enctype="multipart/form-data" target="uploadfrm">-->
+
+<!--    <div>-->
+<!--        <div>-->
+<!--            <input type="file" name="file_head" id="file_head" onchange="javascript:setImagePreview();" />-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div id="DivUp" style="display: none">-->
+<!--                <input type="submit" data-inline="true" id="BtnUp" value="确认上传" data-mini="true" />-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</form>-->
+<!--<div data-role="fieldcontain">-->
+<!--    <div id="localImag">-->
+<!--        <img id="preview" width="-1" height="-1" style="display: none" />-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<script type="text/javascript">-->
+<!--        function setImagePreview() {-->
+<!--            var preview, img_txt, localImag, file_head = document.getElementById("file_head"),-->
+<!--            picture = file_head.value;-->
+<!--            if (!picture.match(/.jpg|.gif|.png|.bmp/i)) return alert("您上传的图片格式不正确，请重新选择！"),-->
+<!--            !1;-->
+<!--            if (preview = document.getElementById("preview"), file_head.files && file_head.files[0]) preview.style.display = "block",-->
+<!--                preview.style.width = "63px",-->
+<!--                preview.style.height = "63px",-->
+<!--                preview.src = window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1 ? window.webkitURL.createObjectURL(file_head.files[0]) : window.URL.createObjectURL(file_head.files[0]);-->
+<!--            else {-->
+<!--                file_head.select(),-->
+<!--                file_head.blur(),-->
+<!--                img_txt = document.selection.createRange().text,-->
+<!--                localImag = document.getElementById("localImag"),-->
+<!--                localImag.style.width = "63px",-->
+<!--                localImag.style.height = "63px";-->
+<!--                try {-->
+<!--                    localImag.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)",-->
+<!--                    localImag.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = img_txt-->
+<!--                } catch(f) {-->
+<!--                    return alert("您上传的图片格式不正确，请重新选择！"),-->
+<!--                    !1-->
+<!--                }-->
+<!--                preview.style.display = "none",-->
+<!--                document.selection.empty()-->
+<!--            }-->
+<!--            return document.getElementById("DivUp").style.display = "block",-->
+<!--            !0-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="telephone=no">
+    <title>手机拍照</title>
+    <style>
+<!--       .jsapiButton {-->
+<!--      border: 0;-->
+<!--      margin-bottom: 15px;-->
+<!--      width: 100%;-->
+<!--      height: 50px;-->
+<!--      background-color: #108EE9;-->
+<!--      border: 1px solid #108EE9;-->
+<!--      color: #ffffff;-->
+<!--      text-align: center;-->
+<!--      font-size: 18px;-->
+<!--    }-->
+    </style>
+</head>
+
+<body>
+<!--<button class="jsapiButton" id="box">-->
+<!--    拍照-->
+    <input type="file" accept="image/*" capture="camera" id="file_input" class="file-btn">
+<!--</button>-->
+
+<img id="showimg">
+</body>
+
+</html>
+
+<script>
+    var showimg = document.getElementById("showimg");
+    var imginput = document.getElementById("file_input");
+    document.getElementById("box").onclick = function () {
+        imginput.onchange = function () {
+            var files = this.files;
+            console.log(files)   //本地的临时路径　　　　　　　　　　
+               // var formdata = new FormData();
+                //formdata.append('fileStream', files);　　　　　　　　　//　formdata再传给后台
+
+            var url = URL.createObjectURL(files[0]);
+            showimg.src = url;
+        }
+    }
+
+</script>

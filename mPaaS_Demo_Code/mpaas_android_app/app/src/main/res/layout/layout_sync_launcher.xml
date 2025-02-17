@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/device"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/sync_by_devide"
+        android:textColor="@android:color/white"
+        android:theme="@style/content_text_18" />
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/sync_by_user"
+        android:textColor="@android:color/white"
+        android:theme="@style/content_text_18" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorPrimary"
+        android:text="测试用例"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:theme="@style/content_text_18" />
+</LinearLayout>

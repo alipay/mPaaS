@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./common.css">
+  <title>页面上下文</title>
+</head>
+
+<body style="width: 100%;height: 100%; overflow-y: scroll;">
+  <button id="J_PushWindow" style="height: 200px;">打开新页面</button>
+  <button id="J_PushWindowClosePage">打开新页面,关闭当前页面</button>
+  <button id="J_PopWindow">关闭当前页面</button>
+  <button id="J_PopTo">关闭多个页面</button>
+  <button id="J_StartApp">启动其他应用</button>
+  <button id="J_StartAppCloseApp">启动其他应用,关闭当前应用</button>
+  <button id="J_StartApp8080">启动其他应用8080</button>
+  <button id="J_ExitApp">退出当前应用</button>
+  <button id="J_BACK">navigation模式移除指定路由</button>
+  <button id="J_BACK_SendEvent">sendEvent模式移除指定路由</button>
+  <button id="J_ExitApp11" style="height: 100px;">花里胡哨</button>
+</body>
+<script>
+  function ready(callback) {
+    var currentUrl = window.location.href;
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var currentUrl = window.location.href;
+    var jBack = document.getElementById('J_BACK');
+    var J_BACK_SendEvent = document.getElementById('J_BACK_SendEvent');
+    var pushWindowNode = document.getElementById('J_PushWindow');
+    var pushWindowClosePage = document.getElementById('J_PushWindowClosePage');
+    var popWindowNode = document.getElementById('J_PopWindow');
+    var popToNode = document.getElementById('J_PopTo');
+    var startAppNode = document.getElementById('J_StartApp');
+    var startAppCloseApp = document.getElementById('J_StartAppCloseApp');
+    var startAppNode8080 = document.getElementById('J_StartApp8080');
+    var exitAppNode = document.getElementById('J_ExitApp');
+    //前端监听resume
+    document.addEventListener('resume',
+      function (e) {
+        alert(`触发resume==${currentUrl} \n ${JSON.stringify(e)}`);
+      }, false);
+    jBack.addEventListener('click', function () {
+      AlipayJSBridge.call('jBack', {
+        param2: 'jBack'
+      }, function (e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          var resultStr = JSON.stringify(e);
+          alert(resultStr);
+        }
+      });
+    });
+    J_BACK_SendEvent.addEventListener('click', function () {
+      AlipayJSBridge.call('J_BACK_SendEvent', {
+        param2: 'J_BACK_SendEvent'
+      }, function (e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          var resultStr = JSON.stringify(e);
+          alert(resultStr);
+        }
+      });
+    });
+    pushWindowNode.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './util.html'
+      });
+    });
+    pushWindowClosePage.addEventListener('click', function () {
+      AlipayJSBridge.call('pushWindow', {
+        url: './util.html',
+        param: {
+          closeCurrentWindow: true
+        }
+      });
+    });
+    popWindowNode.addEventListener('click', function () {
+      AlipayJSBridge.call('popWindow');
+    });
+    popToNode.addEventListener('click', function () {
+      AlipayJSBridge.call('popTo', {
+        index: -1
+      });
+    });
+    startAppNode.addEventListener('click', function () {
+      AlipayJSBridge.call('startApp', {
+        appId: '70000000'
+      });
+    });
+    startAppCloseApp.addEventListener('click', function () {
+      AlipayJSBridge.call('startApp', {
+        appId: '70000000',
+        closeCurrentApp: true
+      });
+    });
+    startAppNode8080.addEventListener('click', function () {
+      AlipayJSBridge.call('startApp', {
+        appId: '80808080'
+      });
+    });
+    exitAppNode.addEventListener('click', function () {
+      AlipayJSBridge.call('exitApp');
+    });
+  });
+</script>
+
+</html>

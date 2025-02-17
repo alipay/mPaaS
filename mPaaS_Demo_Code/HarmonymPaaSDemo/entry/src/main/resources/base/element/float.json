@@ -1,0 +1,40 @@
+{
+  "float": [
+    {
+      "name": "image_width",
+      "value": "56vp"
+    },
+    {
+      "name": "image_height",
+      "value": "56vp"
+    },
+    {
+      "name": "login_font_size",
+      "value": "18fp"
+    },
+    {
+      "name": "login_height",
+      "value": "24vp"
+    },
+    {
+      "name": "login_padding_left",
+      "value": "12vp"
+    },
+    {
+      "name": "login_margin_top",
+      "value": "24vp"
+    },
+    {
+      "name": "login_area_height",
+      "value": "80vp"
+    },
+    {
+      "name": "main_padding_left",
+      "value": "12vp"
+    },
+    {
+      "name": "main_padding_right",
+      "value": "12vp"
+    }
+  ]
+}

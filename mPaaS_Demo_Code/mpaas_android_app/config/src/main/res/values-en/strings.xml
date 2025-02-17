@@ -1,0 +1,22 @@
+<resources>
+        <string name="app_name">configuration</string>
+        <string name="title">configuration</string>
+        <string name="search_tip">The configuration files will be pulled every half hour and then be stored locally. The values stored locally can be obtained by using the ConfigService.getConfig(key) function. Currently, the following keys in the test demo are available: \n test1, test2, test3</string>
+        <string name="search_hint">Enter the key value configured in the background</string>
+        <string name="search">Search</string>
+        <string name="sync_tip">After the button is tapped, the function mConfigService.loadConfigImmediately(0) will be executed and the latest configurations on the servers will be pulled immediately. After the configurations are modified on the backend, the latest values will be returned after this API is called.</string>
+        <string name="sync_config">Update configurations now</string>
+        <string name="monitor_tip">Monitor the changes of a group of key values. When the configured value of the monitored key changes, the monitor will be notified.</string>
+        <string name="monitor_config_change">Monitor the changes of TEST1 configuration</string>
+        <string name="monitor_result">listen for changes：</string>
+        <string name="switch_setting">Redirect the page according to the switch configuration</string>
+        <string name="switch_setting_hint">Switch configuration test: key = test1. If the value contains A, it will be redirected to page A. If the value contains B, it will be redirected to page B.</string>
+        <string name="tv_a_page">I am page A</string>
+        <string name="tv_b_page">I am page B</string>
+        <string name="tv_switch">switch value shown here</string>
+
+        <string name="config_search_monitor">Search monitoring : </string>
+        <string name="config_transfer_renew">Immediate update configuration called</string>
+        <string name="config_renew">Listening called</string>
+        <string name="config_variety">Configuration changes</string>
+</resources>

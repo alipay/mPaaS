@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="center_avatar_icon_size">45dp</dimen>
+    <dimen name="center_avatar_item_height">80dp</dimen>
+
+    <dimen name="AU_SPACE3">12dp</dimen>
+</resources>

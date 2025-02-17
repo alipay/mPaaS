@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d2</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="select">#515151</color>
+    <color name="selected">#1296db</color>
+    <color name="selected2">#2290d0</color>
+    <color name="back">#e6e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="view">#bfbfbf</color>
+    <color name="red">#ff3300</color>
+    <color name="touming">#00ffffff</color>
+</resources>

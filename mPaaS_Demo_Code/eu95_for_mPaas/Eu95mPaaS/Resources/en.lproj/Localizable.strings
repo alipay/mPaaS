@@ -1,0 +1,134 @@
+/* 
+  Localizable.strings
+  mPaas_Poc_Demo
+
+  Created by Raffaele on 2022/2/25.
+  
+*/
+
+//Tab
+"首页" = "Home";
+
+//首页
+"版本升级提示" = "Version Upgrade Prompt";
+"开关配置" = "Switch configuration";
+"H5容器和离线包" = "H5 container";
+"小程序" = "TinyApp";
+"移动网关组件" = "Mobile Gateway Component";
+"消息推送" = "Message Push Service";
+"移动同步" = "Mobile Sync";
+"移动分析" = "Mobile Analysis Service";
+"智能投放" = "Intelligent delivery";
+"设备标识" = "Device identifier";
+"扫一扫组件" = "Scan Code";
+"分享组件" = "Share Service";
+"定位地图" = "Map Service";
+"UI组件" = "AntUI";
+"安全键盘" = "SafeKeyboard";
+"音视频通话组件" = "ARTVC";
+"热修复" = "Hotpatch";
+"多媒体" = "Multimedia";
+
+//版本升级提示
+"版本升级" = "Software update";
+"检测升级：默认弹框提示" = "Check for updates: a default toast";
+"检测升级：自定义弹框图像和loading" = "Check for updates: a custom toast image and loading effect";
+"检测升级：自定义弹框UI" = "Check for updates: a custom toast UI";
+"欢迎使用新版本" = "Welcome Use New Version";
+"版本更新" = "New version";
+"稍后再说" = "Later";
+"立即安装" = "Update Now";
+
+//开关配置
+"开关配置信息" = "Switch configuration information";
+"配置信息" = "Configuration information";
+"确定" = "OK";
+"A页面" = "Page A";
+"B页面" = "Page B";
+
+//H5离线包
+"打开在线页面" = "ONLINE PAGE";
+"打开本地页面" = "H5 OPEN LOCAL HTML FILE";
+"自定义JSAPI" = "REGISTER CUSTOM JSAPI";
+"打开H5离线包" = "OFFLINE PACKAGE";
+"定制导航栏" = "CUSTOM NAVIGATION BAR";
+
+//小程序
+"启动小程序Demo" = "Open TinyApp Demo";
+"调试/预览小程序" = "Debug/Preview TinyApp";
+"自定义JSAPI" = "Custom JSAPI";
+
+//移动网关
+"移动网关" = "Mobile Gateway";
+"调用RPC: Get" = "Call RPC: Get";
+"调用RPC: Post" = "Call RPC: Post";
+"调用RPC: 未验签" = "Call RPC: No Attestation";
+"调用RPC: 未加密" = "Call RPC: Unencrypted";
+"返回数据" = "Respones Data";
+
+//移动同步
+"建立Sync连接" = "Create Sync Connect";
+"绑定用户" = "Bind The User";
+"解绑用户" = "Solution To The User";
+
+//移动分析
+"行为日志" = "Action log";
+"添加行为日志" = "Add Action log";
+"报活日志" = "Active logs";
+"添加报活日志" = "Add Active log";
+"性能日志" = "Performance logs";
+"添加性能日志" = "Add Performance log";
+"卡顿报告（需在真机且非xcode调试）" = "Caton report（Need iPhone And Not Use Xcode Debug）";
+"卡死报告" = "Stopwork logs";
+"闪退报告" = "Crash logs";
+"自定义分析" = "Custom Analysis";
+"模拟卡顿，休眠10秒" = "To Simulate The Caton，Sleep 10s";
+"模拟卡死，休眠30秒" = "To Simulate The Stopwork，Sleep 30s";
+
+//智能投放
+"确定" = "OK";
+
+//设备标识
+"获取设备标识" = "Get Device identifier";
+
+//扫一扫
+"扫一扫" = "Scan Code";
+"默认样式扫码页面" = "Default Style Scan Page";
+"自定义默认样式扫码页面" = "Custom Default Style Scan Page";
+"自定义扫码页面" = "Custom Scan Page";
+
+//分享
+"分享" = "Share";
+"分享文本" = "Share Text";
+"分享图片" = "Share Picture";
+"分享链接" = "Share Link";
+
+//定位
+"定位" = "Positioning";
+"开始定位" = "Start Positioning";
+"定位成功" = "Positioning Success";
+"知道了" = "Got it";
+
+//AntUI
+"主要操作 Disable(AUButtonStyle1)" = "Primary operation Disable(AUButtonStyle1)";
+"辅助操作 Normal(AUButtonStyle2)" = "Auxiliary operation Normal(AUButtonStyle2)";
+"辅助操作 Disable(AUButtonStyle2)" = "Auxiliary operation Disable(AUButtonStyle2)";
+"警告类操作 Normal(AUButtonStyle6)" = "Warning operation Normal(AUButtonStyle6)";
+"警告类操作 Disable(AUButtonStyle6)" = "Warning operation Disable(AUButtonStyle6)";
+"按钮" = "Button";
+"选项" = "Option";
+"筛选五个字" = "Filtering item (5 characters)";
+"筛选项六个字" = "Filtering item (6 characters)";
+"筛选项九个字的样式" = "Filtering item (9 characters)";
+"筛选项十个字的样式哦" = "Filtering item (10 characters)";
+"筛选项超过十个字的样式哦" = "Filtering item (more than 10 characters)";
+"取消关注" = "Unfollow";
+"取消关注_2 Style 9" = "Unfollow_2 Style 9";
+
+//热修复
+"热修复" = "Hotpatch";
+"模拟崩溃" = "Simulate crash";
+"提示" = "Prompt";
+"crash被Hotpacth热修复啦" = "The crash is fixed by Hotpatch.";
+"知道了" = "Got it";
+

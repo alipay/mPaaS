@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>前端页面调用原生</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+    }
+
+    button {
+      border: 0;
+      margin-bottom: 15px;
+      width: 100%;
+      height: 50px;
+      background-color: #108EE9;
+      color: #ffffff;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="J_Alert">显示原生Alert Dialog</button>
+</body>
+
+<script>
+  function ready(callback) {
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    var scanNode = document.getElementById('J_Alert');
+    scanNode.addEventListener('click', function () {
+      AlipayJSBridge.call('alert', {
+        title: '原生 Alert Dialog',
+        message: '这是一个来自原生的 Alert Dialog',
+        button: '确定'
+      }, function (e) {
+        alert("点击了按钮");
+      });
+    });
+  });
+</script>
+
+</html>

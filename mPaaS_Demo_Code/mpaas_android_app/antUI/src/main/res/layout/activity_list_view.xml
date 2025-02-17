@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Dialog" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.mpaas.antui.viewdemo.view.BaseHeadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:aui_titleText="Dialog" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/subButtonStyle"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="true"
+                android:onClick="onListButtonClick"
+                android:tag="1"
+                android:text="蚂蚁下拉刷新（蓝）" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/subButtonStyle"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="true"
+                android:onClick="onListButtonClick"
+                android:tag="2"
+                android:text="蚂蚁下拉刷新（白）" />
+
+            <com.alipay.mobile.antui.basic.AUButton
+                style="@style/subButtonStyle"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="true"
+                android:onClick="onListButtonClick"
+                android:tag="3"
+                android:text="全页面刷新" />
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

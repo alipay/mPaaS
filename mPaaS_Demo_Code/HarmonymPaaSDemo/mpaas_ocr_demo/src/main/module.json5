@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "mpaas_ocr_demo",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

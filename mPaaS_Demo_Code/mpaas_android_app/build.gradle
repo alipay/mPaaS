@@ -1,0 +1,110 @@
+apply plugin: 'com.alipay.apollo.optimize'// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.mpaas_artifact = 'mpaas-baseline'
+    ext.mpaas_baseline = '10.2.3-50'
+    repositories {
+
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        //mavenCentral()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven {
+            //allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven {
+            //allowInsecureProtocol = true
+            url 'http://mvn.dev.alipay.net/artifactory/content/repositories/mobile-haina' }
+        maven {
+            //allowInsecureProtocol = true
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+        maven {
+            //allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/repositories/google/'
+            name 'aliyun-google'
+        }
+        // 其他repo已省略
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+    dependencies {
+
+        classpath 'com.android.boost.easyconfig:easyconfig:2.6.5'
+        // inside 模式下才需要加入下面这个插件
+        if (mPaasBuildType == 'inside') {
+            classpath 'com.alipay.android:android-gradle-plugin:3.0.0.9.14'
+            classpath 'com.android.tools.build:gradle:3.5.1'
+        }else{
+            classpath 'com.android.tools.build:gradle:4.1.1'
+        }
+        classpath 'com.github.kezong:fat-aar:1.3.8'
+        classpath 'com.android.boost.easyconfig:easyconfig:2.8.0'
+    }
+}
+
+allprojects {
+    repositories {
+
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        //mavenCentral()
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        flatDir {
+            dirs 'libs'
+        }
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            credentials {
+                username "admin"
+                password "**"
+            }
+            url "http://mvn.test.alipay.net:8081/artifactory/content/groups/alipay-mobile"
+        }
+        maven {
+            allowInsecureProtocol = true
+            credentials {
+                username "admin"
+                password "**"
+            }
+            url "http://mvn.dev.alipay.net:8081/artifactory/content/groups/alipay-mobile"
+        }
+        maven {
+            allowInsecureProtocol = true
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/repositories/google/'
+            name 'aliyun-google'
+        }
+    }
+
+    configurations {
+        all*.exclude group: 'com.alipay.android.phone.wallet', module: 'nebulauc-build'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// This block encapsulates custom properties and makes them available to all
+// modules in the project.
+ext {
+    // The following are only a few examples of the types of properties you can define.
+    compileSdkVersion = 29
+    minSdkVersion = 18
+    targetSdkVersion  = 29
+    buildToolsVersion = "29.0.5"
+
+
+}

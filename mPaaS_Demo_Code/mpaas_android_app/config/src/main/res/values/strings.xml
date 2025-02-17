@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">开关配置</string>
+    <string name="title">开关配置</string>
+    <string name="search_tip">默认配置文件会半个小时拉一次，拉下来后会存储在本地，通过ConfigService.getConfig(key);可以获取本地存储的值，目前测试demo中配置了如下的key:\ntest2, test3，test4</string>
+    <string name="search_hint">输入在后台配置的key值</string>
+    <string name="search">搜索 通过key获取value</string>
+    <string name="sync_tip">点击后会调用mConfigService.loadConfigImmediately(0);立即从服务器拉取最新的配置，在后台修改后，调用该接口可以立即返回最新的值</string>
+    <string name="sync_config">立即更新配置</string>
+    <string name="monitor_tip">监听一组key值的变化，被监听的key所配置的值发生变化时，会通知监听者</string>
+    <string name="monitor_config_change">监听test1配置的变化</string>
+    <string name="monitor_result">监听到发生变化：</string>
+    <string name="switch_setting">根据开关配置跳转页面</string>
+    <string name="switch_setting_hint">开关配置测试 key = test1。value包含A跳转A页面;value包含B跳转B页面</string>
+    <string name="enable_setting_hint">开关配置测试 key = btnEnable。value包含true按钮高亮可用;value包含false按钮置灰不可用</string>
+    <string name="tv_a_page">我是A页面</string>
+    <string name="tv_b_page">我是B页面</string>
+    <string name="tv_switch">此处显示开关值</string>
+
+    <string name="config_search_monitor">搜索监听 : </string>
+    <string name="config_transfer_renew">调用了立即更新配置</string>
+    <string name="config_renew">调用了监听</string>
+    <string name="config_variety">配置的变化</string>
+</resources>

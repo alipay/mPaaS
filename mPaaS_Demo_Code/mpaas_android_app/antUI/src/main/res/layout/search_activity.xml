@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="SearchBar" />
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_bar"
+           app:aui_titleText="SearchBar" />
+
+        <com.alipay.mobile.antui.basic.AUButton
+            android:id="@+id/search_btn"
+            style="@style/subButtonStyle"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:text="顶部搜索入口" />
+
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

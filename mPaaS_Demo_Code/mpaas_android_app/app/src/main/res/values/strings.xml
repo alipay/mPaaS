@@ -1,0 +1,177 @@
+<resources>
+    <string name="type">0</string>
+    <string name="app_name">POC演示demo</string>
+
+    <string name="tiny_app">小程序</string>
+    <string name="gdmap">高德地图</string>
+    <string name="safekeyboard">安全键盘</string>
+
+    <string name="rpc">移动网关服务</string>
+    <string name="rpc_get_btn">get请求</string>
+    <string name="rpc_post_btn">post请求</string>
+    <string name="rpc_mock_btn">mock请求</string>
+    <string name="rpc_post_limit">post limit请求</string>
+    <string name="rpc_post_weights">动态权重</string>
+    <string name="rpc_exception_btn">异常请求</string>
+    <string name="rpc_endorsed">未加签测试</string>
+    <string name="rpc_dynamic_weight_btn">动态权重</string>
+    <string name="rpc_exception_text">该请求通过rpc拦截器来处理异常</string>
+    <string name="rpc_exception_toast">拦截异常，code: %d</string>
+    <string name="rpc_interceptor">rpc拦截器相关示例，可参考类CommonInterceptor</string>
+    <string name="rpc_self_encrypt">开启rpc加密需配置portal工程下assets/mpaas_netconfig.properties文件：
+        \n1. Crypt=true为开启，false为关闭\n2. PubKey的值需要在同一行，可用\\n代替换行
+        \n3. GWWhiteList为白名单，仅域名在白名单中的请求会被加密，多个域名用英文逗号隔开</string>
+
+    <string name="numkeyboard_normal">正序数字键盘： </string>
+    <string name="numkeyboard_random">随机数字键盘： </string>
+    <string name="alphabetkeyboard_normal">正序数字字母全键盘： </string>
+    <string name="numkeyboard_normal_customed">自定义正序数字键盘： </string>
+    <string name="numkeyboard_random_customed">自定义随机数字键盘： </string>
+    <string name="alphabetkeyboard_normal_customed">自定义正序数字字母全键盘： </string>
+    <string name="clear">清空</string>
+    <string name="clear_keyboard">清空键盘</string>
+    <string name="keyboard_logo_name">安全输入</string>
+    <string name="finish">完成</string>
+    <string name="decryption_addr">键盘解密服务地址(ip:port)</string>
+    <string name="decryption_addr_hint">不填写，不调用解密</string>
+
+    <!--  <string name="push_title">推送</string>
+    <string name="push_init">初始化推送</string>
+    <string name="init_tips">Tips: 使用上面接口，可以实现移动推送的初始化</string>
+    <string name="push_bind">将用户id和token标识绑定</string>
+    <string name="bind_tips">Tips: push支持用户维度的推送。用户可以结合自身的用户系统将用户id和内建渠道的token绑定，进而实现基于用户id的推送</string>
+    <string name="push_unbind">解除用户id和token标识的绑定</string>
+    <string name="unbind_tips">Tips: 使用上面接口，可以实现用户id和token标识的解除绑定操作</string>
+    <string name="push_uploadThirdToken">上报第三方push的token</string>
+    <string name="uploadThirdToken_tips">Tips: 使用上面接口，可以实现第三方push的token的上传，但push不支持对内建渠道的token值的指定</string>
+    <string name="operation_result">操作结果将输入在这里</string>
+    <string name="use_default_msg">使用内置通知栏消息</string>-->
+
+
+    //分享
+    <!--    <string name="share">社交分享</string>-->
+    <string name="click_to_share">点击进行分享</string>
+    <string name="mpaas_share_notice">注意：\n\n1.微信分享需要开发者手动创建WXEntryActivity类，否则无法收到分享回调。\n2.微信分享图片请勿超过32KB，若超出则使用默认的支付宝Icon。\n3.QQ、QZone分享请设置正确的QQ分享ID，并注册到AndroidManifest中，否则将无法正常使用分享及回调功能。\n4.微博分享请确保您的应用签名、包名、分享 ID，应与在微博开放平台中注册的一致，否则将导致分享失败。\n5.短信分享默认启动短信页面即回调分享成功，若开发者希望回调短信发送状态，请自行申请权限进行开发。\n\n注意事项的详细说明请点击下面按钮获取</string>
+    <string name="get_instructions">点击获取分享详细说明</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_timeline">微信朋友圈</string>
+    <string name="weibo">微博</string>
+    <string name="qq">QQ好友</string>
+    <string name="qzone">QZone</string>
+    <string name="dingding">钉钉</string>
+    <string name="sms">短信</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_error">分享异常</string>
+
+    <string name="uikongjian">UI控件库</string>
+    <string name="H5">H5容器双向通信</string>
+    <string name="getid">获取设备id</string>
+    <string name="share">多渠道分享</string>
+    <string name="scan">扫码</string>
+    <string name="ide">IDE插件支持移动端快速开发</string>
+    <string name="storage">统一存储</string>
+    <string name="ant_design">Ant Design</string>
+
+
+    //扫码
+    <!--    <string name="scan_title">扫一扫</string>-->
+    <!--    <string name="standard_ui_btn">使用标准UI</string>-->
+    <!--    <string name="custom_ui_btn">使用自定义UI</string>-->
+    <!--    <string name="scan_failure">扫码失败，请重试！</string>-->
+    <!--    <string name="standard_title">标准UI</string>-->
+    <!--    <string name="confirm">确认</string>-->
+
+
+    //热修复
+    <string name="hotpatch">热修复</string>
+    <string name="mock_need_hotpatch">模拟线上BUG</string>
+    <string name="mock_need_hotpatch_tip">热修复会修复该按钮的点击事件里面的代码逻辑</string>
+    <string name="trigger_hotpatch_dynamic_release">热修复</string>
+    <string name="trigger_hotpatch_dynamic_release_tip">通常情况下，建议开发者在MockLauncherApplicationAgent的postInit中触发热修复部署检测</string>
+    <string name="notice">注意：\n使用热修复时，开发者需要确认加密图片已经正确生成，否则hotpatch包将无法正常下发。</string>
+    <string name="hot_fix_abnormal">热修复之前-error</string>
+    <string name="hot_fix_abnormal_success">热修复完成-success</string>
+
+    //H5
+    <string name="custom_jsapi_setting_tips">注册成功\n
+        现在可以打开离线包，点击\"调用自定义API1\"和\"调用自定义API2\"，即可看到自定义返回值</string>
+    <string name="title">H5</string>
+    <string name="update_success">更新成功</string>
+    <string name="update_failure">更新失败</string>
+    <string name="nebula_app">H5应用</string>
+    <string name="open_h5_app">打开H5应用</string>
+    <string name="open_h5_app_2">打开H5应用(方式二，不再推荐)</string>
+    <string name="update_app">更新H5应用信息</string>
+    <string name="update_specific_app">更新指定的H5应用</string>
+    <string name="verify_app_setting">离线包验签说明</string>
+    <string name="H5resources">H5容器</string>
+
+    <string name="verify_app_setting_toast">1. 请在assets/config/custom_config.json里将h5_shouldverifyapp设置成YES\n
+        2. 请在启动时调用 H5Utils.setProvider(H5PublicRsaProvider.class.getName(),new H5RsaProviderImpl()); 设置验签公钥\n
+        3. 请注意，因为rsa只会在打开H5页面时初始化一次，所以RsaProvider必须在第一次H5页面打开前设置。
+    </string>
+
+
+    <string name="antUI">antUI</string>
+    <!--数据同步-->
+    <string name="sync">移动同步</string>
+    <string name="sync_bind">绑定用户</string>
+    <string name="sync_unbind">解绑定用户</string>
+    <string name="user_id_text">用户id</string>
+    <string name="session_id_text">会话id</string>
+    <string name="user_id_hint">请输入用户id</string>
+    <string name="session_id_hint">请输入会话id</string>
+    <string name="sync_bind_result">绑定返回值</string>
+
+    <string name="sync_bindTips">Tips：sync支持基于用户id的消息同步，使用前需要对用户id进行绑定。
+        sync客户端本地不对sessionId进行要求，sessionId用于配合业务端用户一致性验证
+        ，非必须</string>
+    <string name="sync_unBindTips">Tips：解除用户id的绑定和用户一致性验证</string>
+    <string name="sync_deviceIdTips">Tips：用户的设备id,根据utdid接口获取（UTDevice.getUtdid(context)）
+        ，sync初始化默认使用deviceid绑定即默认支持基于deviceid的消息同步</string>
+    <string name="sync_unconnected">连接状态：not connected </string>
+    <string name="sync_deviceData">基于设备获取的同步数据是： </string>
+    <string name="sync_uidData">基于用户id获取的同步数据是： </string>
+    <string name="sync_deviceid">设备id： </string>
+    <string name="sync_by_devide">基于设备维度的数据同步</string>
+    <string name="sync_by_user">基于用户维度的数据同步</string>
+    <string name="connect_state">连接状态</string>
+    <string name="get_analysis_uid">获取移动分析demo中提供的uid</string>
+    <!--数据同步-->
+
+    <string name="config_service">开关管理配置</string>
+
+    <string name="cdp">智能投放</string>
+
+    <string name="push">消息推送</string>
+    <string name="vis_point">可视化埋点</string>
+    <string name="hot_patch_txt">热修复发布</string>
+
+    <string name="limit_request_Data">LIMIT请求数据 :</string>
+
+
+    <string name="db_storage">数据库存储</string>
+    <string name="random_user">随机生成用户</string>
+    <string name="insert_user">插入用户</string>
+    <string name="user_name_is">用户名为</string>
+    <string name="user_color_is">用户颜色为</string>
+    <string name="user_time_is">用户生成时间为</string>
+    <string name="user_repeated">用户已存在，插入失败</string>
+
+    <string name="kv_storage">键值对存储</string>
+    <string name="random_kv">随机生成键值对</string>
+    <string name="insert_kv">插入键值对</string>
+    <string name="key_is">Key为</string>
+    <string name="value_is">Value为</string>
+
+    <string name="file_storage">文件存储</string>
+    <string name="random_file">随机生成文件</string>
+    <string name="insert_file">插入文件</string>
+    <string name="name_is">文件名径为</string>
+    <string name="path_is">文件路径为</string>
+    <string name="content_is">文件内容为</string>
+    <string name="file_type_is">文件类型为</string>
+
+</resources>

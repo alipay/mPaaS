@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar"
+       app:aui_titleText="单项选择器" />
+    <com.alipay.mobile.antui.basic.AUFrameLayout
+        android:layout_below="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="FilterMenuView" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.alipay.mobile.antui.basic.AUFilterMenuView
+                android:id="@+id/filter_menu_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.alipay.mobile.antui.basic.AUFilterMenuView>
+
+        </LinearLayout>
+
+    </com.alipay.mobile.antui.basic.AUFrameLayout>
+
+
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

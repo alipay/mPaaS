@@ -1,0 +1,124 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "mPaaSDemo"
+    },
+    {
+      "name": "EntryAbilityStage_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbilityStage_label",
+      "value": "label"
+    },
+    {
+      "name": "login",
+      "value": "登录/注册>"
+    },
+    {
+      "name": "personalInfo",
+      "value": "个人信息"
+    },
+    {
+      "name": "avatar",
+      "value": "头像"
+    },
+    {
+      "name": "nickname",
+      "value": "昵称"
+    },
+    {
+      "name": "inputNickname",
+      "value": "请输入昵称"
+    },
+    {
+      "name": "inputPhone",
+      "value": "授权手机号"
+    },
+    {
+      "name": "phone",
+      "value": "手机号"
+    },
+    {
+      "name": "dearUser",
+      "value": "亲爱的用户>"
+    },
+    {
+      "name": "hwid_no_internet_connect",
+      "value": "网络未连接，请检查网络设置。"
+    },
+    {
+      "name": "hwid_text_button_known",
+      "value": "知道了"
+    },
+    {
+      "name": "agree",
+      "value": "已阅读并同意"
+    },
+    {
+      "name": "and",
+      "value": "和"
+    },
+    {
+      "name": "privacy",
+      "value": "隐私政策"
+    },
+    {
+      "name": "protocols",
+      "value": "用户服务协议"
+    },
+    {
+      "name": "others",
+      "value": "其他方式登录"
+    },
+    {
+      "name": "end",
+      "value": "。"
+    },
+    {
+      "name": "appName",
+      "value": "应用名称"
+    },
+    {
+      "name": "sampleaaa",
+      "value": "支付宝需要使用此权限，用于出行、打车等场景\n出行、打车就是小程序，客户那边根据小程序用于哪些业务，大概写下"
+    },
+    {
+      "name": "appDesc",
+      "value": "应用描述"
+    },
+    {
+      "name": "MpaasBridgeMsgAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MpaasBridgeMsgAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "PushLandingAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PushLandingAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "MpaasBridgeExtMsgAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MpaasBridgeExtMsgAbility_label",
+      "value": "label"
+    }
+  ]
+}

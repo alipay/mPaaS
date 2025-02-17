@@ -1,0 +1,67 @@
+<resources>
+    <string name="cdp">Marketing system</string>
+    <string name="app_name">Marketing system</string>
+
+    <string name="multi_style">Booth Type</string>
+    <string name="rotation">Carousel ads</string>
+    <string name="list">list ad</string>
+    <string name="banner">single line</string>
+    <string name="announcement">announcement</string>
+    <string name="popup">popUp ads</string>
+    <string name="splash">splash page ad</string>
+    <string name="h5_popup">popUp ads</string>
+    <string name="h5_popup_native">H5Native popup ads</string>
+
+
+    <string name="location">Booth location</string>
+    <string name="top">top</string>
+    <string name="float_top">float top</string>
+    <string name="bottom">bottom</string>
+    <string name="full">full screen</string>
+    <string name="header">list header</string>
+    <string name="footer">list footer</string>
+    <string name="cdp_float">buoy</string>
+
+    <string name="cdp_test">Cdp test</string>
+
+    <string name="input_space_code">Please enter a custom SpaceCode</string>
+    <string name="ok">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="custom_space_code">Customize SpaceCode</string>
+
+    <string name="dynamic_view_content_1">Dynamic View 1</string>
+    <string name="dynamic_view_content_2">Dynamic View 2</string>
+    <string name="dynamic_view_content_3">Dynamic View 3</string>
+    <string name="dynamic_view_list_1">Dynamic ListView 1</string>
+    <string name="dynamic_view_list_2">Dynamic ListView 2</string>
+    <string name="dynamic_view_list_3">Dynamic ListView 3</string>
+
+    <string name="upload_log">Manually report logs</string>
+
+    <string name="content_text">The translucent light blue area is the text area</string>
+    <string name="feature_add_feature">Add online and offline tests</string>
+    <string name="feature_new_activity">Create a new campaign</string>
+    <string name="feature_new_test_1">Analog Bank Interface: Single Frame</string>
+    <string name="feature_new_test_2">Simulated Bank Interface: Multiframe</string>
+    <string name="feature_new_activity_adcode">The new activity placeholder code is feature_space_new_adcode</string>
+    <string name="feature_add_feature_adcode">The placeholder code for the event online and offline is feature_space_add_adcode</string>
+
+    <string name="show_user_id">The current user ID is as follows (used for crowd management):</string>
+    <string name="cdp_test_ui_view">UI style testing</string>
+    <string name="cdp_test_case_view">test case</string>
+
+
+    <string name="cdp_feature_show_top">The placeholder code above is: pit_cdp_cav_top</string>
+    <string name="cdp_feature_show_center">The placeholder code above is: pit_cdp_cav_center</string>
+    <string name="cdp_feature_show_bottom">The placeholder code above is: pit_cdp_cav_bottom</string>
+
+    <string name="cdp_test_ui_jump_over">jump over</string>
+    <string name="cdp_feature_add_title">Activity online test</string>
+    <string name="cdp_feature_new_title">New activity test</string>
+    <string name="cdp_feature_show_title">Mock Display Page - Single Frame</string>
+
+    <string name="gonggaoquanweizhishili">公告全位置示例</string>
+    <string name="banner_advertising_nice_practice">轮播广告最佳实践</string>
+    <string name="Simulated_display_page">模拟展示页面-多帧</string>
+    <string name="single_advertising_practice">单行广告最佳实践</string>
+</resources>

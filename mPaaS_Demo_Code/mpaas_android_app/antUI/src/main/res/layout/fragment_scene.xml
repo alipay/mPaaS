@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AUScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/change_skin"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:onClick="onChangeSkin"
+            app:listItemType="normal"
+            app:listLeftSubText="皮肤更换功能展示"
+            app:listLeftText="换肤" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="Iconfont矢量图" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="导航栏" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/title_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUTitleBar"
+            app:listItemType="normal"
+            app:listLeftSubText="统一导航栏"
+            app:listLeftText="AUTitleBar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="搜索栏" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/search_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUSearchBar"
+            app:listItemType="normal"
+            app:listLeftSubText="包含点击入口样式和自定义搜索栏输入样式等"
+            app:listLeftText="AUSearchBar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="菜单" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/card_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUCardMenu"
+            app:listItemType="top"
+            app:listLeftSubText="类社交card类弹出菜单"
+            app:listLeftText="AUCardMenu" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/float_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUFloatMenu"
+            app:listItemType="bottom"
+            app:listLeftSubText="类导航栏弹出菜单"
+            app:listLeftText="AUFloatMenu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="Table and List" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/list_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUListItems"
+            app:listItemType="top"
+            app:listLeftSubText="基本表单列表等"
+            app:listLeftText="AUListItems" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/divider_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onDividerListView"
+            app:listItemType="bottom"
+            app:listLeftSubText="带分割线的ListView"
+            app:listLeftText="AUDividerListView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="按钮" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/button_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUButton"
+            app:listItemType="normal"
+            app:listLeftSubText="提供基本样式"
+            app:listLeftText="AUButton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="输入框" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/text_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUTextFields"
+            app:listItemType="normal"
+            app:listLeftSubText="多种场景输入框"
+            app:listLeftText="AUTextFields and InputBox" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="分段选择" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/segment_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUSegment"
+            app:listItemType="normal"
+            app:listLeftSubText="分段选择"
+            app:listLeftText="AUSegment" />
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/AU_SPACE1"-->
+        <!--android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"-->
+        <!--android:layout_marginTop="@dimen/AU_SPACE6"-->
+        <!--android:text="单选框" />-->
+
+        <!--<com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:onClick="onAUCheckbox"-->
+        <!--app:listItemType="normal"-->
+        <!--app:listLeftSubText="单选框"-->
+        <!--app:listLeftText="AUCheckbox" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="提示Toast" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/toast_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUToast"
+            app:listItemType="normal"
+            app:listLeftSubText="提示Toast"
+            app:listLeftText="AUToast" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="Alerts" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/alert_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAlerts"
+            app:listItemType="normal"
+            app:listLeftSubText="alert的各种样式和场景"
+            app:listLeftText="Alerts" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="菊花刷新" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/pullloading_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUPullloadingView"
+            app:listItemType="top"
+            app:listLeftSubText="下拉刷新"
+            app:listLeftText="AUPullloadingView" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/loading_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAULoadingView"
+            app:listItemType="bottom"
+            app:listLeftSubText="界面加载"
+            app:listLeftText="AULoadingView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="列表字母索引" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/blade_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUBladeView"
+            app:listItemType="normal"
+            app:listLeftSubText="列表字母索引"
+            app:listLeftText="AUBladeView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="选择器" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/date_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUDatePicker"
+            app:listItemType="normal"
+            app:listLeftSubText="日期选择器"
+            app:listLeftText="AUDatePicker" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="结果页" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/result_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUResultView"
+            app:listItemType="normal"
+            app:listLeftSubText="结果页"
+            app:listLeftText="AUResultView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="网络异常页" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/neterror_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUNetErrorView"
+            app:listItemType="normal"
+            app:listLeftSubText="3种简单版样式和7种插画版样式"
+            app:listLeftText="AUNetErrorView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="其他" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/tab_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUTabBar"
+            app:listItemType="top"
+            app:listLeftSubText="切换tab栏控件，如首页"
+            app:listLeftText="AUTabBar" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/card_option_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUCardOptionView"
+            app:listItemType="bottom"
+            app:listLeftSubText="首页card操作栏"
+            app:listLeftText="AUCardOptionView" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/amount_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUAmountInputBox"
+            app:listItemType="bottom"
+            app:listLeftSubText="资金链输入框"
+            app:listLeftText="AUAmountInputBox" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/code_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onAUQRCodeView"
+            app:listItemType="bottom"
+            app:listLeftSubText="二维码"
+            app:listLeftText="AUQRCodeView" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/imagepicker_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onImagePicker"
+            app:listItemType="bottom"
+            app:listLeftSubText="图片选择"
+            app:listLeftText="图片选择" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+            android:layout_marginTop="24dp"
+            android:text="功能View" />
+
+        <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+            android:id="@+id/roundimage_demo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:onClick="onImageView"
+            app:listItemType="bottom"
+            app:listLeftSubText="圆角"
+            app:listLeftText="ImageView" />
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+</com.alipay.mobile.antui.basic.AUScrollView>

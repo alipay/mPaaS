@@ -1,0 +1,4 @@
+Lcom.mpaas.demo.hotpatch.HotpatchActivityPoc
+PatchType: dexpatch
+HostDex: true
+android-phone-mobilesdk-quinox-Configs: ForceEnableQSecondDex-true

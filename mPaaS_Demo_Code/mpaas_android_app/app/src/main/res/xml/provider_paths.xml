@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-files-path
+            name="download"
+            path="com.alipay.android.phone.aliupgrade/downloads" />
+        <external-path
+            name="download_sdcard"
+            path="ExtDataTunnel/files/com.alipay.android.phone.aliupgrade/downloads" />
+        <external-path
+            name="files_root"
+            path="Android/data/com.mpaas.demo" />
+        <external-path
+            name="external_files"
+            path="." />
+    </paths>
+</resources>

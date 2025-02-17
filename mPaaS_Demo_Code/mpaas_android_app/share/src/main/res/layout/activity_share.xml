@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alipay.mobile.antui.basic.AUTitleBar
+        android:id="@+id/title_atb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/share_share_btn"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:text="@string/click_to_share" />
+
+    <RadioGroup
+        android:id="@+id/rg_root"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:checkedButton="@+id/rb_url"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL" />
+
+        <RadioButton
+            android:id="@+id/rb_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMG" />
+
+        <RadioButton
+            android:id="@+id/rb_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TXT" />
+    </RadioGroup>
+
+    <com.alipay.mobile.antui.basic.AUAssistLabelView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/mpaas_share_notice" />
+
+    <com.alipay.mobile.antui.basic.AUButton
+        android:id="@+id/share_get_instructions_btn"
+        style="@style/mainButtonStyle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:text="@string/get_instructions"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/yw_1222" />
+    <!--discard：做严格检查-->
+    <!--keep :不做严格检查-->
+    <!--shrinkMode="strict" :该模式只保留在代码或者资源文件中明确引用的资源-->
+    <!--shrinkMode="safe" :该模式会保留所有明确引用的资源以及可能被 Resources.getIdentifier() 动态引用的资源-->

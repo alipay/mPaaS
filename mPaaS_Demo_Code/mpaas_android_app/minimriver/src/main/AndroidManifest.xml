@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.mindemo">
+    <application>
+        <meta-data
+            android:name="mpaas.init.param"
+            android:value="com.mpaas.mindemo.MriverInitImpl" />
+
+        <activity android:name=".MriverActivity"/>
+    </application>
+
+</manifest>

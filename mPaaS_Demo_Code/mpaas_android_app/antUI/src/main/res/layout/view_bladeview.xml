@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.alipay.mobile.antui.basic.AUBladeView
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        app:top1Text="⊙"
+        app:top2Text="オ"/>
+</com.alipay.mobile.antui.basic.AULinearLayout>

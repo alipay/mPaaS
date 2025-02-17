@@ -1,0 +1,26 @@
+<resources>
+      //分享
+    <!--    <string name="share">社交分享</string>-->
+    <string name="click_to_share">点击进行分享</string>
+    <string name="mpaas_share_notice">注意：\n\n1.微信分享需要开发者手动创建WXEntryActivity类，否则无法收到分享回调。\n2.微信分享图片请勿超过32KB，若超出则使用默认的支付宝Icon。\n3.QQ、QZone分享请设置正确的QQ分享ID，并注册到AndroidManifest中，否则将无法正常使用分享及回调功能。\n4.微博分享请确保您的应用签名、包名、分享 ID，应与在微博开放平台中注册的一致，否则将导致分享失败。\n5.短信分享默认启动短信页面即回调分享成功，若开发者希望回调短信发送状态，请自行申请权限进行开发。\n\n注意事项的详细说明请点击下面按钮获取</string>
+    <string name="get_instructions">点击获取分享详细说明</string>
+    <string name="alipay">支付宝</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_timeline">微信朋友圈</string>
+    <string name="weibo">微博</string>
+    <string name="qq">QQ好友</string>
+    <string name="qzone">QZone</string>
+    <string name="dingding">钉钉</string>
+    <string name="sms">短信</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_error">分享异常</string>
+
+    <string name="uikongjian">UI控件库</string>
+    <string name="H5">H5容器双向通信</string>
+    <string name="getid">获取设备id</string>
+    <string name="share">多渠道分享</string>
+    <string name="ide">IDE插件支持移动端快速开发</string>
+
+
+</resources>

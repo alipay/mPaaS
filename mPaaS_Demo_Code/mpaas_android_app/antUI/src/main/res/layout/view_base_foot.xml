@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="121dp"
+    android:paddingTop="84dp"
+    android:gravity="center_horizontal">
+
+    <com.alipay.mobile.antui.basic.AUImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/alipay_logo"/>
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/bottom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alipay AntUI Mobile"
+        android:layout_alignTop="@id/logo"
+        android:layout_toRightOf="@id/logo"
+        android:layout_marginTop="-2dp"
+        android:textColor="#141823"
+        android:textSize="7dp"/>
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updated June 2, 2016"
+        android:layout_toRightOf="@id/logo"
+        android:layout_below="@id/bottom_title"
+        android:textColor="#9197A3"
+        android:textSize="6dp"/>
+
+</com.alipay.mobile.antui.basic.AURelativeLayout>

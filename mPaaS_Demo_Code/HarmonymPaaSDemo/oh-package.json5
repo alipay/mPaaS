@@ -1,0 +1,15 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "mpaasdemo",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "overrides": {
+    "@mpaas/push": "2.0.0-beta"
+  }
+}

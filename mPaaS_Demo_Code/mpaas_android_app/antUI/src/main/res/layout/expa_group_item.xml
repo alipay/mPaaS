@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/AU_MARGIN_UNIVERSAL"
+    android:paddingRight="@dimen/AU_MARGIN_UNIVERSAL">
+
+    <com.alipay.mobile.antui.basic.AUImageView
+        android:id="@+id/group_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <com.alipay.mobile.antui.basic.AUTextView
+        android:id="@+id/group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/AU_MARGIN_UNIVERSAL"
+        android:layout_toRightOf="@id/group_icon"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+
+    <!-- 右边的箭头和勾符号-->
+    <com.alipay.mobile.antui.iconfont.AUIconView
+        android:id="@+id/group_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:iconfontColor="@color/table_arrow_color"
+        app:iconfontSize="@dimen/AU_TEXTSIZE4"
+        app:imageresid="@drawable/table_arrow" />
+
+</RelativeLayout>

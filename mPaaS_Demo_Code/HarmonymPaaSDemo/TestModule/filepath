@@ -1,0 +1,37 @@
+{
+  "TestModule/src/main/ets/pages/Index.ets": {
+    "IdentifierCache": {
+      "#Index_Params": "Index_Params",
+      "#Index": "Index",
+      "#__function": "i",
+      "Index#initialRender#__function": "o",
+      "$0#__function": "t"
+    },
+    "MemberMethodCache": {
+      "initialRender:6:16": "initialRender"
+    },
+    "obfName": "TestModule/src/main/ets/pages/Index.ets"
+  },
+  "TestModule/src/main/ets/testmoduleability/TestModuleAbility.ets": {
+    "IdentifierCache": {
+      "#UIAbility": "UIAbility",
+      "#AbilityConstant": "AbilityConstant",
+      "#Want": "Want",
+      "#hilog": "hilog",
+      "#window": "window",
+      "TestModuleAbility#onWindowStageCreate#__function": "u"
+    },
+    "MemberMethodCache": {
+      "onCreate:6:11": "onCreate",
+      "onDestroy:13:15": "onDestroy",
+      "onWindowStageCreate:17:28": "onWindowStageCreate",
+      "onWindowStageDestroy:30:33": "onWindowStageDestroy",
+      "onForeground:35:38": "onForeground",
+      "onBackground:40:43": "onBackground"
+    },
+    "obfName": "TestModule/src/main/ets/testmoduleability/TestModuleAbility.ets"
+  },
+  "compileSdkVersion": "5.0.0.31",
+  "entryPackageInfo": "testmodule|1.0.0",
+  "PropertyCache": {}
+}

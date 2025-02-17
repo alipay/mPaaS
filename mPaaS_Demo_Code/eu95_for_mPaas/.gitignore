@@ -1,0 +1,13 @@
+build
+products
+Pods
+/Pods
+/Pods/*
+out
+xcshareddata
+xcuserdata
+.idea
+output
+.DS_Store
+/Resources
+/Resources/*

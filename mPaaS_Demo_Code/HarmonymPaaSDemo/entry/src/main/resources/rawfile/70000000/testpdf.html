@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <title>pdf-test</title>
+</head>
+
+<body>
+    <embed src="static/test.pdf" type="application/pdf" width="100%" height="1000px">
+
+    <!-- <script>
+        <canvas id="pdfCanvas"></canvas>
+        var url = '/static/test.pdf'; // PDF文件路径
+        var canvas = document.getElementById('pdfCanvas');
+        var context = canvas.getContext('2d');
+        var pageNum = 1; // 当前显示的页码，默认为第1页
+        var scale = 1; // 缩放比例，默认为1（不缩放）
+        var loadingTask; // PDF加载任务
+        var pageRendering = false; // 是否正在渲染页面，默认为false
+        var pageNumPending = null; // 待渲染的页码，默认为null
+        var printJob = null; // PDF打印任务，默认为null
+        var printCompleteCallback = null; // PDF打印完成后的回调函数，默认为null
+        var viewer = new PDFJSViewer({ container: document.getElementById('pdfCanvas') }); // 创建PDF.js视图器实例
+        function renderPage(num) { // 渲染指定页码的函数
+            pageRendering = true;
+            viewer.render(num);
+            pageRendering = false;
+        }
+        function queueRenderPage(num) { // 将指定页码加入渲染队列的函数
+            if (pageRendering) { // 如果正在渲染页面，则将待渲染的页码存储起来，稍后渲染
+                pageNumPending = num;
+            } else { // 如果当前没有正在渲染的页面，则立即渲染指定页码
+                renderPage(num);
+            }
+        }
+        function onPrevPage() { // 上一页按钮的点击事件处理函数
+            if (pageNum <= 1) { return; } // 如果已经是第一页，则直接返回，不做任何操作
+            pageNum;
+            queueRenderPage(pageNum);
+        }
+        function onNextPage() { // 下一页按钮的点击事件处理函数
+            if (pageNum >= numPages) { return; } // 如果已经是最后一页，则直接返回，不做任何操作
+            pageNum++;
+            queueRenderPage(pageNum);
+        }
+        function onZoomIn() { // 放大按钮的点击事件处理函数，每次放大2倍，最大不超过5倍（即缩放比例不超过5）
+            scale += 0.25; // 更新缩放比例
+            if (scale > 5) { scale = 5; } // 如果缩放比例超过5，则将其设置为5（最大值）
+            queueRenderPage(pageNum); // 重新渲染页面以应用新的缩放比例
+        }
+        function onZoomOut() { // 缩小按钮的点击事件处理函数，每次缩小2倍，最小为1倍（即缩放比例不低于1）
+            scale = 0.25; // 更新缩放比例，但确保不低于1（最小值）
+            if (scale < 1) { scale = 1; } // 如果缩放比例低于1，则将其设置为1（最小值）
+            queueRenderPage(pageNum); // 重新渲染页面以应用新的缩放比例
+        }
+        function onPrint() { // 打印按钮的点击事件处理函数，调用PDF.js的print()方法进行打印操作（需要先安装支持打印功能的插件）
+            printJob = viewer.print(); // 开始打印任务，返
+        }
+    </script> -->
+</body>
+
+</html>

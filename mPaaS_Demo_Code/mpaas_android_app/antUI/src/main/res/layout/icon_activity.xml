@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Icon" />
+
+
+    <com.alipay.mobile.antui.basic.AUScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mpaas.antui.viewdemo.view.BaseHeadView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:aui_titleText="Icon" />
+
+            <com.alipay.mobile.antui.basic.AUGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.alipay.mobile.antui.basic.AUGridView>
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </com.alipay.mobile.antui.basic.AUScrollView>
+
+</LinearLayout>

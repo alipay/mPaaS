@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Input" />
+
+    <com.alipay.mobile.antui.basic.AUScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mpaas.antui.viewdemo.view.BaseHeadView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               app:aui_titleText="Input" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input自动聚焦"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示"/>
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input最大输入长度"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="最大输入长度为10"
+                app:maxLength="10"/>
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入数字的input"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="这是一个数字输入框"
+                app:aui_inputType="textNumber"/>
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入密码的input"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="这是一个密码输入框"
+                app:aui_inputType="textPassword"/>
+
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入小数点的input"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="带小数点的数字键盘"
+                app:aui_inputType="textDecimal"/>
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="输入身份证的input"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="身份证输入键盘"/>
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标题超长"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/safeInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputName="双项输入"
+                app:listItemType="top" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示右移与标题间隔15px"
+                app:inputName="最长可六个字"
+                app:listItemType="center" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="单项输入"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示"
+                app:inputName="单项输入" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多项输入"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示"
+                app:inputName="多项输入"
+                app:listItemType="top" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示"
+                app:inputName="多项输入"
+                app:listItemType="center" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="暗提示"
+                app:inputName="多项输入"
+                app:listItemType="bottom" />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="组合输入"
+                app:isHead="true" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入真实姓名"
+                app:inputName="姓名"
+                app:listItemType="top" />
+
+
+            <com.alipay.mobile.antui.input.AUTextCodeInputBox
+                android:id="@+id/au_textcode_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputName="日期"
+                app:listItemType="center" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:inputName="时间"
+                app:listItemType="bottom" />
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </com.alipay.mobile.antui.basic.AUScrollView>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Badge"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="Badge"/>
+
+        <com.alipay.mobile.antui.badge.AUBadgeView
+            android:id="@+id/badge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            app:textMaxEms="3"
+            />
+
+        <com.alipay.mobile.antui.badge.AUBadgeView
+            android:id="@+id/badge_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            app:textMaxEms="3"
+            />
+
+        <com.alipay.mobile.antui.badge.AUBadgeView
+            android:id="@+id/badge_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            app:textMaxEms="3"
+            />
+
+        <com.alipay.mobile.antui.badge.AUBadgeView
+            android:id="@+id/badge_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            app:textMaxEms="3"
+            />
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="新消息提示跟详细信息后，统一在列表右侧"/>
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:id="@+id/single_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="top"
+                app:listLeftText="单行列表"
+                app:listRightText="详细信息"/>
+
+            <com.alipay.mobile.antui.tablelist.AUSwitchListItem
+                android:id="@+id/switch_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="bottom"
+                app:listLeftText="开启"/>
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未读数跟在主题信息后，统一在列表左侧"/>
+
+            <com.alipay.mobile.antui.tablelist.AUDoubleTitleListItem
+                android:id="@+id/single_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:listItemType="top"
+                app:listLeftImage="@drawable/list_avatar"
+                app:listLeftSubText="标签文本"
+                app:listLeftText="文本标签"
+                />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:id="@+id/single_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="单行列表"
+                />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:id="@+id/single_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="单行列表"
+                app:listRightText="详细信息"
+                />
+
+            <com.alipay.mobile.antui.tablelist.AUSingleTitleListItem
+                android:id="@+id/single_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="center"
+                app:listLeftText="单行列表"
+                />
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+    </LinearLayout>
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+include ':push'
+include ':analytics'
+include ':antUI'
+include ':gdmap'
+include ':app'
+rootProject.name = "AndroidmPaaSDemo"
+include ':upgrade'
+include ':config'
+include ':cdp'
+include ':h5'
+include ':share'
+include ':scan'
+include ':minimriver'

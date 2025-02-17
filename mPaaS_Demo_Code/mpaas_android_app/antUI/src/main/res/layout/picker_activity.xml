@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mpaas.antui.viewdemo.view.DemoTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:aui_titleText="Picker" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="Picker" />
+
+        <com.alipay.mobile.antui.basic.AULinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="时间选择器"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="top"
+                app:inputName="当前选择"
+                />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="日期选择器"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="top"
+                app:inputName="当前选择"
+                />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="级联选择器"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/data_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="top"
+                app:inputName="当前选择"
+                />
+
+            <com.alipay.mobile.antui.basic.AUAssistLabelView
+                android:text="单项选择器"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isHead="true"/>
+            <com.alipay.mobile.antui.input.AUInputBox
+                android:id="@+id/option_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:listItemType="top"
+                app:inputName="当前选择" />
+
+            <com.mpaas.antui.viewdemo.view.BaseFootView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

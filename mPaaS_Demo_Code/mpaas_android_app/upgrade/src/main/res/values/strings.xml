@@ -1,0 +1,61 @@
+<resources >
+
+    <string name="upgrade_release">应用升级发布</string>
+    <string name="cur_ver_is">应用当前版本为：</string>
+
+    <string name="fast_check_tip">快速检测升级，UI 使用 SDK 默认提供的，需要传入一个 icon</string>
+    <string name="fast_check">检测升级</string>
+    <string name="fast_check_has_tip">检测是否有新版本，请在子线程中调用</string>
+    <string name="fast_check_has">检测是否有新版</string>
+    <string name="fast_check_get_tip">获取升级信息，请在子线程中调用</string>
+    <string name="fast_check_get">获取升级信息</string>
+    <string name="default_interval_upgrade_tip">默认升级框弹出间隔的意思是：当有新版本时，短时间内多次进行版本检测，只触发一次升级对话框弹出，默认间隔时间为3天。</string>
+    <string name="default_interval_upgrade">定制升级UI（默认升级框弹出间隔）</string>
+    <string name="custom_interval_upgrade_tip">自定义升级框弹出间隔的意思是：当有新版本时，短时间内多次进行版本检测，两次弹框的间隔超过自定义的时间（单位毫秒），才会弹出升级对话框，目前自定义的间隔为1分钟。</string>
+    <string name="custom_interval_upgrade">定制升级UI（自定义升级框弹出间隔）</string>
+    <string name="look_out">注意：\n1.当服务端设置升级模式为\"多次\"或\"强制\"时，上面的弹出间隔将无效。每次版本检测，若有新版本则必弹升级对话框。\n2.上面所说的升级框弹出间隔所指均为\"showUpgradeDialog\"方法的回调间隔。</string>
+    <string name="checking_upgrade">正在检测版本更新</string>
+    <string name="warning_updating">正在更新，请稍后再试</string>
+    <string name="upgrade_exception">更新出现异常</string>
+    <string name="data_invalid">更新数据非法</string>
+    <string name="has_no_new_version">当前已是最新版</string>
+    <string name="upgrade_less_than_interval">两次升级弹框时间小于设置的间隔时间</string>
+    <string name="single_upgrade">单次提醒升级</string>
+    <string name="multi_upgrade">多次提醒升级</string>
+    <string name="force_upgrade">强制升级</string>
+    <string name="unknown_upgrade_state">未知升级状态：</string>
+
+
+    <string name="havenew_version">有新版</string>
+    <string name="detection_newversion_error">检测新版本发生错误</string>
+
+    <string name="error_getupgradleresult_null">异常，获取升级结果为空</string>
+    <string name="upgradle_information">升级信息:</string>
+    <string name="upgradle_model">\n升级模式：</string>
+    <string name="newversion">\n最新版本：</string>
+    <string name="download_address">\n下载地址：</string>
+
+    <string name="upgrade">升级</string>
+    <string name="cancel">取消</string>
+    <string name="downloading">正在下载</string>
+    <string name="download_exception">下载出现异常</string>
+    <string name="download_finish">下载完成</string>
+    <string name="download_cancel">下载取消</string>
+    <string name="install_new">安装新版本</string>
+    <string name="apk_path">本地存储路径：</string>
+    <string name="install">安装</string>
+
+    <string name="custom_upgrade_dialog">自定义版本升级Dialog</string>
+
+
+    <!--自定义mMPUpgrade.fastCheckNewVersion 弹框样式-->
+    <!--普通升级弹框 -->
+    <string name="about_update_find_new_version">版本更新（用户自定义title）</string>
+    <string name="about_update_now">马上更新</string>
+    <string name="about_update_next_time_to_choice">以后在说</string>
+
+
+
+
+
+</resources>

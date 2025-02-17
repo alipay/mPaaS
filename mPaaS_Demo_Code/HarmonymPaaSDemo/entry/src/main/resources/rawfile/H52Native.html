@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <title>H5向Native通信</title>
+    <style type="text/css">
+
+                input {-webkit-appearance:none; /*去除input默认样式*/}
+                
+                .jsapiButton {
+                    height: 30px;
+                    margin-left: 4%;
+                    margin-top: 10px;
+                    padding-left:0px;
+                    width: 28%;
+                    outline: none;
+                    -webkit-appearance:none;
+                }
+            
+            .descript_title {
+                margin-bottom:0px;
+                font-size:12px;
+                font-weight:bold;
+            }
+            
+            .descript_content {
+                margin-top:0px;
+                margin-bottom:0px;
+                font-size:12px;
+            }
+            
+            
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <p class="descript_title">自定义Api</p>
+
+    <button class="jsapiButton" onclick="jsapi_call('showFloatMenu', {'menues':[{
+                'icon':'iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABEBJREFUaAXtmluITVEYx+e4jHEft1wicsukjHIrHggpvGiYF09TSPKIJ5qSS/JClHggl5IX4kUooVxCjAeaJAzGMBmKXEaY4/ef9jptp3O2fdacvc8c1le/WWvtvdf6Lmvtb6+z95SUOHERcBFwEXARcBFwEXARiCkCiZj0pNQkk8mBNEbAIGiBF4lE4jPlvyU42g2q4DK8gm/wEi7CXOjyz3iMM31gB7RAJmnm4EYoLXqncWIYHIdWkPyAm3AC7kAbSD7CbuhTtE5jfAVcAiOfqOyFvnKKshwOgwmGyiMwpOicxuiFUAdGmqhsgD+WLe3eoJlVMCS/4CyMLgqnMVTJaTU0gJF6Kssh41OB46WwCXQvG7lGZXKndhoDlZy2w3swcoPKjL8ZzjVdoAb8gdIKmfu3vgU5j2FKTsfA3I9KTqchp6XJ9YvhIRh5QqUaMq6OQjmr5KTnqcm4uh/3wQAbg+g3DW6BkddU1kM3m/Hy2gcjFkCm5NSjI4oYczxcACMfqGyFXh0Z17ovipWcVsFzMBKYnHJVxqDD4STo9pB8hQNgtXJy1Z+6HoVKTtsg5+SUGiRkBR16Vu+HLyCR86dA+/HoBUVKTkfBn5zO0B4TlXbGLoNa8AdYG5qJUelsHxcFk0CK/MlJ0Y98iaGjK6yDRjBym8qsSJxm4Plw32ii1M5JG/4OJadcjUVfFTwGI6ovzXWcwOsZcAS8NRoolZxWQEGejeidA/fAiJzO3/JmsNnwzhtdO6eZgRGK4SQ26Nl/BSRa5ovCqA01QwymH+droT+c4g1FA2XBBbtGYkQ1PIHz2NWWV6NQkAoQ9SlwEKJJGhksR5f228vgEAzOcEk0h1Cmn3Ta40ruQiw/2tEzD7TNlOy08c72PVI/lH31FJZSqh2HdEWJ2XCMtVFo67CNrk7R579zOJafW9xv45jeChiaZZqbOV5Pln2a5XzeDkfuMM5Ox9qDUAnZ9P3k3AuuXYnTd6hHJpEuaRxQMjsB0yCbs3JO57QKdnl9dCwSCTIiHwpHMUhvb6CPlNdBn1f80p3GEiiHCaA+jyASidphvX/WtyTJd9jCkn3Q3vL+MKNa6gu9pq7Vbi4yiXRJW1qdtOwXqltndDiU4bYXOYdtI1cs/dwMh5wpbeKNlFHxt83xKEqT8TX2NxsFtjPchLJGT6E+pQR9Ckn9hrYx0PTh8SVna0ybss5XD121eg7rzQIGXETLPNCXgM2gLxBvKP1B7Ek7l9nXtfqksobSLwraHBjjHWygvOrV4ykwqhf4vwrQDJRmzk5Nt45jlaBzYUX/NlGbPk7YttUMa3BmWZ89VlHVLx190tT7paAv90Gvc4POMWyJNiOv4RnsgXNgJfm6v3Qf69+Q2v+VIc0SGSs9rQTpdtq59iaB03sxJb9sooAob7xhjPfZLnLHXQRcBFwEXARcBFwEXARcBFwEYozAb+B+OVoLuFimAAAAAElFTkSuQmCC',
+                'title': '消息中心',
+                'redDot': '999',
+              }, {
+                'icon': 'iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABEBJREFUaAXtmluITVEYx+e4jHEft1wicsukjHIrHggpvGiYF09TSPKIJ5qSS/JClHggl5IX4kUooVxCjAeaJAzGMBmKXEaY4/ef9jptp3O2fdacvc8c1le/WWvtvdf6Lmvtb6+z95SUOHERcBFwEXARcBFwEXARiCkCiZj0pNQkk8mBNEbAIGiBF4lE4jPlvyU42g2q4DK8gm/wEi7CXOjyz3iMM31gB7RAJmnm4EYoLXqncWIYHIdWkPyAm3AC7kAbSD7CbuhTtE5jfAVcAiOfqOyFvnKKshwOgwmGyiMwpOicxuiFUAdGmqhsgD+WLe3eoJlVMCS/4CyMLgqnMVTJaTU0gJF6Kssh41OB46WwCXQvG7lGZXKndhoDlZy2w3swcoPKjL8ZzjVdoAb8gdIKmfu3vgU5j2FKTsfA3I9KTqchp6XJ9YvhIRh5QqUaMq6OQjmr5KTnqcm4uh/3wQAbg+g3DW6BkddU1kM3m/Hy2gcjFkCm5NSjI4oYczxcACMfqGyFXh0Z17ovipWcVsFzMBKYnHJVxqDD4STo9pB8hQNgtXJy1Z+6HoVKTtsg5+SUGiRkBR16Vu+HLyCR86dA+/HoBUVKTkfBn5zO0B4TlXbGLoNa8AdYG5qJUelsHxcFk0CK/MlJ0Y98iaGjK6yDRjBym8qsSJxm4Plw32ii1M5JG/4OJadcjUVfFTwGI6ovzXWcwOsZcAS8NRoolZxWQEGejeidA/fAiJzO3/JmsNnwzhtdO6eZgRGK4SQ26Nl/BSRa5ovCqA01QwymH+droT+c4g1FA2XBBbtGYkQ1PIHz2NWWV6NQkAoQ9SlwEKJJGhksR5f228vgEAzOcEk0h1Cmn3Ta40ruQiw/2tEzD7TNlOy08c72PVI/lH31FJZSqh2HdEWJ2XCMtVFo67CNrk7R579zOJafW9xv45jeChiaZZqbOV5Pln2a5XzeDkfuMM5Ox9qDUAnZ9P3k3AuuXYnTd6hHJpEuaRxQMjsB0yCbs3JO57QKdnl9dCwSCTIiHwpHMUhvb6CPlNdBn1f80p3GEiiHCaA+jyASidphvX/WtyTJd9jCkn3Q3vL+MKNa6gu9pq7Vbi4yiXRJW1qdtOwXqltndDiU4bYXOYdtI1cs/dwMh5wpbeKNlFHxt83xKEqT8TX2NxsFtjPchLJGT6E+pQR9Ckn9hrYx0PTh8SVna0ybss5XD121eg7rzQIGXETLPNCXgM2gLxBvKP1B7Ek7l9nXtfqksobSLwraHBjjHWygvOrV4ykwqhf4vwrQDJRmzk5Nt45jlaBzYUX/NlGbPk7YttUMa3BmWZ89VlHVLx190tT7paAv90Gvc4POMWyJNiOv4RnsgXNgJfm6v3Qf69+Q2v+VIc0SGSs9rQTpdtq59iaB03sxJb9sooAob7xhjPfZLnLHXQRcBFwEXARcBFwEXARcBFwEYozAb+B+OVoLuFimAAAAAElFTkSuQmCC',
+                'title': '首页',
+                'redDot': '100'
+              }]})">showFloatMenu
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('getStatusBarHeight')">状态栏高度</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('fingerPrintVerification',{'fallbackTitle':'', 'isVerifyTouchData':'0'})">
+        fingerPrintVerification
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('getActionBarHeight')">getActionBarHeight</button>
+    <button class="jsapiButton" onclick="jsapi_call('getStatusBarHeight')">getStatusBarHeight</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('dial',{phone:'13212341234'})">dial</button>
+    <button class="jsapiButton" onclick="jsapi_call('takeAlbum', {multipleCount:'2'})">takeAlbum</button>
+    <button class="jsapiButton" onclick="jsapi_call('takePicture', {selfTake:'1'})">takePicture</button>
+    <button class="jsapiButton" onclick="jsapi_call('getContact')">getContact</button>
+    <button class="jsapiButton" onclick="jsapi_call('searchContact', {searchNum:'13212'})">searchContact</button>
+    <button class="jsapiButton" onclick="jsapi_call('checkPermission', {permissions:['location']})">checkPermission</button>
+    <button class="jsapiButton" onclick="jsapi_call('applyPermission', {permissions:['storage']})">applyPermission</button>
+    <button class="jsapiButton" onclick="jsapi_call('killApp')">killApp</button>
+    <button class="jsapiButton" onclick="jsapi_call('getActionBarHeight')">getActionBarHeight</button>
+    <button class="jsapiButton" onclick="jsapi_call('savePicture2Gallery', {imageBase64:'iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAABEBJREFUaAXtmluITVEYx+e4jHEft1wicsukjHIrHggpvGiYF09TSPKIJ5qSS/JClHggl5IX4kUooVxCjAeaJAzGMBmKXEaY4/ef9jptp3O2fdacvc8c1le/WWvtvdf6Lmvtb6+z95SUOHERcBFwEXARcBFwEXARiCkCiZj0pNQkk8mBNEbAIGiBF4lE4jPlvyU42g2q4DK8gm/wEi7CXOjyz3iMM31gB7RAJmnm4EYoLXqncWIYHIdWkPyAm3AC7kAbSD7CbuhTtE5jfAVcAiOfqOyFvnKKshwOgwmGyiMwpOicxuiFUAdGmqhsgD+WLe3eoJlVMCS/4CyMLgqnMVTJaTU0gJF6Kssh41OB46WwCXQvG7lGZXKndhoDlZy2w3swcoPKjL8ZzjVdoAb8gdIKmfu3vgU5j2FKTsfA3I9KTqchp6XJ9YvhIRh5QqUaMq6OQjmr5KTnqcm4uh/3wQAbg+g3DW6BkddU1kM3m/Hy2gcjFkCm5NSjI4oYczxcACMfqGyFXh0Z17ovipWcVsFzMBKYnHJVxqDD4STo9pB8hQNgtXJy1Z+6HoVKTtsg5+SUGiRkBR16Vu+HLyCR86dA+/HoBUVKTkfBn5zO0B4TlXbGLoNa8AdYG5qJUelsHxcFk0CK/MlJ0Y98iaGjK6yDRjBym8qsSJxm4Plw32ii1M5JG/4OJadcjUVfFTwGI6ovzXWcwOsZcAS8NRoolZxWQEGejeidA/fAiJzO3/JmsNnwzhtdO6eZgRGK4SQ26Nl/BSRa5ovCqA01QwymH+droT+c4g1FA2XBBbtGYkQ1PIHz2NWWV6NQkAoQ9SlwEKJJGhksR5f228vgEAzOcEk0h1Cmn3Ta40ruQiw/2tEzD7TNlOy08c72PVI/lH31FJZSqh2HdEWJ2XCMtVFo67CNrk7R579zOJafW9xv45jeChiaZZqbOV5Pln2a5XzeDkfuMM5Ox9qDUAnZ9P3k3AuuXYnTd6hHJpEuaRxQMjsB0yCbs3JO57QKdnl9dCwSCTIiHwpHMUhvb6CPlNdBn1f80p3GEiiHCaA+jyASidphvX/WtyTJd9jCkn3Q3vL+MKNa6gu9pq7Vbi4yiXRJW1qdtOwXqltndDiU4bYXOYdtI1cs/dwMh5wpbeKNlFHxt83xKEqT8TX2NxsFtjPchLJGT6E+pQR9Ckn9hrYx0PTh8SVna0ybss5XD121eg7rzQIGXETLPNCXgM2gLxBvKP1B7Ek7l9nXtfqksobSLwraHBjjHWygvOrV4ykwqhf4vwrQDJRmzk5Nt45jlaBzYUX/NlGbPk7YttUMa3BmWZ89VlHVLx190tT7paAv90Gvc4POMWyJNiOv4RnsgXNgJfm6v3Qf69+Q2v+VIc0SGSs9rQTpdtq59iaB03sxJb9sooAob7xhjPfZLnLHXQRcBFwEXARcBFwEXARcBFwEYozAb+B+OVoLuFimAAAAAElFTkSuQmCC'})">savePicture2Gallery</button>
+    <button class="jsapiButton" onclick="jsapi_call('logout')">logout</button>
+    <button class="jsapiButton" onclick="jsapi_call('checkGpsOpen')">checkGpsOpen</button>
+
+<!--    data = @{@"permissions" : @[@"bluetooth", @"calendar", @"camera", @"photo", @"contact", @"location", @"media", @"microphone", @"network", @"phone", @"sensor", @"sms", @"storage"]};-->
+
+    <p class="descript_title">Device JSAPI</p>
+    <button class="jsapiButton" onclick="jsapi_call('setClipboard',{clipboard:'qqq123'})">setClipboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('getClipboard')">getClipboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('clearClipboard')">clearClipboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('glPasteTransfer',{cbContent:'您是否需要向132123455678转账'})">glPasteTransfer</button>
+    <button class="jsapiButton" onclick="jsapi_call('glClipTransferAlert',{cbContent:'您是否需要向132123455678转账'})">glClipTransferAlert</button>
+
+    <p class="descript_title">SDK JSAPI</p>
+    <p class="descript_content">
+        第三方相关api测试入口
+    </p>
+
+    <button class="jsapiButton" onclick="jsapi_call('liveDetect')">liveDetect</button>
+    <button class="jsapiButton" onclick="jsapi_call('getCurrentPosition')">getCurrentPosition</button>
+    <button class="jsapiButton" onclick="jsapi_call('getCurrentPosition',{isSilent:'true'})">position silent</button>
+    <button class="jsapiButton" onclick="jsapi_call('isYztCertAvailable', {certType:'0'})">isYztCertAvailable</button>
+    <button class="jsapiButton" onclick="jsapi_call('downloadYztCert', {certType:'0'})">downloadYztCert</button>
+    <button class="jsapiButton" onclick="jsapi_call('yztSignMessage', {businessText:'{\n\'amount\' : \'582.3\',\n\'remark\' : \'借款\',\n \'payeeAccount\' : \'65432543210\',\n\'payeePhoneNo\' : \'18525435338\',\n\'payeeName\' : \'张三\',\n\'receivingBank\' : \'2\',\n\'fromAccount\' : \'1234567890123456\'\n}', businessTextSign:'xxx'})">yztSignMessage</button>
+
+    <p class="descript_title">窗口控制</p>
+    <p class="descript_content">
+        pushWindow在示例中均推入了本身页面， popTo只能退回到本Session内的页面，popWindow无Session限制
+    </p>
+
+
+    <button class="jsapiButton" onclick="jsapi_call('pushWindow', {url:window.location.href})">pushWindow</button>
+    <button class="jsapiButton" onclick="jsapi_call('pushWindow', {url:window.location.href,
+                param: {
+                username: 'xxxxx',
+                password: 'aaaaaa',
+                },
+                passData: {
+                username: 'xxxxx',
+                password: 'aaaaaa',
+                }
+                })">pushWindow 自定义参数
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('test_action')">test_action</button>
+    <button class="jsapiButton" onclick="jsapi_call('getStartupParams')">getStartupParams</button>
+
+
+    <button class="jsapiButton" onclick="jsapi_call('popTo', {
+                index: -2 // 回退到上一个页面，假如这个时候没有上一个页面，就会报错
+                })">popTo
+    </button>
+
+    <p class="descript_title">离线包跳转</p>
+    <button class="jsapiButton"
+            onclick="jsapi_call('startApp', {appId:'20201021', transparentTitle:'auto', param:{showOptionMenu:'NO'}})">
+        startApp
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('startH5App', {appId:'90000000',transparentTitle:'always', param:{showOptionMenu:'NO',  tmy:'123'}})">
+        startH5App
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('exitApp')">exitApp</button>
+
+    <p class="descript_title">导航栏背景与标题</p>
+    <button class="jsapiButton" onclick="jsapi_call('showTitlebar')">showTitlebar</button>
+    <button class="jsapiButton" onclick="jsapi_call('getContact')">联系人</button>
+    <button class="jsapiButton" onclick="jsapi_call('hideTitlebar')">hideTitlebar</button>
+    <button class="jsapiButton" onclick="jsapi_call('setTitleColor',{'color':'#FF00FF','test':'123'})">setTitleColor</button>
+    <button class="jsapiButton" onclick="jsapi_call('setBarBottomLineColor',{'color':'0xFF0000FF'})">
+        setBarBottomLineColor
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('setTitle',{'title':'新标题','subtitle':'副标题'})">setTitle</button>
+    <button class="jsapiButton" onclick="jsapi_call('showTitleLoading')">showTitleLoading</button>
+    <button class="jsapiButton" onclick="jsapi_call('hideTitleLoading')">hideTitleLoading</button>
+    <button class="jsapiButton" onclick="jsapi_call('glChangeTitleColor', {color:'0xFF0000'})">glChangeTitleColor</button>
+    <button class="jsapiButton" onclick="jsapi_call('glTitleBarDark', {dark:true})">glTitleBarDark黑</button>
+    <button class="jsapiButton" onclick="jsapi_call('glTitleBarDark', {dark:false})">glTitleBarDark白</button>
+
+    <p class="descript_title">导航栏右侧按钮</p>
+    <button class="jsapiButton" onclick="jsapi_call('setOptionMenu',{
+                title : '按钮',
+                redDot : '123', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                color : '#ff00ff00', // 必须以＃开始 ARGB 颜色值
+                })">setOptionMenu：单个文字按钮
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('setOptionMenu',{
+                   icon:'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',
+                   redDot : '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                })">setOptionMenu：单个图片按钮
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('setOptionMenu',{
+                menus: [{
+                title: '设置'
+                },
+                {
+                title: '注册'
+                }],
+                override: true
+                })">setOptionMenu：多个按钮
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('showOptionMenu')">showOptionMenu</button>
+    <button class="jsapiButton" onclick="jsapi_call('hideOptionMenu')">hideOptionMenu</button>
+
+    <p class="descript_title">界面弹框</p>
+    <button class="jsapiButton" onclick="jsapi_call('alert', {
+                title: '亲',
+                message: '你好',
+                button: '确定'
+                })">alert
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('confirm', {
+                title: '亲',
+                message: '确定要退出吗？',
+                okButton: '是',
+                cancelButton: '否'
+                })">confirm
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('prompt', {
+                title: '亲',
+                message: '确定要这么干吗？',
+                placeholder:'提示文案',
+                okButton: '是',
+                cancelButton: '否'
+                })">prompt
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('toast', {
+                content: '操作成功',
+                duration: '2000'
+                })">toast
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call_actionSheet()">actionSheet</button>
+    <button class="jsapiButton" onclick="jsapi_call_showLoading()">showLoading</button>
+    <button class="jsapiButton" onclick="jsapi_call('hideLoading')">hideLoading</button>
+
+    <p class="descript_title">RPC</p>
+    <button class="jsapiButton" onclick="jsapi_call('rpc', {
+                operationType:'com.antcloud.request.post',
+                requestData:[{
+                password:'i7eqk255wjrzvdbj',
+                username:'beijing'
+                }],
+                headers:{}
+                })">rpc
+    </button>
+
+    <p class="descript_title">统一存储</p>
+    <button class="jsapiButton"
+            onclick="jsapi_call('setAPDataStorage', {type:'common', business:'hexi_biz', key:'hexi_test', value:'hexi_test_value'})">
+        setAPDataStorage
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('getAPDataStorage', {type:'common', business:'hexi_biz', key:'hexi_test'})">
+        getAPDataStorage
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('removeAPDataStorage', {type:'common', business:'hexi_biz', key:'hexi_test'})">
+        removeAPDataStorage
+    </button>
+    <p class="descript_title">Notification</p>
+    <button class="jsapiButton" onclick="jsapi_call('addNotifyListener', {name:'NEBULANOTIFY_TEST_EVENT'})">
+        addNotifyListener
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('postNotification', {name:'TEST_EVENT',data: {hello: 'world'}})">
+        postNotification
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('removeNotifyListener', {name:'NEBULANOTIFY_TEST_EVENT'})">
+        removeNotifyListener
+    </button>
+    <p class="descript_title">截图</p>
+    <button class="jsapiButton" onclick="jsapi_call('snapshot', { // 保存本地截图
+                range: 'screen',
+                dataType: 'none',
+                saveToGallery: true
+                })">截图
+    </button>
+    <!--            <button class="jsapiButton" onclick="jsapi_call('startShare')">分享</button>-->
+    <p class="descript_title">埋点</p>
+    <button class="jsapiButton" onclick="jsapi_call('remoteLog', {
+                type:'behavior',
+                bizType:'Nebula',
+                logLevel: 1, // 1 - high, 2 - medium, 3 - low
+                actionId:'event',
+                seedId:'hexi',
+                param1:'xxx',
+                param2:'xxx',
+                param3:'xxx',
+                param4:'xxx',
+                })">埋点
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('remoteLog', {
+                bizType:'mPaaS_Test',
+                actionId:'event',
+                seedId:'RPC_Ticket_Response',
+                ucId:'test',
+                param1: '1'
+                })">无type埋点
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('mtBizReport', {
+                bizName:'kizbizstrace',
+                subName:'BusCanNotUse',
+                failCode:'10000',
+                extParams:{
+                key: 'value1',
+                key2: 'value2'
+                }
+                })">mtBizReport埋点
+    </button>
+
+    <p class="descript_title">自定义扩展JSApi测试</p>
+    <button class="jsapiButton" onclick="jsapi_call('myapi1')">openSms</button>
+    <button class="jsapiButton" onclick="jsapi_call('myapi2')">setDoubleTitle</button>
+    <button class="jsapiButton" onclick="jsapi_call('demoTest2')">demoTest2</button>
+    <button class="jsapiButton" onclick="jsapi_call('customHideTitleBar')">customHideTitleBar</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('destroyPwdKeyboard')">destroyPwdKeyboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('applyPermission')">applyPermission</button>
+    <button class="jsapiButton" onclick="jsapi_call('checkPermission')"> checkPermission</button>
+    <button class="jsapiButton" onclick="jsapi_call('communicate')"> communicate</button>
+    <button class="jsapiButton" onclick="jsapi_call('exitH5app')"> exitH5app</button>
+    <button class="jsapiButton" onclick="jsapi_call('goHome',{homeIndex:2})"> goHome信用卡</button>
+    <button class="jsapiButton" onclick="jsapi_call('goHome',{homeIndex:1})"> goHome财富</button>
+    <button class="jsapiButton" onclick="jsapi_call('isH5appRunning')"> isH5appRunning</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('setAppData',{type:'user', business:'session',key:'userToken',value:'111'})"> setAppData
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('getAppData')"> getAppData</button>
+    <button class="jsapiButton" onclick="jsapi_call('setUserId')"> setUserId</button>
+    <button class="jsapiButton" onclick="jsapi_call('removeAppData')"> removeAppData</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('startH5app')"> startH5app</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('dial',{phone:13212341234})">dial</button>
+    <button class="jsapiButton" onclick="jsapi_call('getDeviceInfo')">getDeviceInfo</button>
+    <button class="jsapiButton" onclick="jsapi_call('clearPwd')">clearPwd</button>
+    <button class="jsapiButton" onclick="jsapi_call('closeKeyboard')">closeKeyboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('isShowKeyboard')">isShowKeyboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('compareEditText')">compareEditText</button>
+    <button class="jsapiButton" onclick="jsapi_call('antiScreenShot')">antiScreenShot</button>
+    <button class="jsapiButton" onclick="jsapi_call('allowScreenShot')">allowScreenShot</button>
+    <button class="jsapiButton" onclick="jsapi_call('getClipboard')"> getClipboard</button>
+    <button class="jsapiButton" onclick="jsapi_call('takeAlbum', {multipleCount:'3'})"> takeAlbum</button>
+    <button class="jsapiButton" onclick="jsapi_call('takePicture', {selfTake:'1'})"> takePicture</button>
+    <button class="jsapiButton" onclick="jsapi_call('getUUID')"> getUUID</button>
+    <button class="jsapiButton" onclick="jsapi_call('getStatusBarHeight')"> getStatusBarHeight</button>
+    <!--            <button class="jsapiButton" onclick="jsapi_call('getContact')">getContact</button>-->
+    <button class="jsapiButton" onclick="jsapi_call('liveDetect')">liveDetect</button>
+    <button class="jsapiButton" onclick="jsapi_call('scanBankCard')">scanBankCard</button>
+    <button class="jsapiButton" onclick="jsapi_call('scanIdCard')">scanIdCard</button>
+    <button class="jsapiButton" onclick="jsapi_call('isYztCertAvailable', {certType:'0'})">isYztCertAvailable</button>
+    <button class="jsapiButton" onclick="jsapi_call('downloadYztCert', { certType:'0'})">downloadYztCert</button>
+    <button class="jsapiButton" onclick="jsapi_call('yztSignMessage')">yztSignMessage</button>
+    <button class="jsapiButton" onclick="jsapi_call('openMap')">openMap</button>
+    <button class="jsapiButton" onclick="jsapi_call('glshare')">glshare</button>
+    <button class="jsapiButton" onclick="jsapi_call('share')">微信分享</button>
+    <button class="jsapiButton" onclick="jsapi_call('getCurrentPosition')">getCurrentPosition</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('checkGpsOpen')">checkGpsOpen</button>
+    <button class="jsapiButton" onclick="jsapi_call('openGps')">openGps</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('getActiveNetworkInfo')">getActiveNetworkInfo</button>
+    <button class="jsapiButton" onclick="jsapi_call('openNativeSetting')">openNativeSetting</button>
+    <button class="jsapiButton" onclick="jsapi_call('fingerPrintVerification')">fingerPrintVerification</button>
+    <button class="jsapiButton" onclick="jsapi_call('getDeviceFingerprint')">getDeviceFingerprint</button>
+    <button class="jsapiButton" onclick="jsapi_call('getScreenshot',{'left':0,'right':500,'top':0,'bottom':500})">getScreenshot</button>
+    <button class="jsapiButton" onclick="jsapi_call('glWbank')">glWbank</button>
+    <button class="jsapiButton" onclick="jsapi_call('killApp')">killApp</button>
+    <button class="jsapiButton" onclick="jsapi_call('calculateCache')">calculateCache</button>
+    <button class="jsapiButton" onclick="jsapi_call('clearCache')">clearCache</button>
+    <button class="jsapiButton" onclick="jsapi_call('navBackItemChange', {'buttonColor':'0xFF0000'})">
+        navBackItemChange
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('checkAppUpgrade')">checkAppUpgrade</button>
+    <button class="jsapiButton" onclick="jsapi_call('businessEvent',{
+                bizType:'test',
+                logId:'test1234',params:[{name:'tmy',age:'33333333',bizType:'paramsBizType'}]
+               }, res=>{alert(JSON.stringify(res))})">businessEvent
+    </button>
+
+    <button class="jsapiButton"
+            onclick="jsapi_call('glSetOptionMenu', {redDot:'999', icon:'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'})">
+        glSetOptionMenu
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('shareCallWXAuth')">shareCallWXAuth</button>
+    <button class="jsapiButton" onclick="jsapi_call('shareCallWXMini')">shareCallWXMini</button>
+    <button class="jsapiButton" onclick="jsapi_call('mpaasFace')">mpaasFace</button>
+
+    <button class="jsapiButton"
+            onclick="jsapi_call('glSetOptionMenu', {redDot:'-1', icon:'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'})">
+        glSetOptionMenu
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('glRestPAuth')">glRestPAuth</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('savePicture2Gallery', {imageBase64:'iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAWqADAAQAAAABAAAAWgAAAABqtKmNAAAGJUlEQVR4Ae2bz2sdRRzA85JK/4AUQl4qSSiCBZvml9KetEcPRS+9NF6UitCDUj1IPXmyeqhgDz1Vegk5VESDCOKlF8Go+dUoKJRi0Nrk0IL1Vmzy/HzD7jC72bdvZmeT9/b5Xdi3szPf+X7n+9nZ787O7Ovp0U0JKAEloASUgBJQAkpACSgBJaAElIASUAJKQAkoASXwvyZQC/F+enp6Ymtr63qj0RhDT5CukHbscd1GrVZb6+vre3VxcXGlqK3eohWlXgT5OMluhSxu1uhIx8VXOSm6BYGmAcNFDVetXqivQaCBFXSVKwY7yNfgW35qaurl7e3tMeJY6EXrSO705O3e3t61paWlLzuygdooJaAElIASUAJKQAkoASWgBJSAElACSkAJKIHuJRA0e6crLO4dI2hqU1dY9gl06KqDezPbLxnqa1CPxv2gVYf24/NqQZCvQTFamqkrLF4XS4WVgBJQAkpACSgBJaAElIAS8CAQ/MLiYautokyAPcOnayM0os6xn8+8HpC+x3Gdz3F/2evGdTXoycnJE0B9BYgvsR/OgXmXsnmgzy4vLy/kyBUu6krQAD7KJNAldgHstfGx5jz7RYD/6lWxhXBfi/LKFU9MTLxJo+eBfLRg45+m3huDg4MPNzc3fyioY1e1runRTG49QZi4CuBzu7wkg156h8NNjn9xvM9+CNkhjqc4HuG4a0P2GuHkPJ/s/rur0DPjgKd8QnyPVlgK/WekCeQGDZ7j/ycfAevnROOtEy7SMRYx3iXrLLvpfHLR0CuSr8tPyGaUFlHCbbpKY+Q/LKVv9KZbKysr4y6KJVzQjk9Ssr/TG88Qa5dS+U1P0TONnhsIjNpCtOUt2nLFzvNNB03806hhX4Ou8q665cGHzo9tvYBZoBc/5wNZ6gNzUepJfVsf6cuRnVS2+2kQaMwErTq0aKaTbi7Ih+z2Q1168mlChcRhsxEejtBjb8suaVOQSkg9qU/2elyE/gPsl+LzIseg0CEGaXSp/2HBIef/jETj5O8txxtAejarJ4+Pj19E7oNI9r3V1dVccFEY+RF5wwjdJ9Gd7u2W+ebJoIehqKUHyJ9o2vJHmuhlxPZuLguyCADpYPRg20nblbLSEka4OHOUzcTlkb1CoENDR9yGdh0TLyQyuiizIRn6EvZ8bFUWtMxd4Kh5reYBdoe7q+kQzgdKLCv6RG98LvYiu1aWW7KyoLmNR1Iu3kydl3Wa0Jth18lOZUHjXd32kJ4nb3ylbxl6E3ZdDQY/DF0NlS1Hz+pP6UwM51JliVNGNi8wYnk/kckJOh8Rl28QMky4QFamU82WYdeU5SUqC5pRxAOctn07ZJ/kpYH3vOxZMuh8jfyn4jJ6dD+y8amMWBLgTUGLRJVDxz3bN2DIBFHedjuvsFlZht6E3Wb10vlV7tHrqR59Ku2cfU44mOPlSrJMb7XLJY2+R/RYmeuwt4ReytftQte0eetxrdBJcrxQ/El7zBCP+DpW5hCPCyOzemuWz3d5o3zSOndOVjl0iJPztqfRVKedFZTO0Jew56O80qC5jWdTzp5lNLETH1L53qcy10ElmZ82W4Y9U9YqUWnQMsHDqMDuZTXi7Gfc8s4jkCxAUp+HoMRqE1rFTtEJJbFhFGUZbJW3RyssO2Zx7B+c/ZSY+HZeO2SeGLk1dvNgp+4Cve808dp5bB3bEMhcrK/QdyLOQ99j9jFAF16wtedxY73Ox4GBgW9okKywBF2wJgYPkn9yaGjo1sbGxm9NZHoouy8LqZS/aMkcpl1n6vX6d5RvWPm5SQkXQP4WoWO2IJAvMJv3tZ3nmw4KHTgz7GvQV54HUksbsswEjGsp3aNA+4mRyayMHlJliVMpFzn8kfnnUbtQ9Ip+O69I2txuRSpT5zr7hYJ1Xar9zZDtCxdBQsV5wPYA65wlL3faDBdrht7adBWc8swVF4Esei19hZPBtzy9odQVFsuThzj6OXH2DyuvZRKg8l3HZYAX7kTYfYyOd8royXGDg0HHijrpGD0gO+pLpa4EHV90gOu3dzGM/TrKyggxfAR7bfmadL/8VDtKQAkoASWgBJSAElACSkAJKAEloASUgBJQAl1E4D+i2245Fww1RgAAAABJRU5ErkJggg=='})">
+        savePicture2Gallery
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('openPdf', {url:'https://weibank.guilinbank.com.cn/wxmbank/mbankImages/agreementCard/Z2026742000018_01.pdf', title:'测试1',pdfType:'base64',require_agree:true})">openPdf 同意</button>
+    <button class="jsapiButton" onclick="jsapi_call('openPdf', {url:'https://weibank.guilinbank.com.cn/wxmbank/mbankImages/agreementCard/Z2026742000018_01.pdf', title:'testbase64Pdf',pdfType:'base64',downloadable:true})">openPdf下载</button>
+    <button class="jsapiButton" onclick="jsapi_call('gleWanIsOpen')">gleWanIsOpen</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('glGetLocalPhoneToken')">glGetLocalPhoneToken</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('glOpenYLUrl', {url:'https://open.unionpay.com/ajweb/help/hymSimulation/qrCode?acqCode=48020000&orderType=10&paymentValidTime=1000000&qrCodeType=0&orderTime=20211105112921&txnAmt=1000&id=777290058135880&orderNo=20211105112921&flag=%E6%98%AF&backUrl=https%3A%2F%2Fopen.unionpay.com%2Fajweb%2Fhelp%2FhymSimulation%2FfrontUrl&name=%E5%95%86%E6%88%B7%E5%90%8D%E7%A7%B0&reqType=0630001903&merCatCode=5811'})">
+        glOpenYLUrl
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('glOpenYLUrl', {url:'https://qr.95516.com/qrcGtwWeb-web/api/userAuth?version=1.0.0&redirectUrl=https%3A%2F%2Fopen.unionpay.com%2Fajweb%2Fhelp%2FhymSimulation%2FgetUserAuth%3FacqCode%3D48020000%26paymentValidTime%3D1000000%26orderType%3D10%26qrCodeType%3D0%26orderTime%3D20211105112921%26txnAmt%3D1000%26id%3D777290058135880%26flag%3D%25E6%2598%25AF%26orderNo%3D20211105112921%26backUrl%3Dhttps%253A%252F%252Fopen.unionpay.com%252Fajweb%252Fhelp%252FhymSimulation%252FfrontUrl%26name%3D%25E5%2595%2586%25E6%2588%25B7%25E5%2590%258D%25E7%25A7%25B0%26reqType%3D0630001903%26merCatCode%3D5811', isOpen:'1'})">
+        glOpenYLUrl
+    </button>
+
+    <button class="jsapiButton"
+            onclick="jsapi_call('glOpenAlert', {content:'privice', contentTitle:'测试弹出框', cancelTitle:'不同意', agreenTitle:'同意', countDown:'5'})">
+        glOpenAlert
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('glBirthdayAnimation', {imgScale:''})">glBirthdayAnimation</button>
+    <button class="jsapiButton" onclick="jsapi_call('glOpenImgAlert',{imgUrl:'http://200.100.158.168:8080/wxmbank/mbankImages/images/0100000/0103001_inner_Ad20231121221328110720.png'})">glOpenImgAlert</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('glWxWorkShare', {text:'测试分享文本内容', shareType:'3', imgData:'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', fileName:'测试桂林银行', iconurl:'https:www.baidu.com.cn', url:'https:www.baidu.com.cn', summary:'链接描述测试'})">
+        glWxWorkShare
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('glOpenAlert', {content:'<div>ceshineirognsdfalgadl;fa;sfsd;fslkkk</div>', contentTitle:'测试弹出框', cancelTitle:'不同意', agreenTitle:'同意', countDown:'5', contentType:'2'})">
+        glOpenAlert
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('ocrRecognize', {ocrType:'1', ocrCardType:'', ocrMethod:''})">
+        ocrRecognize
+    </button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('ocrRecognize', {ocrType:'1', ocrCardType:'KISBankCard', ocrMethod:''})">ocrRecognizeB
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('ocrRecognize', {ocrType:'', ocrCardType:'', ocrMethod:''})">
+        ocrRecognize
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('ocrEnterprise', {ocrMethod:'1'})">ocrEnterprise</button>
+    <button class="jsapiButton" onclick="jsapi_call('openUrl', {url:'smsto:10086',content:'hello'})">openUrl</button>
+    <button class="jsapiButton" onclick="jsapi_call('glOpenAvatar')">glOpenAvatar</button>
+
+    <button class="jsapiButton" onclick="jsapi_call('gleBKConnect')">gleBKConnect</button>
+    <button class="jsapiButton" onclick="jsapi_call('gleBKSign')">gleBKSign</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('glOpenCustAlert',{haveTimeDown:'2', content:'由于您长时间未操作，为保证您的账户安全，已自动安全退出。',agreenTitle:'重新登录',cancelTitle:'取消', alertHeight:'100' })">
+        glOpenCustAlert
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('testOpenTinyApp', {appid:'2018080616290001'})">testOpenTinyApp
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('applyPermission',{permissions:['bluetooth']})">applyPermission
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('glPasteTransfer')">glPasteTransfer</button>
+    <button class="jsapiButton" onclick="jsapi_call('downloadApp',{url:'',md5:''})">downloadApp</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('openUrl', {url:'http://cs.guilinbank.com.cn:38082/wxmbank/mbankImages/Sd1QpmpmkGzvGc7iilVw_a4igQriivd.pdf'})">
+        openUrl
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('openUrl', { url: 'smsto:96299', sms_body: '66#66' })">
+        openUrl打开短信界面
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('startDownload',{
+                    url:'http://cs.guilinbank.com.cn:38082/wxmbank/mbankImages/companybook/20231121/B-313617000026-20231121-0001_fpoZhAQwckVzr9ut392hc8m1SkkYKY.pdf',
+                    options:{
+                        filename:'aaa.pdf'
+                    }
+                })">下载文件Get
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('glBRAnyChat',
+            {importJson:{
+                  custCardNumber: '1234567890',
+                  dialogTimeOut: 60,
+                  prodAmount: '30',
+                  socialType: 'B0101',
+                  customInfo: '客户：张三\n卡号：1234567890\n产品代码：LC0016\n产品名称：现金16号',
+                  custPhone: '15765852585',
+                  productSubType: '1',
+                  loginPort: '8906',
+                  prodRiskLevelName: '低风险',
+                  socialBeginTime: '20180812',
+                  prodPushOrg: '机构1',
+                  customerType: '1',
+                  socialID: '36858545688568594',
+                  socialEndTime: '20380812',
+                  loginIp: '200.100.252.82',
+                  shuangluOrgCode: 'bairui',
+                  prodName: '现金16号',
+                  busType: '1',
+                  socialTypeName: '身份证',
+                  sysIDName: '双录系统移动端',
+                  busSubType: 'LCCP001',
+                  productType: '1',
+                  loginAppId: '3AE0A7CD-292C-9E4B-A9AA-5B3D53012242',
+                  companyCode: 'bairui',
+                  openFaceLiving: 0,
+                  sysID: '30',
+                  cardType: 'B0101',
+                  extraParam: {
+                    lowestCustRiskLevelName: '激进型',
+                    highestProdRiskLevelName: '低风险'
+                  },
+                  custRiskLevel: 'C5',
+                  custRiskLevelName: '激进型',
+                  custName: '张三',
+                  custLevel: '3',
+                  belongToUserName: 'lzj',
+                  prodRiskLevel: '1',
+                  answerMaxCount: 2,
+                  processBool: false,
+                  prodCode: 'LC0016',
+                  belongToAccount: 'lzj',
+                  productSubTypeName: '理财-理财01',
+                  IssueOrgName: '上海市公安局南山分局',
+                  prodTypeName: '理财',
+                  custID: '100000',
+                  isSimulation: '0'
+            }})">双录测试
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('glAlertWithUrl', {
+	                tilt:'弹框标题',
+	                leftBtnTitle:'不同意',
+                    rightBtnTitle:'同意',
+                    leftBtnColor:'#22494949',
+                    rightBtnColor:'#9F0097F4',
+                    contents:[
+                        {
+                            contentStr:'      尊敬的客户，根据监管要求，您在我行办理的1个代理缴费签约代扣业务需要补签电子协议，为不影响您后续使用，请您及时补签。',
+                            contentType:'0',
+                            contentJumpType:'0',
+                            linkColor:'#00FF00'
+                         },
+                        {
+                            contentStr:'\n\n社保费：',
+                            contentType:'0',
+                            linkColor:'#9F0097F4'
+                        },
+                        {
+                            contentStr:'\n1.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n2.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n3.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n4.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        },{
+                            contentStr:'\n5.《桂林银行委托签约/解约代缴(扣)社会保险费协议书》-99310210100000352023111514422600',
+                            contentType:'1',
+                            linkColor:'#00FF00'
+                        }
+                        ]})">弹窗提醒1
+    </button>
+    <button class="jsapiButton" onclick="jsapi_call('glAlertWithUrl', {
+	                tilt:'弹框标题',
+	                leftBtnTitle:'不同意',
+                    rightBtnTitle:'同意',
+                    leftBtnColor:'#22494949',
+                    rightBtnColor:'#9F0097F4',
+                    contents:[
+                        {
+                            contentStr:'欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，欢迎使用桂林银行app，',
+                            contentType:'0',
+                            contentJumpType:'0',
+                            linkColor:'#00FF00'
+                         },
+                        {
+                            contentStr:'隐私协议',
+                            contentType:'1',
+                            linkColor:'#9F0097F4'
+                        },
+                        {
+                            contentStr:'以及',
+                            contentType:'0',
+                            linkColor:'#00FF00'
+                        },
+                        {
+                            contentStr:'用户协议',
+                            contentType:'1',
+                            linkColor:'#9F0097F4'
+                        },
+                        {
+                            contentStr:'方便xxxx',
+                            contentType:'0',
+                            contentJumpType:'0',
+                            linkColor:'#00FF00'
+                        }]})">弹窗提醒2
+    </button>
+
+    <button class="jsapiButton" onclick="jsapi_call('openNativeSetting',{type:'permission'})">打开应用详情</button>
+    <button class="jsapiButton" onclick="jsapi_call('openNativeSetting',{type:'network'})">打开移动网络</button>
+    <button class="jsapiButton" onclick="jsapi_call('openNativeSetting',{type:'gps'})">打开GPS</button>
+    <button class="jsapiButton"
+            onclick="jsapi_call('openMultipleUrl', {url:'http://cs.guilinbank.com.cn:38080/wxmbank/mbankImages/agreementCard/generalProtocol.pdf'})">
+        openMultipleUrl
+    </button>
+    <p class="descript_title">其它注意事项</p>
+    <p class="descript_content">
+        因为安卓的bridge机制不能确保及早注入，如要尽早的调用js-api，建议监听dom事件AlipayJSBridgeReady，即document.addEventListener('AlipayJSBridgeReady',
+        function(e) {xxxx});
+    </p>
+
+
+    <script src="https://a.alipayobjects.com/g/h5-lib/bizlog/1.2.13/bizlog-browser.js"></script>
+    <script type="text/javascript">
+                function jsapi_call(apiName, params) {
+                    window.AlipayJSBridge && AlipayJSBridge.call(apiName, params, function(data) {
+                    alert('调用结果'+JSON.stringify(data));
+                   });
+                }
+                
+                function startup(){
+                    window.AlipayJSBridge && AlipayJSBridge.startupParams(function(e){
+                        alert('调用结果'+JSON.stringify(e));
+
+                    });
+                    
+                }
+
+            function jsapi_call_storage() {
+                window.AlipayJSBridge && AlipayJSBridge.call('setAPDataStorage', {key:'hexi12306_1', value:JSON.stringify({'name':'hexi1'})}, function(data) {alert('调用结果'+JSON.stringify(data));
+                });
+                window.AlipayJSBridge && AlipayJSBridge.call('setAPDataStorage', {key:'hexi12306_2', value:JSON.stringify({'name':'hexi2'})}, function(data) {alert('调用结果'+JSON.stringify(data));
+                });
+                window.AlipayJSBridge && AlipayJSBridge.call('setAPDataStorage', {key:'hexi12306_3', value:JSON.stringify({'name':'hexi3'})}, function(data) {alert('调用结果'+JSON.stringify(data));
+                });
+                window.AlipayJSBridge && AlipayJSBridge.call('setAPDataStorage', {key:'hexi12306_4', value:JSON.stringify({'name':'hexi4'})}, function(data) {alert('调用结果'+JSON.stringify(data));
+                });
+
+                setTimeout(function(){
+
+                　　AlipayJSBridge.call('getAPDataStorage', {key:'hexi12306_3'}, function(data) {alert('调用结果'+JSON.stringify(data));
+                   });
+
+                },2000);　　　　//延时2秒
+            }
+            
+            function jsapi_call_showLoading() {
+                window.AlipayJSBridge && AlipayJSBridge.call('showLoading');
+                setTimeout("window.AlipayJSBridge && AlipayJSBridge.call('hideLoading')", 3000);
+            }
+            
+            function jsapi_call_showToolbar() {
+                window.AlipayJSBridge && AlipayJSBridge.call('showLoading');
+                setTimeout("window.AlipayJSBridge && AlipayJSBridge.call('hideLoading')", 3000);
+            }
+            
+            function jsapi_call_actionSheet() {
+                window.AlipayJSBridge && AlipayJSBridge.call('actionSheet',{
+                                                             'title': '标题',
+                                                             'btns': ['第一个按钮', '第二个按钮', '第三个按钮'],
+                                                             'cancelBtn': '取消',
+                                                             'destructiveBtnIndex': 2
+                                                             }, function(data) {
+                                                             switch (data.index) {   // index标示用户点击的按钮，在actionSheet中的位置，从0开始
+                                                             case 0:
+                                                             alert('第一个按钮');
+                                                             break;
+                                                             case 1:
+                                                             alert('第二个按钮');
+                                                             break;
+                                                             case 2:
+                                                             alert('第三个按钮');
+                                                             break;
+                                                             case 3:
+                                                             alert('取消按钮');
+                                                             break;
+                                                             }
+                                                             });
+            }
+            
+            document.addEventListener('toolbarMenuClick', function(data){
+                                      alert('调用结果'+JSON.stringify(data));
+                                      setTimeout("window.AlipayJSBridge && AlipayJSBridge.call('hideToolbar')", 0);
+                                      });
+                                      function custom_jsapi_test() {
+                                          window.AlipayJSBridge && AlipayJSBridge.call('pushWindow', {'url':'H5JsApiTest.html'}, function(data) {alert('调用结果'+JSON.stringify(data));
+                                                                                       });
+                                                                                       
+                                      }
+            
+            document.addEventListener('back', function (e) {
+                                        alert('触发back');
+                                      e.preventDefault();
+                                      if(confirm('back已拦截,是否确定返回？')) {
+                                      AlipayJSBridge.call('popWindow');
+                                      }
+                                      }, false);
+
+            document.addEventListener('glHomeAppearNotice', function (e) {
+                                      alert('通知： ' + JSON.stringify(event.data));
+                                      }, false);
+            
+                                      
+            document.addEventListener('livesInfo', function (event) {
+                                                                alert('页面回退时带过来的内容： ' + JSON.stringify(event.data));
+                                                                });
+            document.addEventListener('glAlertWithUrlClick', function (event) {
+                                                                alert('下标： ' + JSON.stringify(event.data));
+                                                                });
+                                                    
+            document.addEventListener('scanBankCardInfo', function (event) {
+                                                                alert('页面回退时带过来的内容： ' + JSON.stringify(event.data));
+                                                                });
+            
+
+            document.addEventListener('startupParams', function (e) {
+                                      alert('nativeEvent带过来的内容： ' + JSON.stringify(e));
+            }, false);
+            
+            document.addEventListener('onPwdKeyboardChangeResult', function (event) {
+                                                                alert('键盘onPwdKeyboardChangeResult： ' + JSON.stringify(event.data));
+                                                                });
+            
+            
+            document.addEventListener('h5NetworkChange', function (e) {
+                                      alert('111： ' + JSON.stringify(e));
+            }, false);
+            document.addEventListener('onMenuItemSelected', function (event) {
+                                                                alert('点击index： ' + JSON.stringify(event.data));
+                                                                });
+            
+            document.addEventListener('onAntiScreenShotResult', function (event) {
+                                                                alert('禁止截屏通知 ' + JSON.stringify(event.data));
+                                                                });
+            document.addEventListener('optionMenu', function (event) {
+                                                                alert('点击了右边的button ' + JSON.stringify(event.data));
+                                                                });
+
+
+            /*
+            document.addEventListener('resume', function(event) {
+                alert('页面回退时带过来的内容resume： ' + JSON.stringify(event.data));
+            });
+            document.addEventListener('appResume', function(event) {
+                alert('页面回退时带过来的内容appResume： ' + JSON.stringify(event.data));
+            });
+            document.addEventListener('pageResume', function(event) {
+                alert('页面回退时带过来的内容pageResume： ' + JSON.stringify(event.data));
+            });
+            */
+
+            
+                                                    
+                                                               X
+
+    </script>
+</div>
+</body>
+</html>
+

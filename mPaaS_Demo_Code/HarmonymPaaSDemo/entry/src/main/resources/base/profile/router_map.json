@@ -1,0 +1,29 @@
+{
+  "routerMap": [
+    {
+      "name": "PageConfig",
+      "pageSourceFile": "src/main/ets/pages/PageConfig.ets",
+      "buildFunction": "getPageConfig"
+    },
+    {
+      "name": "PageMini",
+      "pageSourceFile": "src/main/ets/pages/PageMini.ets",
+      "buildFunction": "getPageMini"
+    },
+    {
+      "name": "PageDataCenterA",
+      "pageSourceFile": "src/main/ets/pages/PageDataCenterA.ets",
+      "buildFunction": "getPageDataCenterA"
+    },
+    {
+      "name": "PageHarmonyBaase",
+      "pageSourceFile": "src/main/ets/pages/PageHarmonyBaase.ets",
+      "buildFunction": "getPageHarmonyBaase"
+    },
+    {
+      "name": "PageHriver",
+      "pageSourceFile": "src/main/ets/pages/PageHriver.ets",
+      "buildFunction": "getPageHriver"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/.hvigor/
+/.idea/
+/entry/build/
+/entry/.preview/
+/oh_modules/
+/oh-package-lock.json5
+/entry/oh_modules/
+/entry/oh-package-lock.json5
+*/oh-package-lock.json5
+/local.properties
+/hvigor/hvigor-config.json5
+/entry/src/main/.DS_Store
+.DS_Store
+/.DS_Store
+local.properties
+

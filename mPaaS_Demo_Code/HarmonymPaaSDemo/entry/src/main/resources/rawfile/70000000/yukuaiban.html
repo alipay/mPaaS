@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Obu-harmonyOS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="static/css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/iconly.css"><!-- Theme css -->
+  <script src="static/js/flexible.js" type="text/javascript"></script>
+  <script src="static/js/vue.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="app">
+    <button id="JC_TEST1">speak voice</button>
+    <button id="JC_TEST2">页面上下文</button>
+    <div class="top" :class="fixedTop?'fixed':''">
+      <!-- 搜索 -->
+      <div class="search">
+        <i class="iconfont icon-chaxun"></i>
+        <input type="text" name="keyword" placeholder="搜索ETC/OBU业务" autocomplete="off">
+      </div>
+      <i class="iconfont icon-scan scan"></i>
+    </div>
+    <!-- 四宫格快捷导航 -->
+    <div class="quic-nav">
+      <ul>
+        <li>
+          <div class="icon" id="JC_TEST3">
+            <img src="static/picture/icon-etc-apply.png" alt="">
+          </div>
+          <p>ETC申办</p>
+        </li>
+        <li>
+          <div class="icon" id="JC_TEST4">
+            <img src="static/picture/icon-etc-activate.png" alt="">
+          </div>
+          <p>ETC激活</p>
+        </li>
+        <li>
+          <div class="icon">
+            <img src="static/picture/icon-process.png" alt="">
+          </div>
+          <p>申办流程</p>
+        </li>
+        <li>
+          <div class="icon">
+            <img src="static/picture/icon-service.png" alt="">
+          </div>
+          <p>业务指引</p>
+        </li>
+      </ul>
+    </div>
+    <!-- 热门服务 -->
+    <div class="service-hot">
+      <div class="title">
+        <span><i></i>热门服务</span>
+        <a href="">查看更多<i class="iconfont icon-right1"></i></a>
+      </div>
+      <div class="items">
+        <div class="block red" id="jc_sss">
+          <h3><span>账单查询</span><i class="iconfont icon-right"></i></h3>
+          <p>ETC消费记录</p>
+          <a href="order-history.html">查找</a>
+        </div>
+        <div class="block purple">
+          <h3><span>OBU信息</span><i class="iconfont icon-right"></i></h3>
+          <p>匹配您的ETC/OBU产品</p>
+          <a href="">检测</a>
+        </div>
+      </div>
+      <div class="list">
+        <ul>
+          <li class="one">
+            <div class="l">
+              <h4><span>移动支付电子发票</span></h4>
+              <p>微信、支付宝等扫码付发票开具</p>
+            </div>
+            <div class="r"></div>
+          </li>
+          <li class="two">
+            <div class="l">
+              <h4><span>OBU升级</span></h4>
+              <p>在线为您的OBU设备升级</p>
+            </div>
+            <div class="r"></div>
+          </li>
+          <li class="three">
+            <div class="l">
+              <h4><span>路况提示</span></h4>
+              <p>前面道路状况提示</p>
+            </div>
+            <div class="r"></div>
+          </li>
+          <li class="four">
+            <div class="l">
+              <h4><span>缴费/支付</span></h4>
+              <p>账单缴费、在线支付</p>
+            </div>
+            <div class="r"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- tab-bar导航 -->
+    <div class="tab-bar-holder"></div>
+    <!-- <div class="tab-bar">
+        <ul>
+            <li :class="activeTab==1?'on':''" @click="changeTab(1)">
+                <i class="iconfont icon-index"></i>
+                <span>首页</span>
+            </li>
+            <li :class="activeTab==2?'on':''" @click="changeTab(2)">
+                <a href="mine.html">
+                <i class="iconfont icon-zhinanzhen"></i>
+                <span>服务</span>
+            </a>
+            </li>
+            <li :class="activeTab==3?'on':''" @click="changeTab(3)">
+                <a href="mine.html">
+                <i class="iconfont icon-wodedangxuan-copy"></i>
+                <span>我的</span>
+            </a>
+            </li>
+        </ul>
+    </div> -->
+    <div class="bottom-panel">
+      <ul>
+        <li class="active"><a href="">
+            <div class="icon"><i class="iconly-Home icli"></i><i class="iconly-Home icbo"></i></div>
+            <span>首页</span>
+          </a></li>
+        <li><a href="category.html">
+            <div class="icon"><i class="iconly-Category icli"></i><i class="iconly-Category icbo"></i></div>
+            <span>服务</span>
+          </a></li>
+        <li><a href="profile.html">
+            <div class="icon"><i class="iconly-Profile icli"></i><i class="iconly-Profile icbo"></i></div>
+            <span>我的</span>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+  function ready(callback) {
+    var currentUrl = window.location.href;
+    alert(currentUrl);
+    alert("ready111");
+    // 如果 jsbridge 已经注入则直接调用
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      // 如果没有注入则监听注入的事件
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  ready(function () {
+    document.addEventListener('testAction',
+      function (e) {
+        alert(JSON.stringify(e.data));
+      },
+      false);
+    var testNode1 = document.getElementById('JC_TEST1');
+    var uaNode = document.getElementById('JC_TEST3');
+    var ssNode = document.getElementById('JC_TEST4');
+
+    uaNode.addEventListener('click', function () {
+      alert('test success')
+    });
+
+    ssNode.addEventListener('click', function () {
+      AlipayJSBridge.call('myapi1', {
+        param1: 'Hello'
+      }, function (e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          alert(JSON.stringify(e));
+        }
+      });
+    });
+    testNode1.addEventListener('click', function () {
+      AlipayJSBridge.call('tts', {
+        param1: '小寒 你好'
+      }, function (e) {
+        if (e.error === 1) {
+          alert('请前往自定义设置注册JSAPI');
+        } else {
+          alert(JSON.stringify(e));
+        }
+      });
+    });
+  });
+</script>
+<!--<script>
+    new Vue({
+    el: '#app',
+    data: {
+        activeTab: 1, // 默认高亮的tab-bar
+        fixedTop: false // 顶部是否固定
+    },
+    mounted() {
+        this.$nextTick(() => {
+            window.addEventListener("scroll", this.scroll);
+        });
+    },
+    methods: {
+        // 切换tab-bar
+        changeTab: function (item) {
+            this.activeTab = item
+        },
+        // 监听页面滚动
+        scroll: function () {
+            var scrollTop = document.documentElement.scrollTop
+            if (scrollTop > 100) {
+                this.fixedTop = true
+            } else {
+                this.fixedTop = false
+            }
+        }
+    }
+})
+</script>-->
+
+</html>

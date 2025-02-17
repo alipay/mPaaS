@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:isShowSearchBtn="true"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:searchEditText="输入文本"
+        app:isShowSearchBtn="true"
+        app:isShowVoiceSearch="true"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:inputMaxLength="4"
+        app:searchEditHint="暗文本提示"
+        app:isShowSearchBtn="true"
+        app:isShowVoiceSearch="true"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintIconUnicode="@string/iconfont_user"
+        app:isShowSearchBtn="true"
+        app:isShowVoiceSearch="true"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintIconDrawable="@drawable/mine_blue"
+        app:searchButtonText="完成"
+        app:isShowSearchBtn="true"
+        app:isShowVoiceSearch="true"/>
+
+    <com.alipay.mobile.antui.basic.AUSearchInputBox
+        android:id="@+id/view_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:searchEditHint="暗文本提示" />
+
+    <com.alipay.mobile.antui.basic.AUSearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:searchEditHint="暗文本提示" />
+</LinearLayout>

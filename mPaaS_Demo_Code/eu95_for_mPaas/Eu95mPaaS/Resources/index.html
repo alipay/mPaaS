@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="get()">点击获取AlipayJSBridge</button>
+</body>
+<script>
+  function get() {
+    alert('点击了')
+    window.AlipayJSBridge.call('getYkbUserInfoApi', (result) => {
+      alert('getYkbUserInfoApi结果：'+JSON.stringify(result));
+    });
+  }
+</script>
+
+
+
+<script>
+  let src3 = 'https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.0/vconsole.min.js';
+  document.write('<scr' + 'ipt  src="' + src3 + '"></scr' + 'ipt>');
+  document.write('<scr' + 'ipt>let vConsole = new VConsole();</scr' + 'ipt>');
+</script>
+</html>

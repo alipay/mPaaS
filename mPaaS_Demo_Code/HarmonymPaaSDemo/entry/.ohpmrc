@@ -1,0 +1,4 @@
+@mpaas:registry=https://mpaas-ohpm.oss-cn-hangzhou.aliyuncs.com/meta
+@alipay:registry=https://mpaas-ohpm.oss-cn-hangzhou.aliyuncs.com/meta
+#@alipay:registry=https://scmcenterclient.cn-hangzhou.alipay.aliyun-inc.com/AlipayClient/HarRepo/
+#@mpaas:registry=https://scmcenterclient.cn-hangzhou.alipay.aliyun-inc.com/AlipayClient/HarRepo

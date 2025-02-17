@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Push</string>
+    <string name="push_title">推送</string>
+    <string name="push_init">初始化推送</string>
+    <string name="init_tips">Tips: 使用上面接口，可以实现移动推送的初始化</string>
+    <string name="push_bind">将用户id和token标识绑定</string>
+    <string name="bind_tips">Tips: push支持用户维度的推送。用户可以结合自身的用户系统将用户id和内建渠道的token绑定，进而实现基于用户id的推送</string>
+    <string name="push_unbind">解除用户id和token标识的绑定</string>
+    <string name="unbind_tips">Tips: 使用上面接口，可以实现用户id和token标识的解除绑定操作</string>
+    <string name="push_uploadThirdToken">上报第三方push的token</string>
+    <string name="uploadThirdToken_tips">Tips: 使用上面接口，可以实现第三方push的token的上传，但push不支持对内建渠道的token值的指定</string>
+    <string name="operation_result">操作结果将输入在这里</string>
+    <string name="use_default_msg">使用内置通知栏消息</string>
+
+    <string name="success">Success</string>
+    <string name="failed">Failed</string>
+    <string name="pushmessage">push message</string>
+    <string name="in_rigerst_success">Internal channel registered successfully. The value of adToken: </string>
+    <string name="xiaomi">Xiaomi</string>
+    <string name="huawei">Huawei</string>
+    <string name="third_party_channel">Third-party channel </string>
+    <string name="register_success_adtoken"> Registration successful. The value of adToken: </string>
+    <string name="push_message_key">Key value of push message"</string>
+    <string name="push_message_value">Value of push message: </string>
+    <string name="binding_user_operation">Bind user operation</string>
+    <string name="unbind_user">Unbind user operation</string>
+    <string name="third_pushtoken_upload_operation">Report third-party push token</string>
+    <string name="push_channel">push channel</string>
+    <string name="zhuyifeineijinxiaoxi">(Note: not internal message)</string>
+    <string name="self_built_channel_adToken">adToken of internal channel: </string>
+    <string name="third_channel_adToken">adToken of third-party channel: </string>
+
+    <string name="come_push_demo">前往demo: </string>
+
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent">
+
+    <com.alipay.mobile.antui.basic.AULinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.mpaas.antui.viewdemo.view.DemoTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           app:aui_titleText="Button" />
+
+        <com.mpaas.antui.viewdemo.view.BaseHeadView
+           app:aui_titleText="Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.mpaas.antui.viewdemo.view.BaseHeadView>
+
+
+        <com.alipay.mobile.antui.basic.AULoadingView
+            android:id="@+id/loading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.alipay.mobile.antui.basic.AULoadingView>
+
+
+
+        <com.alipay.mobile.antui.basic.AUProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/AU_ICONSIZE3"
+            android:layout_height="@dimen/AU_ICONSIZE3"
+            android:indeterminateDrawable="@drawable/au_pullrefresh_progress"
+            />
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中"/>
+
+        <com.alipay.mobile.antui.basic.AUProgressBar
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:id="@+id/progressBar2"
+            android:layout_width="@dimen/AU_ICONSIZE3"
+            android:layout_height="@dimen/AU_ICONSIZE3"
+            android:indeterminateDrawable="@drawable/au_pullrefresh_progress"
+            />
+        <com.alipay.mobile.antui.basic.AUTextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+        <com.alipay.mobile.antui.basic.AUDragLoadingView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+
+
+    <com.mpaas.antui.viewdemo.view.BaseFootView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

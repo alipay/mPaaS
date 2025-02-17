@@ -1,0 +1,48 @@
+# mPaaS Pods Begin
+plugin "cocoapods-mPaaS"
+source "https://gitee.com/mpaas/podspecs"
+mPaaS_baseline 'cp_change_15200851'  # 请将 x.x.x 替换成真实基线版本
+mPaaS_version_code 18   # This line is maintained by MPaaS plugin automatically. Please don't modify.
+# mPaaS Pods End
+# ---------------------------------------------------------------------
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Eu95mPaaS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for mPaas_Poc_Demo
+
+  remove_pod "mPaaS_Security"
+  
+  mPaaS_pod "mPaaS_UTDID"
+  mPaaS_pod "mPaaS_ScanCode"
+  mPaaS_pod "mPaaS_LBS"
+  mPaaS_pod "mPaaS_CommonUI"
+#  mPaaS_pod "mPaaS_CDP"
+  mPaaS_pod "mPaaS_Hotpatch"
+  mPaaS_pod "mPaaS_Log"
+  mPaaS_pod "mPaaS_Upgrade"
+  mPaaS_pod "mPaaS_Sync"
+  
+  mPaaS_pod "mPaaS_Push"
+  mPaaS_pod "mPaaS_RPC"
+  mPaaS_pod "mPaaS_OCR"
+
+  
+  mPaaS_pod "mPaaS_Config"
+  
+  mPaaS_pod "mPaaS_Diagnosis"
+
+  #  移动框架
+  mPaaS_pod "mPaaS_MobileFramework"
+
+  # 小程序
+    mPaaS_pod "mPaaS_Ariver"
+    mPaaS_pod "mPaaS_BlueShield"
+  #终端环境检测
+    mPaaS_pod "mPaaS_SecurityEnvCheck"
+
+
+end

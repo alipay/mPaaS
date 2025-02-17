@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+.header {
+  color: #888;
+  font-size: 14px;
+  padding: 0 16px 8px;
+}
+input {
+  padding: 0;
+  text-indent: 10px;
+  border: 1px solid #666;
+  font-size: 15px;
+  color: #333;
+  height: 25px;
+  width: 100%;
+  display: block;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+button {
+	border: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 50px;
+  background-color: #108EE9;
+  border: 1px solid #108EE9;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+button:disabled {
+  color: rgba(255,255,255,.6);
+  background-color: #9ED1F6;
+  border-color: #9ED1F6;
+}

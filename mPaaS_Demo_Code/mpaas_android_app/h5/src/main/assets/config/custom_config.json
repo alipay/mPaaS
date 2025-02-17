@@ -1,0 +1,48 @@
+[
+  {
+    "value": "{\"config\":{\"al\":\"3\",\"pr\":{\"4\":\"86400\",\"common\":\"864000\"},\"ur\":\"1800\",\"fpr\":{\"common\":\"3888000\"}},\"switch\":\"yes\"}",
+    "key": "h5_nbmngconfig"
+  },
+  {
+    "value": "NO",
+    "key": "h5_shouldverifyapp"
+  },
+  {
+
+    "value": "NO",
+    "key": "mp_ta_use_orginal_mini_nagivationbar"
+  },
+
+  {
+    "key": "h5_remote_debug_host",
+    "value": "wss://cn-hangzhou-mproxy.cloud.alipay.com/host/"
+  },
+
+  {
+    "value": "1",
+    "key": "TSBS"
+  },
+
+  {
+    "value": "NO",
+    "key": "mp_h5_shouldHookGetlocation"
+  },
+
+  {
+    "value": "NO",
+    "key": "h5_tiny_multiApp"
+  },
+
+  {
+    "value": "YES",
+    "key": "mp_h5_dont_reload_when_release"
+  },
+
+  {
+    "value": "{\"config\":{\"al\":\"3\",\"pr\":{\"4\":\"86400\",\"common\":\"864000\"},\"ur\":\"100\",\"fpr\":{\"common\":\"3888000\"}},\"switch\":\"yes\"}",
+    "key": "h5_nbmngconfig"
+  }
+
+
+
+]

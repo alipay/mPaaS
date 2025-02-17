@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="75dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_get"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_get_btn"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_post_btn"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+
+            <Button
+                android:id="@+id/btn_limit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_post_limit"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <TextView
+                android:id="@+id/tvLimitTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_weights"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_post_weights"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+
+            <Button
+                android:id="@+id/btn_exception"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_exception_btn"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <Button
+                android:id="@+id/btn_endorsed"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_endorsed"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <Button
+                android:id="@+id/btn_mock"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/rpc_mock_btn"
+                android:textColor="@android:color/white"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_horizontal"
+                android:text="@string/rpc_exception_text"
+                android:textColor="@android:color/black"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_horizontal"
+                android:text="@string/rpc_interceptor"
+                android:textColor="@android:color/black"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_horizontal"
+                android:text="@string/rpc_self_encrypt"
+                android:textColor="@android:color/black"
+                android:theme="@style/content_text_18"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="77dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

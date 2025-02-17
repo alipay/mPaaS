@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="stylesheet" href="./common.css">
+      <title>页面上下文</title>
+  </head>
+  <body>
+    <button id="J_PushWindow">打开新页面</button>
+    <button id="J_PopWindow">关闭当前页面</button>
+    <button id="J_PopTo">关闭多个页面</button>
+    <button id="J_StartApp">启动其他应用</button>
+    <button id="J_StartApp8080">启动其他应用8080</button>
+    <button id="J_ExitApp">退出当前应用</button>
+    <button id="J_CUSTOMEHIDETITLEBAR">动态显示</button>
+    <button id="J_CUSTOMEHIDETITLEBAR2">动态隐藏</button>
+    <button id="J_CUSTOMEHIDETITLEBAR3">动态显示内置JSAPI</button>
+    <button id="J_CUSTOMEHIDETITLEBAR4">动态隐藏内置JSAPI</button>
+    <button id="J_getPage">getPage</button>
+  </body>
+  <script>
+    function ready(callback) {
+      // 如果 jsbridge 已经注入则直接调用
+      if (window.AlipayJSBridge) {
+        callback && callback();
+      } else {
+        // 如果没有注入则监听注入的事件
+        document.addEventListener('AlipayJSBridgeReady', callback, false);
+      }
+    }
+
+    ready(function() {
+      var pushWindowNode = document.getElementById('J_PushWindow');
+      var popWindowNode = document.getElementById('J_PopWindow');
+      var popToNode = document.getElementById('J_PopTo');
+      var startAppNode = document.getElementById('J_StartApp');
+      var startAppNode8080 = document.getElementById('J_StartApp8080');
+      var exitAppNode = document.getElementById('J_ExitApp');
+      var customHideTitleBarNode = document.getElementById('J_CUSTOMEHIDETITLEBAR');
+      var customHideTitleBarNode2 = document.getElementById('J_CUSTOMEHIDETITLEBAR2');
+      var customHideTitleBarNode3 = document.getElementById('J_CUSTOMEHIDETITLEBAR3');
+      var customHideTitleBarNode4 = document.getElementById('J_CUSTOMEHIDETITLEBAR4');
+      var getPage = document.getElementById('J_getPage');
+      pushWindowNode.addEventListener('click', function() {
+        AlipayJSBridge.call('pushWindow', {
+          url: './util.html'
+        });
+      });
+      popWindowNode.addEventListener('click', function() {
+        AlipayJSBridge.call('popWindow');
+      });
+      popToNode.addEventListener('click', function() {
+        AlipayJSBridge.call('popTo', {
+          index: -1
+        });
+      });
+      startAppNode.addEventListener('click', function() {
+        AlipayJSBridge.call('startApp', {
+          appId: '70000000'
+        });
+      });
+      startAppNode8080.addEventListener('click', function() {
+        AlipayJSBridge.call('startApp', {
+          appId: '80808080'
+        });
+      });
+      exitAppNode.addEventListener('click', function() {
+        AlipayJSBridge.call('exitApp');
+      });
+      customHideTitleBarNode.addEventListener('click', function() {
+        AlipayJSBridge.call('customHideTitleBar', {
+            param2: 'YES'
+          },
+          function(result) {
+              console.log(result);
+          });
+      });
+
+      customHideTitleBarNode2.addEventListener('click', function() {
+        AlipayJSBridge.call('customHideTitleBar', {
+            param2: 'NO'
+          },
+          function(result) {
+              console.log(result);
+          });
+      });
+
+      customHideTitleBarNode3.addEventListener('click', function() {
+        AlipayJSBridge.call('showTitleBar')
+      });
+
+      customHideTitleBarNode4.addEventListener('click', function() {
+        AlipayJSBridge.call('hideTitleBar')
+      });
+    getPage.addEventListener('click', function () {
+        AlipayJSBridge.call('getPage', function (e) {
+            if (e.error === 1) {
+                alert('请前往自定义设置注册JSAPI');
+            } else {
+                alert(JSON.stringify(e));
+            }
+        });
+        AlipayJSBridge.call('getPage', {
+            param2: 'notifyN2h'
+        }, function (e) {
+            if (e.error === 1) {
+                alert('请前往自定义设置注册JSAPI');
+            } else {
+                alert(JSON.stringify(e));
+            }
+        });
+    });
+
+
+    });
+  </script>
+
+
+</html>

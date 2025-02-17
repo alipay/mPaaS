@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="upgrade_release">Software update</string>
+    <string name="cur_ver_is">current version</string>
+
+    <string name="fast_check_tip">Check for updates. The UI is defaulted by the SDKs, and an icon is required</string>
+    <string name="fast_check">Check for updates</string>
+    <string name="fast_check_has_tip">Check whether a new version is available. Please call the corrsponding APIs in the child thread</string>
+    <string name="fast_check_has">Check for a new version</string>
+    <string name="fast_check_get_tip">Obtain the update information. Please call the corrsponding APIs in the child thread</string>
+    <string name="fast_check_get">Obtain update information</string>
+    <string name="default_interval_upgrade_tip">Default pop-up interval of the update dialog box: when a new version is available, multiple checks for updates will be triggered in a short time while the update dialog box pops up for only once. The default pop-up interval is 3 days.</string>
+    <string name="default_interval_upgrade">Custom update UI (custom pop-up interval of the update dialog box)</string>
+    <string name="custom_interval_upgrade_tip">Custom pop-up interval of the update dialog box: when a new version is available, multiple checks for updates will be triggered in a short time. The update dialog box will pop up only when the interval between the pop-ups exceeds the custom period (unit: millisecond). Currently, the custom interval is 1 minite.</string>
+    <string name="custom_interval_upgrade">Custom update UI (custom pop-up interval of the update dialog box) </string>
+    <string name="look_out">Note:\n1.when the update mode is set as \"multiple times"\or\"forced", the configured pop-up interval will not take effect. For each check for updates, if there is a new version available, the update dialog box will pop up.\n2.The abovementioned pop-up interval of the update dialog box refers to the callback interval of the \"showUpgradeDialog\" method.</string>
+    <string name="checking_upgrade">Checking for updates</string>
+    <string name="warning_updating">Update in progress. Please try later.</string>
+    <string name="upgrade_exception">Exception in update</string>
+    <string name="data_invalid">Illegal update data</string>
+    <string name="has_no_new_version">It is currently the latest version</string>
+    <string name="upgrade_less_than_interval">The pop-up time of two upgrades is less than the set interval</string>
+    <string name="single_upgrade">Single reminder upgrade</string>
+    <string name="multi_upgrade">Multiple reminder upgrades</string>
+    <string name="force_upgrade">Forced upgrade</string>
+    <string name="unknown_upgrade_state">Unknown upgrade status：</string>
+
+    <string name="upgrade">upgrade</string>
+    <string name="havenew_version">A new version</string>
+    <string name="detection_newversion_error">An error occurred in detecting the new version</string>
+
+    <string name="error_getupgradleresult_null">The upgrade result is empty</string>
+    <string name="upgradle_information">Update information:</string>
+    <string name="upgradle_model">\nUpgrade mode：</string>
+    <string name="newversion">\nThe latest version：</string>
+    <string name="download_address">\nDownload address：</string>
+
+    <string name="cancel">cancel</string>
+    <string name="downloading">Downloading...</string>
+    <string name="download_exception">Download exception</string>
+    <string name="download_finish">Download complete</string>
+    <string name="download_cancel">Download cancelled</string>
+    <string name="install_new">Install new version</string>
+    <string name="apk_path">Local storage path：</string>
+    <string name="install">install</string>
+
+    <string name="about_update_find_new_version">版本更新（英语版本用户自定义）</string>
+    <string name="about_update_now">about_update_now </string>
+    <string name="about_update_next_time_to_choice">about_update_next_time_to_choice</string>
+
+
+    <string name="custom_upgrade_dialog">自定义En</string>
+
+</resources>

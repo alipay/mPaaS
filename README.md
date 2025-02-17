@@ -1,100 +1,101 @@
-# mPaaS H5 容器 10.1.60
-![30 分钟接入](https://img.alicdn.com/tfs/TB1v2Y8vKL2gK0jSZFmXXc7iXXa-2560-1000.png)
+# mPaaS H5 Container 10.1.60
+[![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob//kroos_work/README.md)
+[![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/kroos_work/README.zh-Hans.md)
 
-### mPaaS 离线包是什么？
-Hybrid 开发模式已不是什么新鲜的话题，不仅可以快速发布新业务，同时无需考虑 App 发版时间，为业务更新迭代提供了极强的灵活性。相比于 Web 开发，Hybrid 开发模式提供了丰富的设备 API，让业务形态可以更加多元和丰富。  
+### What is the mPaaS offline package?
+The hybrid development model is not a new topic. It can not only quickly release new services, but also provide great flexibility for business updates and iterations without considering the release time of the App. Compared with Web development, the hybrid development model provides a rich set of device APIs, making business forms more diverse and rich.  
 
-mPaaS 离线包源自于支付宝原生方案，经历了严苛的业务考验，让你直接和支付宝使用同一套框架层代码，拥有统一容器及内核，相对系统内核获取更低 Crash 率和 ANR 率，适配性强，并具备良好的、弹性的扩展能力，结合具体业务需求定制 JSAPI。
+The mPaaS offline package is derived from the native solution of Alipay and has undergone rigorous business tests. It allows you to use the same set of framework layer codes as Alipay directly, with a unified container and kernel, and a lower Crash rate and ANR rate compared to the system kernel. It has strong adaptability and good and flexible expansion capabilities, and can customize JSAPI based on specific business needs.
 
-### 它解决什么问题？
-
-
-* **减少白屏**
-* **解决 Hybrid App 跨平台兼容与适配**
-* **提升 Hybrid App 性能**
-* **原生开发下的包大小优化**
-
-### 实现原理
-
-* **减少白屏**
-
-为了优化 HTML5 容器用户体验，减少白屏时间，我们在 H5 容器中引入了离线包技术。离线包可以简单理解为一个 zip 压缩包，其中包含前端页面所需的 HTML、CSS、JS、图片等资源。内置到客户端后，H5 容器打开离线包页面时会直接从离线包中获取资源，这个是毫秒的访问时间，消除了打开页面白屏现象。
-
-* **解决 Hybrid App 跨平台兼容与适配**
-
-通过 mPaaS 提供的统一 UC 内核，从而快速解决在 Android 设备上“一套代码因系统内核不同，导致展现形式不同”的兼容适配问题。
-
-* **提升 Hybrid App 性能**
-
-为了提升 HTML5 容器稳定性，我们在安卓系统上使用了 UC WebView，其崩溃率和 ANR 率远低于系统浏览器，而且彻底规避了安卓系统 Webview 碎片化问题。
-
-* **原生开发下的包大小优化**
-
-针对离线包，我们做了“业务资源包”和“公共资源包”分类。公共资源包中包含框架 JS、CSS、常见图片等，同时此类资源在整个 App 内仅保存一份；业务资源包仅保存业务所需的页面静态资源，同时各业务间相互独立解耦。从而保证一个业务的页面资源能够同时来自业务资源包和公共资源包，充分优化 App 大小。
-基于以上方案，Native 业务可将转化成 HTML5，从而进一步优化 App 大小，实现业务动态下发，按需下载。
-
-### 你需要准备的
-
-- 一个原生安卓工程，添加签名切编译出 APK 安装包
-- 在 mPaaS 控制台创建了应用并上传加签后的安装包获得了 *.config 配置文件
-- 配置开发环境（在本教程中以 macOS 下的安卓开发环境为例进行说明）。更多信息，请参考[准备配置]([文档中心 - 蚂蚁金服金融科技](https://tech.antfin.com/docs/2/99044))
-- 网络连接和网络浏览器（推荐使用 Chrome 浏览器）
-- 一部安卓手机及配套的数据线（手机系统版本为安卓 4.3 或更新，您也可以选择使用模拟器进行调试）
-
-### 你可以如何接入它？
-
-#### [步骤零：申请试用]
-
-  [申请试用 mPaaS 离线包](https://www.aliyun.com/product/mpaas?spm=5176.224200.h2v3icoap.455.5d716ed6zl3rpw&aly_as=J7wB1L5q)
-
-#### [Android 端]
-
-* 步骤一：接入 mPaaS Inside
-
-  [接入 mPaaS Inside](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*xziLQJ_oNFsAAAAAAAAAAABkARQnAQ)
-
-* 步骤二：接入 mPaaS Nebula 容器
-
-  [接入 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*kRtRRam3PxAAAAAAAAAAAABkARQnAQ)
-
-* 步骤三：打包，预置到客户端，编译运行
-
-  [预置离线包，编译运行](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*e5pMRpUNrjcAAAAAAAAAAABkARQnAQ)
-
-#### [iOS 端]
-
-* 步骤一：创建工程并接入 mPaaS Nebula 容器组件
-
-  [接入 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*IwoXSqm6sBgAAAAAAAAAAABkARQnAQ)
-
-* 步骤二：使用 mPaaS Nebula 容器
-
-  [使用 mPaaS Nebula 容器](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*y02KQ6c9gFkAAAAAAAAAAABkARQnAQ)
-
-* 步骤三：使用 mPaaS 离线包
-
-  [预置离线包，编译运行](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*U_wHQ51Gb6IAAAAAAAAAAABkARQnAQ)
+### What problem does it solve?
 
 
-#### [步骤四：申请 UC 内核]
+* **Reduce the white screen**
+* **Solve the cross-platform compatibility and adaptation of Hybrid App**
+* **Improve Hybrid App Performance**
+* **Optimize package size for native development**
 
-  [申请 UC 内核 Key，预计半个工作日内生效](https://tech.antfin.com/docs/2/112551)
+### The principles
 
-具体接入文档可参考：[mPaaS 容器文档](https://tech.antfin.com/docs/2/130789)
+* **Reduce the white screen**
 
-### 我们已经服务了谁
+In order to optimize the HTML5 container user experience and reduce the white screen time, we introduced the offline package technology in the H5 container. The offline package can be simply understood as a zip compressed package, which contains the HTML, CSS, JS, pictures and other resources required by the front-end page. After being built into the client side, the H5 container will directly obtain resources from the offline package when opening the offline package page. The access time of this process is at the millisecond level, which can eliminate the white screen phenomenon when opening the page.
 
-![容器能力 - 案例墙](https://img.alicdn.com/tfs/TB1aJf4vUz1gK0jSZLeXXb9kVXa-2560-641.png)
+* **Solve the cross-platform compatibility and adaptation of Hybrid App**
 
-### 欢迎交流 + 反馈 + 拍砖
+The unified UC kernel provided by mPaaS can quickly solve the compatibility and adaptation problem on Android devices: "a set of code has different presentation forms due to different system kernels."
 
-* Issue 反馈（如果你遇到任何 bug 或者功能需求，欢迎第一时间让我们知道）  
-  [Issue 地址](https://github.com/alipay/mpaas-demo/issues)
-* 加入技术交流群，有问题随时交流
+* **Improve Hybrid App Performance**
 
-![mPaaS 功能试用 - 引流关注](https://img.alicdn.com/tfs/TB1Rbf9vHY1gK0jSZTEXXXDQVXa-2560-1000.jpg)
+To improve the stability of the HTML5 container, we used UC WebView on the Android system. Its crash rate and ANR rate are much lower than those of the system browser, and it completely avoids the Android system Webview fragmentation problem.
 
-### 开源许可
+* **Optimize package size for native development**
+
+For offline packages, we have classified them into "business resource packages" and "public resource packages". The public resource package contains framework JS, CSS, common images, etc., and only one copy of such resources is saved in the entire App; the business resource package only saves the page static resources required by the business, and each business is independently decoupled from each other. This ensures that the page resources of a business can come from both the business resource package and the public resource package, fully optimizing the App size.
+Based on the above solution, Native services can be converted into HTML5, thereby further optimizing the App size and enabling dynamic service delivery and on-demand downloading.
+
+### What you need to prepare
+
+- A native Android project, add signature and compile APK installation package
+- Create an application in the mPaaS console and upload the signed installation package to obtain the *.config configuration file
+- Configure the development environment (this tutorial uses the Android development environment under macOS as an example). For more information, see [Prepare for Configuration]([Document Center - Ant Financial Technology](https://tech.antfin.com/docs/2/99044))
+- Internet connection and web browser (Chrome is recommended)
+- An Android phone and its data cable (the phone system version must be Android 4.3 or later, you can also choose to use an emulator for debugging)
+
+### How can you access it?
+
+#### [Step 0: Apply for a trial]
+
+  [Apply for a trial of mPaaS offline package](https://www.alibabacloud.com/en?_p_lc=1)
+
+#### [Android]
+
+* Step 1: Connect to mPaaS Inside
+
+  [Connect to mPaaS Inside](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*xziLQJ_oNFsAAAAAAAAAAABkARQnAQ)
+
+* Step 2: Connect to the mPaaS Nebula container
+
+  [Connect to the mPaaS Nebula container](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*kRtRRam3PxAAAAAAAAAAAABkARQnAQ)
+
+* Step 3: Packaging, pre-installing to the client side, compiling and running
+
+  [Preset offline package, compile and run](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*e5pMRpUNrjcAAAAAAAAAAABkARQnAQ)
+
+#### [iOS]
+
+* Step 1: Create a project and connect to the mPaaS Nebula container component
+
+  [Connect to mPaaS Nebula container](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*IwoXSqm6sBgAAAAAAAAAAABkARQnAQ)
+
+* Step 2: Use mPaaS Nebula container
+
+  [Use mPaaS Nebula container](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*y02KQ6c9gFkAAAAAAAAAAABkARQnAQ)
+
+* Step 3: Use the mPaaS offline package
+
+  [Preset offline package, compile and run](https://gw.alipayobjects.com/mdn/site_comm/afts/file/A*U_wHQ51Gb6IAAAAAAAAAAABkARQnAQ)
+
+
+#### [Step 4: Apply for UC kernel]
+
+  [Apply for UC kernel key, which is expected to take effect within half a working day](https://survey.alipay.com/apps/zhiliao/Oi2hbo_-v)
+
+For access documents, please refer to:[mPaaS Container Documentation](https://tech.antfin.com/docs/2/130789)
+
+### Who have we served?
+
+![Container Capabilities - Case Wall](https://img.alicdn.com/tfs/TB1aJf4vUz1gK0jSZLeXXb9kVXa-2560-641.png)
+
+### Welcome to exchange + feedback + criticism
+
+* Issue feedback (if you encounter any bugs or feature requests, please let us know as soon as possible)  
+  [Issue address](https://github.com/alipay/mpaas-demo/issues)
+* Join the technical exchange group and communicate at any time if you have any questions
+
+![mPaaS Function Trial - Draw Attention](https://img.alicdn.com/tfs/TB1Rbf9vHY1gK0jSZTEXXXDQVXa-2560-1000.jpg)
+
+### Open Source License
 
 This project is under the Apache 2.0 License. See the [LICENSE](https://github.com/alipay/mpaas-demo/blob/master/LICENSE) file for the full license text.
 
@@ -114,6 +115,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-### Disclaimer（免责声明）
+### Disclaimer
 
-[免责声明](https://github.com/alipay/mpaas-demo/blob/master/Disclaimer.md)
+[Disclaimer](https://github.com/alipay/mpaas-demo/blob/master/Disclaimer.md)
+```
+
+### Disclaimer
+
+[Disclaimer](https://github.com/alipay/mpaas-demo/blob/master/Disclaimer.md)

@@ -1,8 +1,6 @@
 [![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob/master/mPaaS_Demo_Code/HarmonymPaaSDemo/README.md)
 [![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/master/README.zh-Hans.md)
 
----
-
 **Introduction to mPaaS Integration Demo for Harmony OS**
 
 Welcome to the mPaaS integration demo for Harmony OS! This demo is designed to showcase how mPaaS (Mobile Platform as a Service) can be seamlessly integrated into applications built on the Harmony OS platform. mPaaS, developed by Alibaba Cloud, is a comprehensive mobile development platform that provides a wide range of services and tools to help developers build, test, and manage high-quality mobile applications.

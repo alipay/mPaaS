@@ -1,8 +1,6 @@
-# mPaaS H5 容器 10.1.60
+# mPaaS 介绍
 [![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob//master/README.md)
 [![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/master/README.zh-Hans.md)
-
-**深入介绍 mPaaS**
 
 ### 什么是 mPaaS？
 

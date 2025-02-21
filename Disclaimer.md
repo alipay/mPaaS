@@ -1,21 +1,19 @@
-## mPaaS Demo 免责声明
+mPaaS Demo is an open-source version of the demo provided by mPaaS to help developers better utilize the capabilities of its components. The copyrights for the applications, code, and materials provided by mPaaS belong to mPaaS, and users have the freedom to use them.
 
-mPaaS Demo 是 mPaaS 为帮助开发者更好地使用组件能力，而提供相应 Demo 的开源版本。mPaaS 提供的应用、代码和资料的著作权均归 mPaaS 所有，用户具有自由的使用权。
+If a user downloads, installs, uses, or modifies this tool and its related code, it indicates that the user trusts the tool. Therefore, mPaaS will not be held responsible for any form of loss or harm caused to the user or others while using this tool.
 
-如果用户下载、安装、使用、修改本工具及相关代码，即表明用户信任该工具。那么，用户在使用本工具时造成对用户自己或他人任何形式的损失和伤害，mPaaS 不承担任何责任。
+This tool does not contain any malicious code intended to damage the user's computer data or obtain the user's private information. By default, any operational information obtained during the use of this tool will be desensitized when printed in logs and will not be uploaded. When the application encounters an exception, the user can manually choose whether to report the fault log via email, ensuring that user privacy is not compromised.
 
-本工具不含有任何旨在破坏用户计算机数据和获取用户隐私信息的恶意代码；本工具使用过程中获取到的操作信息在打印日志时默认会进行脱敏，且不会进行上传；当应用出现异常时，用户可手动选择是否通过邮件上报故障日志，不会泄漏用户隐私。
+For applications downloaded from non-official release sites, mPaaS cannot guarantee that they are free from computer viruses, hidden Trojan horse programs, or hacker software. Using such software may result in unpredictable risks, and it is recommended that users do not easily download, install, or use them. mPaaS will not bear any legal responsibility arising from such actions.
 
-对于用户从非工具发布站点下载的应用，本工具无法保证其是否感染计算机病毒、是否隐藏有伪装的特洛伊木马程序或者黑客软件。用户使用此类软件，将可能导致不可预测的风险，建议用户不要轻易下载、安装、使用。本工具不承担由此产生的一切法律责任。
+Users must not use the functions provided by this tool to mislead or deceive others. Users may only use this tool for learning and communication purposes and must not use it for illegal activities. Users must not intentionally circumvent or destroy any technical measures taken by this tool to protect copyrights.
 
-用户不得利用本工具提供的功能误导、欺骗他人；用户仅可将本工具用于学习交流，不得用于非法用途；不得故意避开或者破坏本工具为保护著作权而采取的技术措施。
+The functions provided by this tool have been thoroughly tested, but we cannot guarantee complete compatibility with all software and hardware systems, nor can we guarantee that the tool is entirely error-free. If compatibility issues or software errors occur, users can seek technical support in the community. We will do our best to solve problems and answer questions.
 
-本工具提供的功能经过详细的测试，但不能保证与所有的软硬件系统完全兼容，不能保证本工具完全没有错误。如果出现不兼容及软件错误的情况，用户可以到交流群获得技术支持。我们将尽力为用户解决问题、解答疑问。
+The risks associated with using this tool are borne by the user. To the maximum extent permitted by applicable law, mPaaS will not be held responsible for any damages or risks resulting from the use or inability to use this system.
 
-使用本工具所提供的系统所产生的风险由用户自行承担。在适用法律允许的最大范围内，对因使用或不能使用本系统所产生的损害及风险，本工具不承担任何相关责任。
+If any term in this agreement is found to be invalid or unenforceable for any reason, or if it violates any applicable legal provisions, that term shall be deemed deleted, but the remaining terms of this agreement shall remain valid and binding.
 
-如果本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，或违反任何适用的法律条款，则该条款被视为删除，但本协议的其余条款仍有效并且具有约束力。
+The author reserves the right to modify this agreement based on changes in relevant laws and regulations, as well as the development needs of the tool. In case of any conflict between the old and new agreements, the latest version of the agreement shall prevail. If the user continues to use this system, it is considered that the user accepts the changes to this agreement.
 
-作者有权根据有关法律、法规的变化以及工具的发展需求等因素修改本协议。若新旧协议有冲突，以最新版本协议为准。如果用户继续使用本系统，则视为您接受本协议的变动。
-
-本协议的一切解释权与修改权归本工具所有。
+All rights to interpret and modify this agreement are reserved by the tool.

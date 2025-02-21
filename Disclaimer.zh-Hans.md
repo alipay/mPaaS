@@ -1,5 +1,8 @@
 ## mPaaS Demo 免责声明
 
+[![en](https://img.shields.io/badge/Language-English-red)](https://github.com/alipay/mPaaS/blob//master/Disclaimer.md)
+[![zh-Hans](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-blue)](https://github.com/alipay/mPaaS/blob/master/Disclaimer.zh-Hans.md)
+
 mPaaS Demo 是 mPaaS 为帮助开发者更好地使用组件能力，而提供相应 Demo 的开源版本。mPaaS 提供的应用、代码和资料的著作权均归 mPaaS 所有，用户具有自由的使用权。
 
 如果用户下载、安装、使用、修改本工具及相关代码，即表明用户信任该工具。那么，用户在使用本工具时造成对用户自己或他人任何形式的损失和伤害，mPaaS 不承担任何责任。

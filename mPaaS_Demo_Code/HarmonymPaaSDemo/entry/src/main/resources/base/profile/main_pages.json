@@ -21,6 +21,10 @@
     "test/TestPageNavigation1",
     "test/TestPageNavigation10",
     "test/TestPageNavigation999",
-    "test/TestPageNavigationChild"
+    "test/TestPageNavigationChild",
+    "test/PageModelQuery",
+    "test/TestPageWeb",
+    "test/TestInterface",
+    "test/TestBonePoints"
   ]
 }

@@ -180,7 +180,7 @@ export struct DemoNavComponent {
     .visibility((this.navigationBarState.visibility === 0) ? Visibility.Visible : Visibility.None)
     .width('100%')
     //隐藏导航栏设置0
-    .height('0')
+    // .height('0')
     .alignItems(VerticalAlign.Center)
     .justifyContent(FlexAlign.Start)
     .backgroundColor(NavigationBarUtils.alterColorWithAlpha(

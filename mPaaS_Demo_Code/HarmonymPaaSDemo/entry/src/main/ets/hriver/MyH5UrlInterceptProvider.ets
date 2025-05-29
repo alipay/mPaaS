@@ -9,6 +9,8 @@ export class MyH5UrlInterceptProvider extends H5UrlInterceptProvider {
       // page.webcontroller?.loadUrl("https://www.baidu.com")
 
       // page.webcontroller?.runJavaScript("")
+
+      // page.webcontroller?.registerJavaScriptProxy(this.testObjtest, "objName", ["test", "toString", "testNumber"], ["asyncTestBool"]);
     }
     return false
   }

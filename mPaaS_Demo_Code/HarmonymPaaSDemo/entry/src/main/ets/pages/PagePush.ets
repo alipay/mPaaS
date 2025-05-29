@@ -13,8 +13,8 @@ struct PagePush {
   async bindIdAndToken() {
     // token 就是 init 方法返回的 token 值
     // 其中 phoneNumber 可以为空
-    console.info(Constants.TAG, `push绑定前打印  ${this.tokenVal}`)
-    let res: CallResp = await MpaasPushServiceImpl.getInstance().bind(this.tokenVal,"15501196165")
+    console.info(Constants.TAG, `push绑定前打印  ${this.tokenVal}  ${MPFramework.instance.userId}`)
+    let res: CallResp = await MpaasPushServiceImpl.getInstance().bind("21111",this.tokenVal,MPFramework.instance.userId)
     console.log("bind res=" + res.msg)
     if (res.success) {
       this.bindState = "绑定成功"
@@ -27,7 +27,7 @@ struct PagePush {
 
   async unbindIdAndToken() {
     // token 就是 init 方法返回的 token 值
-    let res: CallResp = await MpaasPushServiceImpl.getInstance().unbind(this.tokenVal)
+    let res: CallResp = await MpaasPushServiceImpl.getInstance().unbind(this.tokenVal, MPFramework.instance.userId)
     console.log("unbind res=" + res.msg)
     if (res.success) {
       this.bindState = "解绑成功"

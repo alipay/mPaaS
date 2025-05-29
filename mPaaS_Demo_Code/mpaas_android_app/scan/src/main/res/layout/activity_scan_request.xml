@@ -1,68 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="12dp"
-    android:layout_marginRight="12dp"
-    android:orientation="vertical"
+    android:padding="12dp"
     tools:context=".ScanRequestActivity">
 
-    <Button
-        android:id="@+id/btn_start_scan"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/scan_title" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_ui_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/setting_scan_style" />
+        <Button
+            android:id="@+id/btn_start_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫一扫" />
 
-    <Button
-        android:id="@+id/btn_translucent_status_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/transparent_status_bar" />
+        <Button
+            android:id="@+id/btn_ui_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置UI风格" />
 
-    <Button
-        android:id="@+id/btn_recognize_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/set_scan_type" />
+        <Button
+            android:id="@+id/btn_translucent_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置透明状态栏" />
 
-    <Button
-        android:id="@+id/btn_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/set_scan_title" />
+        <Button
+            android:id="@+id/btn_recognize_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置识别类型" />
 
-    <Button
-        android:id="@+id/btn_hint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/set_Tips_title" />
+        <Button
+            android:id="@+id/btn_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置标题文案" />
 
-    <Button
-        android:id="@+id/btn_open_torch_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/set_Tips_open_title" />
+        <Button
+            android:id="@+id/btn_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置提示文案" />
 
-    <Button
-        android:id="@+id/btn_close_torch_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/set_Tips_close_title" />
+        <Button
+            android:id="@+id/btn_open_torch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置打开手电筒提示文案" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_close_torch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置关闭手电筒提示文案" />
+
+        <Button
+            android:id="@+id/btn_hide_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置不显示相册" />
+    </LinearLayout>
+</ScrollView>

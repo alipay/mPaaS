@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.scan.scan.ScanActivity;
+import com.example.scan.demo.ScanActivity;
 import com.example.share.share.ShareActivity1;
 import com.mpaas.demo.R;
 import com.mpaas.nebula.adapter.api.MPNebula;

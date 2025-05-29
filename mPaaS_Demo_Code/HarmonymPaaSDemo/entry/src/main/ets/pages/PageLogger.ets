@@ -16,6 +16,36 @@ struct PageLogger {
       TitleComponent({ title: "移动分析" })
       Scroll() {
         Column() {
+          Button("商品点击事件")
+            .fontSize(16)
+            .margin({ top: 10 })
+            .fontWeight(FontWeight.Bold)
+            .onClick(() => {
+              let param = new Map<string, string>();
+              param['goods_id'] = "商品id"
+              MPRemoteLogger.logBehavior('event_goods_click', 'biztype_goods', param);
+              promptAction.showToast({ message: `商品点击事件触发` })
+            })
+          Button("创建订单事件")
+            .fontSize(16)
+            .margin({ top: 10 })
+            .fontWeight(FontWeight.Bold)
+            .onClick(() => {
+              let param = new Map<string, string>();
+              param['order_id'] = "订单id"
+              MPRemoteLogger.logBehavior('event_order_click', 'biztype_order', param);
+              promptAction.showToast({ message: `创建订单事件触发` })
+            })
+          Button("支付点击事件")
+            .fontSize(16)
+            .margin({ top: 10 })
+            .fontWeight(FontWeight.Bold)
+            .onClick(() => {
+              let param = new Map<string, string>();
+              param['pay_id'] = "支付id"
+              MPRemoteLogger.logBehavior('event_pay_click', 'biztype_pay', param);
+              promptAction.showToast({ message: `支付点击事件触发` })
+            })
           Button("APP报活")
             .fontSize(16)
             .margin({ top: 10 })

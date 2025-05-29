@@ -3,12 +3,14 @@ package com.mpaas.mindemo;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.alibaba.ariver.app.api.Page;
+import com.mpaas.mas.adapter.api.MPLogger;
 import com.mpaas.mriver.base.view.ITitleEventDispatcher;
 import com.mpaas.mriver.base.view.TitleBarFrameLayout;
 import com.mpaas.mriver.base.view.TitleBarTheme;
@@ -30,7 +32,13 @@ public class CustomTitleView implements ITitleView {
 
     @Override
     public void setPage(Page page) {
-
+        MPLogger.error("自定义title----",">>>setPage<<<");
+        Bundle bundle = page.getStartParams();
+        if (bundle==null){
+            return;
+        }
+        String transparentTitle  = bundle.getString("transparentTitle");
+        MPLogger.error("自定义title----",transparentTitle);
     }
 
     @Override
@@ -56,7 +64,7 @@ public class CustomTitleView implements ITitleView {
 
     @Override
     public void setTitle(String s) {
-
+        MPLogger.error("自定义title----",">>>setTitle<<<");
     }
 
     @Override

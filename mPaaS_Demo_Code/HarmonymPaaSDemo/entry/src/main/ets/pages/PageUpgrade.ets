@@ -1,7 +1,7 @@
 import { TitleComponent } from '../component/TitleComponent';
 import { MPUpgradeService } from '@mpaas/upgrade';
 import { HRiver } from '@mpaas/hriver';
-import { upgradeRes } from '@mpaas/upgrade/src/main/ets/a/b';
+// import { upgradeRes } from '@mpaas/upgrade/src/main/ets/a/b';
 import { Constants } from '../constants/Constants';
 
 @Entry
@@ -26,7 +26,7 @@ struct PageUpgrade {
             .margin({ top: 10 })
             .fontWeight(FontWeight.Bold)
             .onClick(() => {
-              MPUpgradeService.checkNewVersion().then((response: upgradeRes | Error | null) => {
+              MPUpgradeService.checkNewVersion().then((response) => {
                 let str = JSON.stringify(response)
                 AlertDialog.show(
                   {
@@ -37,15 +37,7 @@ struct PageUpgrade {
                     gridCount: 3,
                     confirm: {
                       value: '确认', action: () => {
-                        let downRUl  = (response as upgradeRes).downloadURL
-                        console.info(Constants.TAG,`下载地址：${downRUl}`)
-                        if (response == null) {
-                          return
-                        }
-                        if (response instanceof Error) {
-                          return
-                        }
-                        HRiver.startUrl(downRUl)
+                        console.info('Closed callbacks by 确认')
                       }
                     },
                     cancel: () => {

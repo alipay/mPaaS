@@ -16,7 +16,7 @@ import {
 import { DialogMyCustom } from '../component/DialogMyCustom';
 import { BannerModel } from '../rpc/EntityModel';
 import AlertExit from '../component/CustomLoadingDialog';
-import { promptAction, router } from '@kit.ArkUI';
+import { componentSnapshot, promptAction, router } from '@kit.ArkUI';
 import { Constants } from '../constants/Constants';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import RouterManager from '../constants/RouterManager';
@@ -24,11 +24,13 @@ import { MPFileUtils } from '../constants/MPFileUtils';
 import { REQ_MODEL } from '../rpc/REQ_MODEL';
 import { JSON } from '@kit.ArkTS';
 import { systemDateTime } from '@kit.BasicServicesKit';
+import { image } from '@kit.ImageKit';
+import { curUIContext, savePixelMapToAlbum } from '../constants/Global';
+import { checkPermissions, mediaList } from '../constants/PermissionUtils';
 
 class H5CustomPlugin extends H5SimplePlugin {
   private select: number | number[] = 0
   private fruits: string[] = ['apple1', 'orange2', 'peach3', 'grape4', 'banana5']
-
   dialogController: CustomDialogController = new CustomDialogController({
     builder: DialogMyCustom({
       cancel: (): void => this.onCancel(),
@@ -56,6 +58,7 @@ class H5CustomPlugin extends H5SimplePlugin {
   }
 
   onPrepare(filter: H5EventFilter): void {
+    filter.addAction('snapshot')
     filter.addAction('myapi1')
     filter.addAction('myapi2')
     filter.addAction('customHideTitleBar')
@@ -80,6 +83,7 @@ class H5CustomPlugin extends H5SimplePlugin {
     filter.addAction("sendMsgToPreviousPage")
     filter.addAction("h5ToolbarClose")
     filter.addAction("h5PageFinished")
+    filter.addAction("embeStartApp")
     // filter.addAction("setTitle")
   }
 
@@ -94,13 +98,42 @@ class H5CustomPlugin extends H5SimplePlugin {
     //   page.titleBarData.title = event.param
     //   return true
     // }
+    if ('snapshot' == event.action) {
+      let page = event.target as Page
+      checkPermissions(mediaList).then(() => {
+        curUIContext().getComponentSnapshot().get(page.webComponentId, (error: Error, pixmap: image.PixelMap) => {
+          if (error) {
+            console.log(Constants.TAG, "截图失败error: " + JSON.stringify(error))
+            return;
+          }
+          console.log(Constants.TAG, "截图success: " + JSON.stringify(pixmap))
+          savePixelMapToAlbum(pixmap).then(() => {
+
+          })
+          // pixmap 截图结果
+        })
+      })
+      return true
+    }
+    if ('embeStartApp' == event.action) {
+      //在嵌入式离线包页面打开新的嵌入式离线包
+      let param: Map<string, Object> = new Map<string, Object>()
+      param.set("showBackButton", false)
+      // 显示不全的问题  内嵌必须加
+      param.set("embedPage", "YES")
+      param.set("scrollForward", 2)
+      param.set("scrollBackward", 1)
+      HRiver.startUrl('resource://rawfile/70000000/index.html?username=张三&=age=18', param,
+        RouterManager.embedPageNavPathStack)
+      return true
+    }
     // 默认导航栏 三个点的拦截事件
-    // if ('optionMenu' == event.action) {
-    //   promptAction.showToast({
-    //     message: "拦截了三个点的点击"
-    //   })
-    //   return true
-    // }
+    if ('optionMenu' == event.action) {
+      promptAction.showToast({
+        message: "拦截了三个点的点击"
+      })
+      return true
+    }
     if ('h5PageFinished' == event.action) {
       let page = event.target as Page
       if (page) {
@@ -117,20 +150,23 @@ class H5CustomPlugin extends H5SimplePlugin {
       return true
     }
     if ("sendMsgToPreviousPage" == event.action) {
-      //给某个页面 resume 发消息---不生效
+      //给某个页面 testAction-> resume 发消息
       let page = event.target as Page
       if (page) {
         let session = page.getSession()
         let pages = session?.getPages()
         if (pages && pages.length > 0) {
-          for (let index = 0; index < pages.length - 1; index++) {
-            let item = pages[index]
-            console.info(Constants.TAG, `pageItem: ${item.pageUrl}`)
-            if (item.pageUrl.includes('test.html')) {
-              let h5Data = page.h5Session?.getData()
-              h5Data?.set("h5_session_pop_param", JSON.stringify({ data: "也无风雨也无晴" }));
-              page.sendEvent('h5PageResume')
-              return true;
+          for (let index = pages.length - 1; index >= 0; index--) {
+            let itemPage = pages[index]
+            console.info(Constants.TAG, `pageItem: ${itemPage.pageUrl}`)
+            if (itemPage.pageUrl.includes('test.html')) {
+              itemPage?.sendToWeb('testAction', { data: 'native sendtoweb 啊啊啊啊' })
+            }
+            if (itemPage.pageUrl.includes('index.html')) {
+              let h5DataPage = itemPage.h5Session?.getData()
+              h5DataPage?.set("h5_session_pop_param", JSON.stringify({ data: "好山好水好风光（其他页面传的）" }));
+
+              itemPage?.sendEvent("h5PageResume",{ data: "见青山多妩媚" })
             }
           }
         }
@@ -340,7 +376,12 @@ class H5CustomPlugin extends H5SimplePlugin {
       // this.textPick(context)
 
       let page = event.target as Page
-      page.sendToWeb('testAction', { data: 'native sendtoweb 啊啊啊啊' })
+
+      // let a :ESObject = { permanentKey: 'native sendtoweb 啊啊啊啊' }
+
+      let model: ESObject = { name: '张三', age: 18 };
+      let a: Record<string, ESObject> = { 'key001': model, };
+      page.sendToWeb('testAction', a)
       return true;
     }
     if ('notifyN2h' == event.action) {
@@ -482,17 +523,17 @@ class H5CustomPlugin extends H5SimplePlugin {
   //模拟promise请求===============================end
 
   interceptEvent(event: H5Event, context: H5BridgeContext): Boolean {
-    console.info(Constants.TAG, `插件拦截-interceptEvent ${event.action}}`)
+    console.info(Constants.TAG, `插件拦截-interceptEvent ${event.action}`)
     //默认导航栏 右上3个点内部弹窗的点击事件（注意这里不是3个点的点击事件）
-    // if ('h5ToolbarMenuBt' == event.action) {
-    //   //从tag类型判断按钮
-    //   let param: ESObject = event.param
-    //   let tag = param[H5Param.MENU_TAG] as string
-    //   promptAction.showToast({
-    //     message: "拦截了三个点内部弹框的点击"
-    //   })
-    //   return false
-    // }
+    if ('h5ToolbarMenuBt' == event.action) {
+      //从tag类型判断按钮
+      let param: ESObject = event.param
+      let tag = param[H5Param.MENU_TAG] as string
+      promptAction.showToast({
+        message: "拦截了三个点内部弹框的点击"
+      })
+      return false
+    }
     if ('h5ToolbarBack' == event.action) {
       console.info(Constants.TAG, `hriver导航栏返回`)
       promptAction.showToast({
@@ -502,36 +543,37 @@ class H5CustomPlugin extends H5SimplePlugin {
     }
     return false;
   }
-  datePick(context:H5BridgeContext){
+
+  datePick(context: H5BridgeContext) {
     let selectedDate: Date = new Date("2010-1-1")
     DatePickerDialog.show({
       start: new Date("2000-1-1"),
       end: new Date("2100-12-31"),
       selected: selectedDate,
-      showTime:true,
-      useMilitaryTime:false,
-      disappearTextStyle: {color: Color.Pink, font: {size: '22fp', weight: FontWeight.Bold}},
-      textStyle: {color: '#ff00ff00', font: {size: '18fp', weight: FontWeight.Normal}},
-      selectedTextStyle: {color: '#ff182431', font: {size: '14fp', weight: FontWeight.Regular}},
+      showTime: true,
+      useMilitaryTime: false,
+      disappearTextStyle: { color: Color.Pink, font: { size: '22fp', weight: FontWeight.Bold } },
+      textStyle: { color: '#ff00ff00', font: { size: '18fp', weight: FontWeight.Normal } },
+      selectedTextStyle: { color: '#ff182431', font: { size: '14fp', weight: FontWeight.Regular } },
       onDateAccept: (value: Date) => {
         // 通过Date的setFullYear方法设置按下确定按钮时的日期，这样当弹窗再次弹出时显示选中的是上一次确定的日期
         selectedDate = value
         console.info("DatePickerDialog:onDateAccept()" + value.toString())
-        let a  =  context.sendBridgeResultWithCallbackKept({
+        let a = context.sendBridgeResultWithCallbackKept({
           success: true,
           data: `点了弹窗的onAccept`
         })
       },
       onCancel: () => {
         console.info("DatePickerDialog:onCancel()")
-        let a  = context.sendBridgeResultWithCallbackKept({
+        let a = context.sendBridgeResultWithCallbackKept({
           success: true,
           data: `点了弹窗的onAccept`
         })
       },
       onDateChange: (value: Date) => {
         console.info("DatePickerDialog:onDateChange()" + value.toString())
-        let a  =  context.sendBridgeResultWithCallbackKept({
+        let a = context.sendBridgeResultWithCallbackKept({
           success: true,
           data: `点了弹窗的onDateChange`
         })
@@ -539,34 +581,34 @@ class H5CustomPlugin extends H5SimplePlugin {
     })
   }
 
-  textPick(context:H5BridgeContext){
+  textPick(context: H5BridgeContext) {
     TextPickerDialog.show({
       range: this.fruits,
       selected: this.select,
-      disappearTextStyle: {color: Color.Red, font: {size: 15, weight: FontWeight.Lighter}},
-      textStyle: {color: Color.Black, font: {size: 20, weight: FontWeight.Normal}},
-      selectedTextStyle: {color: Color.Blue, font: {size: 30, weight: FontWeight.Bolder}},
+      disappearTextStyle: { color: Color.Red, font: { size: 15, weight: FontWeight.Lighter } },
+      textStyle: { color: Color.Black, font: { size: 20, weight: FontWeight.Normal } },
+      selectedTextStyle: { color: Color.Blue, font: { size: 30, weight: FontWeight.Bolder } },
       onAccept: (value: TextPickerResult) => {
         // 设置select为按下确定按钮时候的选中项index，这样当弹窗再次弹出时显示选中的是上一次确定的选项
         this.select = value.index
         console.log(this.select + '')
         // 点击确定后，被选到的文本数据展示到页面
         // this.v = value.value as string
-        console.info(Constants.TAG,"TextPickerDialog:onAccept()" + JSON.stringify(value))
+        console.info(Constants.TAG, "TextPickerDialog:onAccept()" + JSON.stringify(value))
         context.sendBridgeResult({
           success: true,
           data: `点了弹窗的onAccept`
         })
       },
       onCancel: () => {
-        console.info(Constants.TAG,"TextPickerDialog:onCancel()")
+        console.info(Constants.TAG, "TextPickerDialog:onCancel()")
         context.sendBridgeResultWithCallbackKept({
           success: true,
           data: `点了弹窗的onCancel`
         })
       },
       onChange: (value: TextPickerResult) => {
-        console.info(Constants.TAG,"TextPickerDialog:onChange()" + JSON.stringify(value))
+        console.info(Constants.TAG, "TextPickerDialog:onChange()" + JSON.stringify(value))
         context.sendBridgeResultWithCallbackKept({
           success: true,
           data: `点了弹窗的onChange`

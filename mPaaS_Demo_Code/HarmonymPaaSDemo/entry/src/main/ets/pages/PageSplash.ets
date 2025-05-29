@@ -16,13 +16,14 @@ import { H5WebClientProviderImpl } from '../hriver/H5WebClientProviderImpl';
 import { MyH5UrlInterceptProvider } from '../hriver/MyH5UrlInterceptProvider';
 import { MPRemoteLogger } from '@mpaas/masadapter';
 import { MPConfigService } from '@mpaas/configservice';
-import { HRiverMini } from '@mpaas/hrivermini';
 import { MPRpc } from '@mpaas/rpc';
 import { getTopAbility } from '../constants/Global';
 import { common } from '@kit.AbilityKit';
 import { HomeAbilityContext } from '../extensions/HomeAbilityContext';
 import Framework from '@mpaas/apframework';
-import { H5CustomPlugin } from '../hriver/H5CustomPlugin';
+import { HRiverMini } from '@mpaas/hrivermini';
+import { PermissionAdapter, PermissionAdapterUtils } from '@mpaas/mpaas_permission_fortress';
+import { DemoPermissionAdapter } from '../extensions/DemoPermissionAdapter';
 
 @Entry
 @Component
@@ -65,6 +66,8 @@ struct PageSplash {
     console.log(Constants.TAG, "mPaaS init other compoment")
     //初始化RPC
     MPRpc.init();
+    //去掉异常信息前边的code
+    MPRpc.easyNote()
     //设置全局拦截器
     MPRpc.addGlobalInterceptor(new MyInterceptor());
     // MPFramework.instance.appSecret = "e9cc9c9261784e726657a52ab2f98615";
@@ -116,6 +119,8 @@ struct PageSplash {
       import('../extensions/CustomExtension')
     })
     HRiverMini.init()
+    //小程序自定义权限引到弹窗
+    PermissionAdapterUtils.setProvider(PermissionAdapter.name, new DemoPermissionAdapter())
     let applicationManager: ESObject = Framework.microApplicationContext["applicationManger"]
     if (applicationManager) {
       // 获取第二步缓存的TopUIAbility

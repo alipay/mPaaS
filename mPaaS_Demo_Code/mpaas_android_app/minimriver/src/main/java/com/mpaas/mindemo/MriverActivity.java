@@ -32,12 +32,12 @@ public class MriverActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 //无胶囊
-                Mriver.setProxy(TitleViewFactoryProxy.class, new TitleViewFactoryProxy() {
-                    @Override
-                    public ITitleView createTitle(Context context, App app) {
-                        return new CustomTitleView(context);
-                    }
-                });
+//                Mriver.setProxy(TitleViewFactoryProxy.class, new TitleViewFactoryProxy() {
+//                    @Override
+//                    public ITitleView createTitle(Context context, App app) {
+//                        return new CustomTitleView(context);
+//                    }
+//                });
                 Bundle bundle = new Bundle();
                 bundle.putString("query", "name=123&pwd=456");//设置参数
                 Mriver.startApp(MriverActivity.this, "8899889988998899", bundle);

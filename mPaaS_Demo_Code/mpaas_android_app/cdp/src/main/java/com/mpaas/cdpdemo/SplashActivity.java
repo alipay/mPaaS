@@ -36,12 +36,12 @@ public class SplashActivity extends BaseActivity {
         cdpAdvertisementService.doSplash(this, new HashMap<String, String>(), new CdpAdvertisementService.IAdEventHandler() {
             @Override
             public void onClosed(SpaceInfo spaceInfo) {
-
+                Log.e("suj------","onClosed clicked:"+spaceInfo.toString());
             }
 
             @Override
             public void onJump(SpaceInfo spaceInfo) {
-                Log.e("suj","onJump clicked:"+spaceInfo.toString());
+                Log.e("suj------","onJump clicked:"+spaceInfo.toString());
             }
         });
     }

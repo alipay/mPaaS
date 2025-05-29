@@ -1,5 +1,7 @@
 export class Constants {
   static readonly TAG: string = "mPaaSLOG"
+  static readonly TEST_PAGEWEB: string = 'test/TestPageWeb';
+  static readonly PAGE_MODELQUERY: string = 'test/PageModelQuery';
   static readonly PAGE_DATACENTERA: string = 'pages/PageDataCenterA';
   static readonly PAGE_HARMONYBAASE: string = 'pages/PageHarmonyBaase';
   static readonly PAGE_RPC: string = 'pages/PageRpc';
@@ -21,11 +23,13 @@ export class Constants {
   static readonly PAGE_MINI: string = 'pages/PageMini';
   static readonly PAGE_KEYBOARD: string = 'pages/PageKeyBoard';
   static readonly PAGE_WEB: string = 'pages/PageWeb';
+  static readonly PAGE_TEST_BONE_POINTS: string = 'test/TestBonePoints';
   static readonly TEST_PAGENAVIGATION: string = 'test/TestPageNavigation';
   static readonly TEST_PAGENAVIGATION1: string = 'test/TestPageNavigation1';
   static readonly TEST_PAGENAVIGATION10: string = 'test/TestPageNavigation10';
   static readonly TEST_PAGENAVIGATION999: string = 'test/TestPageNavigation999';
   static readonly TestPageNavigationChild: string = 'test/TestPageNavigationChild';
+  static readonly TestInterface: string = 'test/TestInterface';
   static readonly PAGE_NAVIGATION: string = 'pages/PageNavigation';
   static readonly ACTION_TEST_EVENT: string = 'NEBULANOTIFY_fortest';
 

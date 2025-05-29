@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.scan.widget.APTextureView
+    <com.example.scan.demo.custom.widget.APTextureView
         android:id="@+id/surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.example.scan.widget.ScanView
+    <com.example.scan.demo.custom.widget.ScanView
         android:id="@+id/scan_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

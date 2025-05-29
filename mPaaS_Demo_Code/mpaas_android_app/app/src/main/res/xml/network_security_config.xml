@@ -17,7 +17,6 @@
     </trust-anchors>
 </debug-overrides>
 <domain-config cleartextTrafficPermitted="true">
-    <domain includeSubdomains="true">192.168.162.161</domain>
-    <!--        <domain includeSubdomains="true">11.158.124.220</domain>-->
+    <domain includeSubdomains="true"></domain>
 </domain-config>
 </network-security-config>

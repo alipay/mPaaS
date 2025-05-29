@@ -136,7 +136,6 @@
 // }
 
 import { mPaaSOCRCardType } from '@mpaas/mpaas_ocr_core/Index';
-import { AiCameraPage } from '@mpaas/mpaas_ocr_demo/Index';
 import { Constants } from '../constants/Constants';
 import RouterManager from '../constants/RouterManager';
 import { BannerModel } from '../rpc/EntityModel';

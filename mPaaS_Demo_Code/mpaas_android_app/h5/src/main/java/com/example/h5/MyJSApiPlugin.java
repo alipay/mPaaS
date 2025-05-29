@@ -10,6 +10,7 @@ import com.alipay.mobile.h5container.api.H5BridgeContext;
 import com.alipay.mobile.h5container.api.H5Event;
 import com.alipay.mobile.h5container.api.H5EventFilter;
 import com.alipay.mobile.h5container.api.H5SimplePlugin;
+import com.mpaas.nebula.adapter.api.MPNebula;
 
 
 /**
@@ -20,6 +21,7 @@ public class MyJSApiPlugin extends H5SimplePlugin {
 
     private static final String API_1 = "myapi1";
     private static final String API_2 = "myapi2";
+    private static final String duofupoc = "duofupoc";
     private static final String TINY_TO_NATIVE = "tinyToNative";
     private static final String GET_APP_VERSION = "getAppVersion";
 
@@ -27,8 +29,10 @@ public class MyJSApiPlugin extends H5SimplePlugin {
     public void onPrepare(H5EventFilter filter) {
         super.onPrepare(filter);
         filter.addAction(API_1);
+        filter.addAction(duofupoc);
         filter.addAction(API_2);
         filter.addAction(TINY_TO_NATIVE);
+        filter.addAction(GET_APP_VERSION);
         filter.addAction(GET_APP_VERSION);
         filter.addAction(CommonEvents.H5_PAGE_PHYSICAL_BACK);
         filter.addAction("h5ToolbarBack");
@@ -38,7 +42,7 @@ public class MyJSApiPlugin extends H5SimplePlugin {
     @Override
     public boolean interceptEvent(H5Event event, H5BridgeContext context) {
         String action = event.getAction();
-        if ("h5ToolbarBack".equalsIgnoreCase(action)){
+        if ("h5ToolbarBack".equalsIgnoreCase(action)) {
             Toast.makeText(event.getActivity(), "h5ToolbarBack", Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -58,8 +62,18 @@ public class MyJSApiPlugin extends H5SimplePlugin {
     @Override
     public boolean handleEvent(H5Event event, H5BridgeContext context) {
         String action = event.getAction();
-        if ("h5ToolbarBack".equalsIgnoreCase(action)){
+        if ("h5ToolbarBack".equalsIgnoreCase(action)) {
             Toast.makeText(event.getActivity(), "h5ToolbarBack", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if (duofupoc.equalsIgnoreCase(action)) {
+            JSONObject params = event.getParam();
+            String param = params.getString("param2");
+            JSONObject result = new JSONObject();
+            result.put("success", true);
+            result.put("message", "这是前端调用native的自定义jsapi【duofupoc】");
+            context.sendBridgeResult(result);
+//            h5Page.getBridge().sendDataWarpToWeb("h5NetworkChange", param, null);
             return true;
         }
         if (API_2.equalsIgnoreCase(action)) {

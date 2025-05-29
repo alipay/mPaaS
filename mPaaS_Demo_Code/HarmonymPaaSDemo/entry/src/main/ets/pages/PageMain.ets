@@ -7,7 +7,7 @@ import { Constants } from '../constants/Constants';
 import RouterManager from '../constants/RouterManager';
 import { BannerModel } from '../rpc/EntityModel';
 import { common } from '@kit.AbilityKit';
-import { promptAction } from '@kit.ArkUI';
+import { FrameNode, promptAction, UIObserver } from '@kit.ArkUI';
 import { getPageConfig } from './PageConfig';
 import { getPageMini } from './PageMini';
 import { getPageHriver } from './PageHriver';
@@ -16,8 +16,8 @@ import { getPageHarmonyBaase } from './PageHarmonyBaase';
 import { NavStackProvider } from '../hriver/NavStackProvider';
 import { H5PageLifeCycle } from '../hriver/H5PageLifeCycle';
 import { getPageOcr } from './PageOcr';
-import { AiCameraPage } from '@mpaas/mpaas_ocr_demo/Index';
-import { mPaaSOCRCardType } from '@mpaas/mpaas_ocr_core/Index';
+import { getPageAntUi } from './PageAntUi';
+import { AiCameraPage } from '@mpaas/mpaas_ocr_demo';
 
 // @Builder
 // export function getPageMain(): void {
@@ -34,7 +34,7 @@ export struct PageMain {
   @State clickIndexMyOnPageShow: number = 0
   @State clickIndexMyOnPageHide: number = 0
   tempCurrentIndex: number = 0
-
+  private timer: number = 0
   aboutToAppear(): void {
     //管理原生路由栈
     RouterManager.createNavPathStackByPage(this.navPathStack)
@@ -44,6 +44,7 @@ export struct PageMain {
     HRiver.setProvider(H5PageLifeCycleProvider.name, new H5PageLifeCycle())
     //小程序设置路由栈
     HRiverMini.notifyNavigationCreate(this.context, RouterManager.pageNavPathStack)
+    this.onTouchScreenListener()
   }
 
   @Builder
@@ -64,6 +65,8 @@ export struct PageMain {
       getPageHarmonyBaase()
     } else if (name == "PageOcr") {
       getPageOcr()
+    }else if (name == "PageAntUi") {
+      getPageAntUi()
     } else if (name == 'AiCameraPage') {
       //OCR
       AiCameraPage();
@@ -102,6 +105,18 @@ export struct PageMain {
             }
             .tabBar("我的")
           }
+          .onTouch((event: TouchEvent)=>{
+            // 增加触摸事件，有触摸时清空延迟任务
+            clearTimeout(this.timer)
+            setTimeout(() => {
+              console.log(Constants.TAG,'test onTouch')
+            },100)
+          })
+          // 调用onTouchIntercept修改该组件的HitTestMode属性
+          .onTouchIntercept((event : TouchEvent) => {
+            console.log(Constants.TAG,` onTouchIntercept-${JSON.stringify(event)}`);
+            return HitTestMode.Default
+          })
           .onChange((index: number) => {
             this.tempCurrentIndex = index
             this.clickIndexMyOnPageShow = this.tempCurrentIndex
@@ -112,6 +127,15 @@ export struct PageMain {
       .height('100%')
     }.navDestination(this.PagesMap)
     .hideTitleBar(true)
+  }
+
+  onTouchScreenListener(){
+    // callback是开发者定义的监听回调函数
+    let callback = (event: GestureEvent, frameNode?: FrameNode) => {
+      console.log(Constants.TAG,`屏幕点击监控：${event.timestamp}`)
+    };
+    let observer: UIObserver = this.getUIContext().getUIObserver();
+    observer.on('willClick', callback);
   }
 
   onPageShow(): void {

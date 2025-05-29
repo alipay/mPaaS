@@ -109,13 +109,15 @@
     ],
     "requestPermissions": [
       {
-        "name": "TEMPJITALLOW",                  // 必须添加，解决66版本release闪退问题
-        "reason": "$string:sampleaaa", // 根据小程序使用场景自定义相应说明
+        "name": "ohos.permission.WRITE_MEDIA",
+        "reason": "$string:appName",
         "usedScene": {
-          "abilities": [
-            "EntryAbility"
-          ],
-          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "$string:appName",
+        "usedScene": {
         }
       },
       {
@@ -157,11 +159,6 @@
         "reason": "$string:appName",
         "usedScene": {
         }
-      }
-    ],
-    "definePermissions": [
-      {
-        "name": "TEMPJITALLOW"  // 必须添加，解决66版本release闪退问题
       }
     ],
     //路由表

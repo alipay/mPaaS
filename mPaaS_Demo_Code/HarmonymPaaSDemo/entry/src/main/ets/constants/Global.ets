@@ -1,9 +1,13 @@
 import { common, UIAbility } from '@kit.AbilityKit'
-import { window } from '@kit.ArkUI'
+import { promptAction, window } from '@kit.ArkUI'
 import systemDateTime from '@ohos.systemDateTime'
 import { ArkTSUtils, JSON, util } from '@kit.ArkTS'
 import { Constants } from './Constants'
 import { BusinessError } from '@kit.BasicServicesKit'
+import { image } from '@kit.ImageKit'
+import { photoAccessHelper } from '@kit.MediaLibraryKit'
+import { fileIo } from '@kit.CoreFileKit'
+import { resourceManager } from '@kit.LocalizationKit'
 
 /**
  * 全局扩展
@@ -65,9 +69,6 @@ export function setUIAbilityContext(a: common.UIAbilityContext) {
 export function curUIAbilityContext(): common.UIAbilityContext {
   return uiAbilityContext
 }
-
-
-
 
 
 //退出app
@@ -199,4 +200,49 @@ export function setTopAbility(ability: UIAbility | undefined) {
 
 export function getTopAbility() {
   return topAbility
+}
+
+
+export async function savePixelMapToAlbum(pixel: image.PixelMap | undefined = undefined) {
+  //这一坨代码是获取rawfile下的图片
+  // const resourceMgr: resourceManager.ResourceManager = curContext().resourceManager;
+  // // beer.jpeg为rawfile文件下的图片名，可根据自身需求修改使用。
+  // const fileData: Uint8Array = await resourceMgr.getRawFileContent('beer.jpeg');
+  // let buffer = new Uint8Array(fileData).buffer as object as ArrayBuffer;
+  // let imageResource = image.createImageSource(buffer);
+  // let opts: image.DecodingOptions = { editable: true };
+  // pixel = await imageResource.createPixelMap(opts);
+
+  // 获取相册的保存路径
+  let helper = photoAccessHelper.getPhotoAccessHelper(curUIAbilityContext());
+  console.info(Constants.TAG, '保存相册-1');
+  let uri = await helper.createAsset(photoAccessHelper.PhotoType.IMAGE, 'jpeg');
+  console.info(Constants.TAG, '保存相册-2');
+  let file = await fileIo.open(uri, fileIo.OpenMode.READ_WRITE | fileIo.OpenMode.CREATE);
+  console.info(Constants.TAG, '保存相册-3');
+  let imagePackerApi = image.createImagePacker();
+  console.info(Constants.TAG, '保存相册-4');
+  let packOpts: image.PackingOption = { format: 'image/jpeg', quality: 98 };
+  console.info(Constants.TAG, '保存相册-5');
+
+  imagePackerApi.packToFile(pixel, file.fd, packOpts, (err: BusinessError) => {
+    console.info(Constants.TAG, '保存相册-6');
+    if (err) {
+      console.info(Constants.TAG, '保存相册-7');
+      console.error(Constants.TAG, `Failed to pack the image to file.code ${err.code},message is ${err.message}`);
+    } else {
+      console.info(Constants.TAG, '保存相册-8');
+      console.info(Constants.TAG, 'Succeeded in packing the image to file.');
+      imagePackerApi.release((err: BusinessError) => {
+        if (err) {
+          console.error(Constants.TAG,
+            `Failed to release the image source instance.code ${err.code},message is ${err.message}`);
+        } else {
+          console.info(Constants.TAG, 'Succeeded in releasing the image source instance.');
+          fileIo.close(file.fd);
+        }
+      })
+      promptAction.showToast({ message: '已保存至相册！' });
+    }
+  })
 }

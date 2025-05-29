@@ -5,13 +5,14 @@ import { Constants } from '../constants/Constants';
 import data from '@ohos.telephony.data';
 import { webview } from '@kit.ArkWeb';
 import { HriverPageUtils } from '../constants/HriverPageUtils';
+import RouterManager from '../constants/RouterManager';
 
-//拦截嵌入式H5的返回事件
+//h5声明周期
 export class H5PageLifeCycle extends H5PageLifeCycleProvider {
   count: number = 0
 
   onBackPress(page?: Page | undefined): boolean {
-    // 默认写法
+    // 默认写法-拦截嵌入式H5的返回事件
     // let navPathStack: NavPathStack|undefined = page?.getSession()?.getRouter()?.getNavPathStack()
     // let activePageSize = page?.getSession()?.getActivePageCount() || 0
     // if (navPathStack && page && page.embedPage && navPathStack.size() == 1 && activePageSize == 1) {
@@ -47,20 +48,12 @@ export class H5PageLifeCycle extends H5PageLifeCycleProvider {
       }
       return true;
     }
+    console.info(Constants.TAG, `非嵌入式触发返回`)
     return super.onBackPress(page);
   }
 
   onPageShow(routerName: string, page?: Page | undefined): void {
     super.onPageShow(routerName, page);
-    let navPathStack: NavPathStack | undefined = page?.getSession()?.getRouter()?.getNavPathStack()
-    if (navPathStack && page) {
-      let array: String[] | undefined = navPathStack.getAllPathName()
-      if (array != undefined) {
-        console.info(Constants.TAG, `stack is：${JSON.stringify(array)}`)
-      } else {
-        console.info(Constants.TAG, `stack is null`)
-      }
-    }
     let sessiona = page?.getSession()
     let pages = sessiona?.getPages
     // if (page) {
@@ -93,6 +86,7 @@ export class H5PageLifeCycle extends H5PageLifeCycleProvider {
     HriverPageUtils
       .getInstance()
       .removePageNum()
+    RouterManager.stackInfo()
     console.info(Constants.TAG, `H5PageLifeCycle onPageExit=${page?.pageUrl}  page数量：${pages?.length} nav数量：${page?.getSession()?.getRouter()?.getNavPathStack()?.size()}`)
   }
 }

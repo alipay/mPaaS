@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_scan_window_corner_width">15dp</dimen>
+    <dimen name="my_scan_multi_codes_icon_widths">37dp</dimen>
+</resources>

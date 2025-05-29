@@ -30,9 +30,10 @@ struct PageMini {
             })
             let startParams = new Map<string, Object>()
             startParams.set("query", "aa=bb")
+            startParams.set("disablePresetMenu", "YES")
             //这参数只是控制胶囊是否显示，如果要控制二级页的导航栏，需要自定义导航栏
             // startParams.set("disablePresetMenu", "YES")
-            HRiverMini.startApp("0000000111111101", startParams)
+            HRiverMini.startApp("0000000000000011", startParams)
           })
         Button("远程小程序(自定义菜单栏)")
           .fontSize(16)

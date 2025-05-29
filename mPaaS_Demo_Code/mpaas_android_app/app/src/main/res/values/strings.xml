@@ -1,6 +1,6 @@
 <resources>
     <string name="type">0</string>
-    <string name="app_name">POC演示demo</string>
+    <string name="app_name">mPaaSDemo</string>
 
     <string name="tiny_app">小程序</string>
     <string name="gdmap">高德地图</string>

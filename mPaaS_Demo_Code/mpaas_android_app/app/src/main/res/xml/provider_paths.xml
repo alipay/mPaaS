@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <paths>
+        <files-path
+            name="files-path"
+            path="." />
         <external-files-path
             name="download"
             path="com.alipay.android.phone.aliupgrade/downloads" />

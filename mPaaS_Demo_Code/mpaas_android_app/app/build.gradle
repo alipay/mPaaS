@@ -107,9 +107,10 @@ dependencies {
     //推送
 
     //H5容器麦克风权限被拒绝的问题
-    implementation("com.alipay.android.phone.wallet:nebulaucsdk-build:999.3.22.1.281.231206202451@aar") {
-        force = true
-    }
+//    implementation("com.alipay.android.phone.wallet:nebulaucsdk-build:999.3.22.1.281.231206202451@aar") {
+//    implementation("com.alipay.android.phone.wallet:nebulaucsdk-build:888.3.22.2.66.230817192043@aar") {
+//        force = true
+//    }
 
     //安全键盘
     implementation 'com.mpaas.android:safekeyboard'

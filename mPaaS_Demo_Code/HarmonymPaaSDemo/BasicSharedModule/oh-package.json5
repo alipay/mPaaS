@@ -7,9 +7,9 @@
     "license": "Apache-2.0",
     "packageType": "InterfaceHar",
     "dependencies": {
-        "@mpaas/framework": "1.0.240722195448",
-        "@mpaas/rpc": "1.0.240904203320",
-        "@mpaas/sync_service": "1.0.240911193552"
+        "@mpaas/framework": "1.0.241015152559",
+        "@mpaas/rpc": "1.0.250410144901",
+        "@mpaas/sync_service": "1.0.250417152906"
     },
     "devDependencies": {},
     "dynamicDependencies": {}

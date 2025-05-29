@@ -1,6 +1,6 @@
 import { AbilityConstant, common, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
-import { promptAction, window } from '@kit.ArkUI';
+import { KeyboardAvoidMode, promptAction, window } from '@kit.ArkUI';
 import { Constants } from '../constants/Constants';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { curSystemStatusBarHeight, setContext, setSystemStatusBarHeight, setWindowStage } from '../constants/Global';
@@ -13,7 +13,6 @@ import { BannerArrayModel } from '../rpc/EntityModel';
 
 export default class EntryAbility extends UIAbility {
   private windowObj?: window.Window
-
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
     setUIAbilityContext(this.context)
@@ -33,6 +32,7 @@ export default class EntryAbility extends UIAbility {
     //沉浸式
     windowStage.getMainWindow().then((window) => {
       window.setWindowLayoutFullScreen(true)
+      window.getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.OFFSET)
     })
     setWindowStage(windowStage)
 

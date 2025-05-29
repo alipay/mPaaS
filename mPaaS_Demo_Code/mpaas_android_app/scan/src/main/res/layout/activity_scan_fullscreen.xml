@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".ScanFullScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫一扫" />
+
+        <Button
+            android:id="@+id/btn_start_scan_continuously"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="连续扫码" />
+
+        <Button
+            android:id="@+id/btn_enable_album_multi_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置相册显示多码" />
+
+        <Button
+            android:id="@+id/btn_fetch_multi_ma_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置获取全部码结果" />
+
+        <Button
+            android:id="@+id/btn_recognize_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置识别类型" />
+
+        <Button
+            android:id="@+id/btn_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置提示文案" />
+
+        <Button
+            android:id="@+id/btn_open_torch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置打开手电筒提示文案" />
+
+        <Button
+            android:id="@+id/btn_close_torch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置关闭手电筒提示文案" />
+
+        <Button
+            android:id="@+id/btn_hide_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置不显示相册" />
+
+        <Button
+            android:id="@+id/btn_multi_ma_marker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置多码标识图片" />
+
+        <Button
+            android:id="@+id/btn_multi_ma_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置多码提示文案" />
+
+        <Button
+            android:id="@+id/btn_target_ma_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置选中单码标识颜色" />
+
+        <Button
+            android:id="@+id/btn_enable_ai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置开启AI" />
+
+        <Button
+            android:id="@+id/btn_delay_tip_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置延时提示文案" />
+
+        <Button
+            android:id="@+id/btn_delay_tip_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设置延时提示时间" />
+
+        <Button
+            android:id="@+id/btn_close_permission_delegate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="关闭自定义权限交互" />
+    </LinearLayout>
+</ScrollView>

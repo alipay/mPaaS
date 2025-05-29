@@ -111,6 +111,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@color/colorPrimary"
                 android:clickable="true"
+                android:visibility="gone"
                 android:gravity="center"
                 android:text="小程序自定义UI"
                 android:textColor="@android:color/white"

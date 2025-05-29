@@ -17,7 +17,7 @@ struct PageLoginCallBack {
     if (appNode != null) {
       let page: Page | null = appNode.getActivePage()
       if (page != null) {
-        //有效
+        //有效 h5 resume 接收
         let h5Data = page.h5Session?.getData()
         let resultData: REQ_MODEL = {
           userName: "这个api回执必须是字符串",
@@ -25,7 +25,7 @@ struct PageLoginCallBack {
         }
         h5Data?.set("h5_session_pop_param", JSON.stringify(resultData));
 
-        //有效
+        //有效  h5 testAction 接收
         page.sendToWeb('testAction', { data: 'action:testAction  callback:测试数据' })
       }
     }

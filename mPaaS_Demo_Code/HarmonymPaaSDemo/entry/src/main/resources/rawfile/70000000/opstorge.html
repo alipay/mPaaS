@@ -14,8 +14,7 @@
 
     <button id="J_saveDataBtn" class="btn">保存数据(原生存)</button>
     <button id="J_getDataBtn" class="btn">查看数据(原生取)</button>
-    <button id="J_saveDataBtnH5" class="btn">保存数据(H5存)</button>
-    <button id="J_getDataBtnH5" class="btn">查看数据(H5取)</button>
+    <button id="J_h5getData" class="btn">取-客户端存</button>
     <button id="J_removeDataBtn" class="btn">删除数据</button>
 </body>
 <script>
@@ -50,30 +49,11 @@ ready(function() {
     });
   }, false);
 
-
-  document.querySelector('#J_saveDataBtnH5').addEventListener('click', function(e) {
-    AlipayJSBridge.call('setAPDataStorage', {
-      type: "common",
-      business: "customBusinessKey",
-      key: "customKey",
-      value: "customValue"
-    }, function(result) {
-      alert(JSON.stringify(result));
-    });
-  }, false);
-
-  document.querySelector('#J_getDataBtnH5').addEventListener('click', function(e) {
+  
+  document.querySelector('#J_h5getData').addEventListener('click', function(e) {
     AlipayJSBridge.call('getAPDataStorage', {
-      type: "common",
-      business: "customBusinessKey",
-      key: "customKey"
-    }, function(result) {
-      alert(JSON.stringify(result));
-    });
-    AlipayJSBridge.call('removeAPDataStorage', {
-      type: "common",
-      business: "customBusinessKey",
-      key: "customKey"
+      business: "dataStorage.json",
+      key: "key1"
     }, function(result) {
       alert(JSON.stringify(result));
     });

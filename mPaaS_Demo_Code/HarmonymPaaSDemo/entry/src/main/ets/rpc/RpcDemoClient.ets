@@ -21,6 +21,7 @@ export class RpcDemoClient {
       isPb: false,
       header: headers,
       timeout:2000
+      // signType:5
     }, requestParam);
   }
 

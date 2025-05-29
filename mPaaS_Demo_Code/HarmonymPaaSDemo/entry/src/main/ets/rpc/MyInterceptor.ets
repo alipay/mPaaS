@@ -4,14 +4,21 @@ import { Constants } from '../constants/Constants';
 import { JSON } from '@kit.ArkTS';
 
 export class MyInterceptor implements RpcInterceptor {
-  async getMpaasUtdid() {
-    let udid = await MPFramework.instance.udid;
+  async getMpaasUtdid(): Promise<string> {
+    let udid = await MPFramework.instance.udid
     console.error(Constants.TAG, `请求参数-设备标识：${udid}`)
+    return udid
+  }
+
+  async tempPreHandle(rpcInvokeContext: RpcInvokeContext) {
+    //模拟拦截器里添加header
+    rpcInvokeContext.addHeader("rpcHeader3", "测试header3")
+    rpcInvokeContext.addHeader("rpcHeader4-udid", await this.getMpaasUtdid())
   }
 
   preHandle(rpcInvokeContext: RpcInvokeContext): boolean {
     //模拟拦截器里添加header
-    rpcInvokeContext.addHeader("rpcHeader3","测试header3")
+    this.tempPreHandle(rpcInvokeContext)
     //模拟添加公共参数
     let requestObj = rpcInvokeContext.getRequestArg()
     requestObj["commonParam"] = "aaaaa"
@@ -22,8 +29,6 @@ export class MyInterceptor implements RpcInterceptor {
     requestHeaders.forEach((value, key) => {
       console.log(Constants.TAG, `请求头：key:${key}  value:${value}`)
     });
-
-    this.getMpaasUtdid()
     return true;
   }
 
@@ -37,6 +42,7 @@ export class MyInterceptor implements RpcInterceptor {
   }
 
   handleException(rpcInvokeContext: RpcInvokeContext, exception: RPCException): boolean {
+    exception.message = exception.message.substring(0, exception.message.indexOf("]"))
     console.log(Constants.TAG, `响应参数:${exception.message}`)
     return false
   }

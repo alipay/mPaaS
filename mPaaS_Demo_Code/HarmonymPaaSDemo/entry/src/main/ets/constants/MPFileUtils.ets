@@ -29,13 +29,17 @@ export class MPFileUtils {
     })
   }
 
-  saveFileByName(name: string) {
-    getLoaclJson("pageIndexConfig.txt").then((result: string) => {
-      console.info(Constants.TAG, `读取本地json：${result}`)
-      this.mpfile?.saveFile(name, result).then((result) => {
-        console.info(Constants.TAG, `文件存储状态 ${result}`)
+  saveFileByName(name: string): Promise<boolean> {
+    return new Promise((resolve: Function, reject: Function) => {
+      getLoaclJson("pageIndexConfig.txt").then((result: string) => {
+        console.info(Constants.TAG, `读取本地json：${result}`)
+        this.mpfile?.saveFile(name, result).then((result) => {
+          console.info(Constants.TAG, `文件存储状态 ${result}`)
+          resolve(result)
+        })
+      }).catch((error: Error) => {
+        reject(error)
       })
-    }).catch((error: Error) => {
     })
   }
 }

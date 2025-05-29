@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    (function init() {
+      if (window.AlipayJSBridge) {
+        alert("正确.");
+        AlipayJSBridge.call('duofupoc', {
+                param2: 'World'
+        }, function (e) {
+            if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                    window.location.reload()
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+      } else {
+        alert("AlipayJSBridge不存在.");
+      }
+    })();
+  </script>
+  <body>
+    <div>测试页面</div>
+  </body>
+</html>

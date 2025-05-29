@@ -14,7 +14,7 @@ struct PageWeb {
   controller: web_webview.WebviewController = new web_webview.WebviewController();
   build() {
     Column() {
-      Web({ src: 'http://192.168.149.213:5500/testPage/page.html', controller: this.controller })
+      Web({ src: 'https://activity.cqrcb.com:20168/hccbtl/m2170/601-preview.html', controller: this.controller })
     }
   }
 

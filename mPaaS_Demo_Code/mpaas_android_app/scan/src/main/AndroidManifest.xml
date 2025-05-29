@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.scan">
-
+    package="com.example.scan.demo">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application>
 
-        <activity android:name=".CustomScanActivity"/>
-        <activity android:name=".scan.ScanActivity"/>
-        <activity android:name=".scan.ScanRequestActivity"/>
+        <activity android:name=".ScanRequestActivity" />
+        <activity android:name=".ScanFullScreenActivity" />
+        <activity android:name=".ScanActivity"/>
+        <activity
+            android:name=".custom.CustomScanActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".custom.MyScanActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
 
     </application>
 

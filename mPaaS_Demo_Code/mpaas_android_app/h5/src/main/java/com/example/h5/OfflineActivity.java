@@ -41,8 +41,8 @@ public class OfflineActivity extends BaseActivity implements View.OnClickListene
         if (v.getId() == R.id.btnUpdate) {
             MPNebula.updateAllApp(new MpaasNebulaUpdateCallback() {
                 @Override
-                public void onResult(boolean success, boolean isLimit) {
-                    super.onResult(success, isLimit);
+                public void onResult(boolean success, boolean isLimit, String detailCode) {
+                    super.onResult(success, isLimit, detailCode);
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -72,8 +72,8 @@ public class OfflineActivity extends BaseActivity implements View.OnClickListene
             map.put("66668888", "3.0.0.0");
             MPNebula.updateApp(map, new MpaasNebulaUpdateCallback() {
                 @Override
-                public void onResult(boolean success, boolean isLimit) {
-                    super.onResult(success, isLimit);
+                public void onResult(boolean success, boolean isLimit, String detailCode) {
+                    super.onResult(success, isLimit, detailCode);
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+          content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" href="./common.css">
     <title>Document</title>
 </head>
@@ -51,14 +52,18 @@
         document.querySelector('.menu').addEventListener('click', function () {
             AlipayJSBridge.call('setOptionMenu', {
                 // 显示时的顺序为从右至左
-                menus: [{
+                menus: [
+                {
+                    icontype: 'search',
+                    redDot: '9', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
+                },{
                     icontype: 'scan',
                     redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
-                }, {
+                },{
                     icontype: 'user',
                     redDot: '-1', // -1 表示不显示，0 表示显示红点，1-99 表示在红点上显示的数字
                 }],
-                override: true // 在需要设置多个 option 的情况下，是否保留默认的 optionMenu
+                override: false // 在需要设置多个 option 的情况下，是否保留默认的 optionMenu
             });
 
             // 必须强制调用一次以刷新界面
@@ -67,7 +72,7 @@
 
         document.querySelector('.reset').addEventListener('click', function () {
             AlipayJSBridge.call('setOptionMenu', {
-                reset: true,
+                reset: false,
             });
             AlipayJSBridge.call('showOptionMenu');
         });

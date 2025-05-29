@@ -1,4 +1,4 @@
-import { AppManager, AppNode, CommonEvents, getProxy, Page, TitleBarData, XRiverProxy } from '@mpaas/hriver'
+import { HRiver, AppNode, CommonEvents, getProxy, Page, TitleBarData, XRiverProxy } from '@mpaas/hriver'
 import { BannerModel } from '../rpc/EntityModel'
 import { promptAction, router } from '@kit.ArkUI'
 import { curSystemStatusBarHeight } from '../constants/Global'
@@ -14,6 +14,7 @@ export function CustomUIBuilder(name: string, p: Page) {
 export struct CustomTitleBarComponent {
   @Prop titleBarData: TitleBarData
   page: Page | null = null
+  scroller: Scroller = new Scroller()
 
   aboutToAppear(): void {
     this.titleBarData.showTitleBar = false
@@ -28,71 +29,86 @@ export struct CustomTitleBarComponent {
         .width('100%')
         .height(`${curSystemStatusBarHeight()}px`)
       //判断是否显示导航栏
-      if (this.titleBarData.showTitleBar) {
-        Row() {
-          //判断是否显示返回键
-          if (this.titleBarData.showBackButton) {
-            Image($r("app.media.ic_back_white"))
+      Scroll(this.scroller){
+        if (this.titleBarData.showTitleBar) {
+          Row() {
+            //判断是否显示返回键
+            if (this.titleBarData.showBackButton) {
+              Image($r("app.media.ic_back_white"))
+                .width('48')
+                .height('48')
+                .objectFit(ImageFit.None)
+                .backgroundColor(Color.Black)
+                .onClick(() => {
+                  promptAction.showToast({
+                    message: "点击了自定义导航栏返回按钮"
+                  })
+                  //这个方法会触发前端的back事件
+                  this.page?.sendEvent("h5ToolbarBack")
+                  //针对this.$router.push的跳转方式
+                  // if (this.page?.webcontroller?.accessBackward()) {
+                  //   this.page?.webcontroller?.backward()
+                  // } else {
+                  //   router.back()
+                  // }
+
+                  //mPaaS跳转方式
+                  // this.page?.backClickEvent()
+                })
+            }
+            if (this.titleBarData.showCloseBtn) {
+              Text(" X ")
+                .fontSize('30')
+                .fontColor(Color.White)
+                .onClick(() => {
+                  HRiver.exitAllSession()
+                })
+            }
+            Text(this.titleBarData.title)
+              .fontSize('16')
+              .fontColor(Color.White)
+            if (this.titleBarData.customData != undefined) {
+              Text((this.titleBarData.customData as BannerModel).name)
+                .fontSize('16')
+                .fontColor(Color.White)
+                .backgroundColor(Color.Green)
+            }
+            if (this.titleBarData.customData != undefined) {
+              Text((this.titleBarData.customData as BannerModel).desc)
+                .fontSize('16')
+                .fontColor(Color.White)
+                .backgroundColor(Color.Green)
+            }
+            if (this.titleBarData.customData != undefined) {
+              Text(this.titleBarData.customData['imgUrl'])
+                .fontSize('16')
+                .fontColor(Color.White)
+                .backgroundColor(Color.Yellow)
+            }
+            Image($r("app.media.startIcon"))
               .width('48')
               .height('48')
               .objectFit(ImageFit.None)
-              .backgroundColor(Color.Black)
               .onClick(() => {
-                promptAction.showToast({
-                  message: "点击了自定义导航栏返回按钮"
-                })
-                // this.page?.sendEvent("h5ToolbarBack")
-                //针对this.$router.push的跳转方式
-                if (this.page?.webcontroller?.accessBackward()) {
-                  this.page?.webcontroller?.backward()
-                } else {
-                  router.back()
-                }
-
-                //mPaaS跳转方式
-                // this.page?.backClickEvent()
+                //自定义action
+                this.page?.sendToWeb('testAction', { data: 'native sendtoweb 啊啊啊啊' })
+                //内部action
+                // this.page?.sendEvent()
               })
+              .backgroundColor(Color.Red)
           }
-          if (this.titleBarData.showCloseBtn){
-            Text(" X ")
-              .fontSize('30')
-              .fontColor(Color.White)
-          }
-          Text(this.titleBarData.title)
-            .fontSize('16')
-            .fontColor(Color.White)
-          if (this.titleBarData.customData != undefined) {
-            Text((this.titleBarData.customData as BannerModel).desc)
-              .fontSize('16')
-              .fontColor(Color.White)
-              .backgroundColor(Color.Green)
-          }
-          if (this.titleBarData.customData != undefined) {
-            Text(this.titleBarData.customData['imgUrl'])
-              .fontSize('16')
-              .fontColor(Color.White)
-              .width(40)
-              .height(40)
-              .backgroundColor(Color.Yellow)
-          }
-          Image($r("app.media.startIcon"))
-            .width('48')
-            .height('48')
-            .objectFit(ImageFit.None)
-            .onClick(() => {
-              //自定义action
-              this.page?.sendToWeb('testAction', { data: 'native sendtoweb 啊啊啊啊' })
-              //内部action
-              // this.page?.sendEvent()
-            })
-            .backgroundColor(Color.Red)
+          .justifyContent(FlexAlign.SpaceAround)
+          .backgroundColor(Color.Blue)
+          .height('48')
         }
-        .justifyContent(FlexAlign.SpaceAround)
-        .backgroundColor(Color.Blue)
-        .width('100%')
-        .height('48')
       }
+      .scrollable(ScrollDirection.Horizontal) // 滚动方向为垂直方向
+      .scrollBar(BarState.On) // 滚动条常驻显示
+      .scrollBarColor(Color.Gray) // 滚动条颜色
+      .scrollBarWidth(10) // 滚动条宽度
+      .edgeEffect(EdgeEffect.Spring) // 滚动到边沿后回弹
     }
+    .width('100%')
   }
 }
 

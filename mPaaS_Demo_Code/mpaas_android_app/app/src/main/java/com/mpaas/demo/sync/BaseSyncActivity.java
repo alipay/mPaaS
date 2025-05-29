@@ -192,8 +192,8 @@ public abstract class BaseSyncActivity extends FragmentActivity implements View.
         appMap.put(appid, "");
         MPNebula.updateApp(appMap, new MpaasNebulaUpdateCallback() {
             @Override
-            public void onResult(final boolean success, final boolean isLimit) {
-                super.onResult(success, isLimit);
+            public void onResult(boolean success, boolean isLimit, String detailCode) {
+                super.onResult(success, isLimit, detailCode);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

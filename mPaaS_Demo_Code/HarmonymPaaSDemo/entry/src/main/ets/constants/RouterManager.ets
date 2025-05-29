@@ -3,6 +3,12 @@ import { JSON } from '@kit.ArkTS'
 
 class RouterManager {
   pageNavPathStack: NavPathStack | null = null
+  embedPageNavPathStack: NavPathStack | null = null
+
+  createNavPathStackByEmbed(n1: NavPathStack) {
+    this.embedPageNavPathStack = n1
+    this.stackInfo()
+  }
 
   createNavPathStackByPage(n1: NavPathStack) {
     this.pageNavPathStack = n1

@@ -1,0 +1,118 @@
+{
+  "mpaas_ocr_demo/Index.ets": {
+    "IdentifierCache": {},
+    "MemberMethodCache": {},
+    "obfName": "mpaas_ocr_demo/Index.ets"
+  },
+  "mpaas_ocr_demo/src/main/ets/components/AiCameraPage.ets": {
+    "IdentifierCache": {
+      "#abilityAccessCtrl": "abilityAccessCtrl",
+      "#image": "image",
+      "#fs": "fs",
+      "#hilog": "hilog",
+      "#JSON": "JSON",
+      "#util": "util",
+      "#TAG": "TAG",
+      "#isShowData": "isShowData",
+      "#CustomDialogExample": "CustomDialogExample",
+      "CustomDialogExample#initialRender#__function": "d1",
+      "CustomDialogExample#initialRender#$9#__function": "e1",
+      "CustomDialogExample#$0#__function": "f1",
+      "AiCameraPage#handleClick#mediaBean": "g1",
+      "AiCameraPage#handleClick#__function": "h1",
+      "AiCameraPage#handleClick#$1#processId": "i1",
+      "AiCameraPage#handleClick#$1#rst": "j1",
+      "AiCameraPage#handleOcrResult#objectImage": "k1",
+      "AiCameraPage#handleOcrResult#roiImage": "l1",
+      "AiCameraPage#handleOcrResult#fullImage": "m1",
+      "AiCameraPage#saveImgToLocal#sourceOptions": "n1",
+      "AiCameraPage#saveImgToLocal#imageResource": "o1",
+      "AiCameraPage#saveImgToLocal#imagePackerApi": "p1",
+      "AiCameraPage#saveImgToLocal#packOpts": "q1",
+      "AiCameraPage#saveImgToLocal#__function": "t1",
+      "AiCameraPage#saveCardImg#decoder": "u1",
+      "AiCameraPage#saveCardImg#imageSource": "v1",
+      "AiCameraPage#saveCardImg#decodingOptions": "w1",
+      "AiCameraPage#saveCardImg#imagePackerApi": "z1",
+      "AiCameraPage#saveCardImg#packOpts": "a2",
+      "AiCameraPage#saveCardImg#__function": "c2",
+      "AiCameraPage#saveCardImg#$2#__function": "e2",
+      "AiCameraPage#xmediaCoreBizAnalyze#$1#__function": "f2",
+      "AiCameraPage#xmediaCoreBizAnalyze#$1#$0#rst": "g2",
+      "AiCameraPage#xmediaCoreBizAnalyze#$1#$0#res": "h2",
+      "AiCameraPage#xmediaCoreBizAnalyze#$0#__function": "i2",
+      "AiCameraPage#xmediaCoreBizAnalyze#$0#$0#res": "j2",
+      "AiCameraPage#ocrBankCardPhotoConfig#numSize": "k2",
+      "AiCameraPage#ocrBankCardPhotoConfig#readLen": "l2",
+      "AiCameraPage#ocrBankCardPhotoConfig#imageSource": "m2",
+      "AiCameraPage#initialRender#__function": "n2",
+      "AiCameraPage#initialRender#$0#__function": "q2",
+      "AiCameraPage#initialRender#$0#$2#bannerModel": "r2",
+      "AiCameraPage#initialRender#$0#$0#__function": "b3",
+      "AiCameraPage#initialRender#$0#$0#$5#__function": "c3",
+      "AiCameraPage#initialRender#$0#$0#$2#__function": "d3",
+      "AiCameraPage#initialRender#$0#$0#$2#$0#$0#__function": "f3",
+      "AiCameraPage#initOCR#__function": "g3",
+      "AiCameraPage#initOCR#$0#processId": "h3",
+      "AiCameraPage#initOCR#$0#rst": "i3",
+      "AiCameraPage#initOCR#$0#$0#__function": "j3",
+      "AiCameraPage#setupCameraService#atManager": "k3",
+      "AiCameraPage#setupCameraService#__function": "l3",
+      "AiCameraPage#$0#$1#$0#__function": "n3",
+      "$0#__function": "p3"
+    },
+    "MemberMethodCache": {
+      "aboutToAppear:384:388": "aboutToAppear",
+      "aboutToDisappear:390:393": "aboutToDisappear",
+      "setupCameraService:395:400": "setupCameraService",
+      "initOCR:405:439": "initOCR",
+      "initialRender:441:525": "initialRender",
+      "ocrBankCardVideoConfig:528:530": "ocrBankCardVideoConfig",
+      "ocrBankCardPhotoConfig:533:552": "ocrBankCardPhotoConfig",
+      "xmediaCoreBizAnalyze:555:580": "xmediaCoreBizAnalyze",
+      "saveCardImg:585:636": "saveCardImg",
+      "saveImgToLocal:639:663": "saveImgToLocal",
+      "handleOcrResult:666:681": "handleOcrResult",
+      "onAccept:683:685": "onAccept",
+      "exitApp:687:689": "exitApp",
+      "handleClick:691:712": "handleClick",
+      "initialRender:732:750": "initialRender"
+    },
+    "obfName": "mpaas_ocr_demo/src/main/ets/components/AiCameraPage.ets"
+  },
+  "mpaas_ocr_demo/src/main/ets/utils/MediaBean.ts": {
+    "IdentifierCache": {},
+    "MemberMethodCache": {},
+    "obfName": "mpaas_ocr_demo/src/main/ets/utils/MediaBean.ts"
+  },
+  "mpaas_ocr_demo/src/main/ets/utils/MediaHelper.ts": {
+    "IdentifierCache": {
+      "#picker": "picker",
+      "#StringUtils": "StringUtils",
+      "MediaHelper#buildMediaBean#mediaBean": "q3",
+      "MediaHelper#selectPicture#$0#photoSelectOptions": "r3",
+      "MediaHelper#selectPicture#$0#photoPicker": "s3",
+      "MediaHelper#selectPicture#$0#__function": "v3",
+      "MediaHelper#selectPicture#$0#$2#mediaBean": "w3",
+      "MediaHelper#selectPicture#$0#$0#photoSelectResult": "x3"
+    },
+    "MemberMethodCache": {
+      "MediaHelper:15:17": "MediaHelper",
+      "selectPicture:24:52": "selectPicture",
+      "buildMediaBean:59:70": "buildMediaBean"
+    },
+    "obfName": "mpaas_ocr_demo/src/main/ets/utils/MediaHelper.ts"
+  },
+  "mpaas_ocr_demo/src/main/ets/utils/StringUtils.ts": {
+    "IdentifierCache": {
+      "#default": "default"
+    },
+    "MemberMethodCache": {
+      "isNullOrEmpty:2:10": "isNullOrEmpty"
+    },
+    "obfName": "mpaas_ocr_demo/src/main/ets/utils/StringUtils.ts"
+  },
+  "compileSdkVersion": "5.0.0.71",
+  "entryPackageInfo": "@mpaas/mpaas_ocr_demo|0.0.3",
+  "PropertyCache": {}
+}

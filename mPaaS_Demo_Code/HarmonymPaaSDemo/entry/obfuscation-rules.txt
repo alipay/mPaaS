@@ -22,6 +22,8 @@
 # src/main/ets/constants
 # ../oh_modules/@mpaas/*
 
+-remove-log
+
 -enable-property-obfuscation
 -enable-toplevel-obfuscation
 -compact

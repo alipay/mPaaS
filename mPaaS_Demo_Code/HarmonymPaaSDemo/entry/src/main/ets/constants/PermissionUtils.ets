@@ -2,10 +2,34 @@ import { abilityAccessCtrl, bundleManager, common, Permissions } from '@kit.Abil
 import { BusinessError } from '@kit.BasicServicesKit';
 import { promptAction } from '@kit.ArkUI';
 import { Constants } from './Constants';
+import { curUIAbilityContext } from './Global';
 
 export const permissionsList: Array<Permissions> =
-  ['ohos.permission.LOCATION', 'ohos.permission.APPROXIMATELY_LOCATION','ohos.permission.MICROPHONE'];
+  ['ohos.permission.LOCATION', 'ohos.permission.APPROXIMATELY_LOCATION', 'ohos.permission.MICROPHONE'];
 
+export const mediaList: Array<Permissions> =
+  ['ohos.permission.WRITE_MEDIA', 'ohos.permission.READ_MEDIA'];
+
+
+//获取授权
+export async function checkPermissions(permissions: Array<Permissions>): Promise<void> {
+  let grantStatus: abilityAccessCtrl.GrantStatus = await checkPermissionGrant(permissions[0]);
+  if (grantStatus === abilityAccessCtrl.GrantStatus.PERMISSION_GRANTED) {
+    // 已经授权，可以继续访问目标操作
+
+  } else {
+    // 申请定位权限
+    reqPermissionsFromUser(permissions, curUIAbilityContext()).then((bo: boolean) => {
+      promptAction.showToast({
+        message: "授权成功"
+      })
+    }).catch((err: Error) => {
+      promptAction.showToast({
+        message: "授权失败"
+      })
+    })
+  }
+}
 
 //检查授权
 export async function checkPermissionGrant(permission: Permissions): Promise<abilityAccessCtrl.GrantStatus> {
@@ -37,8 +61,9 @@ export async function checkPermissionGrant(permission: Permissions): Promise<abi
 
 //申请授权
 // 使用UIExtensionAbility：将common.UIAbilityContext 替换为common.UIExtensionContext
-export function reqPermissionsFromUser(permissions: Array<Permissions>, context: common.UIAbilityContext): Promise<boolean> {
-  return new Promise((resolve,reject)=>{
+export function reqPermissionsFromUser(permissions: Array<Permissions>,
+  context: common.UIAbilityContext): Promise<boolean> {
+  return new Promise((resolve, reject) => {
     let atManager: abilityAccessCtrl.AtManager = abilityAccessCtrl.createAtManager();
     // requestPermissionsFromUser会判断权限的授权状态来决定是否唤起弹窗
     atManager.requestPermissionsFromUser(context, permissions).then((data) => {

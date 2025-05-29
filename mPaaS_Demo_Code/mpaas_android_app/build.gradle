@@ -1,9 +1,15 @@
 apply plugin: 'com.alipay.apollo.optimize'// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext.mpaas_artifact = 'mpaas-baseline'
-    ext.mpaas_baseline = '10.2.3-50'
+    ext.mpaas_baseline = '10.2.3-62'
     repositories {
-
+        maven {
+            credentials {
+                username "626668353c6b5273a0ce984d"
+                password "t[4AU)JOBzXN"
+            }
+            url "https://packages.aliyun.com/63dc774a9dee9309492b993a/maven/repo-jpkdy/"
+        }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
         //mavenCentral()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
@@ -46,7 +52,13 @@ buildscript {
 
 allprojects {
     repositories {
-
+        maven {
+            credentials {
+                username "626668353c6b5273a0ce984d"
+                password "t[4AU)JOBzXN"
+            }
+            url "https://packages.aliyun.com/63dc774a9dee9309492b993a/maven/repo-jpkdy/"
+        }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
         //mavenCentral()
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
@@ -96,6 +108,25 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+//资源冲突检查
+task checkResourceConflict {
+    doLast {
+        def resourceMap = [:]
+        subprojects.each { project ->
+            project.fileTree("src/main/res").visit { file ->
+                if (file.name.endsWith(".xml") || file.name.endsWith(".png")) {
+                    def key = file.name
+                    if (resourceMap.containsKey(key)) {
+                        println "冲突资源：${key}，存在于 ${resourceMap.get(key)} 和 ${project.name}"
+                    } else {
+                        resourceMap.put(key, project.name)
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // This block encapsulates custom properties and makes them available to all
 // modules in the project.

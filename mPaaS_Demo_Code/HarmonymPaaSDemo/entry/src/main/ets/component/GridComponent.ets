@@ -1,22 +1,16 @@
 import {
-  AppManager,
-  AppNode,
-  getProxy,
-  H5EmbedPageLifeCycleProvider,
-  H5PageLifeCycleProvider,
-  H5WebClientProvider,
-  HRBuilder,
-  HRiver,
-  Page,
-  RouterUtils,
-  XRiverProxy
+    AppManager,
+    AppNode,
+    getProxy, HRBuilder,
+    HRiver,
+    Page,
+    RouterUtils,
+    XRiverProxy
 } from '@mpaas/hriver';
 import { Constants } from '../constants/Constants';
-import { H5EmbedPageLifeCycleProviderImpl } from '../hriver/H5EmbedPageLifeCycleProviderImpl';
-import { H5PageLifeCycle } from '../hriver/H5PageLifeCycle';
-import { H5WebProivder } from '../hriver/H5WebProivder';
 import { MineModel } from '../rpc/EntityModel';
 import { MineViewModel } from '../viewmodel/MineViewModel';
+import RouterManager from '../constants/RouterManager';
 
 
 @Component
@@ -36,6 +30,12 @@ struct GridComponent {
       let appManager = getProxy(XRiverProxy.AppManager) as AppManager
       let appNode: AppNode | null = appManager.findTopApp()
       if (appNode != null) {
+        let version = appNode.appVersion
+        appNode.appModel?.name
+        appNode.appModel?.version
+        appNode.appModel?.app_id
+        appNode.appModel?.vhost
+        appNode.appModel?.fallback_base_url
         let page: Page | null = appNode.getActivePage()
         if (page != null) {
           page.sendToWeb('testAction', { data: '这条数据来自于嵌入式H5的原生页面的onResume()'})
@@ -51,6 +51,7 @@ struct GridComponent {
   }
 
   aboutToAppear(): void {
+    RouterManager.createNavPathStackByEmbed(this.pageInfos)
     console.log(Constants.TAG, `嵌入式离线包-aboutToAppear`)
     let param: Map<string, Object> = new Map<string, Object>()
     param.set("showBackButton", false)
@@ -63,13 +64,15 @@ struct GridComponent {
     param.set("scrollForward", 2)
     param.set("scrollBackward", 1)
     // param.set("bottomSafe", "YES")
-    HRiver.startApp('70000000', param, this.pageInfos)
+    // HRiver.startApp('70000000', param, RouterManager.embedPageNavPathStack)
+    HRiver.startUrl('resource://rawfile/70000000/index.html?username=张三&=age=18', param, RouterManager.embedPageNavPathStack)
     // HRiver.startUrl("https://ykmappxc.cqdcg.com/mpt/citycode-universalcode-h5/#/?caring=true",param,this.pageInfos)
     // 避免白屏不需要下面这行代码了
     // HRiver.setProvider(H5EmbedPageLifeCycleProvider.name, new H5EmbedPageLifeCycleProviderImpl(this.pageInfos))
     // 只需要拦截退出事件就可以按退出手势后正常退出，避免内嵌页面白屏。
-    HRiver.setProvider(H5PageLifeCycleProvider.name, new H5PageLifeCycle())
-    HRiver.setProvider(H5WebClientProvider.name, new H5WebProivder())
+    // HRiver.setProvider(H5PageLifeCycleProvider.name, new H5PageLifeCycle())
+    // HRiver.setProvider(H5WebClientProvider.name, new H5WebClientProviderImpl())
+
   }
 
   @Builder
@@ -94,7 +97,7 @@ struct GridComponent {
         .width('100%')
         .height('20%')
 
-        Navigation(this.pageInfos) {
+        Navigation(RouterManager.embedPageNavPathStack) {
           //@{@"status":e_usually_success, @"message":@"", @"payload":@{@"homeType":@"wealth"}}
         }
         .mode(NavigationMode.Stack)
@@ -144,7 +147,7 @@ struct GridComponent {
       if (appNode != null) {
         let page: Page | null = appNode.getActivePage()
         if (page != null) {
-          page.sendToWeb('testAction', { data: 'native sendtoweb 啊啊啊啊' })
+          page.sendToWeb('testAction', { permanentkey: 'native sendtoweb 啊啊啊啊' })
         }
       }
     })

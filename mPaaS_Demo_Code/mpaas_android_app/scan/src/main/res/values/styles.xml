@@ -1,8 +1,7 @@
 <resources>
-
-    <style name="AppThemeNew" parent="android:Theme.Light">
+    <style name="noTitleTransBgStyle">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
 </resources>

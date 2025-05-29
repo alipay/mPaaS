@@ -15,11 +15,13 @@ import com.alipay.mobile.nebula.provider.MPH5ContentProviderPreWebProvider;
 import com.alipay.mobile.nebula.util.H5Utils;
 import com.alipay.mobile.nebula.webview.APSslErrorHandler;
 import com.alipay.mobile.nebula.webview.APWebView;
+import com.alipay.mobile.nebulaappproxy.api.H5ReceiverUtil;
 import com.alipay.mobile.nebulauc.provider.H5PermissionRequestProvider;
 import com.example.h5.NativeMPH5ContentProviderPreWebProvider;
 import com.mpaas.apm.api.MPMonitor;
 import com.mpaas.cdp.api.IMCdpExportApi;
 import com.mpaas.cdp.api.MCdpApi;
+import com.mpaas.core.MP;
 import com.mpaas.demo.h55.H5PermissionRequestProviderImp;
 import com.mpaas.demo.h55.H5TransStatusBarColorProviderImpl;
 import com.mpaas.demo.h55.H5ViewProviderImpl;
@@ -63,18 +65,24 @@ public class MainApplication extends QuinoxlessApplicationLike {
                 return extras;
             }
         });
-
     }
 
 
     @Override
     public void onMPaaSFrameworkInitFinished() {
+        MPLogger.error("aaaaaaaaaaaa",MPLogger.getUserId());
         // 可以在用户登录成功后设置
         MPLogger.setUserId("MpaasPoc");
         H5Utils.setProvider(H5ReceivedSslErrorHandler.class.getName(), new H5ReceivedSslErrorHandler() {
             @Override
             public void onReceivedSslError(APWebView apWebView, APSslErrorHandler apSslErrorHandler, SslError sslError) {
                 apSslErrorHandler.proceed();
+            }
+        });
+        H5Utils.setProvider(H5ReceivedSslErrorHandler.class.getName(), new H5ReceivedSslErrorHandler() {
+            @Override
+            public void onReceivedSslError(APWebView apWebView, APSslErrorHandler apSslErrorHandler, SslError sslError) {
+                MPLogger.error("ssl错误",sslError.toString());
             }
         });
         //麦克风权限问题
@@ -90,6 +98,15 @@ public class MainApplication extends QuinoxlessApplicationLike {
         MPPush.init(this);
         //自动化日志用于记录页面切换事件。您可以借此分析应用各功能或运营页面的 PV 和 UV 等数据。
         MPLogger.enableAutoLog();
+        //配置验签
+        // 设置小程序离线包验签公钥，如需关闭验签，可在 custom_config.json 中，将 h5_shouldverifyapp 的 value 设置成 NO
+        MPNebula.enableAppVerification("MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzRc51CZkfOX8bodSs8fh" +
+                "h8rBsODWvEYrzCMEa61iAi6YXG5yO3sm1q7A/to9wX8EKfXqZiJaUmtWFtPfIVBA" +
+                "CQ2+hsqxbkCI/MtjfM/EnkmVCXo1bo/gh2Nloc5KY0prupGjymXxgUtjBDiAMK4/" +
+                "xtpTz14rxKAUJDBHokoFmSOSao5sfrOAaQJ7EBvvD4X8QnIkoUqSTLNjK2uuoTdh" +
+                "6KE6l1zsgfEIanlSOpWPZNCBh0DkDl//zV+2iHesXEZtisWxaVmcQtGSwWM0pjuT" +
+                "uGdIyUd1AIkXX1vv6WfyfIt1nhABg+BdnJWvDw1//XnlStId05nyMIeFICDIwMJH" +
+                "IQIDAQAB");
 
         MPMonitor.enableRpcMonitor();
     }
@@ -102,6 +119,8 @@ public class MainApplication extends QuinoxlessApplicationLike {
                 // 此方法为阻塞调用，请不要在主线程上调用内置离线包方法。如果内置多个amr包，要确保文件已存在，如不存在，会造成其他内置离线包失败。
                 // 此方法仅能调用一次，多次调用仅第一次调用有效。
                 MPNebula.loadOfflineNebula("h5_json.json",
+                        new MPNebulaOfflineInfo("20200101_0.0.0.2.amr", "20200101", "0.0.0.2"),
+                        new MPNebulaOfflineInfo("20250101_0.0.0.4.amr", "20250101", "0.0.0.4"),
                         new MPNebulaOfflineInfo("70000000_0.0.0.2.amr", "70000000", "0.0.0.2"),
                         new MPNebulaOfflineInfo("80808080_0.0.0.9.amr", "80808080", "0.0.0.9"),
                         new MPNebulaOfflineInfo("66668888_1.0.0.0.amr", "66668888", "1.0.0.0"),

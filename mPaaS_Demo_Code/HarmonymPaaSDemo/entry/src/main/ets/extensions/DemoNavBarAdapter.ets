@@ -1,3 +1,4 @@
+import { AUPanelManager, DialogButtonType, ObservedPermissionInfo } from '@mpaas/antui';
 import { CRVPage, MYNavigationBarAdapter } from '@mpaas/nebulaintegration';
 import { TinyMenuState } from '@mpaas/xriverohos';
 import { DemoLoadingComponent } from './DemoLoadingComponent';
@@ -50,7 +51,28 @@ export class DemoNavBarAdapter extends MYNavigationBarAdapter {
   }
 
   showPermissionDialog(component: Object, dlgData: ESObject, a174: Function, b174: Function): boolean {
-    return false
+    AUPanelManager.showPermissionFrom(component, {
+      icon: dlgData.icon,
+      title: '自定义申请权限title',
+      subTitle: '自定义申请权限subTitle',
+      content: '自定义申请权限content',
+      subContent: '',
+      checkbox: undefined,
+      buttons: [
+        {
+          title: '不好', type: DialogButtonType.Cancel, action: (isChecked: boolean) => {
+          a174()
+        }
+        },
+        {
+          title: '好', type: DialogButtonType.Normal, action: () => {
+          b174()
+        }
+        }
+      ],
+      info: new ObservedPermissionInfo()
+    })
+    return true
   }
 }
 

@@ -10,7 +10,7 @@ import { BannerArrayModel } from '../rpc/EntityModel';
 import { PostReqModle } from '../rpc/PostReqModle';
 import { JSON, util } from '@kit.ArkTS';
 import { ArticleList0JsonGetReq } from '../rpc/ArticleList0JsonGetReq';
-import { BaseTitleComponent } from 'library/Index';
+// import { BaseTitleComponent } from 'library/Index';
 import { curContext, curUIContext } from '../constants/Global';
 import { BusinessError } from '@kit.BasicServicesKit';
 
@@ -193,7 +193,7 @@ struct PageRpc {
 
   build() {
     Flex({ direction: FlexDirection.Column }) {
-      BaseTitleComponent({ title: "移动网关" })
+      // BaseTitleComponent({ title: "移动网关" })
       Scroll() {
         Column() {
           ForEach(this.btnSize, (item: string) => {

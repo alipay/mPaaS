@@ -6,6 +6,7 @@ export class BannerArrayModel {
 
 export class BannerModel {
   desc: string = "";
+  name: string = "";
 }
 
 export class MineModel {

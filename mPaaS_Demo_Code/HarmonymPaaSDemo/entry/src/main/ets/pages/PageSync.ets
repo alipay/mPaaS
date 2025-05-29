@@ -1,4 +1,4 @@
-import { BaseTitleComponent } from 'library/Index';
+// import { BaseTitleComponent } from 'library/Index';
 import { MPFramework } from '@mpaas/framework';
 import { Constants } from '../constants/Constants';
 import { JSON } from '@kit.ArkTS';
@@ -12,6 +12,7 @@ import {
   SyncCommand,
   SyncMessage
 } from '@mpaas/sync_service';
+import { BaseTitleComponent } from 'basicsharedmodule';
 
 // import { MPUDID } from '@mpaas/udid'
 let hasInit = false;
@@ -24,9 +25,6 @@ struct PageSync {
   connectListener: ConnectionListener = {
     onConnectionStateChanged: (connectionEvent: ConnectionEvent) => {
       let type = connectionEvent.getEventType();
-      console.log(Constants.TAG, `onConnectionStateChanged监听到sync状态 ${type}`)
-
-      console.log(Constants.TAG, `sync状态 ${type}`)
       switch (type) {
         case ConnectionType.Connecting:
           this.connectionMsg = "连接中"
@@ -45,6 +43,9 @@ struct PageSync {
           this.connectionMsg = message
           break;
       }
+      console.log(Constants.TAG, `onConnectionStateChanged监听到sync状态 ${this.connectionMsg}`)
+
+      console.log(Constants.TAG, `sync状态 ${this.connectionMsg}`)
       promptAction.showToast({
         message: "connectionMsg为" + this.connectionMsg
       })
@@ -56,8 +57,8 @@ struct PageSync {
       MPSync.initialize();
       hasInit = true;
     }
-    MPSync.addConnectionListener(this.connectListener)
     MPSync.appToForeground();
+    MPSync.addConnectionListener(this.connectListener)
     //sync
     console.log(Constants.TAG, `sync状态：建联`)
     // this.getUtdid()
@@ -75,7 +76,7 @@ struct PageSync {
   // }
   onPageHide(): void {
     MPSync.appToBackground();
-    MPSync.removeConnectionListener(this.connectListener)
+    // MPSync.removeConnectionListener(this.connectListener)
     console.log(Constants.TAG, `sync状态：断链`)
   }
 
@@ -142,17 +143,13 @@ struct PageSync {
         }
         .justifyContent(FlexAlign.Start)
         .alignItems(HorizontalAlign.Center)
-        .height('100%')
         .width('100%')
       }
-      .backgroundColor(0xDCDCDC)
-      .scrollable(ScrollDirection.Vertical) // 滚动方向为垂直方向
+      .scrollable(ScrollDirection.Vertical) // 滚动方向纵向
       .scrollBar(BarState.On) // 滚动条常驻显示
       .scrollBarColor(Color.Gray) // 滚动条颜色
       .scrollBarWidth(10) // 滚动条宽度
-      .edgeEffect(EdgeEffect.Spring) // 滚动到边沿后回弹
-      .height('100%')
-      .width('100%')
+      .edgeEffect(EdgeEffect.None)
     }
     .width('100%')
     .height('100%')

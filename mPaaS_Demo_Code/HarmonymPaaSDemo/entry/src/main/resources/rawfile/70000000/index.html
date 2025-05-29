@@ -2,53 +2,58 @@
 <html lang="zh-cn">
 
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="./common.css">
     <title>JSAPI示例</title>
 </head>
 
 <body style="width: 100%;height: 100%; background-color: burlywood; overflow-y: scroll;">
-<button id="J_Ua1">0.0.0.16</button>
-<button id="showCloseX">showCloseX</button>
-<button id="hideNativeTitleBar">hideTitleBar</button>
-<button id="hideNativeBackButton">hideBackButton</button>
-<button id="customMenu">自定义菜单</button>
-<button id="goMenu">goMenu</button>
-<button id="goStorge">goStorge</button>
-<button id="hideStatusBar">沉浸式</button>
-<button id="showStatusBar">非沉浸式</button>
-<button id="J_Ua">UserAgent</button>
-<button id="J_PushWindow">页面上下文</button>
-<button id="J_UI">界面交互</button>
-<button id="J_Event">事件扩展</button>
-<button id="J_Util">工具类</button>
-<button id="J_UseCommonResource">使用公共资源包</button>
-<button id="J_API1">调用自定义API1</button>
-<button id="J_API2">调用自定义API2</button>
-<button id="J_PLUGIN_DIALOG">PLUGIN中弹窗</button>
-<button id="windowOpen">window.open</button>
-<button id="addNotifyListener">添加通知</button>
-<button id="removeNotifyListener">移除通知</button>
-<button id="postNotify">分发消息</button>
-<button id="notifyN2h">模拟原生发通知</button>
-<button id="toNativeCallback">打开原生页面并获取返回值</button>
-<button id="J_BACK">返回</button>
-<button id="jBackResultPackage">返回携带参数</button>
-<button id="postRpc">rpc</button>
-<button id="jumpHref">href跳转</button>
-<button id="changeColor">修改导航栏颜色</button>
-<button>升级离线包</button>
-<button>埋点</button>
-<!--    <button style="position: absolute; bottom: 10px; right:10px; background-color: aqua;">底部按钮</button>-->
+    <button id="J_Ua1">0.0.0.78</button>
+    <button id="h5PostRpc">南网H5-rpc测试</button>
+    <button id="showLoading1">showLoading1</button>
+    <button id="snapshot1">snapshot1</button>
+    <button id="showCloseX">showCloseX</button>
+    <button id="embeStartApp">embeStartApp</button>
+    <button id="hideNativeTitleBar">hideTitleBar</button>
+    <button id="hideNativeBackButton">hideBackButton</button>
+    <button id="customMenu">自定义菜单</button>
+    <button id="goMenu">goMenu</button>
+    <button id="goStorge">goStorge</button>
+    <button id="hideStatusBar">沉浸式</button>
+    <button id="showStatusBar">非沉浸式</button>
+    <button id="J_Ua">UserAgent</button>
+    <button id="J_PushWindow">页面上下文</button>
+    <button id="J_UI">界面交互</button>
+    <button id="J_Event">事件扩展</button>
+    <button id="J_Util">工具类</button>
+    <button id="J_UseCommonResource">使用公共资源包</button>
+    <button id="J_API1">调用自定义API1</button>
+    <button id="J_API2">调用自定义API2</button>
+    <button id="J_PLUGIN_DIALOG">PLUGIN中弹窗</button>
+    <button id="windowOpen">window.open</button>
+    <button id="addNotifyListener">添加通知</button>
+    <button id="removeNotifyListener">移除通知</button>
+    <button id="postNotify">分发消息</button>
+    <button id="notifyN2h">模拟原生发通知</button>
+    <button id="toNativeCallback">打开原生页面并获取返回值</button>
+    <button id="J_BACK">返回</button>
+    <button id="jBackResultPackage">返回携带参数</button>
+    <button id="postRpc">rpc</button>
+    <button id="jumpHref">href跳转</button>
+    <button id="changeColor">修改导航栏颜色</button>
+    <button id="h5mas">h5/pc移动分析</button>
+    <button>升级离线包</button>
+    <button>埋点</button>
+    <!--    <button style="position: absolute; bottom: 10px; right:10px; background-color: aqua;">底部按钮</button>-->
 </body>
 <script>
 
 
     function ready(callback) {
         var currentUrl = window.location.href;
-        <!--        alert(currentUrl);-->
+<!--        alert(currentUrl);-->
         // 如果 jsbridge 已经注入则直接调用
         if (window.AlipayJSBridge) {
             callback && callback();
@@ -60,7 +65,12 @@
 
     ready(function () {
         var currentUrl = window.location.href;
+        var h5PostRpc = document.getElementById('h5PostRpc');
+        var h5mas = document.getElementById('h5mas');
+        var snapshot1 = document.getElementById('snapshot1');
+        var showLoading1 = document.getElementById('showLoading1');
         var jumpHref = document.getElementById('jumpHref');
+        var embeStartApp = document.getElementById('embeStartApp');
         var showCloseX = document.getElementById('showCloseX');
         var changeColor = document.getElementById('changeColor');
         var toNativeCallback = document.getElementById('toNativeCallback');
@@ -89,13 +99,68 @@
         var postRpc = document.getElementById('postRpc');
         var notifyN2h = document.getElementById('notifyN2h');
 
+        h5PostRpc.addEventListener('click', function () {
+            AlipayJSBridge.call('myapi1', {
+                param1: 'Hello'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    alert(JSON.stringify(e));
+                }
+            });
+        });
+        h5mas.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './insideMas.html'
+            });
+        });
+        showLoading1.addEventListener('click', function () {
+            AlipayJSBridge.call('showLoading', {
+                text: 'Loading'
+            });
+            AlipayJSBridge.call('showLoading', {
+                text: 'Loading'
+            });
+            AlipayJSBridge.call('showLoading', {
+                text: 'Loading'
+            });
+            setTimeout(function() {
+                AlipayJSBridge.call('hideLoading');
+            }, 2000);
+        });
+        snapshot1.addEventListener('click', function () {
+            AlipayJSBridge.call('snapshot', {
+                param2: 'snapshot'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
+
+        embeStartApp.addEventListener('click', function () {
+            AlipayJSBridge.call('embeStartApp', {
+                param2: 'embeStartApp'
+            }, function (e) {
+                if (e.error === 1) {
+                    alert('请前往自定义设置注册JSAPI');
+                } else {
+                    var resultStr = JSON.stringify(e);
+                    alert(resultStr);
+                }
+            });
+        });
 
         AlipayJSBridge.call('getStartupParams', {
             // 可选，根据 key 值过滤返回结果，不填返回全部
-            key: ['keyList']
-            }, function(result) {
+            key: ['keyList', 'age']
+        }, function (result) {
             alert(`启动参数${JSON.stringify(result)}`);
-         });
+        });
 
         AlipayJSBridge.call('setTitle', {
             title: '设置一个标题试试'
@@ -341,8 +406,8 @@
         api2Node.addEventListener('click', function () {
             __commonWrap('myapi2', {
                 param2: 'myapi2通过其他方式传'
-            }).then((res)=>{
-            alert(`2==${JSON.stringify(res)}`);
+            }).then((res) => {
+                alert(`2==${JSON.stringify(res)}`);
             })
             // AlipayJSBridge.call('myapi2', {
             //     param2: 'World'

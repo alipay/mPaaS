@@ -1,9 +1,9 @@
-import { BroadcastManager, CustomUIBuilderProvider, HRiver } from '@mpaas/hriver';
+import { BroadcastManager, CustomUIBuilderProvider, HRiver, HRiverUtil } from '@mpaas/hriver';
 import { Constants } from '../constants/Constants';
 import { H5CustomPlugin } from '../hriver/H5CustomPlugin';
 import { CustomUIBuilderProviderImpl } from '../hriver/CustomUIBuilderProviderImpl';
 import { promptAction } from '@kit.ArkUI';
-import { BaseTitleComponent } from 'library';
+import { BaseTitleComponent } from 'basicsharedmodule';
 import AlertExit from '../component/CustomLoadingDialog';
 import { ArrayList } from '@kit.ArkTS';
 import request from '@ohos.request';
@@ -26,7 +26,9 @@ struct PageHriver {
         Scroll() {
           Column() {
             Text("含义：" + "forceStatusBar:是否要状态栏高度\n" +
-              "动态控制(原生/h5)导航栏，注释forceStatusBar,如果H5有导航栏，原生调用page.sendEvent(showTitleBar/hideTitleBar),如果原生有导航栏，H5调用AlipayJsbridge.call(showTitleBar/hideTitleBar)")
+              "动态控制(原生/h5)导航栏，注释forceStatusBar," +
+              "如果H5有导航栏，原生调用page.sendEvent(showTitleBar/hideTitleBar)," +
+              "如果原生有导航栏，H5调用AlipayJsbridge.call(showTitleBar/hideTitleBar)")
               .width('80%')
               .fontSize(14)
               .fontColor(Color.Gray)
@@ -43,7 +45,9 @@ struct PageHriver {
                 startParams.set('query', 'uuuuuuuua');
                 // HRiver.startUrl("https://cdn.cqdcg.com/static/upload/ykb/luban/pages/opluban_you.html", startParams)
                 // HRiver.startUrl("http://30.172.64.146:5500/index.html",startParams)
-                HRiver.startUrl("https://wwww.aliyun.com", startParams)
+                // HRiver.startUrl("http://30.172.64.210:5500/index.html", startParams)
+                HRiver.startUrl("http://30.172.65.52:5173/")
+                // HRiver.startUrl("http://30.172.65.52:5500/testpdf.html")
                 // HRiver.startUrl("http://192.168.162.161:5500/index.html",startParams)
                 // HRiver.startUrl("https://ykmappxc.cqdcg.com/mpt/citycode-universalcode-h5/#/?caring=true",startParams)
               })
@@ -65,7 +69,7 @@ struct PageHriver {
                 let startParams: Map<string, Object> = new Map();
                 //加载阶段显示默认标题
                 startParams.set('defaultTitle', '默认标题');
-                // startParams.set('url', '/test/index.html#/C');
+                startParams.set('url', '/test/index.html#/C');
                 HRiver.startApp('81818181', startParams)
               })
             Button("自定义在线错误页")
@@ -146,11 +150,13 @@ struct PageHriver {
               .onClick(() => {
                 //打开本地网页
                 let list = new ArrayList<string>()
-                list.add("Navi首页");
-                list.add("navi");
+                list.add("自定义参数1");
+                list.add("自定义参数2");
                 let startParams: Map<string, Object> = new Map()
                 startParams.set("keyList", list)
-                HRiver.startUrl('resource://rawfile/70000000/index.html', startParams)
+                startParams.set('defaultTitle', '客户端传的标题并不读取网页标题');
+                startParams.set('readTitle', "NO");
+                HRiver.startUrl('resource://rawfile/70000000/index.html?username=张三&=age=18', startParams)
                 // HRiver.startUrl('resource://rawfile/dist/index.html')
                 // HRiver.startUrl('resource://rawfile/yukuaiban.html')
               })
@@ -180,6 +186,7 @@ struct PageHriver {
                 // startParams.set('showBottomLine', false)
 
                 // HRiver.startApp("80808080", startParams)
+                // HRiver.startApp("10101010", startParams)
                 HRiver.startApp("70000000", startParams)
               })
 
@@ -193,6 +200,7 @@ struct PageHriver {
                 let startParams: Map<string, Object> = new Map();
                 //加载阶段显示默认标题
                 startParams.set('defaultTitle', '默认标题');
+                startParams.set('readTitle', "NO");
                 // startParams.set("embedPage", "YES")
                 HRiver.startApp('70000000', startParams)
                 //打开本地网页

@@ -1,5 +1,5 @@
 import { MPFramework } from '@mpaas/framework';
-import { H5WebClientProvider, Page } from '@mpaas/hriver';
+import { H5WebClientProvider, HRiver, Page } from '@mpaas/hriver';
 import { JSON, util } from '@kit.ArkTS';
 import { Constants } from '../constants/Constants';
 import { abilityAccessCtrl, common, Permissions } from '@kit.AbilityKit';
@@ -7,9 +7,22 @@ import { checkPermissionGrant, reqPermissionsFromUser } from '../constants/Permi
 import { curUIAbilityContext, curUIContext } from '../constants/Global';
 import { promptAction } from '@kit.ArkUI';
 import { HriverPageUtils } from '../constants/HriverPageUtils';
+import RouterManager from '../constants/RouterManager';
 
 export class H5WebClientProviderImpl extends H5WebClientProvider {
   private context = getContext(this) as common.UIAbilityContext;
+
+  onDownloadStart(h6: Page | undefined, url: string | undefined, userAgent: string | undefined, contentDisposition: string | undefined, mimetype: string | undefined, contentLength: number | undefined): void {
+    console.info(Constants.TAG,`onDownloadStart contentDisposition：${contentDisposition}  contentLength:${contentLength}`)
+  }
+
+  // onSslErrorEventReceive(t3: Page | undefined, handler: SslErrorHandler, error: SslError): void {
+  //   handler.handleConfirm()
+  // }
+
+  onScroll(x: number, y: number, page: Page | undefined): void {
+    console.info(Constants.TAG,`透传滚动   ${x}  ${y}  ${page?.pageId}`)
+  }
 
   onControllerAttached(page: Page | undefined): void {
     let session = page?.getSession()
@@ -30,6 +43,8 @@ export class H5WebClientProviderImpl extends H5WebClientProvider {
       page.titleBarData.showCloseBtn = true
     }
     HriverPageUtils.getInstance().addPageNum()
+    HRiver.setUserAgent(`当前长度UA：${HriverPageUtils.getInstance().pageLength}`)
+    RouterManager.stackInfo()
     console.info(Constants.TAG, `H5WebClientProviderImpl#onPageEnd():${page?.pageUrl}  ${url}    ${pages?.length}`)
   }
 

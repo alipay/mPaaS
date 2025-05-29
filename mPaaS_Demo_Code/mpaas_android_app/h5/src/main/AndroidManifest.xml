@@ -18,6 +18,7 @@
 
         <activity android:name="com.example.h5.NebulaAppActivity" />
         <activity android:name="com.example.h5.PublicResActivity" />
+        <activity android:name="com.example.h5.WebViewActivity1" />
         <!--        <meta-data-->
         <!--            android:name="UCSDKAppKey"-->
         <!--            android:value="JJQ/FLbHKX+ETiFNpCcb0fqjPfQ+JnjGBxDaqUm0MDcNATUVfsVrSh4KHq8of4/pFud/TDgjKf8891LpDlGG4w==" />-->

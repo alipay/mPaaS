@@ -10,7 +10,7 @@
 </head>
 
 <body style="width: 100%;height: 100%; background-color: burlywood; overflow-y: scroll;">
-<button id="J_Ua1">0.0.0.16</button>
+<button id="J_Ua1">0.0.0.75</button>
 <button id="hideNativeTitleBar">hideTitleBar</button>
 <button id="hideNativeBackButton">hideBackButton</button>
 <button id="customMenu">自定义菜单</button>
@@ -38,6 +38,7 @@
 <button>升级离线包</button>
 <button>埋点</button>
 <button style="position: absolute; bottom: 10px; right:10px; background-color: aqua;">底部按钮</button>
+<button id="goGx">goGx</button>
 </body>
 <script>
 
@@ -56,6 +57,7 @@
 
     ready(function () {
         var currentUrl = window.location.href;
+        var goGx = document.getElementById('goGx');
         var toNativeCallback = document.getElementById('toNativeCallback');
         var hideNativeTitleBar = document.getElementById('hideNativeTitleBar');
         var hideNativeBackButton = document.getElementById('hideNativeBackButton');
@@ -243,6 +245,12 @@
                 url: './opmenu.html'
             });
         });
+        goGx.addEventListener('click', function () {
+            AlipayJSBridge.call('pushWindow', {
+                url: './gxindex.html'
+            });
+        });
+
         goStorge.addEventListener('click', function () {
             AlipayJSBridge.call('pushWindow', {
                 url: './opstorge.html'

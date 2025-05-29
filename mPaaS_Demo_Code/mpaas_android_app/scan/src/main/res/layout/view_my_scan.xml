@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.example.scan.demo.custom.widget.BgPreviewContainer
+        android:id="@+id/ll_bgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/custom_title"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_scan_from_gallery" />
+    </LinearLayout>
+
+    <com.example.scan.demo.custom.widget.MyRayView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="252dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ll_title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_torch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="189dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_torch"
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:src="@drawable/my_torch_off"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_torch_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="轻触照亮"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</merge>

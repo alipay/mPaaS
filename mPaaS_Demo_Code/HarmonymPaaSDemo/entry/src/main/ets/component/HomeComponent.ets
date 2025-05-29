@@ -1,7 +1,7 @@
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { MPFramework } from '@mpaas/framework';
 import { Constants } from '../constants/Constants';
-import { router } from '@kit.ArkUI';
+import { promptAction, router } from '@kit.ArkUI';
 import { bundleManager, common } from '@kit.AbilityKit';
 import RouterManager from '../constants/RouterManager';
 import { BannerModel } from '../rpc/EntityModel';
@@ -14,6 +14,9 @@ export struct HomeComponent {
 
   async getMpaasUtdid() {
     let udid = await MPFramework.instance.udid;
+    promptAction.showToast({
+      message: `设备标识：${udid}`
+    })
     console.error(Constants.TAG, "设备标识", udid)
   }
 
@@ -72,7 +75,7 @@ export struct HomeComponent {
                   console.error(Constants.TAG, `跳转出错 ${err.name}  ${err.message}  ${err.stack?.toString()}`)
                 });
               })
-            Button("存储")
+            Button("统一存储")
               .fontSize(16)
               .margin({ top: 10 })
               .width('80%')
@@ -256,24 +259,25 @@ export struct HomeComponent {
                 })
                 RouterManager.pushPath(navPathInfo, true)
               })
-            Button("测试H5容器加载离线包")
+            Button("AntUI")
               .fontSize(16)
-              .visibility(Visibility.Hidden)
               .margin({ top: 10 })
               .width('80%')
               .fontWeight(FontWeight.Bold)
               .onClick(() => {
-                hilog.error(0, Constants.TAG, "click->测试H5容器加载离线包送")
-                router.pushUrl({
-                  url: Constants.PAGE_H5_CONTAINER
-                }).catch((err: Error) => {
-                  console.log(Constants.TAG, `跳转出错${err}`)
-                });
+                let bannnerModel: BannerModel = new BannerModel()
+                bannnerModel.desc = "this params from PageAntUi"
+                let navPathInfo = new NavPathInfo("PageAntUi", bannnerModel, (popinfo: PopInfo) => {
+                  let result = popinfo.result as BannerModel
+                  console.info(Constants.TAG, `回执传参：${JSON.stringify(result)}`)
+                })
+                RouterManager.pushPath(navPathInfo, true)
               })
           }
           .justifyContent(FlexAlign.Start)
           .width('100%')
         }
+        //scroll包裹的布局不要写高度，要不然没法滚动
         .scrollable(ScrollDirection.Vertical) // 滚动方向纵向
         .scrollBar(BarState.On) // 滚动条常驻显示
         .scrollBarColor(Color.Gray) // 滚动条颜色

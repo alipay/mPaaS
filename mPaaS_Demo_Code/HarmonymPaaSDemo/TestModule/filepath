@@ -19,6 +19,7 @@
       "#Want": "Want",
       "#hilog": "hilog",
       "#window": "window",
+      "#default": "default",
       "TestModuleAbility#onWindowStageCreate#__function": "u"
     },
     "MemberMethodCache": {
@@ -31,7 +32,7 @@
     },
     "obfName": "TestModule/src/main/ets/testmoduleability/TestModuleAbility.ets"
   },
-  "compileSdkVersion": "5.0.0.31",
+  "compileSdkVersion": "5.0.0.71",
   "entryPackageInfo": "testmodule|1.0.0",
   "PropertyCache": {}
 }

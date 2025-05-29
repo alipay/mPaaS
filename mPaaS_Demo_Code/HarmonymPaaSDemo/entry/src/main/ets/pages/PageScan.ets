@@ -1,5 +1,5 @@
 import { Constants } from '../constants/Constants';
-import { BaseTitleComponent } from 'library/Index';
+// import { BaseTitleComponent } from 'library/Index';
 import { ScanInterface, ScanManager } from '@mpaas/scanapp';
 import { promptAction, router } from '@kit.ArkUI';
 
@@ -18,7 +18,7 @@ struct PageScan {
 
   build() {
     Column() {
-      BaseTitleComponent({ title: "扫一扫" })
+      // BaseTitleComponent({ title: "扫一扫" })
       Button("跳转系统相机扫一扫")
         .fontSize(16)
         .margin({ top: 10 })

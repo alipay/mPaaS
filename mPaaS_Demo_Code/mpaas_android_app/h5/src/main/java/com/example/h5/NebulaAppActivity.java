@@ -100,10 +100,10 @@ public class NebulaAppActivity extends BaseActivity implements View.OnClickListe
         Map<String, String> appMap = new HashMap<>();
         //key为appid，value为version，version可以通过H5AppProvider获取，startUpdateApp内部会自动读取version，所以这里可以传空
         appMap.put(appid, "");
-        MPNebula.updateApp(appMap, new MpaasNebulaUpdateCallback() {
+        MPNebula.updateApp(appMap,new MpaasNebulaUpdateCallback(){
             @Override
-            public void onResult(final boolean success, final boolean isLimit) {
-                super.onResult(success, isLimit);
+            public void onResult(boolean success, boolean isLimit, String detailCode) {
+                super.onResult(success, isLimit, detailCode);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
@@ -117,8 +117,8 @@ public class NebulaAppActivity extends BaseActivity implements View.OnClickListe
     private void updateAllApps() {
         MPNebula.updateAllApp(new MpaasNebulaUpdateCallback() {
             @Override
-            public void onResult(final boolean success, final boolean isLimit) {
-                super.onResult(success, isLimit);
+            public void onResult(boolean success, boolean isLimit, String detailCode) {
+                super.onResult(success, isLimit, detailCode);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

@@ -1,7 +1,7 @@
-import { CRVPage } from '@mpaas/nebulaintegration'
-import { TinyMenuButtonState, TinyMenuState } from '@mpaas/xriverohos'
 import { window } from '@kit.ArkUI'
 import { AUCustomIcon } from '@mpaas/antui'
+import { CRVPage } from '@mpaas/nebulaintegration'
+import { TinyMenuButtonState, TinyMenuState } from '@mpaas/xriverohos'
 import { Constants } from '../constants/Constants'
 
 @CustomDialog

@@ -17,7 +17,7 @@ Welcome to the mPaaS integration demo for Android! This demo is designed to show
 In this demo, you will learn how to integrate mPaaS into an Android application. We will cover the following key areas:
 
 1. **Setting Up Your Development Environment**: Ensure you have the necessary tools and dependencies installed to start developing with mPaaS and Android.
-2. **Integrating mPaaS SDK**: Step-by-step instructions on how to integrate the mPaaS SDK into your Android project.
+2. **Integrating mPaaS SDK**: Integrate the mPaaS SDK into your Android project.
 3. **Configuring mPaaS Services**: Configure and use various mPaaS services such as push notifications, analytics, and user authentication.
 4. **Testing and Debugging**: Best practices for testing and debugging your mPaaS-integrated application to ensure it performs optimally.
 5. **Deploying Your Application**: Guidance on deploying your application to production, ensuring a smooth and successful launch.

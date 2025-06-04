@@ -1,4 +1,4 @@
-import { AUButton, AUInputBox, AUInputField, AUListItem, AUPanelManager, AUText, } from "@mpaas/antui"
+import { AUButton, AUInputBox, AUInputField, AUListItem, AUPanelManager, AUText, AUToast, } from "@mpaas/antui"
 // import { BaseTitleComponent } from "library"
 import { MineModel } from "../rpc/EntityModel"
 import { MineViewModel } from '../viewmodel/MineViewModel';
@@ -25,6 +25,9 @@ export struct PageAntUi {
         // })
         Column() {
           Row() {
+            AUToast({
+              text:"test"
+            })
             AUText({ text: "用户名" })
             AUInputField({
               placeholder: "AntUI输入框",
